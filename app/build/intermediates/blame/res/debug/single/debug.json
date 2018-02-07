@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-ldpi_icon.png.flat",
+        "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-ldpi/icon.png"
+    },
+    {
+        "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/layout_main.xml.flat",
+        "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/layout_main_activity.xml.flat",
+        "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/main_activity.xml"
+    },
+    {
+        "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_icon.png.flat",
+        "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-mdpi_icon.png.flat",
+        "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-mdpi/icon.png"
+    },
+    {
+        "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/raw_androidpn.properties.flat",
+        "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/raw/androidpn.properties"
+    },
+    {
+        "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_notification.png.flat",
+        "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable/notification.png"
+    }
+]
