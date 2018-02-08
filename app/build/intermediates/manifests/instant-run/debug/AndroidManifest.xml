@@ -39,8 +39,13 @@
         </activity>
         <activity
             android:name="org.androidpn.demoapp.MainActivity"
-            android:label="Main" >
-        </activity>
+            android:label="Main" />
+        <activity
+            android:name="org.androidpn.demoapp.BussinessInfoActivity"
+            android:label="Bussiness Info" />
+        <activity
+            android:name="org.androidpn.demoapp.NavigationActivity"
+            android:label="navigation" />
         <activity
             android:name="org.androidpn.client.NotificationDetailsActivity"
             android:label="Notification Details" >

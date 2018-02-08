@@ -20,6 +20,13 @@ import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.Future;
 
+import org.androidpn.IQ.ActivityInquiryIQ;
+import org.androidpn.IQ.NotificationIQ;
+import org.androidpn.IQprovider.ActivityIQProvider;
+import org.androidpn.IQprovider.BussinessIQProvider;
+import org.androidpn.IQprovider.NotificationIQProvider;
+import org.androidpn.packetlistener.ActivityPacketListener;
+import org.androidpn.packetlistener.NotificationPacketListener;
 import org.androidpn.utils.ActivityHolder;
 import org.jivesoftware.smack.ConnectionConfiguration;
 import org.jivesoftware.smack.ConnectionListener;
@@ -321,6 +328,9 @@ public class XmppManager {
                     ProviderManager.getInstance().addIQProvider("activity",
                             "androidpn:iq:inquiry",
                             new ActivityIQProvider());
+                    ProviderManager.getInstance().addIQProvider("bussiness",
+                            "androidpn:iq:inquiry",
+                            new BussinessIQProvider());
 
                 } catch (XMPPException e) {
                     Log.e(LOGTAG, "XMPP connection failed", e);

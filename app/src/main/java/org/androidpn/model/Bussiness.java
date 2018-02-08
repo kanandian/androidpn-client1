@@ -1,5 +1,7 @@
 package org.androidpn.model;
 
+import org.androidpn.utils.Location;
+
 /**
  * Created by pro1 on 18/2/6.
  */
@@ -8,9 +10,10 @@ public class Bussiness {
 
     private Long bussinessId;
     private String imageURL;
-    private String businessName;
+    private String bussinessName;
+    private String classification;
     private String tag;
-    private String location;
+    private Location location;
     private String mobile;
     private String des;
 
@@ -34,12 +37,20 @@ public class Bussiness {
         this.imageURL = imageURL;
     }
 
-    public String getBusinessName() {
-        return businessName;
+    public String getBussinessName() {
+        return bussinessName;
     }
 
-    public void setBusinessName(String businessName) {
-        this.businessName = businessName;
+    public void setBussinessName(String bussinessName) {
+        this.bussinessName = bussinessName;
+    }
+
+    public String getClassification() {
+        return classification;
+    }
+
+    public void setClassification(String classification) {
+        this.classification = classification;
     }
 
     public String getTag() {
@@ -50,12 +61,16 @@ public class Bussiness {
         this.tag = tag;
     }
 
-    public String getLocation() {
+    public Location getLocation() {
         return location;
     }
 
-    public void setLocation(String location) {
+    public void setLocation(Location location) {
         this.location = location;
+    }
+
+    public void setLocation(String location) {
+        this.location = new Location(location);
     }
 
     public String getMobile() {

@@ -12,9 +12,9 @@
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
-		<activity android:name=".MainActivity" android:label="Main">
-
-		</activity>
+		<activity android:name=".MainActivity" android:label="Main"></activity>
+		<activity android:name=".BussinessInfoActivity" android:label="Bussiness Info"></activity>
+		<activity android:name=".NavigationActivity" android:label="navigation"></activity>
 		<activity android:name="org.androidpn.client.NotificationDetailsActivity"
 			android:label="Notification Details">
 		</activity>

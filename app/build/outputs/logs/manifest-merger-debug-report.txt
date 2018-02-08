@@ -50,11 +50,23 @@ ADDED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/Andr
 	android:name
 		ADDED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:12:15-62
 activity#org.androidpn.demoapp.MainActivity
-ADDED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:15:3-17:14
+ADDED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:15:3-74
 	android:label
 		ADDED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:15:42-62
 	android:name
 		ADDED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:15:13-41
+activity#org.androidpn.demoapp.BussinessInfoActivity
+ADDED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:16:3-93
+	android:label
+		ADDED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:16:51-81
+	android:name
+		ADDED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:16:13-50
+activity#org.androidpn.demoapp.NavigationActivity
+ADDED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:17:3-86
+	android:label
+		ADDED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:17:48-74
+	android:name
+		ADDED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:17:13-47
 activity#org.androidpn.client.NotificationDetailsActivity
 ADDED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:18:3-20:14
 	android:label

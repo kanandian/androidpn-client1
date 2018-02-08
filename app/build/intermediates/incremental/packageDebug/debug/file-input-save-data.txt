@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Feb 08 12:48:02 CST 2018
+#Thu Feb 08 16:02:54 CST 2018
 210.set=NATIVE_RESOURCE
 14.set=JAVA_RESOURCE
 180.file=/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar/assets/custtexture_aolr.png
