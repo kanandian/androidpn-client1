@@ -8,18 +8,26 @@
         android:minSdkVersion="3"
         android:targetSdkVersion="3" />
 
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:debuggable="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:testOnly="true" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="6e6873f83ecb750fadb47a27101016bb" />
+
         <activity
             android:name="org.androidpn.demoapp.EntryActivity"
             android:label="@string/app_name" >
@@ -41,6 +49,10 @@
             android:name="org.androidpn.client.NotificationSettingsActivity"
             android:label="Notification Settings" >
         </activity>
+        <activity
+            android:name="com.amap.api.navi.AmapRouteActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar" />
 
         <service
             android:name="org.androidpn.client.NotificationService"
@@ -50,6 +62,7 @@
                 <action android:name="org.androidpn.client.NotificationService" />
             </intent-filter>
         </service>
+        <service android:name="com.amap.api.location.APSService" />
         <!--
 			<meta-data android:name="ANDROIDPN_API_KEY"
 			android:value="1234567890" />

@@ -116,5 +116,8 @@
     <orderEntry type="jdk" jdkName="Android API 8 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="__local_aars__:/Users/pro1/AndroidStudioProjects/androidpn-client1/libs/asmack.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="com.amap.api:navi-3dmap:5.6.0_3dmap5.7.0@jar" level="project" />
+    <orderEntry type="library" name="com.amap.api:search:5.7.0@jar" level="project" />
+    <orderEntry type="library" name="com.amap.api:location:3.8.0@jar" level="project" />
   </component>
 </module>
