@@ -21,11 +21,13 @@ import java.util.UUID;
 import java.util.concurrent.Future;
 
 import org.androidpn.IQ.ActivityInquiryIQ;
+import org.androidpn.IQ.BussinessIQ;
 import org.androidpn.IQ.NotificationIQ;
 import org.androidpn.IQprovider.ActivityIQProvider;
 import org.androidpn.IQprovider.BussinessIQProvider;
 import org.androidpn.IQprovider.NotificationIQProvider;
 import org.androidpn.packetlistener.ActivityPacketListener;
+import org.androidpn.packetlistener.BussinessPacketListener;
 import org.androidpn.packetlistener.NotificationPacketListener;
 import org.androidpn.utils.ActivityHolder;
 import org.jivesoftware.smack.ConnectionConfiguration;
@@ -84,6 +86,8 @@ public class XmppManager {
 
     private PacketListener activityPacketListener;
 
+    private PacketListener bussinessPacketListener;
+
     private Handler handler;
 
     private List<Runnable> taskList;
@@ -108,6 +112,7 @@ public class XmppManager {
         connectionListener = new PersistentConnectionListener(this);
         notificationPacketListener = new NotificationPacketListener(this);
         activityPacketListener = new ActivityPacketListener(this);
+        bussinessPacketListener = new BussinessPacketListener(this);
 
         handler = new Handler();
         taskList = new ArrayList<Runnable>();
@@ -182,6 +187,10 @@ public class XmppManager {
 
     public PacketListener getActivityPacketListener() {
         return activityPacketListener;
+    }
+
+    public PacketListener getBussinessPacketListener() {
+        return bussinessPacketListener;
     }
 
     public void startReconnectionThread() {
@@ -468,6 +477,10 @@ public class XmppManager {
                     PacketFilter packetFilter1 = new PacketTypeFilter(ActivityInquiryIQ.class);
                     PacketListener packetListener1 = xmppManager.getActivityPacketListener();
                     connection.addPacketListener(packetListener1, packetFilter1);
+
+                    PacketFilter packetFilter2 = new PacketTypeFilter(BussinessIQ.class);
+                    PacketListener packetListener2 = xmppManager.getBussinessPacketListener();
+                    connection.addPacketListener(packetListener2, packetFilter2);
 
                     xmppManager.runTask();
 

@@ -39,6 +39,12 @@ dependencies {
     compile 'com.amap.api:search:latest.integration'
     //导航功能
     compile 'com.amap.api:navi-3dmap:latest.integration'
+
+    //TabLayout
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    //ViewPage
+    compile 'com.android.support:support-v4:23.0.1'
 }
 
 
