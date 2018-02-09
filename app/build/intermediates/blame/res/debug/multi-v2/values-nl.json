@@ -4,13 +4,20 @@
             "outputFile": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml",
             "map": [
                 {
-                    "source": "/Users/pro1/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/4774226b059b4694b1e91d46d76a5f56/res/values-nl/values-nl.xml",
+                    "source": "/Users/pro1/.gradle/caches/transforms-1/files-1.1/appcompat-v7-22.2.0.aar/fa7e54509b1019b3c85d37e59d6bf53a/res/values-nl/values-nl.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,173,281,404,509,616,702,810,930,1007,1084,1166,1277,1381,1480,1595,1708,1811,1929,2032",
-                        "endColumns": "117,107,122,104,106,85,107,119,76,76,81,110,103,98,114,112,102,117,102,100",
-                        "endOffsets": "168,276,399,504,611,697,805,925,1002,1079,1161,1272,1376,1475,1590,1703,1806,1924,2027,2128"
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "291,409,514,621,707,815,935,1046,1150,1249,1364,1477,1580",
+                        "endColumns": "117,104,106,85,107,119,110,103,98,114,112,102,117",
+                        "endOffsets": "404,509,616,702,810,930,1041,1145,1244,1359,1472,1575,1693"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,173,278,385,471,579,699,810,914,1013,1128,1241,1344",
+                        "endColumns": "117,104,106,85,107,119,110,103,98,114,112,102,117",
+                        "endOffsets": "168,273,380,466,574,694,805,909,1008,1123,1236,1339,1457"
                     }
                 }
             ]

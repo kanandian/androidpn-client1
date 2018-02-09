@@ -15,14 +15,15 @@ public final class R {
   public static final class id {
     public static final int btn_navi=0x7f020000;
     public static final int btn_settings=0x7f020001;
-    public static final int main_bottom=0x7f020002;
-    public static final int main_content=0x7f020003;
-    public static final int main_header=0x7f020004;
-    public static final int navigationbar=0x7f020005;
+    public static final int main_content=0x7f020002;
+    public static final int main_header=0x7f020003;
+    public static final int navigationbar=0x7f020004;
   }
   public static final class layout {
-    public static final int main=0x7f030000;
-    public static final int main_activity=0x7f030001;
+    public static final int bussiness_info=0x7f030000;
+    public static final int main=0x7f030001;
+    public static final int main_activity=0x7f030002;
+    public static final int main_frame=0x7f030003;
   }
   public static final class raw {
     public static final int androidpn=0x7f040000;

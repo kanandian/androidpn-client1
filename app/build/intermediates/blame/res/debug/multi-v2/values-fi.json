@@ -4,13 +4,20 @@
             "outputFile": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml",
             "map": [
                 {
-                    "source": "/Users/pro1/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/4774226b059b4694b1e91d46d76a5f56/res/values-fi/values-fi.xml",
+                    "source": "/Users/pro1/.gradle/caches/transforms-1/files-1.1/appcompat-v7-22.2.0.aar/fa7e54509b1019b3c85d37e59d6bf53a/res/values-fi/values-fi.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,163,271,394,494,595,681,786,904,991,1073,1153,1260,1363,1460,1566,1665,1769,1888,1987",
-                        "endColumns": "107,107,122,99,100,85,104,117,86,81,79,106,102,96,105,98,103,118,98,100",
-                        "endOffsets": "158,266,389,489,590,676,781,899,986,1068,1148,1255,1358,1455,1561,1660,1764,1883,1982,2083"
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "291,399,499,600,686,791,909,1016,1119,1216,1322,1421,1525",
+                        "endColumns": "107,99,100,85,104,117,106,102,96,105,98,103,118",
+                        "endOffsets": "394,494,595,681,786,904,1011,1114,1211,1317,1416,1520,1639"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,163,263,364,450,555,673,780,883,980,1086,1185,1289",
+                        "endColumns": "107,99,100,85,104,117,106,102,96,105,98,103,118",
+                        "endOffsets": "158,258,359,445,550,668,775,878,975,1081,1180,1284,1403"
                     }
                 }
             ]
