@@ -4,22 +4,14 @@
             "outputFile": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/pro1/.gradle/caches/transforms-1/files-1.1/appcompat-v7-22.2.0.aar/fa7e54509b1019b3c85d37e59d6bf53a/res/values-hdpi/values-hdpi.xml",
+                    "source": "/Users/pro1/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/290aea182564531ac0a5ceec7a301a8c/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "4",
-                        "startOffsets": "297",
-                        "endLines": "8",
-                        "endColumns": "13",
-                        "endOffsets": "567"
-                    },
-                    "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
                         "endLines": "6",
                         "endColumns": "13",
-                        "endOffsets": "325"
+                        "endOffsets": "327"
                     }
                 }
             ]

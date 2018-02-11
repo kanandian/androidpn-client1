@@ -51,16 +51,17 @@
     <LinearLayout
         android:id="@+id/main_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btn_navi"
-            android:layout_width="match_parent"
-            android:layout_height="24px"
-            android:text="导航"/>
 
     </LinearLayout>
+
+    <org.androidpn.layout.NavBottomLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:visibility="visible"></org.androidpn.layout.NavBottomLayout>
 
     <!--<fragment-->
         <!--android:id="@+id/frag_nav_bottom"-->

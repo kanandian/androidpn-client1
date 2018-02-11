@@ -20,24 +20,12 @@ import java.util.List;
 
 public class MainActivity extends Activity {
 
-    private Button naviButton;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.main_activity);
 
-        naviButton = (Button) findViewById(R.id.btn_navi);
-
-        naviButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, NavigationActivity.class);
-                startActivity(intent);
-            }
-        });
 
         // Start the service
 //        ServiceManager serviceManager = new ServiceManager(this);
