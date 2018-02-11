@@ -7,25 +7,31 @@
     format="10"
     ir-eligibility="CLASS_ADDED"
     plugin-version="3.0.0"
-    timestamp="1518331158819"
+    timestamp="1518334972970"
     token="219025068009279309"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="3828" />
+        duration="875" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="299" />
+        duration="51" />
     <task
         name="verifier"
-        duration="219" />
+        duration="22" />
 
     <artifact
+        location="/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
         location="/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
         type="SPLIT" />
     <artifact
         location="/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/outputs/apk/debug/app-debug.apk"
@@ -75,10 +81,25 @@
     <build
         build-mode="COLD"
         ir-eligibility="CLASS_ADDED"
-        timestamp="1518331158819"
+        timestamp="1518333344957"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
+            location="/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1518334972970"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
             location="/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/outputs/apk/debug/app-debug.apk"

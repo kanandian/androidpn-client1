@@ -5,8 +5,8 @@
     android:versionName="0.5.0" >
 
     <uses-sdk
-        android:minSdkVersion="3"
-        android:targetSdkVersion="3" />
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
