@@ -1,11 +1,19 @@
 [
     {
+        "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_nav_mine.png.flat",
+        "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable/nav_mine.png"
+    },
+    {
         "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-ldpi_icon.png.flat",
         "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-ldpi/icon.png"
     },
     {
         "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/layout_item_bussiness.xml.flat",
         "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/item_bussiness.xml"
+    },
+    {
+        "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/layout_nav_bottom_item.xml.flat",
+        "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/nav_bottom_item.xml"
     },
     {
         "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/layout_bussiness_info.xml.flat",
@@ -24,6 +32,10 @@
         "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/icon.png"
     },
     {
+        "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_nav_find.png.flat",
+        "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable/nav_find.png"
+    },
+    {
         "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-mdpi_icon.png.flat",
         "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-mdpi/icon.png"
     },
@@ -34,6 +46,10 @@
     {
         "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_notification.png.flat",
         "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable/notification.png"
+    },
+    {
+        "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_nav_main_selected.png.flat",
+        "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable/nav_main_selected.png"
     },
     {
         "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/layout_nav_bottom.xml.flat",
