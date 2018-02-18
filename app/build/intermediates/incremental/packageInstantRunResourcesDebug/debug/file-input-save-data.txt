@@ -1,15 +1,15 @@
 #Internal package file, do not edit.
-#Sun Feb 11 15:42:55 CST 2018
+#Sun Feb 18 19:12:08 CST 2018
 2.base=/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/debug/resources-debug.ap_
 5.file=/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/debug/resources-debug.ap_/res/layout/item_bussiness.xml
 5.set=ANDROID_RESOURCE
 3.base=/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/debug/resources-debug.ap_
-6.file=/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/debug/resources-debug.ap_/AndroidManifest.xml
+6.file=/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable/notification.png
 2.set=ANDROID_RESOURCE
 10.set=ANDROID_RESOURCE
 10.file=/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-hdpi-v4/icon.png
 4.base=/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/debug/resources-debug.ap_
-7.file=/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable/notification.png
+7.file=/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/debug/resources-debug.ap_/AndroidManifest.xml
 7.set=ANDROID_RESOURCE
 count=11
 0.file=/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/debug/resources-debug.ap_/res/layout/main.xml

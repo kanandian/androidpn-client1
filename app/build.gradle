@@ -43,7 +43,7 @@ dependencies {
     //TabLayout
 //    compile 'com.android.support:design:22.2.0'
     //ViewPage
-    compile 'com.android.support:support-v4:23.0.1'
+//    compile 'com.android.support:support-v4:23.0.1'
 
     //volley
     compile 'com.android.volley:volley:1.0.0'

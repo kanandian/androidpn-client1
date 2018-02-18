@@ -4,7 +4,6 @@ ADDED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/Andr
 INJECTED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-53:12
 INJECTED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-53:12
 INJECTED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-53:12
-MERGED from [com.android.support:support-v4:23.0.1] /Users/pro1/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/b1f9eb57eddf8a96ca71f4a6e4beb5ed/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.volley:volley:1.0.0] /Users/pro1/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/81f4636341ce48393d23fecd7d855064/AndroidManifest.xml:2:1-11:12
 INJECTED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-53:12
 INJECTED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-53:12
@@ -25,8 +24,6 @@ INJECTED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/A
 		INJECTED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml
 application
 ADDED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:5:2-41:16
-MERGED from [com.android.support:support-v4:23.0.1] /Users/pro1/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/b1f9eb57eddf8a96ca71f4a6e4beb5ed/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] /Users/pro1/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/b1f9eb57eddf8a96ca71f4a6e4beb5ed/AndroidManifest.xml:22:5-20
 MERGED from [com.android.volley:volley:1.0.0] /Users/pro1/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/81f4636341ce48393d23fecd7d855064/AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.0.0] /Users/pro1/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/81f4636341ce48393d23fecd7d855064/AndroidManifest.xml:9:5-20
 	android:label
@@ -115,8 +112,6 @@ uses-sdk
 ADDED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:42:2-40
 INJECTED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:42:2-40
 INJECTED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:42:2-40
-MERGED from [com.android.support:support-v4:23.0.1] /Users/pro1/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/b1f9eb57eddf8a96ca71f4a6e4beb5ed/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.0.1] /Users/pro1/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/b1f9eb57eddf8a96ca71f4a6e4beb5ed/AndroidManifest.xml:20:5-43
 MERGED from [com.android.volley:volley:1.0.0] /Users/pro1/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/81f4636341ce48393d23fecd7d855064/AndroidManifest.xml:7:5-43
 MERGED from [com.android.volley:volley:1.0.0] /Users/pro1/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/81f4636341ce48393d23fecd7d855064/AndroidManifest.xml:7:5-43
 INJECTED from /Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:42:2-40
