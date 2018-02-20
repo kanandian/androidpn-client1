@@ -1,6 +1,8 @@
 package org.androidpn.layout;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -9,7 +11,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import org.androidpn.demoapp.MainActivity;
+import org.androidpn.demoapp.PersonalActivity;
 import org.androidpn.demoapp.R;
+import org.androidpn.demoapp.RegisterActivity;
+import org.androidpn.utils.ActivityHolder;
 
 /**
  * Created by pro1 on 18/2/9.
@@ -32,16 +38,42 @@ public class NavBottomLayout extends LinearLayout {
         mainPage.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("nav_test", "main_page");
+                mainPage.setImageResource(R.drawable.nav_main_selected);
+                findPage.setImageResource(R.drawable.nav_find);
+                minePage.setImageResource(R.drawable.nav_mine);
 
+                convertActivity(MainActivity.class);
+            }
+        });
+
+        findPage.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mainPage.setImageResource(R.drawable.nav_main);
+                findPage.setImageResource(R.drawable.nav_find_selected);
+                minePage.setImageResource(R.drawable.nav_mine);
+
+            }
+        });
+
+        minePage.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mainPage.setImageResource(R.drawable.nav_main);
+                findPage.setImageResource(R.drawable.nav_find);
+                minePage.setImageResource(R.drawable.nav_mine_selected);
+
+                convertActivity(RegisterActivity.class);
             }
         });
     }
 
-    private void convertPage(ImageView page) {
-        mainPage.setImageResource(R.drawable.nav_main_selected);
-        findPage.setImageResource(R.drawable.nav_find);
-        minePage.setImageResource(R.drawable.nav_mine);
+    private void convertActivity(Class<?> activityclass) {
+        Activity currentActivity = ActivityHolder.getInstance().getCurrentActivity();
+        if(currentActivity.getClass() != activityclass) {
+            Intent intent = new Intent(currentActivity, activityclass);
+            currentActivity.startActivity(intent);
+        }
     }
 
 

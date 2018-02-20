@@ -9,14 +9,17 @@
 		<activity android:name=".EntryActivity" android:label="@string/app_name">
 
 		</activity>
-		<activity android:name=".MainActivity" android:label="Main">
+		<activity android:name=".MainActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
-		<activity android:name=".BussinessInfoActivity" android:label="Bussiness Info"></activity>
-		<activity android:name=".NavigationActivity" android:label="navigation"></activity>
+		<activity android:name=".BussinessInfoActivity"></activity>
+		<activity android:name=".NavigationActivity"></activity>
+		<activity android:name=".PersonalActivity"></activity>
+		<activity android:name=".RegisterActivity"></activity>
+		<activity android:name=".LoginActivity"></activity>
 		<activity android:name="org.androidpn.client.NotificationDetailsActivity"
 			android:label="Notification Details">
 		</activity>
