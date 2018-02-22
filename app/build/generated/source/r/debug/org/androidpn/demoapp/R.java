@@ -21,26 +21,27 @@ public final class R {
   public static final class id {
     public static final int btn_settings=0x7f020000;
     public static final int button_register=0x7f020001;
-    public static final int edit_email=0x7f020002;
-    public static final int edit_idcard=0x7f020003;
-    public static final int edit_mobile=0x7f020004;
-    public static final int edit_name=0x7f020005;
-    public static final int edit_password=0x7f020006;
-    public static final int edit_sex=0x7f020007;
-    public static final int edit_username=0x7f020008;
-    public static final int image_bussiness=0x7f020009;
-    public static final int image_nav=0x7f02000a;
-    public static final int image_nav_find=0x7f02000b;
-    public static final int image_nav_main=0x7f02000c;
-    public static final int image_nav_mine=0x7f02000d;
-    public static final int list_bussinesses=0x7f02000e;
-    public static final int main_content=0x7f02000f;
-    public static final int main_header=0x7f020010;
-    public static final int navigationbar=0x7f020011;
-    public static final int text_bussiness_name=0x7f020012;
-    public static final int text_distance=0x7f020013;
-    public static final int text_nav=0x7f020014;
-    public static final int text_tags=0x7f020015;
+    public static final int edit_check_password=0x7f020002;
+    public static final int edit_email=0x7f020003;
+    public static final int edit_idcard=0x7f020004;
+    public static final int edit_mobile=0x7f020005;
+    public static final int edit_name=0x7f020006;
+    public static final int edit_password=0x7f020007;
+    public static final int edit_sex=0x7f020008;
+    public static final int edit_username=0x7f020009;
+    public static final int image_bussiness=0x7f02000a;
+    public static final int image_nav=0x7f02000b;
+    public static final int image_nav_find=0x7f02000c;
+    public static final int image_nav_main=0x7f02000d;
+    public static final int image_nav_mine=0x7f02000e;
+    public static final int list_bussinesses=0x7f02000f;
+    public static final int main_content=0x7f020010;
+    public static final int main_header=0x7f020011;
+    public static final int navigationbar=0x7f020012;
+    public static final int text_bussiness_name=0x7f020013;
+    public static final int text_distance=0x7f020014;
+    public static final int text_nav=0x7f020015;
+    public static final int text_tags=0x7f020016;
   }
   public static final class layout {
     public static final int bussiness_info=0x7f030000;
