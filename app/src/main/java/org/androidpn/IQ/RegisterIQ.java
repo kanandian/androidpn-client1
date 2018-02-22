@@ -19,7 +19,6 @@ public class RegisterIQ extends IQ {
     String sex;
 
     public RegisterIQ() {
-
     }
 
     public String getUserName() {
