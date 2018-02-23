@@ -9,17 +9,98 @@
 		<activity android:name=".EntryActivity" android:label="@string/app_name">
 
 		</activity>
-		<activity android:name=".MainActivity">
+		<!--<activity android:name=".MainActivity">-->
+			<!--<intent-filter>-->
+				<!--<action android:name="android.intent.action.MAIN" />-->
+				<!--<category android:name="android.intent.category.LAUNCHER" />-->
+			<!--</intent-filter>-->
+		<!--</activity>-->
+
+
+		<activity
+			android:name=".MainActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
+		<activity android:name=".FrameActivity" >
+		</activity>
+		<activity android:name=".SearchActivity" >
+		</activity>
+		<activity
+			android:name=".TuanActivity"
+			android:label="@string/title_activity_tuan" >
+		</activity>
+		<activity
+			android:name=".CheckinActivity"
+			android:label="@string/title_activity_checkin" >
+		</activity>
+		<activity
+			android:name=".MyActivity"
+			android:label="@string/title_activity_my" >
+		</activity>
+		<activity
+			android:name=".MoreActivity"
+			android:label="@string/title_activity_more" >
+		</activity>
+		<activity android:name=".ShopListActivity" >
+		</activity>
+		<activity
+			android:name=".SearchMoreActivity"
+			android:label="@string/title_activity_search_more" >
+		</activity>
+		<activity
+			android:name=".ShopDetailsActivity"
+			android:label="@string/title_activity_shop_details" >
+		</activity>
+		<activity
+			android:name=".SearchTheCity"
+			android:label="@string/title_activity_sou_quan_cheng" >
+		</activity>
+		<activity
+			android:name=".ShopDetailsMore"
+			android:label="@string/title_activity_shop_details_more" >
+		</activity>
+		<activity
+			android:name=".RankingList"
+			android:label="@string/title_activity_paihangbang" >
+		</activity>
+		<activity
+			android:name=".RegistrationActivity"
+			android:label="@string/title_activity_registration" >
+		</activity>
+		<activity
+			android:name=".LoginActivity"
+			android:label="@string/title_activity_login" >
+		</activity>
+		<activity
+			android:name=".ShopDetailsCheckinActivity"
+			android:label="@string/title_activity_shop_detailsqiandao" >
+		</activity>
+		<activity
+			android:name=".ShopDetailsCommentActivity"
+			android:label="@string/title_activity_shop_detailsdianping" >
+		</activity>
+		<activity
+			android:name=".RankingList_more"
+			android:label="@string/title_activity_paihangbang_more" >
+		</activity>
+		<activity
+			android:name=".RankingList_bzrm"
+			android:label="@string/title_activity_paihangbang_bzrm" >
+		</activity>
+		<activity
+			android:name=".TuanDetailsActivity"
+			android:label="@string/title_activity_tuan_details" >
+		</activity>
+
+
 		<activity android:name=".BussinessInfoActivity"></activity>
 		<activity android:name=".NavigationActivity"></activity>
 		<activity android:name=".PersonalActivity"></activity>
 		<activity android:name=".RegisterActivity"></activity>
-		<activity android:name=".LoginActivity"></activity>
+		<!--<activity android:name=".LoginActivity"></activity>-->
 		<activity android:name="org.androidpn.client.NotificationDetailsActivity"
 			android:label="Notification Details">
 		</activity>
@@ -27,7 +108,6 @@
 			android:label="Notification Settings">
 		</activity>
 		<activity android:name="com.amap.api.navi.AmapRouteActivity"
-			android:theme="@android:style/Theme.NoTitleBar"
 			android:configChanges="orientation|keyboardHidden" />
 		<service android:enabled="true"
 			android:name="org.androidpn.client.NotificationService"
