@@ -27,7 +27,7 @@ import java.util.List;
  * ���а�-��������ģ��
  * */
 
-public class RankingList_bzrm extends Activity {
+public class RankingList_bzrm extends BaseActivity {
 
 	private ListView mListView;
 	private MyGet myGet = new MyGet();

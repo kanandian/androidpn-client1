@@ -21,7 +21,7 @@ import java.util.Map;
 /**
  * ����-����ģ��
  * */
-public class SearchMoreActivity extends Activity {
+public class SearchMoreActivity extends BaseActivity {
 
 	private ListView mSearch_more_mainlist;
 	private ListView mSearch_more_morelist;

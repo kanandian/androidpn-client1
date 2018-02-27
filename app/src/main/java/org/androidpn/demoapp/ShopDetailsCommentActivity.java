@@ -17,7 +17,7 @@ import org.androidpn.info.ShopInfo;
 /**
  * ��������-����ģ��
  * */
-public class ShopDetailsCommentActivity extends Activity {
+public class ShopDetailsCommentActivity extends BaseActivity {
 
 	private ShopInfo info = null;
 	private TextView mShop_details_more_title;

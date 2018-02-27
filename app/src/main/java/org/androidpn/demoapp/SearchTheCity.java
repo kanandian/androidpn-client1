@@ -10,7 +10,7 @@ import android.widget.TextView;
 /**
  * ��ȫ��ģ��
  * */
-public class SearchTheCity extends Activity {
+public class SearchTheCity extends BaseActivity {
 
 	private ImageView mSouquancheng_back;
 	private TextView mSouquancheng_moresearch, mSouquancheng_text1,

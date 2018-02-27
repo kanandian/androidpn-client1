@@ -28,7 +28,7 @@ import android.widget.Button;
  * 
  * @author Sehwan Noh (devnoh@gmail.com)
  */
-public class DemoAppActivity extends Activity {
+public class DemoAppActivity extends BaseActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

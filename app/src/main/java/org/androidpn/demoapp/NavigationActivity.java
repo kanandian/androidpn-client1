@@ -17,7 +17,7 @@ import org.androidpn.utils.ActivityHolder;
  * Created by pro1 on 18/2/8.
  */
 
-public class NavigationActivity extends Activity {
+public class NavigationActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

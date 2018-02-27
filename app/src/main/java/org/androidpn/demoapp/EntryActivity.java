@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 
-public class EntryActivity extends Activity {
+public class EntryActivity extends BaseActivity {
 
     public static final int TO_OTHER_ACTIVITY = 0;
 
@@ -77,14 +77,6 @@ public class EntryActivity extends Activity {
         new StartActivityThread(EntryActivity.this).start();
 
     }
-
-    @Override
-    protected void onResume() {
-        // TODO Auto-generated method stub
-        super.onResume();
-        ActivityHolder.getInstance().setCurrentActivity(EntryActivity.this);
-    }
-
 
     class StartActivityThread extends Thread {
 

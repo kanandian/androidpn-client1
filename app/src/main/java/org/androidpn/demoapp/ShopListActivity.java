@@ -35,7 +35,7 @@ import java.util.Map;
 /**
  * �����б�ģ��
  * */
-public class ShopListActivity extends Activity {
+public class ShopListActivity extends BaseActivity {
 
 	private ListView mListView, mShoplist_toplist, mShoplist_threelist,
 			mShoplist_onelist2, mShoplist_twolist2, mShoplist_onelist1,

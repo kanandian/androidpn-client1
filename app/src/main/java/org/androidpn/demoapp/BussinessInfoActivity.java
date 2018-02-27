@@ -14,7 +14,7 @@ import org.jivesoftware.smack.packet.IQ;
  * Created by pro1 on 18/2/8.
  */
 
-public class BussinessInfoActivity extends Activity {
+public class BussinessInfoActivity extends BaseActivity {
 
     long bussinessId;
 

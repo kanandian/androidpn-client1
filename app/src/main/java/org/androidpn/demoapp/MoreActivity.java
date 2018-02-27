@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
  * ����ģ��
  * */
 
-public class MoreActivity extends Activity {
+public class MoreActivity extends BaseActivity {
 
 	private ImageView mMore_button1, mMore_list_likeapp, mMore_list_tuanapp,
 			mMore_list_moreapp;

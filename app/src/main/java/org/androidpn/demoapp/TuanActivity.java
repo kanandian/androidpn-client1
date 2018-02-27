@@ -28,7 +28,7 @@ import java.util.List;
 /**
  * �Ź�ģ��
  * */
-public class TuanActivity extends Activity {
+public class TuanActivity extends BaseActivity {
 
 	// ������linearlayout��Ϊ��ť
 	private LinearLayout mTuan_search;

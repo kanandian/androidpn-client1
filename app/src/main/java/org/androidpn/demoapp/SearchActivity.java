@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import org.androidpn.utils.ActivityHolder;
+
 /**
  * ����ģ��
  * */
@@ -63,6 +65,13 @@ public class SearchActivity extends Activity {
 		mSearch_list_paihangbang.setOnClickListener(mOnclickListener);
 		mSearch_list_youhuiquan.setOnClickListener(mOnclickListener);
 
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+
+		ActivityHolder.getInstance().setCurrentActivity(SearchActivity.this);
 	}
 
 	private class MyOnclickListener implements View.OnClickListener {

@@ -11,7 +11,7 @@ import android.widget.TextView;
  * �ҵ�ģ��
  * */
 
-public class MyActivity extends Activity {
+public class MyActivity extends BaseActivity {
 
 	private TextView mMy_register, mMy_login, mMy_address, mMy_checkin,
 			mMy_comment, mMy_photo;

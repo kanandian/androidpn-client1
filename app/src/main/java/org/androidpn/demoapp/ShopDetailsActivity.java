@@ -33,7 +33,7 @@ import java.util.ArrayList;
 /**
  * ��������ģ��
  * */
-public class ShopDetailsActivity extends Activity {
+public class ShopDetailsActivity extends BaseActivity {
 
 	private ShopInfo info = null;
 	private LoadImg loadImg;

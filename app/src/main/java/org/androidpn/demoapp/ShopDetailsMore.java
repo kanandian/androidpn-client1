@@ -13,7 +13,7 @@ import org.androidpn.info.ShopInfo;
 /**
  * ��������-������Ϣģ��
  * */
-public class ShopDetailsMore extends Activity {
+public class ShopDetailsMore extends BaseActivity {
 
 	private ShopInfo info = null;
 	private TextView mShop_details_more_title, mShop_details_more_time;

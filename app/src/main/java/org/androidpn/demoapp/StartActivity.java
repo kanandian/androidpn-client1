@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 /**
  * �����������
  * */
-public class StartActivity extends Activity {
+public class StartActivity extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

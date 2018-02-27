@@ -10,7 +10,7 @@ import android.widget.TextView;
  * ���а�-����ģ��
  * </BR> </BR> By����ɬ </BR> ��ϵ���ߣ�QQ 534429149
  * */
-public class RankingList_more extends Activity {
+public class RankingList_more extends BaseActivity {
 
 	private TextView mpaihangbang_more_bzrm, mpaihangbang_more_zjct,
 			mpaihangbang_more_kwzj, mpaihangbang_more_hjzj,

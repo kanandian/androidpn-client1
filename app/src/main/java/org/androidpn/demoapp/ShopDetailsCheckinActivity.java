@@ -36,7 +36,7 @@ import java.util.List;
 /**
  * ��������-ǩ��ģ��
  * */
-public class ShopDetailsCheckinActivity extends Activity {
+public class ShopDetailsCheckinActivity extends BaseActivity {
 
 	private ShopInfo info = null;
 	private TextView mShop_details_more_title;

@@ -22,7 +22,7 @@ import java.util.List;
  * ǩ��ģ��
  * </BR> </BR> By����ɬ </BR> ��ϵ���ߣ�QQ 534429149
  * */
-public class CheckinActivity extends Activity {
+public class CheckinActivity extends BaseActivity {
 
 	private LinearLayout mCheckin_search;
 	private LinearLayout mLayout;

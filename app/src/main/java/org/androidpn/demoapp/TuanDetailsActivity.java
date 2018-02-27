@@ -19,7 +19,7 @@ import org.androidpn.utils.LoadImg;
  * 
  * </BR> </BR> By����ɬ </BR> ��ϵ���ߣ�QQ 534429149
  * */
-public class TuanDetailsActivity extends Activity implements MyScrollView.OnScrollListener {
+public class TuanDetailsActivity extends BaseActivity implements MyScrollView.OnScrollListener {
 
 	private ShopInfo Values;
 	private LoadImg loadImg;

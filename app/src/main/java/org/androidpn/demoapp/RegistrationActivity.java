@@ -12,7 +12,7 @@ import android.widget.Toast;
 /**
  * ע��ģ��
  * */
-public class RegistrationActivity extends Activity {
+public class RegistrationActivity extends BaseActivity {
 
 	private ImageView mRegistration_back;
 	private EditText mRegistration_user, mRegistration_name,

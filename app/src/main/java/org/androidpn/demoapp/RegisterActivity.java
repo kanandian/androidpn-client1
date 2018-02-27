@@ -15,7 +15,7 @@ import org.androidpn.utils.ActivityHolder;
  * Created by pro1 on 18/2/20.
  */
 
-public class RegisterActivity extends Activity {
+public class RegisterActivity extends BaseActivity {
 
     private EditText usernameEdit;
     private EditText passwordEdit;

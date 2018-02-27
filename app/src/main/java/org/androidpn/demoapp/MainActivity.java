@@ -103,7 +103,7 @@ public class MainActivity extends FragmentActivity {
 
     private ViewPager mViewPager;// ����һ���Լ���viewpager
 
-    // ViewPager �����ǵ�listview���ҲҪһ��������
+//     ViewPager �����ǵ�listview���ҲҪһ��������
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
