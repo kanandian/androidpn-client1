@@ -96,8 +96,8 @@ public class RegistrationActivity extends BaseActivity {
 			Log.d("Regsiter Packet", "sendRegisterIQ: "+registerIQ.toXML());
 
 			ActivityHolder.getInstance().sendPacket(registerIQ);
-			UserInfoHolder.getInstance().setUserName(userName);
-			UserInfoHolder.getInstance().setPassword(password);
+//			UserInfoHolder.getInstance().setUserName(userName);
+//			UserInfoHolder.getInstance().setPassword(password);
 
 		}
 

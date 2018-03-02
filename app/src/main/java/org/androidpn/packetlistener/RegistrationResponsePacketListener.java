@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 
+import org.androidpn.IQ.RegistrationResponseIQ;
 import org.androidpn.client.Constants;
 import org.androidpn.client.XmppManager;
 import org.androidpn.utils.ActivityHolder;
@@ -33,25 +34,35 @@ public class RegistrationResponsePacketListener implements PacketListener {
     public void processPacket(Packet packet) {
         Log.d("qzf", "processPacket: registration listener");
 
-        if(true) {
-            SharedPreferences.Editor editor = sharedPrefs.edit();
+        if(packet instanceof RegistrationResponseIQ) {
+            RegistrationResponseIQ registrationResponseIQ = (RegistrationResponseIQ) packet;
 
-            String userName = UserInfoHolder.getInstance().getUserName();
-            String password = UserInfoHolder.getInstance().getPassword();
+            String userName = registrationResponseIQ.getUserName();
+            String password = registrationResponseIQ.getPassword();
+            String name = registrationResponseIQ.getName();
+            String mobile = registrationResponseIQ.getMobile();
+
+            SharedPreferences.Editor editor = sharedPrefs.edit();
 
             editor.putString(Constants.XMPP_USERNAME, userName);
             editor.putString(Constants.XMPP_PASSWORD, password);
 
+            //修改xmppmanager中的数据
             xmppManager.setUsername(userName);
             xmppManager.setPassword(password);
 
+            //修改xmppconnection中的数据
             setUserToConnection(userName);
-        } else {
-            String userName = xmppManager.getUsername();
-            String password = xmppManager.getPassword();
 
+
+            //设置UserInfoHolder中的数据
             UserInfoHolder.getInstance().setUserName(userName);
             UserInfoHolder.getInstance().setPassword(password);
+            UserInfoHolder.getInstance().setName(name);
+            UserInfoHolder.getInstance().setMobile(mobile);
+
+        } else {
+
         }
 
 
