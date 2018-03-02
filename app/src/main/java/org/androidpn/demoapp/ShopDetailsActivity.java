@@ -411,45 +411,45 @@ public class ShopDetailsActivity extends BaseActivity {
 		mshop_details_address_txt.setText(info.getSaddress());
 		mshop_details_phone_txt.setText(info.getStel());
 
-		int slevel = Integer.valueOf(info.getSlevel());
-		switch (slevel) {
-		case 0:
-			mShop_details_star.setImageResource(R.drawable.star0);
-			break;
-		case 1:
-			mShop_details_star.setImageResource(R.drawable.star1);
-			break;
-		case 2:
-			mShop_details_star.setImageResource(R.drawable.star2);
-			break;
-		case 3:
-			mShop_details_star.setImageResource(R.drawable.star3);
-			break;
-		case 4:
-			mShop_details_star.setImageResource(R.drawable.star4);
-			break;
-		case 5:
-			mShop_details_star.setImageResource(R.drawable.star5);
-			break;
-		}
+//		int slevel = Integer.valueOf(info.getSlevel());
+//		switch (slevel) {
+//		case 0:
+//			mShop_details_star.setImageResource(R.drawable.star0);
+//			break;
+//		case 1:
+//			mShop_details_star.setImageResource(R.drawable.star1);
+//			break;
+//		case 2:
+//			mShop_details_star.setImageResource(R.drawable.star2);
+//			break;
+//		case 3:
+//			mShop_details_star.setImageResource(R.drawable.star3);
+//			break;
+//		case 4:
+//			mShop_details_star.setImageResource(R.drawable.star4);
+//			break;
+//		case 5:
+//			mShop_details_star.setImageResource(R.drawable.star5);
+//			break;
+//		}
 
-		if (info.getSflag_tuan().equals("1")) {
-			mshop_details_tuan.setVisibility(View.VISIBLE);
-			mshop_details_tuan_txt.setText("����255Ԫ��16�Ŵ���ȯ1��");
-		}
-		if (info.getSflag_quan().equals("1")) {
-			mshop_details_quan.setVisibility(View.VISIBLE);
-			mshop_details_quan_txt.setText("�ĺ�Ժ��ʳ�����500�����м�...");
-		}
-		if (info.getSflag_ding().equals("1")) {
-			mshop_details_ding.setVisibility(View.VISIBLE);
-			mshop_details_ding_hui.setVisibility(View.VISIBLE);
-			mshop_details_ding_jiang.setVisibility(View.VISIBLE);
-		}
-		if (info.getSflag_ka().equals("1")) {
-			mshop_details_card.setVisibility(View.VISIBLE);
-			mshop_details_card_txt.setText("��Աר��9.5�ۣ��������");
-		}
+//		if (info.getSflag_tuan().equals("1")) {
+//			mshop_details_tuan.setVisibility(View.VISIBLE);
+//			mshop_details_tuan_txt.setText("����255Ԫ��16�Ŵ���ȯ1��");
+//		}
+//		if (info.getSflag_quan().equals("1")) {
+//			mshop_details_quan.setVisibility(View.VISIBLE);
+//			mshop_details_quan_txt.setText("�ĺ�Ժ��ʳ�����500�����м�...");
+//		}
+//		if (info.getSflag_ding().equals("1")) {
+//			mshop_details_ding.setVisibility(View.VISIBLE);
+//			mshop_details_ding_hui.setVisibility(View.VISIBLE);
+//			mshop_details_ding_jiang.setVisibility(View.VISIBLE);
+//		}
+//		if (info.getSflag_ka().equals("1")) {
+//			mshop_details_card.setVisibility(View.VISIBLE);
+//			mshop_details_card_txt.setText("��Աר��9.5�ۣ��������");
+//		}
 	}
 
 }

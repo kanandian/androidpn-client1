@@ -87,40 +87,40 @@ public class ShopAdapter extends BaseAdapter {
 		hold.mQuan.setVisibility(View.GONE);
 		hold.mDing.setVisibility(View.GONE);
 		hold.mCard.setVisibility(View.GONE);
-		if (list.get(arg0).getSflag_tuan().equals("1")) {
-			hold.mTuan.setVisibility(View.VISIBLE);
-		}
-		if (list.get(arg0).getSflag_quan().equals("1")) {
-			hold.mQuan.setVisibility(View.VISIBLE);
-		}
-		if (list.get(arg0).getSflag_ding().equals("1")) {
-			hold.mDing.setVisibility(View.VISIBLE);
-		}
-		if (list.get(arg0).getSflag_ka().equals("1")) {
-			hold.mCard.setVisibility(View.VISIBLE);
-		}
+//		if (list.get(arg0).getSflag_tuan().equals("1")) {
+//			hold.mTuan.setVisibility(View.VISIBLE);
+//		}
+//		if (list.get(arg0).getSflag_quan().equals("1")) {
+//			hold.mQuan.setVisibility(View.VISIBLE);
+//		}
+//		if (list.get(arg0).getSflag_ding().equals("1")) {
+//			hold.mDing.setVisibility(View.VISIBLE);
+//		}
+//		if (list.get(arg0).getSflag_ka().equals("1")) {
+//			hold.mCard.setVisibility(View.VISIBLE);
+//		}
 
-		int slevel = Integer.valueOf(list.get(arg0).getSlevel());
-		switch (slevel) {
-		case 0:
-			hold.mStar.setImageResource(R.drawable.star0);
-			break;
-		case 1:
-			hold.mStar.setImageResource(R.drawable.star1);
-			break;
-		case 2:
-			hold.mStar.setImageResource(R.drawable.star2);
-			break;
-		case 3:
-			hold.mStar.setImageResource(R.drawable.star3);
-			break;
-		case 4:
-			hold.mStar.setImageResource(R.drawable.star4);
-			break;
-		case 5:
-			hold.mStar.setImageResource(R.drawable.star5);
-			break;
-		}
+//		int slevel = Integer.valueOf(list.get(arg0).getSlevel());
+//		switch (slevel) {
+//		case 0:
+//			hold.mStar.setImageResource(R.drawable.star0);
+//			break;
+//		case 1:
+//			hold.mStar.setImageResource(R.drawable.star1);
+//			break;
+//		case 2:
+//			hold.mStar.setImageResource(R.drawable.star2);
+//			break;
+//		case 3:
+//			hold.mStar.setImageResource(R.drawable.star3);
+//			break;
+//		case 4:
+//			hold.mStar.setImageResource(R.drawable.star4);
+//			break;
+//		case 5:
+//			hold.mStar.setImageResource(R.drawable.star5);
+//			break;
+//		}
 
 		// ����Ĭ����ʾ��ͼƬ
 		hold.mImage.setImageResource(R.drawable.shop_photo_frame);

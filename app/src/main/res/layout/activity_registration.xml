@@ -62,12 +62,23 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/Registration_name"
+                    android:id="@+id/Registration_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="0.2dp"
                     android:background="#FFFFFF"
                     android:hint="请输入昵称"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/Registration_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.2dp"
+                    android:background="#FFFFFF"
+                    android:hint="请输入姓名"
                     android:padding="10dp"
                     android:singleLine="true"
                     android:textSize="16sp" />
@@ -91,6 +102,18 @@
                     android:layout_marginBottom="0.2dp"
                     android:background="#FFFFFF"
                     android:hint="请重复注册密码"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/Registration_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.2dp"
+                    android:background="#FFFFFF"
+                    android:hint="请输入电话号码"
                     android:inputType="textPassword"
                     android:padding="10dp"
                     android:singleLine="true"

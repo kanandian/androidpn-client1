@@ -13,10 +13,7 @@ public class RegisterIQ extends IQ {
     String localName;
     String localPassword;
     String name;
-    String email;
-    String idCard;
     String mobile;
-    String sex;
 
     public RegisterIQ() {
     }
@@ -61,36 +58,12 @@ public class RegisterIQ extends IQ {
         this.name = name;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getIdCard() {
-        return idCard;
-    }
-
-    public void setIdCard(String idCard) {
-        this.idCard = idCard;
-    }
-
     public String getMobile() {
         return mobile;
     }
 
     public void setMobile(String mobile) {
         this.mobile = mobile;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
     }
 
     @Override
@@ -108,8 +81,8 @@ public class RegisterIQ extends IQ {
 //        return buf.toString();
 
         StringBuilder buf = new StringBuilder();
-        buf.append("<").append("inquiry").append(" xmlns=\"").append(
-                "androidpn:iq:inquiry").append("\">");
+        buf.append("<").append("registeration").append(" xmlns=\"").append(
+                "androidpn:iq:registeration").append("\">");
 
         if(userName != null){
             buf.append("<userName>").append(userName).append("</userName>");
@@ -126,20 +99,10 @@ public class RegisterIQ extends IQ {
         if(name != null){
             buf.append("<name>").append(name).append("</name>");
         }
-        if(email != null){
-            buf.append("<email>").append(email).append("</email>");
-        }
-        if(idCard != null){
-            buf.append("<idCard>").append(idCard).append("</idCard>");
-        }
         if(mobile != null){
             buf.append("<mobile>").append(mobile).append("</mobile>");
         }
-        if(sex != null){
-            buf.append("<sex>").append(sex).append("</sex>");
-        }
-
-        buf.append("</").append("inquiry").append("> ");
+        buf.append("</").append("registeration").append("> ");
         return buf.toString();
     }
 }

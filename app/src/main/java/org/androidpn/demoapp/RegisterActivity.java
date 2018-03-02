@@ -71,11 +71,8 @@ public class RegisterActivity extends BaseActivity {
 
             registerIQ.setUserName(userName);
             registerIQ.setPassword(password);
-            registerIQ.setIdCard(idCard);
             registerIQ.setName(name);
-            registerIQ.setSex(sex);
             registerIQ.setMobile(mobile);
-            registerIQ.setEmail(email);
 
             Log.d("Regsiter Packet", "sendRegisterIQ: "+registerIQ.toXML());
 

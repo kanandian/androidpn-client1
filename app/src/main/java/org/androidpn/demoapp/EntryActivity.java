@@ -17,7 +17,7 @@ public class EntryActivity extends BaseActivity {
         public void handleMessage(android.os.Message msg) {
             if(msg.what == TO_OTHER_ACTIVITY){
                 Activity activity = (Activity) msg.obj;
-                Intent intent = new Intent(activity, MainActivity.class);
+                Intent intent = new Intent(activity, FrameActivity.class);
                 activity.startActivity(intent);
                 activity.finish();
             }

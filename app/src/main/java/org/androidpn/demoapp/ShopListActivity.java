@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
@@ -17,6 +19,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.androidpn.IQ.InquiryIQ;
 import org.androidpn.adapter.SearchMainAdapter;
 import org.androidpn.adapter.SearchMoreAdapter;
 import org.androidpn.adapter.ShopAdapter;
@@ -25,7 +28,9 @@ import org.androidpn.model.Model;
 import org.androidpn.net.MyGet;
 import org.androidpn.net.ThreadPoolUtils;
 import org.androidpn.thread.HttpGetThread;
+import org.androidpn.utils.ActivityHolder;
 import org.androidpn.utils.MyJson;
+import org.jivesoftware.smack.packet.IQ;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -36,6 +41,9 @@ import java.util.Map;
  * �����б�ģ��
  * */
 public class ShopListActivity extends BaseActivity {
+
+	private static final int UPDATE_UI = 0;
+
 
 	private ListView mListView, mShoplist_toplist, mShoplist_threelist,
 			mShoplist_onelist2, mShoplist_twolist2, mShoplist_onelist1,
@@ -69,6 +77,18 @@ public class ShopListActivity extends BaseActivity {
 	private boolean mainlistview2 = false;
 	private List<Map<String, Object>> mainList1;
 	private List<Map<String, Object>> mainList2;
+
+	private Handler handler = new Handler() {
+		@Override
+		public void handleMessage(Message msg) {
+			super.handleMessage(msg);
+
+			if(msg.what == UPDATE_UI) {
+				mAdapter = new ShopAdapter(list, ShopListActivity.this);
+				mListView.setAdapter(mAdapter);
+			}
+		}
+	};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -141,7 +161,7 @@ public class ShopListActivity extends BaseActivity {
 					ThreadPoolUtils.execute(new HttpGetThread(hand, url));
 					listBottemFlag = false;
 				} else if (!listBottemFlag)
-					Toast.makeText(ShopListActivity.this, "���������Ժ�", 1).show();
+					Toast.makeText(ShopListActivity.this, "���������Ժ�", Toast.LENGTH_SHORT).show();
 			}
 		});
 		mListView.addFooterView(ListBottem, null, false);
@@ -151,6 +171,33 @@ public class ShopListActivity extends BaseActivity {
 		// ƴ���ַ�������
 		url = Model.SHOPURL + "start=" + mStart + "&end=" + mEnd;
 		ThreadPoolUtils.execute(new HttpGetThread(hand, url));
+	}
+
+	@Override
+	public void sendInquiryIQ() {
+		super.sendInquiryIQ();
+
+		InquiryIQ inquiryIQ = new InquiryIQ();
+		inquiryIQ.setTarget("activity");
+		inquiryIQ.setTitle("shoplist");
+		inquiryIQ.setType(IQ.Type.GET);
+
+		Log.d("qzf", "sendInquiryIQ: "+inquiryIQ.toXML());
+
+		ActivityHolder.getInstance().sendPacket(inquiryIQ);
+	}
+
+	@Override
+	public void setContentList(Object contentList) {
+		super.setContentList(contentList);
+
+		if(contentList instanceof List) {
+			this.list = (List<ShopInfo>) contentList;
+			Message msg = new Message();
+			msg.what = UPDATE_UI;
+			handler.sendMessage(msg);
+		}
+
 	}
 
 	private class MyOnclickListener implements View.OnClickListener {

@@ -7,15 +7,15 @@ import java.io.Serializable;
  * */
 public class ShopInfo implements Serializable {
 
-	private String sid;
-	private String sname;
+	private String sid;	//id
+	private String sname;	//名字
 	private String stype;
-	private String saddress;
+	private String saddress;	//地址
 	private String snear;
-	private String stel;
+	private String stel;	//电话
 	private String stime;
-	private String szhekou;
-	private String smembercard;
+	private String szhekou;	//折扣
+	private String smembercard;	//
 	private String sper;
 	private String smoney;
 	private String snum;
@@ -24,13 +24,17 @@ public class ShopInfo implements Serializable {
 	private String sflag_quan;
 	private String sflag_ding;
 	private String sflag_ka;
-	private String longitude;
-	private String latitude;
+	private String longitude;	//经度
+	private String latitude;	//纬度
 	private String sintroduction;
 	private String sdetails;
 	private String stips;
 	private String sflag_promise;
 	private String iname;
+
+	public ShopInfo() {
+	}
+
 	public String getSid() {
 		return sid;
 	}

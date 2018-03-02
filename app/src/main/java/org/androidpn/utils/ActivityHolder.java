@@ -2,6 +2,7 @@ package org.androidpn.utils;
 
 import android.app.Activity;
 
+import org.androidpn.client.XmppManager;
 import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.packet.Packet;
 
@@ -16,6 +17,8 @@ public class ActivityHolder {
     private Activity currentActivity;
 
     private XMPPConnection connection;
+
+    private XmppManager xmppManager;
 
     private ActivityHolder() {
 
@@ -42,6 +45,14 @@ public class ActivityHolder {
 
     public XMPPConnection getConnection() {
         return connection;
+    }
+
+    public XmppManager getXmppManager() {
+        return xmppManager;
+    }
+
+    public void setXmppManager(XmppManager xmppManager) {
+        this.xmppManager = xmppManager;
     }
 
     public void setConnection(XMPPConnection connection) {

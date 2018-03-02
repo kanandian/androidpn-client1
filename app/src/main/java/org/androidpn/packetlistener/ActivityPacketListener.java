@@ -7,9 +7,15 @@ import org.androidpn.IQ.ActivityInquiryIQ;
 import org.androidpn.client.LogUtil;
 import org.androidpn.client.XmppManager;
 import org.androidpn.demoapp.MainActivity;
+import org.androidpn.demoapp.ShopListActivity;
+import org.androidpn.info.ShopInfo;
+import org.androidpn.model.Bussiness;
 import org.androidpn.utils.ActivityHolder;
 import org.jivesoftware.smack.PacketListener;
 import org.jivesoftware.smack.packet.Packet;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by pro1 on 18/2/6.
@@ -28,16 +34,23 @@ public class ActivityPacketListener implements PacketListener {
 
     @Override
     public void processPacket(Packet packet) {
-        Log.d(LOGTAG, "processPacket: " + packet.toXML());
+        Log.d("qzf", "processPacket: " + packet.toXML());
         if(packet instanceof ActivityInquiryIQ) {
             ActivityInquiryIQ activityInquiryIQ = (ActivityInquiryIQ) packet;
 //            for(Bussiness bussiness : activityInquiryIQ.getBussinessList()) {
 //                Log.d(LOGTAG, bussiness.getBusinessName());
 //            }
             Activity activity = ActivityHolder.getInstance().getCurrentActivity();
-            if(activity instanceof MainActivity) {
-                MainActivity mainActivity = (MainActivity) activity;
-                mainActivity.setBussinessList(activityInquiryIQ.getBussinessList());
+            if(activity instanceof ShopListActivity) {
+                ShopListActivity shopListActivity = (ShopListActivity) activity;
+
+                List<ShopInfo> shopInfoList = new ArrayList<ShopInfo>();
+
+                for(Bussiness bussiness : activityInquiryIQ.getBussinessList()) {
+                    shopInfoList.add(bussiness.toShopInfo());
+                }
+
+                shopListActivity.setContentList(shopInfoList);
             }
         }
     }

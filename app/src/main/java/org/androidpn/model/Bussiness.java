@@ -1,5 +1,6 @@
 package org.androidpn.model;
 
+import org.androidpn.info.ShopInfo;
 import org.androidpn.utils.Location;
 
 /**
@@ -87,5 +88,19 @@ public class Bussiness {
 
     public void setDes(String des) {
         this.des = des;
+    }
+
+    public ShopInfo toShopInfo() {
+        ShopInfo shopInfo = new ShopInfo();
+
+        shopInfo.setSid(String.valueOf(this.getBussinessId()));
+        shopInfo.setSname(this.getBussinessName());
+        shopInfo.setIname(this.getImageURL());
+        shopInfo.setStype(this.getClassification());
+        shopInfo.setLatitude(String.valueOf(this.getLocation().getLatitude()));
+        shopInfo.setLongitude(String.valueOf(this.getLocation().getLongitude()));
+        shopInfo.setSintroduction(this.getDes());
+
+        return shopInfo;
     }
 }

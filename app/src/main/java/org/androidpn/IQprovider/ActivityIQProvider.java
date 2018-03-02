@@ -1,5 +1,7 @@
 package org.androidpn.IQprovider;
 
+import android.util.Log;
+
 import org.androidpn.IQ.ActivityInquiryIQ;
 import org.androidpn.model.Bussiness;
 import org.jivesoftware.smack.packet.IQ;
@@ -16,14 +18,18 @@ import java.util.List;
 public class ActivityIQProvider implements IQProvider {
     @Override
     public IQ parseIQ(XmlPullParser parser) throws Exception {
+        Log.d("qzf", "parseIQ1: "+parser.getAttributeCount());
         ActivityInquiryIQ activityInquiryIQ = new ActivityInquiryIQ();
         List<Bussiness> bussinessList = new ArrayList<Bussiness>();
         for (boolean done = false; !done; ) {
             int eventType = parser.next();
+            Log.d("qzf", "type: "+eventType);
             if (eventType == 2) {
                 Bussiness bussiness = new Bussiness();
                 for(int i=0; i<parser.getAttributeCount(); i++) {
+                    Log.d("qzf", ""+i);
                     if("id".equals(parser.getAttributeName(i))) {
+                        Log.d("qzf", "id: "+parser.getAttributeValue(i));
                         bussiness.setBussinessId(Long.parseLong(parser.getAttributeValue(i)));
                     }
                     if("name".equals(parser.getAttributeName(i))) {
@@ -44,12 +50,14 @@ public class ActivityIQProvider implements IQProvider {
                 }
                 bussinessList.add(bussiness);
             } else if (eventType == 3
-                    && "response".equals(parser.getName())) {
+                    && "activity".equals(parser.getName())) {
                 done = true;
+                Log.d("qzf", "parseIQ: done");
             }
         }
 
         activityInquiryIQ.setBussinessList(bussinessList);
+        Log.d("qzf", "parseIQ2: activityiq finished");
         return activityInquiryIQ;
     }
 }
