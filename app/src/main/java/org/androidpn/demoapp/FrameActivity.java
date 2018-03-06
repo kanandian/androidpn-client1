@@ -1,5 +1,6 @@
 package org.androidpn.demoapp;
 
+import android.app.Activity;
 import android.app.ActivityGroup;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -17,6 +18,8 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import org.androidpn.utils.ActivityHolder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -210,6 +213,13 @@ public class FrameActivity extends ActivityGroup {
 				.getDecorView();
 		view4.setTag(4);
 		list.add(view4);
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+
+		ActivityHolder.getInstance().refreshAllFrameAcrivity();
 	}
 
 	/**

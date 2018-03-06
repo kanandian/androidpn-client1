@@ -60,6 +60,9 @@ public class RegistrationResponsePacketListener implements PacketListener {
             UserInfoHolder.getInstance().setPassword(password);
             UserInfoHolder.getInstance().setName(name);
             UserInfoHolder.getInstance().setMobile(mobile);
+            UserInfoHolder.getInstance().setAuth(true);
+
+            ActivityHolder.getInstance().closeActivity();
 
         } else {
 

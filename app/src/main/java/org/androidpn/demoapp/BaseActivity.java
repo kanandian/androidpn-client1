@@ -26,4 +26,8 @@ public class BaseActivity extends Activity {
     public void setContentList(Object contentList) {
 
     }
+
+    public void refresh() {
+
+    }
 }

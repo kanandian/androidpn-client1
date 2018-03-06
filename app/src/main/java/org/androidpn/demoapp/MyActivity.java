@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import org.androidpn.utils.ActivityHolder;
+import org.androidpn.utils.UserInfoHolder;
 
 /**
  * �ҵ�ģ��
@@ -14,7 +18,7 @@ import android.widget.TextView;
 public class MyActivity extends BaseActivity {
 
 	private TextView mMy_register, mMy_login, mMy_address, mMy_checkin,
-			mMy_comment, mMy_photo;
+			mMy_comment, mMy_photo, mMy_logintoast, mMy_info;
 	// �ŷ�
 	private LinearLayout mMy_messagebtn;
 	// listview���͵�linearlayout��ť
@@ -33,6 +37,8 @@ public class MyActivity extends BaseActivity {
 	private void initView() {
 		mMy_register = (TextView) findViewById(R.id.My_register);
 		mMy_login = (TextView) findViewById(R.id.My_login);
+		mMy_info = (TextView) findViewById(R.id.My_info);
+
 		mMy_address = (TextView) findViewById(R.id.My_address);
 		mMy_checkin = (TextView) findViewById(R.id.My_checkin);
 		mMy_comment = (TextView) findViewById(R.id.My_comment);
@@ -48,7 +54,13 @@ public class MyActivity extends BaseActivity {
 		mMy_list_tuangoushoucang = (LinearLayout) findViewById(R.id.My_list_tuangoushoucang);
 		mMy_list_guanzhu = (LinearLayout) findViewById(R.id.My_list_guanzhu);
 		mMy_list_fensi = (LinearLayout) findViewById(R.id.My_list_fensi);
+
+		mMy_logintoast = (TextView) findViewById(R.id.My_logintoast);
+
+
 		MyOnclickListener mOnclickListener = new MyOnclickListener();
+
+
 		mMy_register.setOnClickListener(mOnclickListener);
 		mMy_login.setOnClickListener(mOnclickListener);
 		mMy_address.setOnClickListener(mOnclickListener);
@@ -66,6 +78,34 @@ public class MyActivity extends BaseActivity {
 		mMy_list_tuangoushoucang.setOnClickListener(mOnclickListener);
 		mMy_list_guanzhu.setOnClickListener(mOnclickListener);
 		mMy_list_fensi.setOnClickListener(mOnclickListener);
+
+		mMy_info.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Intent intent = new Intent(MyActivity.this, PersonalActivity.class);
+				startActivity(intent);
+			}
+		});
+
+		ActivityHolder.getInstance().addFrameActivity(MyActivity.this);
+	}
+
+	@Override
+	public void refresh() {
+		super.refresh();
+
+		loadPersonalData();
+	}
+
+	public void loadPersonalData() {
+		if (UserInfoHolder.getInstance().isAuth()) {
+			mMy_logintoast.setText(UserInfoHolder.getInstance().getUserName());
+			mMy_logintoast.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
+
+			mMy_register.setVisibility(View.GONE);
+			mMy_login.setVisibility(View.GONE);
+			mMy_info.setVisibility(View.VISIBLE);
+		}
 	}
 
 	private class MyOnclickListener implements View.OnClickListener {

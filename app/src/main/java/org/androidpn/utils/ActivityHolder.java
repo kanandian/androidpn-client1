@@ -3,8 +3,13 @@ package org.androidpn.utils;
 import android.app.Activity;
 
 import org.androidpn.client.XmppManager;
+import org.androidpn.demoapp.BaseActivity;
+import org.androidpn.demoapp.FrameActivity;
 import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.packet.Packet;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by pro1 on 18/1/31.
@@ -20,8 +25,10 @@ public class ActivityHolder {
 
     private XmppManager xmppManager;
 
-    private ActivityHolder() {
+    private List<BaseActivity> frameActivityList;
 
+    private ActivityHolder() {
+        frameActivityList = new ArrayList<BaseActivity>();
     }
 
     public static ActivityHolder getInstance () {
@@ -41,6 +48,25 @@ public class ActivityHolder {
 
     public void setCurrentActivity(Activity currentActivity) {
         this.currentActivity = currentActivity;
+    }
+
+    public void closeActivity() {
+        Activity activity = getCurrentActivity();
+        if (activity instanceof FrameActivity) {
+
+        } else {
+            activity.finish();
+        }
+    }
+
+    public void addFrameActivity(BaseActivity activity) {
+        this.frameActivityList.add(activity);
+    }
+
+    public void refreshAllFrameAcrivity() {
+        for (BaseActivity activity : this.frameActivityList) {
+            activity.refresh();
+        }
     }
 
     public XMPPConnection getConnection() {
