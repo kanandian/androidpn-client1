@@ -47,12 +47,14 @@ public class RegistrationResponsePacketListener implements PacketListener {
             editor.putString(Constants.XMPP_USERNAME, userName);
             editor.putString(Constants.XMPP_PASSWORD, password);
 
+            editor.commit();
+
             //修改xmppmanager中的数据
             xmppManager.setUsername(userName);
             xmppManager.setPassword(password);
 
             //修改xmppconnection中的数据
-            setUserToConnection(userName);
+            UserInfoHolder.getInstance().setUserToConnection(userName);
 
 
             //设置UserInfoHolder中的数据
@@ -68,27 +70,6 @@ public class RegistrationResponsePacketListener implements PacketListener {
 
         }
 
-
-
-    }
-
-    private void setUserToConnection(String userName) {
-        XMPPConnection connection = ActivityHolder.getInstance().getConnection();
-        String user = connection.getUser();
-
-        String[] userContents = user.split("[@]");
-        String newUser = userName+"@"+userContents[1];
-
-        Class<?> clazz = connection.getClass();
-        try {
-            Field userField = clazz.getDeclaredField("user");
-            userField.setAccessible(true);
-            userField.set(connection, newUser);
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }
 
 
     }

@@ -1,5 +1,9 @@
 package org.androidpn.utils;
 
+import org.jivesoftware.smack.XMPPConnection;
+
+import java.lang.reflect.Field;
+
 /**
  * Created by pro1 on 18/3/2.
  */
@@ -69,5 +73,26 @@ public class UserInfoHolder {
 
     public void setAuth(boolean auth) {
         isAuth = auth;
+    }
+
+    public void setUserToConnection(String userName) {
+        XMPPConnection connection = ActivityHolder.getInstance().getConnection();
+        String user = connection.getUser();
+
+        String[] userContents = user.split("[@]");
+        String newUser = userName+"@"+userContents[1];
+
+        Class<?> clazz = connection.getClass();
+        try {
+            Field userField = clazz.getDeclaredField("user");
+            userField.setAccessible(true);
+            userField.set(connection, newUser);
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+
+
     }
 }

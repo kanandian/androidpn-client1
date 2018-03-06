@@ -15,10 +15,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60dafe0b-8e2a-42db-ad42-6e61ad2ab874" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/LoginIQ.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/LoginResponseIQ.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQprovider/LoginIQProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/packetlistener/LoginReponsePacketListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
@@ -27,26 +23,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$ConnectTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$ConnectTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$LoginTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$LoginTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$RegisterTask$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$RegisterTask$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$RegisterTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$RegisterTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/DemoAppActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/DemoAppActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/org/androidpn/demoapp/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/org/androidpn/demoapp/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/client/XmppManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/client/XmppManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/BaseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/BaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/FrameActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/FrameActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/MyActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/MyActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/packetlistener/LoginReponsePacketListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/packetlistener/LoginReponsePacketListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/packetlistener/RegistrationResponsePacketListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/packetlistener/RegistrationResponsePacketListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/ActivityHolder.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/ActivityHolder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_my.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/UserInfoHolder.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/UserInfoHolder.java" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,8 +57,8 @@
       <file leaf-file-name="LoginReponsePacketListener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/packetlistener/LoginReponsePacketListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="335">
+              <caret line="60" column="68" lean-forward="true" selection-start-line="60" selection-start-column="68" selection-end-line="60" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,8 +69,20 @@
       <file leaf-file-name="RegistrationResponsePacketListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/packetlistener/RegistrationResponsePacketListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="57" column="33" lean-forward="false" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+            <state relative-caret-position="362">
+              <caret line="62" column="28" lean-forward="false" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInfoHolder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/UserInfoHolder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1899,7 +1891,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopListActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/RegistrationResponseIQ.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQprovider/RegistrationIQProvider.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/UserInfoHolder.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/RegistrationActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_my.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/LoginIQ.java" />
@@ -1907,12 +1898,13 @@
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/client/XmppManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQprovider/LoginIQProvider.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/packetlistener/RegistrationResponsePacketListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/packetlistener/LoginReponsePacketListener.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/ActivityHolder.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/BaseActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/MyActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/FrameActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/UserInfoHolder.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/packetlistener/RegistrationResponsePacketListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/packetlistener/LoginReponsePacketListener.java" />
       </list>
     </option>
   </component>
@@ -2453,7 +2445,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520305725882" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520315586643" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2500,7 +2492,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520305725882" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520315586643" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2682,7 +2674,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520305725883" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520315586652" />
       </method>
     </configuration>
     <list size="1">
@@ -2854,7 +2846,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519979157792</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="初步 登录">
+      <created>1520305748620</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1520305748621</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2913,7 +2912,8 @@
     <MESSAGE value="添加页面(大备份)" />
     <MESSAGE value="修改" />
     <MESSAGE value="完善注册" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善注册" />
+    <MESSAGE value="初步 登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="初步 登录" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3063,17 +3063,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/UserInfoHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="e#1296#1297#0" expanded="false" />
-            <element signature="e#1325#1326#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/arrow_profile.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -3170,7 +3159,7 @@
         <state relative-caret-position="480">
           <caret line="39" column="56" lean-forward="false" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3188,8 +3177,8 @@
         <state relative-caret-position="337">
           <caret line="350" column="52" lean-forward="false" selection-start-line="350" selection-start-column="52" selection-end-line="350" selection-end-column="52" />
           <folding>
-            <element signature="e#13159#15158#0" expanded="true" />
-            <element signature="e#15157#15158#0" expanded="true" />
+            <element signature="e#13159#15158#0" expanded="false" />
+            <element signature="e#15157#15158#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3268,19 +3257,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/ActivityHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="65" column="39" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="39" />
-          <folding>
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#1508#1509#0" expanded="true" />
-            <element signature="e#1560#1561#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_my.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -3313,7 +3289,7 @@
         <state relative-caret-position="190">
           <caret line="143" column="69" lean-forward="false" selection-start-line="143" selection-start-column="69" selection-end-line="143" selection-end-column="69" />
           <folding>
-            <element signature="e#1270#1276#0" expanded="true" />
+            <element signature="e#1270#1276#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3339,15 +3315,33 @@
         <state relative-caret-position="640">
           <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/UserInfoHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/ActivityHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="52" column="16" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/packetlistener/RegistrationResponsePacketListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="57" column="33" lean-forward="false" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+        <state relative-caret-position="362">
+          <caret line="62" column="28" lean-forward="false" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -3356,8 +3350,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/packetlistener/LoginReponsePacketListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="335">
+          <caret line="60" column="68" lean-forward="true" selection-start-line="60" selection-start-column="68" selection-end-line="60" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
