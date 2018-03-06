@@ -1,10 +1,12 @@
 package org.androidpn.utils;
 
 import android.app.Activity;
+import android.content.Intent;
 
 import org.androidpn.client.XmppManager;
 import org.androidpn.demoapp.BaseActivity;
 import org.androidpn.demoapp.FrameActivity;
+import org.androidpn.demoapp.NavigationActivity;
 import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.packet.Packet;
 
@@ -89,11 +91,16 @@ public class ActivityHolder {
         if(connection == null) {
 
 
-
-
-
         } else {
             connection.sendPacket(packet);
         }
     }
+
+
+    public void startNaviActivity(Location location) {
+        Intent intent = new Intent(this.getCurrentActivity(), NavigationActivity.class);
+        intent.putExtra("location", location);
+        this.getCurrentActivity().startActivity(intent);
+    }
+
 }

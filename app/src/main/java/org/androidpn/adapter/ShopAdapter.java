@@ -58,31 +58,39 @@ public class ShopAdapter extends BaseAdapter {
 	}
 
 	@Override
-	public View getView(final int arg0, View arg1, ViewGroup arg2) {
+	public View getView(final int position, View view, ViewGroup viewGroup) {
 		final Holder hold;
-		if (arg1 == null) {
+		if (view == null) {
 			hold = new Holder();
-			arg1 = View.inflate(ctx, R.layout.item_shop, null);
-			hold.mTitle = (TextView) arg1.findViewById(R.id.ShopItemTextView);
-			hold.mImage = (ImageView) arg1.findViewById(R.id.ShopItemImage);
-			hold.mMoney = (TextView) arg1.findViewById(R.id.ShopItemMoney);
-			hold.mAddress = (TextView) arg1.findViewById(R.id.ShopItemAddress);
-			hold.mStytle = (TextView) arg1.findViewById(R.id.ShopItemStytle);
-			hold.mStar = (ImageView) arg1.findViewById(R.id.ShopItemStar);
-			hold.mTuan = (ImageView) arg1.findViewById(R.id.ShopItemTuan);
-			hold.mQuan = (ImageView) arg1.findViewById(R.id.ShopItemQuan);
-			hold.mDing = (ImageView) arg1.findViewById(R.id.ShopItemDing);
-			hold.mCard = (ImageView) arg1.findViewById(R.id.ShopItemCard);
+			view = View.inflate(ctx, R.layout.item_shop, null);
+			hold.mTitle = (TextView) view.findViewById(R.id.ShopItemTextView);
+			hold.mImage = (ImageView) view.findViewById(R.id.ShopItemImage);
+			hold.mMoney = (TextView) view.findViewById(R.id.ShopItemMoney);
+			hold.mAddress = (TextView) view.findViewById(R.id.ShopItemAddress);
+			hold.mStytle = (TextView) view.findViewById(R.id.ShopItemStytle);
+			hold.mStar = (ImageView) view.findViewById(R.id.ShopItemStar);
+			hold.mDistance = (TextView) view.findViewById(R.id.ShopItemJuli);
 
-			arg1.setTag(hold);
+			hold.mTuan = (ImageView) view.findViewById(R.id.ShopItemTuan);
+			hold.mQuan = (ImageView) view.findViewById(R.id.ShopItemQuan);
+			hold.mDing = (ImageView) view.findViewById(R.id.ShopItemDing);
+			hold.mCard = (ImageView) view.findViewById(R.id.ShopItemCard);
+
+			view.setTag(hold);
 		} else {
-			hold = (Holder) arg1.getTag();
+			hold = (Holder) view.getTag();
 		}
-		hold.mTitle.setText(list.get(arg0).getSname());
-		hold.mImage.setTag(Model.SHOPLISTIMGURL + list.get(arg0).getIname());
-		hold.mMoney.setText(list.get(arg0).getSmoney());
-		hold.mAddress.setText(list.get(arg0).getSaddress());
-		hold.mStytle.setText(list.get(arg0).getStype());
+
+		ShopInfo shopInfo = list.get(position);
+
+		hold.mTitle.setText(shopInfo.getSname());
+		hold.mImage.setTag(Model.SHOPLISTIMGURL + shopInfo.getIname());
+		hold.mMoney.setText(shopInfo.getSmoney());
+		hold.mAddress.setText(shopInfo.getSaddress());
+		hold.mStytle.setText(shopInfo.getStype());
+
+		hold.mStar.setImageResource(shopInfo.getStarImageResource());
+
 		hold.mTuan.setVisibility(View.GONE);
 		hold.mQuan.setVisibility(View.GONE);
 		hold.mDing.setVisibility(View.GONE);
@@ -126,12 +134,12 @@ public class ShopAdapter extends BaseAdapter {
 		hold.mImage.setImageResource(R.drawable.shop_photo_frame);
 		// �����ȡͼƬ
 		Bitmap bit = loadImg.loadImage(hold.mImage, Model.SHOPLISTIMGURL
-				+ list.get(arg0).getIname(), new LoadImg.ImageDownloadCallBack() {
+				+ list.get(position).getIname(), new LoadImg.ImageDownloadCallBack() {
 			@Override
 			public void onImageDownload(ImageView imageView, Bitmap bitmap) {
 				// ���罻��ʱ�ص�������ֹ��λ
 				if (hold.mImage.getTag().equals(
-						Model.SHOPLISTIMGURL + list.get(arg0).getIname())) {
+						Model.SHOPLISTIMGURL + list.get(position).getIname())) {
 					// �����������ػ���ͼƬ��ʾ
 					hold.mImage.setImageBitmap(bitmap);
 				}
@@ -143,11 +151,11 @@ public class ShopAdapter extends BaseAdapter {
 			hold.mImage.setImageBitmap(bit);
 		}
 
-		return arg1;
+		return view;
 	}
 
 	static class Holder {
-		TextView mTitle, mMoney, mAddress, mStytle;
+		TextView mTitle, mMoney, mAddress, mStytle, mDistance;
 		ImageView mImage, mStar, mTuan, mQuan, mDing, mCard;
 	}
 

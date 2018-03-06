@@ -1,5 +1,7 @@
 package org.androidpn.info;
 
+import org.androidpn.demoapp.R;
+
 import java.io.Serializable;
 
 /**
@@ -24,13 +26,15 @@ public class ShopInfo implements Serializable {
 	private String sflag_quan;
 	private String sflag_ding;
 	private String sflag_ka;
-	private String longitude;	//经度
-	private String latitude;	//纬度
+	private double longitude;	//经度
+	private double latitude;	//纬度
 	private String sintroduction;
 	private String sdetails;
 	private String stips;
 	private String sflag_promise;
 	private String iname;
+
+
 
 	public ShopInfo() {
 	}
@@ -137,16 +141,19 @@ public class ShopInfo implements Serializable {
 	public void setSflag_ka(String sflag_ka) {
 		this.sflag_ka = sflag_ka;
 	}
-	public String getLongitude() {
+	public double getLongitude() {
 		return longitude;
 	}
-	public void setLongitude(String longitude) {
+
+	public void setLongitude(double longitude) {
 		this.longitude = longitude;
 	}
-	public String getLatitude() {
+
+	public double getLatitude() {
 		return latitude;
 	}
-	public void setLatitude(String latitude) {
+
+	public void setLatitude(double latitude) {
 		this.latitude = latitude;
 	}
 	public String getSintroduction() {
@@ -178,5 +185,26 @@ public class ShopInfo implements Serializable {
 	}
 	public void setIname(String iname) {
 		this.iname = iname;
+	}
+
+	public String getStarSrc() {
+		return "@drawable/star"+this.getSlevel();
+	}
+
+	public int getStarImageResource() {
+		if ("0".equals(this.getSlevel())) {
+			return R.drawable.star0;
+		} else if ("1".equals(this.getSlevel())) {
+			return R.drawable.star1;
+		} else if ("2".equals(this.getSlevel())) {
+			return R.drawable.star2;
+		} else if ("3".equals(this.getSlevel())) {
+			return R.drawable.star3;
+		} else if ("4".equals(this.getSlevel())) {
+			return R.drawable.star4;
+		} else if ("5".equals(this.getSlevel())) {
+			return R.drawable.star5;
+		}
+		return R.drawable.star0;
 	}
 }

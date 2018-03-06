@@ -191,6 +191,7 @@
                     android:paddingBottom="13dp"
                     android:paddingTop="13dp"
                     android:text="后海大金丝胡同4号(银锭桥南)"
+                    android:textColor="#000000"
                     android:textSize="16sp" />
 
                 <ImageView
@@ -231,6 +232,7 @@
                     android:paddingBottom="13dp"
                     android:paddingTop="13dp"
                     android:text="13716551797"
+                    android:textColor="#000000"
                     android:textSize="16sp" />
 
                 <ImageView
@@ -646,6 +648,7 @@
                     android:paddingBottom="10dp"
                     android:paddingLeft="15dp"
                     android:text="营业时间、餐厅特色、餐厅氛围"
+                    android:textColor="#000000"
                     android:textSize="16sp" />
 
                 <ImageView

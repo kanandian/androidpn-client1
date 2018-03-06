@@ -51,8 +51,8 @@ public class MyJson {
 				info.setSflag_quan(job.getString("sflag_quan"));
 				info.setSflag_ding(job.getString("sflag_ding"));
 				info.setSflag_ka(job.getString("sflag_ka"));
-				info.setLongitude(job.getString("longitude"));
-				info.setLatitude(job.getString("latitude"));
+				info.setLongitude(job.getDouble("longitude"));
+				info.setLatitude(job.getDouble("latitude"));
 				info.setSintroduction(job.getString("sintroduction"));
 				info.setSdetails(job.getString("sdetails"));
 				info.setStips(job.getString("stips"));

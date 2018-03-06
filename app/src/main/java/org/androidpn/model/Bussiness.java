@@ -16,6 +16,8 @@ public class Bussiness {
     private String tag;
     private Location location;
     private String mobile;
+    private double price;
+    private String level;
     private String des;
 
     public Bussiness() {
@@ -82,6 +84,22 @@ public class Bussiness {
         this.mobile = mobile;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public String getLevel() {
+        return level;
+    }
+
+    public void setLevel(String level) {
+        this.level = level;
+    }
+
     public String getDes() {
         return des;
     }
@@ -97,9 +115,14 @@ public class Bussiness {
         shopInfo.setSname(this.getBussinessName());
         shopInfo.setIname(this.getImageURL());
         shopInfo.setStype(this.getClassification());
-        shopInfo.setLatitude(String.valueOf(this.getLocation().getLatitude()));
-        shopInfo.setLongitude(String.valueOf(this.getLocation().getLongitude()));
+        shopInfo.setLatitude(this.getLocation().getLatitude());
+        shopInfo.setLongitude(this.getLocation().getLongitude());
         shopInfo.setSintroduction(this.getDes());
+        shopInfo.setStel(this.getMobile());
+
+        shopInfo.setSmoney(String.valueOf(this.getPrice()));
+        shopInfo.setSaddress(this.getLocation().getAddress());
+        shopInfo.setSlevel(this.getLevel());
 
         return shopInfo;
     }

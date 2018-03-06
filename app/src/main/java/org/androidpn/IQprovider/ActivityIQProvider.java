@@ -44,6 +44,15 @@ public class ActivityIQProvider implements IQProvider {
                     if("location".equals(parser.getAttributeName(i))) {
                         bussiness.setLocation(parser.getAttributeValue(i));
                     }
+                    if("mobile".equals(parser.getAttributeName(i))) {
+                        bussiness.setMobile(parser.getAttributeValue(i));
+                    }
+                    if("price".equals(parser.getAttributeName(i))) {
+                        bussiness.setPrice(Double.parseDouble(parser.getAttributeValue(i)));
+                    }
+                    if("level".equals(parser.getAttributeName(i))) {
+                        bussiness.setLevel(parser.getAttributeValue(i));
+                    }
                     if("des".equals(parser.getAttributeName(i))) {
                         bussiness.setDes(parser.getAttributeValue(i));
                     }

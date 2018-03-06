@@ -6,6 +6,7 @@ import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -25,7 +26,9 @@ import org.androidpn.info.SignInfo;
 import org.androidpn.model.Model;
 import org.androidpn.net.ThreadPoolUtils;
 import org.androidpn.thread.HttpGetThread;
+import org.androidpn.utils.ActivityHolder;
 import org.androidpn.utils.LoadImg;
+import org.androidpn.utils.Location;
 import org.androidpn.utils.MyJson;
 
 import java.util.ArrayList;
@@ -187,6 +190,10 @@ public class ShopDetailsActivity extends BaseActivity {
 		mshop_fujin_quanbu.setOnClickListener(myOnClickListener);
 		mshop_details_fendian.setOnClickListener(myOnClickListener);
 		mshop_details_kanguo.setOnClickListener(myOnClickListener);
+
+
+		mshop_details_address.setOnClickListener(myOnClickListener);
+
 		// ������̵�ͼƬ�ķ���
 		addImg();
 		// �ж��Ƿ�Ҫ��ʾ������ȯ�����Ŀؼ�����
@@ -197,6 +204,24 @@ public class ShopDetailsActivity extends BaseActivity {
 	private class MyOnClickListener implements View.OnClickListener {
 		public void onClick(View v) {
 			int mID = v.getId();
+
+			if (mID == R.id.shop_details_address) {
+				Location location = new Location();
+
+				location.setAddress(info.getSaddress());
+				location.setLongitude(info.getLongitude());
+				location.setLatitude(info.getLatitude());
+
+				ActivityHolder.getInstance().startNaviActivity(location);
+			}
+
+			if (mID == R.id.shop_details_phone) {
+				Intent intent = new Intent(Intent.ACTION_DIAL);
+				intent.setData(Uri.parse("tel:"+info.getStel()));
+
+				startActivity(intent);
+			}
+
 			if (mID == R.id.Shop_details_back) {
 				ShopDetailsActivity.this.finish();
 			}
@@ -410,6 +435,7 @@ public class ShopDetailsActivity extends BaseActivity {
 		mShop_details_money.setText(info.getSmoney());
 		mshop_details_address_txt.setText(info.getSaddress());
 		mshop_details_phone_txt.setText(info.getStel());
+		mShop_details_star.setImageResource(info.getStarImageResource());
 
 //		int slevel = Integer.valueOf(info.getSlevel());
 //		switch (slevel) {
