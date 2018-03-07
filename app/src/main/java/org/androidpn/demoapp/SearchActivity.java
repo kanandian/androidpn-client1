@@ -13,7 +13,7 @@ import org.androidpn.utils.ActivityHolder;
  * ����ģ��
  * */
 
-public class SearchActivity extends Activity {
+public class SearchActivity extends BaseActivity {
 
 	// ������linearlayout��Ϊ��ť
 	private LinearLayout mSearch_city, mSearch_search;
@@ -67,13 +67,6 @@ public class SearchActivity extends Activity {
 
 	}
 
-	@Override
-	protected void onResume() {
-		super.onResume();
-
-		ActivityHolder.getInstance().setCurrentActivity(SearchActivity.this);
-	}
-
 	private class MyOnclickListener implements View.OnClickListener {
 		public void onClick(View v) {
 			int mID = v.getId();
@@ -81,26 +74,31 @@ public class SearchActivity extends Activity {
 			case R.id.Search_food:
 				Intent intent = new Intent(SearchActivity.this,
 						ShopListActivity.class);
+				intent.putExtra("title", "美食");
 				SearchActivity.this.startActivity(intent);
 				break;
 			case R.id.Search_outing:
 				Intent intent1 = new Intent(SearchActivity.this,
 						ShopListActivity.class);
+				intent1.putExtra("title", "景点");
 				SearchActivity.this.startActivity(intent1);
 				break;
 			case R.id.Search_hotel:
 				Intent intent2 = new Intent(SearchActivity.this,
 						ShopListActivity.class);
+				intent2.putExtra("title", "酒店");
 				SearchActivity.this.startActivity(intent2);
 				break;
 			case R.id.Search_pub:
 				Intent intent3 = new Intent(SearchActivity.this,
 						ShopListActivity.class);
+				intent3.putExtra("title", "酒吧");
 				SearchActivity.this.startActivity(intent3);
 				break;
 			case R.id.Search_chinsesnack:
 				Intent intent4 = new Intent(SearchActivity.this,
 						ShopListActivity.class);
+				intent4.putExtra("title", "小吃");
 				SearchActivity.this.startActivity(intent4);
 				break;
 			case R.id.Search_more:

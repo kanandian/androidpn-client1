@@ -78,6 +78,8 @@ public class ShopListActivity extends BaseActivity {
 	private List<Map<String, Object>> mainList1;
 	private List<Map<String, Object>> mainList2;
 
+	private String title;
+
 	private Handler handler = new Handler() {
 		@Override
 		public void handleMessage(Message msg) {
@@ -95,6 +97,10 @@ public class ShopListActivity extends BaseActivity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_shoplist);
+
+		Intent intent = getIntent();
+		title = intent.getStringExtra("title");
+
 		initView();
 	}
 
@@ -179,7 +185,7 @@ public class ShopListActivity extends BaseActivity {
 
 		InquiryIQ inquiryIQ = new InquiryIQ();
 		inquiryIQ.setTarget("activity");
-		inquiryIQ.setTitle("shoplist");
+		inquiryIQ.setTitle(title);
 		inquiryIQ.setType(IQ.Type.GET);
 
 		Log.d("qzf", "sendInquiryIQ: "+inquiryIQ.toXML());
