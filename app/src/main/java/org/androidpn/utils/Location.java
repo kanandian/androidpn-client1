@@ -1,5 +1,7 @@
 package org.androidpn.utils;
 
+import com.amap.api.navi.model.NaviLatLng;
+
 import java.io.Serializable;
 
 /**
@@ -45,6 +47,11 @@ public class Location implements Serializable {
 
     public void setLatitude(double latitude) {
         this.latitude = latitude;
+    }
+
+    public NaviLatLng toNaviLatLng() {
+        NaviLatLng naviLatLng = new NaviLatLng(this.getLatitude(), this.getLongitude());
+        return naviLatLng;
     }
 
     @Override

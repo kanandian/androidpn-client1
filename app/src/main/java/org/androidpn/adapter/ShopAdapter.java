@@ -15,10 +15,15 @@ import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 
+import com.amap.api.maps.AMapUtils;
+import com.amap.api.maps.model.LatLng;
+
 import org.androidpn.demoapp.R;
 import org.androidpn.info.ShopInfo;
 import org.androidpn.model.Model;
 import org.androidpn.utils.LoadImg;
+import org.androidpn.utils.Location;
+import org.androidpn.utils.LocationHolder;
 
 /**
  * �����б��������
@@ -88,6 +93,12 @@ public class ShopAdapter extends BaseAdapter {
 		hold.mMoney.setText(shopInfo.getSmoney());
 		hold.mAddress.setText(shopInfo.getSaddress());
 		hold.mStytle.setText(shopInfo.getStype());
+
+		Location location = LocationHolder.getInstance().getLocation();
+		LatLng latLng1 = new LatLng(location.getLatitude(), location.getLongitude());
+		LatLng latLng2 = new LatLng(shopInfo.getLatitude(), shopInfo.getLongitude());
+		float distance = AMapUtils.calculateLineDistance(latLng1,latLng2);
+		hold.mDistance.setText(String.valueOf(distance));
 
 		hold.mStar.setImageResource(shopInfo.getStarImageResource());
 

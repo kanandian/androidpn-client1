@@ -88,24 +88,24 @@
         "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/emoji315.png"
     },
     {
-        "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_emoji215.png.flat",
-        "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/emoji215.png"
-    },
-    {
         "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_emoji009.png.flat",
         "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/emoji009.png"
+    },
+    {
+        "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_emoji215.png.flat",
+        "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/emoji215.png"
     },
     {
         "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_emoji023.png.flat",
         "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/emoji023.png"
     },
     {
-        "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/color_my_title_textcolor.xml.flat",
-        "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/color/my_title_textcolor.xml"
-    },
-    {
         "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_category_10.png.flat",
         "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/ic_category_10.png"
+    },
+    {
+        "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/color_my_title_textcolor.xml.flat",
+        "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/color/my_title_textcolor.xml"
     },
     {
         "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_category_55.png.flat",
@@ -1058,6 +1058,10 @@
     {
         "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_back_d.png.flat",
         "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/ic_back_d.png"
+    },
+    {
+        "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/layout_activity_navi.xml.flat",
+        "source": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_navi.xml"
     },
     {
         "merged": "/Users/pro1/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_icon_photo_u.png.flat",

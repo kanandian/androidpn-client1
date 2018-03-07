@@ -211,7 +211,7 @@
                 android:background="@drawable/shopdetails_list_bkg" >
 
                 <ImageView
-                    android:id="@+id/shop_image_flag"
+                    android:id="@+id/shop_image_flag1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
