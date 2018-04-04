@@ -95,10 +95,13 @@ public class ShopAdapter extends BaseAdapter {
 		hold.mStytle.setText(shopInfo.getStype());
 
 		Location location = LocationHolder.getInstance().getLocation();
-		LatLng latLng1 = new LatLng(location.getLatitude(), location.getLongitude());
-		LatLng latLng2 = new LatLng(shopInfo.getLatitude(), shopInfo.getLongitude());
-		float distance = AMapUtils.calculateLineDistance(latLng1,latLng2);
-		hold.mDistance.setText(String.valueOf(distance));
+		if (location != null) {
+			LatLng latLng1 = new LatLng(location.getLatitude(), location.getLongitude());
+			LatLng latLng2 = new LatLng(shopInfo.getLatitude(), shopInfo.getLongitude());
+			float distance = AMapUtils.calculateLineDistance(latLng1,latLng2);
+			hold.mDistance.setText(String.valueOf(distance));
+
+		}
 
 		hold.mStar.setImageResource(shopInfo.getStarImageResource());
 

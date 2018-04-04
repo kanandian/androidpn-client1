@@ -6,6 +6,7 @@ public class InquiryIQ extends IQ {
 	
 	private String target = null;
 	private String title = null;
+	private String content = null;
 
 	public InquiryIQ(){
 		
@@ -13,7 +14,6 @@ public class InquiryIQ extends IQ {
 
 	@Override
 	public String getChildElementXML() {
-		// TODO Auto-generated method stub
 		StringBuilder buf = new StringBuilder();
         buf.append("<").append("inquiry").append(" xmlns=\"").append(
                 "androidpn:iq:inquiry").append("\">");
@@ -23,6 +23,9 @@ public class InquiryIQ extends IQ {
         if(title != null){
         	buf.append("<title>").append(title).append("</title>");
         }
+        if (content != null) {
+			buf.append("<content>").append(content).append("</content>");
+		}
         buf.append("</").append("inquiry").append("> ");
         return buf.toString();
 	}
@@ -44,4 +47,11 @@ public class InquiryIQ extends IQ {
 		this.title = title;
 	}
 
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
 }

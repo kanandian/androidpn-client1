@@ -20,11 +20,11 @@ android {
     }
 
     buildTypes {
-//        debug {
-//            packagingOptions {
-//                doNotStrip "**/*/*.so"
-//            }
-//        }
+        debug {
+            packagingOptions {
+                doNotStrip "**/*/*.so"
+            }
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-    implementation files('/Users/pro1/AndroidStudioProjects/androidpn-client1/libs/asmack.jar')
+    implementation files('/Users/macpro/AndroidStudioProjects/androidpn-client1/libs/asmack.jar')
 
     compile fileTree(dir: 'libs', include: ['*.jar'])
     //3D地图so及jar

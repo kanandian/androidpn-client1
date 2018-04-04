@@ -18,6 +18,9 @@
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <application
         android:debuggable="true"
@@ -142,6 +145,7 @@
             </intent-filter>
         </service>
         <service android:name="com.amap.api.location.APSService" />
+
         <!--
 			<meta-data android:name="ANDROIDPN_API_KEY"
 			android:value="1234567890" />

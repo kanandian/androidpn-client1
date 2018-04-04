@@ -850,7 +850,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="上传照片"
+                android:text="快捷支付"
                 android:textColor="#FF8C00"
                 android:textSize="13sp" />
         </LinearLayout>

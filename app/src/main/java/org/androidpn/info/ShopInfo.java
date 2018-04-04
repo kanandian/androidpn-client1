@@ -34,6 +34,8 @@ public class ShopInfo implements Serializable {
 	private String sflag_promise;
 	private String iname;
 
+	private String sholder;
+
 
 
 	public ShopInfo() {
@@ -185,6 +187,14 @@ public class ShopInfo implements Serializable {
 	}
 	public void setIname(String iname) {
 		this.iname = iname;
+	}
+
+	public String getSholder() {
+		return sholder;
+	}
+
+	public void setSholder(String sholder) {
+		this.sholder = sholder;
 	}
 
 	public String getStarSrc() {

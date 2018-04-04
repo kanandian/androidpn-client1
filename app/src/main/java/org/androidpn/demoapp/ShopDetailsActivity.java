@@ -30,6 +30,7 @@ import org.androidpn.utils.ActivityHolder;
 import org.androidpn.utils.LoadImg;
 import org.androidpn.utils.Location;
 import org.androidpn.utils.MyJson;
+import org.androidpn.utils.UserInfoHolder;
 
 import java.util.ArrayList;
 
@@ -220,6 +221,15 @@ public class ShopDetailsActivity extends BaseActivity {
 				intent.setData(Uri.parse("tel:"+info.getStel()));
 
 				startActivity(intent);
+			}
+
+			if (mID == R.id.Shop_details_bottom_img2) {
+				if (UserInfoHolder.getInstance().isAuth()) {
+					Toast.makeText(ShopDetailsActivity.this, "用户未登录，请先登录" ,Toast.LENGTH_SHORT).show();
+				} else {
+					Intent intent = new Intent(ShopDetailsActivity.this, PaymentActivity.class);
+					startActivity(intent);
+				}
 			}
 
 			if (mID == R.id.Shop_details_back) {

@@ -3,6 +3,7 @@ package org.androidpn.demoapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
@@ -12,7 +13,10 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.androidpn.IQ.InquiryIQ;
 import org.androidpn.info.ShopInfo;
+import org.androidpn.utils.ActivityHolder;
+import org.jivesoftware.smack.packet.IQ;
 
 /**
  * ��������-����ģ��
@@ -54,8 +58,9 @@ public class ShopDetailsCommentActivity extends BaseActivity {
 		mshop_dianping_OK = (TextView) findViewById(R.id.shop_dianping_OK);
 		mshop_dianping_OK.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
-				Toast.makeText(ShopDetailsCommentActivity.this, "�������ύ��ť������",
-						1).show();
+				Toast.makeText(ShopDetailsCommentActivity.this, "评论已添加", Toast.LENGTH_SHORT).show();
+
+				sendCommentIQ();
 			}
 		});
 		mshop_dianping_ratingbar.setOnTouchListener(new View.OnTouchListener() {
@@ -66,6 +71,21 @@ public class ShopDetailsCommentActivity extends BaseActivity {
 				return false;
 			}
 		});
+	}
+
+	private void sendCommentIQ() {
+		String bussinessName = info.getSname();
+		String commentContent = mshop_dianping_edittext1.getText().toString();
+
+		InquiryIQ commentIQ = new InquiryIQ();
+		commentIQ.setTarget("comment");
+		commentIQ.setTitle(bussinessName);
+		commentIQ.setContent(commentContent);
+		commentIQ.setType(IQ.Type.SET);
+
+		Log.d("qzf's log", "sendInquiryIQ: "+commentIQ.toXML());
+
+		ActivityHolder.getInstance().sendPacket(commentIQ);
 	}
 
 	private void initModel() {
