@@ -228,6 +228,7 @@ public class ShopDetailsActivity extends BaseActivity {
 					Toast.makeText(ShopDetailsActivity.this, "用户未登录，请先登录" ,Toast.LENGTH_SHORT).show();
 				} else {
 					Intent intent = new Intent(ShopDetailsActivity.this, PaymentActivity.class);
+					intent.putExtra("toUserName", info.getSholder());
 					startActivity(intent);
 				}
 			}
@@ -244,12 +245,12 @@ public class ShopDetailsActivity extends BaseActivity {
 				startActivity(intent);
 			}
 			if (mID == R.id.Shop_details_bottom_img1) {
-				Intent intent = new Intent(ShopDetailsActivity.this,
-						ShopDetailsCheckinActivity.class);
-				Bundle bund = new Bundle();
-				bund.putSerializable("ShopInfo", info);
-				intent.putExtra("value", bund);
-				startActivity(intent);
+//				Intent intent = new Intent(ShopDetailsActivity.this,
+//						ShopDetailsCheckinActivity.class);
+//				Bundle bund = new Bundle();
+//				bund.putSerializable("ShopInfo", info);
+//				intent.putExtra("value", bund);
+//				startActivity(intent);
 			}
 			if (mID == R.id.Shop_details_bottom_img2) {
 				

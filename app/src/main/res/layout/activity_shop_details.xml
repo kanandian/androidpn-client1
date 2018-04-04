@@ -828,7 +828,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="签到留言"
+                android:text="查看评论"
                 android:textColor="#FF8C00"
                 android:textSize="13sp" />
         </LinearLayout>

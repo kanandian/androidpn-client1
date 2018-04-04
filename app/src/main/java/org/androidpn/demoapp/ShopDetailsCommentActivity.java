@@ -16,6 +16,7 @@ import android.widget.Toast;
 import org.androidpn.IQ.InquiryIQ;
 import org.androidpn.info.ShopInfo;
 import org.androidpn.utils.ActivityHolder;
+import org.androidpn.utils.UserInfoHolder;
 import org.jivesoftware.smack.packet.IQ;
 
 /**
@@ -74,13 +75,14 @@ public class ShopDetailsCommentActivity extends BaseActivity {
 	}
 
 	private void sendCommentIQ() {
-		String bussinessName = info.getSname();
+		String bussinessId = info.getSid();
 		String commentContent = mshop_dianping_edittext1.getText().toString();
 
 		InquiryIQ commentIQ = new InquiryIQ();
 		commentIQ.setTarget("comment");
-		commentIQ.setTitle(bussinessName);
+		commentIQ.setTitle(bussinessId);
 		commentIQ.setContent(commentContent);
+		commentIQ.setUserName(UserInfoHolder.getInstance().getUserName());
 		commentIQ.setType(IQ.Type.SET);
 
 		Log.d("qzf's log", "sendInquiryIQ: "+commentIQ.toXML());

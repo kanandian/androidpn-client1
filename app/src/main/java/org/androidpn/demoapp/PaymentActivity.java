@@ -1,6 +1,7 @@
 package org.androidpn.demoapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -24,10 +25,15 @@ public class PaymentActivity extends Activity {
 
     private Button paymentBtn;
 
+    private String toUserName;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
+
+        Intent intent = getIntent();
+        toUserName = intent.getStringExtra("toUserName");
 
         amountEdit = (EditText) findViewById(R.id.edit_amount);
         paymentBtn = (Button) findViewById(R.id.btn_payment);
@@ -44,7 +50,6 @@ public class PaymentActivity extends Activity {
         String amount = amountEdit.getText().toString();
 
         String fromUserName = UserInfoHolder.getInstance().getUserName();
-        String toUserName = info;
 
         PaymentIQ paymentIQ = new PaymentIQ();
         paymentIQ.setFromUserName(fromUserName);

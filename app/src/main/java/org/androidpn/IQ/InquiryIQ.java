@@ -7,6 +7,7 @@ public class InquiryIQ extends IQ {
 	private String target = null;
 	private String title = null;
 	private String content = null;
+	private String userName = null;
 
 	public InquiryIQ(){
 		
@@ -25,6 +26,9 @@ public class InquiryIQ extends IQ {
         }
         if (content != null) {
 			buf.append("<content>").append(content).append("</content>");
+		}
+		if (userName != null) {
+			buf.append("<username>").append(userName).append("</username>");
 		}
         buf.append("</").append("inquiry").append("> ");
         return buf.toString();
@@ -53,5 +57,13 @@ public class InquiryIQ extends IQ {
 
 	public void setContent(String content) {
 		this.content = content;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 }

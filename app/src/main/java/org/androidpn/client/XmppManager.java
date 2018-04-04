@@ -22,16 +22,19 @@ import java.util.concurrent.Future;
 
 import org.androidpn.IQ.ActivityInquiryIQ;
 import org.androidpn.IQ.BussinessIQ;
+import org.androidpn.IQ.CommentsIQ;
 import org.androidpn.IQ.LoginResponseIQ;
 import org.androidpn.IQ.NotificationIQ;
 import org.androidpn.IQ.RegistrationResponseIQ;
 import org.androidpn.IQprovider.ActivityIQProvider;
 import org.androidpn.IQprovider.BussinessIQProvider;
+import org.androidpn.IQprovider.CommentsIQProvider;
 import org.androidpn.IQprovider.LoginIQProvider;
 import org.androidpn.IQprovider.NotificationIQProvider;
 import org.androidpn.IQprovider.RegistrationIQProvider;
 import org.androidpn.packetlistener.ActivityPacketListener;
 import org.androidpn.packetlistener.BussinessPacketListener;
+import org.androidpn.packetlistener.CommentsPacketListener;
 import org.androidpn.packetlistener.LoginReponsePacketListener;
 import org.androidpn.packetlistener.NotificationPacketListener;
 import org.androidpn.packetlistener.RegistrationResponsePacketListener;
@@ -98,6 +101,8 @@ public class XmppManager {
 
     private PacketListener loginResponsePacketListener;
 
+    private PacketListener commentPacketListener;
+
     private Handler handler;
 
     private List<Runnable> taskList;
@@ -125,6 +130,7 @@ public class XmppManager {
         bussinessPacketListener = new BussinessPacketListener(this);
         registrationResponsePacketListener = new RegistrationResponsePacketListener(this);
         loginResponsePacketListener = new LoginReponsePacketListener(this);
+        commentPacketListener = new CommentsPacketListener(this);
 
         handler = new Handler();
         taskList = new ArrayList<Runnable>();
@@ -211,6 +217,10 @@ public class XmppManager {
 
     public PacketListener getLoginResponsePacketListener() {
         return loginResponsePacketListener;
+    }
+
+    public PacketListener getCommentPacketListener() {
+        return commentPacketListener;
     }
 
     public void startReconnectionThread() {
@@ -366,6 +376,9 @@ public class XmppManager {
                     ProviderManager.getInstance().addIQProvider("login",
                             "androidpn:iq:login",
                             new LoginIQProvider());
+                    ProviderManager.getInstance().addIQProvider("comment",
+                            "androidpn:iq:comment",
+                            new CommentsIQProvider());
 
                 } catch (XMPPException e) {
                     Log.e(LOGTAG, "XMPP connection failed", e);
@@ -515,6 +528,10 @@ public class XmppManager {
                     PacketFilter packetFilter4 = new PacketTypeFilter(LoginResponseIQ.class);
                     PacketListener packetListener4 = xmppManager.getLoginResponsePacketListener();
                     connection.addPacketListener(packetListener4, packetFilter4);
+
+                    PacketFilter packetFilter5 = new PacketTypeFilter(CommentsIQ.class);
+                    PacketListener packetListener5 = xmppManager.getCommentPacketListener();
+                    connection.addPacketListener(packetListener5, packetFilter5);
 
                     xmppManager.runTask();
 
