@@ -427,12 +427,12 @@
             <ListView
                 android:id="@+id/list_shops"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"></ListView>
+                android:layout_height="246dp"></ListView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:background="@drawable/search_list_bg" />
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:background="@drawable/search_list_bg" />-->
         </LinearLayout>
     </ScrollView>
 

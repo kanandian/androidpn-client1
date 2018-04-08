@@ -50,6 +50,7 @@ public class FrameActivity extends ActivityGroup {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_frame);
+		ActivityHolder.getInstance().setCurrentActivity(FrameActivity.this);
 		initView();
 	}
 

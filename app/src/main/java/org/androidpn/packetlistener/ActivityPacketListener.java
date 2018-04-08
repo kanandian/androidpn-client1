@@ -37,7 +37,6 @@ public class ActivityPacketListener implements PacketListener {
 
     @Override
     public void processPacket(Packet packet) {
-        Log.d("qzf", "processPacket: " + packet.toXML());
         if(packet instanceof ActivityInquiryIQ) {
             ActivityInquiryIQ activityInquiryIQ = (ActivityInquiryIQ) packet;
 //            for(Bussiness bussiness : activityInquiryIQ.getBussinessList()) {
@@ -58,6 +57,7 @@ public class ActivityPacketListener implements PacketListener {
                 List<ShopInfo> shopList = bussinessListToShopInfoList(activityInquiryIQ.getBussinessList());
 
                 searchActivity.setContentList(shopList);
+                Log.d("qzf:", "processPacket: SearchActivity");
 
             }
         }

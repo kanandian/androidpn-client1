@@ -61,12 +61,13 @@ public class ActivityIQProvider implements IQProvider {
             } else if (eventType == 3
                     && "activity".equals(parser.getName())) {
                 done = true;
-                Log.d("qzf", "parseIQ: done");
+                Log.d("qzf", "parseActivityIQ: done");
             }
         }
 
+
         activityInquiryIQ.setBussinessList(bussinessList);
-        Log.d("qzf", "parseIQ2: activityiq finished");
+        Log.d("qzf", "parseIQ2: activityiq finished " + activityInquiryIQ.getBussinessList().get(0).getBussinessName());
         return activityInquiryIQ;
     }
 }
