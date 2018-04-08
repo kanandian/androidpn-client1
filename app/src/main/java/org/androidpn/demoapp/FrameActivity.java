@@ -219,6 +219,8 @@ public class FrameActivity extends ActivityGroup {
 	protected void onResume() {
 		super.onResume();
 
+		ActivityHolder.getInstance().setCurrentActivity(FrameActivity.this);
+
 		ActivityHolder.getInstance().refreshAllFrameAcrivity();
 	}
 

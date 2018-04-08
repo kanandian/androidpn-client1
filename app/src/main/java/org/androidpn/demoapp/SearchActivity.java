@@ -3,11 +3,23 @@ package org.androidpn.demoapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 
+import org.androidpn.IQ.InquiryIQ;
+import org.androidpn.adapter.ShopAdapter;
+import org.androidpn.info.ShopInfo;
 import org.androidpn.utils.ActivityHolder;
+import org.androidpn.utils.UserInfoHolder;
+import org.jivesoftware.smack.packet.IQ;
+
+import java.util.List;
 
 /**
  * ����ģ��
@@ -15,22 +27,42 @@ import org.androidpn.utils.ActivityHolder;
 
 public class SearchActivity extends BaseActivity {
 
+	private static final int UPDATE_UI = 0;
+
 	// ������linearlayout��Ϊ��ť
 	private LinearLayout mSearch_city, mSearch_search;
 	// gridview��ʽlinearlayout��Ϊ��ť
 	private LinearLayout mSearch_food, mSearch_outing, mSearch_hotel,
 			mSearch_pub, mSearch_more, mSearch_chinsesnack;
 	// listview��ʽlinearlayout��Ϊ��ť
-	private LinearLayout mSearch_list_huiyuanka, mSearch_list_souquancheng,
-			mSearch_list_paihangbang, mSearch_list_youhuiquan;
+//	private LinearLayout mSearch_list_huiyuanka, mSearch_list_souquancheng,
+//			mSearch_list_paihangbang, mSearch_list_youhuiquan;
 	// ����ʶ��ť
 	private ImageView mSearch_button1;
+
+	private List<ShopInfo> shopList;
+	private ShopAdapter adapter;
+	private ListView listShop;
+
+	private Handler handler = new Handler() {
+		@Override
+		public void handleMessage(Message msg) {
+			super.handleMessage(msg);
+
+			if(msg.what == UPDATE_UI) {
+				adapter = new ShopAdapter(shopList, SearchActivity.this);
+				listShop.setAdapter(adapter);
+			}
+		}
+	};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_search);
 		initView();
+
+		sendInquiryIQ();
 	}
 
 	private void initView() {
@@ -46,10 +78,10 @@ public class SearchActivity extends BaseActivity {
 		mSearch_more = (LinearLayout) findViewById(R.id.Search_more);
 		mSearch_chinsesnack = (LinearLayout) findViewById(R.id.Search_chinsesnack);
 		// listview��ʽlinearlayout��Ϊ��ť
-		mSearch_list_huiyuanka = (LinearLayout) findViewById(R.id.Search_list_huiyuanka);
-		mSearch_list_souquancheng = (LinearLayout) findViewById(R.id.Search_list_souquancheng);
-		mSearch_list_paihangbang = (LinearLayout) findViewById(R.id.Search_list_paihangbang);
-		mSearch_list_youhuiquan = (LinearLayout) findViewById(R.id.Search_list_youhuiquan);
+//		mSearch_list_huiyuanka = (LinearLayout) findViewById(R.id.Search_list_huiyuanka);
+//		mSearch_list_souquancheng = (LinearLayout) findViewById(R.id.Search_list_souquancheng);
+//		mSearch_list_paihangbang = (LinearLayout) findViewById(R.id.Search_list_paihangbang);
+//		mSearch_list_youhuiquan = (LinearLayout) findViewById(R.id.Search_list_youhuiquan);
 		MyOnclickListener mOnclickListener = new MyOnclickListener();
 		mSearch_city.setOnClickListener(mOnclickListener);
 		mSearch_search.setOnClickListener(mOnclickListener);
@@ -60,11 +92,45 @@ public class SearchActivity extends BaseActivity {
 		mSearch_pub.setOnClickListener(mOnclickListener);
 		mSearch_more.setOnClickListener(mOnclickListener);
 		mSearch_chinsesnack.setOnClickListener(mOnclickListener);
-		mSearch_list_huiyuanka.setOnClickListener(mOnclickListener);
-		mSearch_list_souquancheng.setOnClickListener(mOnclickListener);
-		mSearch_list_paihangbang.setOnClickListener(mOnclickListener);
-		mSearch_list_youhuiquan.setOnClickListener(mOnclickListener);
 
+		listShop = (ListView) findViewById(R.id.list_shops);
+
+		listShop.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+				Intent intent = new Intent(SearchActivity.this, ShopDetailsActivity.class);
+				Bundle bund = new Bundle();
+				bund.putSerializable("ShopInfo",shopList.get(position));
+				intent.putExtra("value",bund);
+				startActivity(intent);
+			}
+		});
+
+//		mSearch_list_huiyuanka.setOnClickListener(mOnclickListener);
+//		mSearch_list_souquancheng.setOnClickListener(mOnclickListener);
+//		mSearch_list_paihangbang.setOnClickListener(mOnclickListener);
+//		mSearch_list_youhuiquan.setOnClickListener(mOnclickListener);
+
+	}
+
+	public void setContentList(List<ShopInfo> shopList) {
+		this.shopList = shopList;
+
+		Message msg = new Message();
+		msg.what = UPDATE_UI;
+		handler.sendMessage(msg);
+	}
+
+	public void sendInquiryIQ() {
+		InquiryIQ inquiryIQ = new InquiryIQ();
+
+		inquiryIQ.setTarget("activity");
+		inquiryIQ.setTitle("perference:"+ UserInfoHolder.getInstance().getUserName());
+		inquiryIQ.setType(IQ.Type.GET);
+
+		Log.d("qzf's", "sendInquiryIQ: "+inquiryIQ.toXML());
+
+		ActivityHolder.getInstance().sendPacket(inquiryIQ);
 	}
 
 	private class MyOnclickListener implements View.OnClickListener {
@@ -106,16 +172,16 @@ public class SearchActivity extends BaseActivity {
 						SearchMoreActivity.class);
 				SearchActivity.this.startActivity(intent5);
 				break;
-			case R.id.Search_list_souquancheng:
-				Intent intent6 = new Intent(SearchActivity.this,
-						SearchTheCity.class);
-				SearchActivity.this.startActivity(intent6);
-				break;
-			case R.id.Search_list_paihangbang:
-				Intent intent7 = new Intent(SearchActivity.this,
-						RankingList.class);
-				SearchActivity.this.startActivity(intent7);
-				break;
+//			case R.id.Search_list_souquancheng:
+//				Intent intent6 = new Intent(SearchActivity.this,
+//						SearchTheCity.class);
+//				SearchActivity.this.startActivity(intent6);
+//				break;
+//			case R.id.Search_list_paihangbang:
+//				Intent intent7 = new Intent(SearchActivity.this,
+//						RankingList.class);
+//				SearchActivity.this.startActivity(intent7);
+//				break;
 //			case R.id.Search_list_huiyuanka:
 //				Intent intent8 = new Intent(SearchActivity.this,
 //						TuanDetailsActivity.class);

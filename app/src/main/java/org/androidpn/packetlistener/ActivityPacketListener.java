@@ -1,12 +1,15 @@
 package org.androidpn.packetlistener;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.util.Log;
 
 import org.androidpn.IQ.ActivityInquiryIQ;
 import org.androidpn.client.LogUtil;
 import org.androidpn.client.XmppManager;
+import org.androidpn.demoapp.FrameActivity;
 import org.androidpn.demoapp.MainActivity;
+import org.androidpn.demoapp.SearchActivity;
 import org.androidpn.demoapp.ShopListActivity;
 import org.androidpn.info.ShopInfo;
 import org.androidpn.model.Bussiness;
@@ -44,14 +47,30 @@ public class ActivityPacketListener implements PacketListener {
             if(activity instanceof ShopListActivity) {
                 ShopListActivity shopListActivity = (ShopListActivity) activity;
 
-                List<ShopInfo> shopInfoList = new ArrayList<ShopInfo>();
-
-                for(Bussiness bussiness : activityInquiryIQ.getBussinessList()) {
-                    shopInfoList.add(bussiness.toShopInfo());
-                }
+                List<ShopInfo> shopInfoList = bussinessListToShopInfoList(activityInquiryIQ.getBussinessList());
 
                 shopListActivity.setContentList(shopInfoList);
+            } else if (activity instanceof FrameActivity) {
+                FrameActivity frameActivity = (FrameActivity) activity;
+
+                SearchActivity searchActivity = (SearchActivity) frameActivity.getLocalActivityManager().getActivity("search");
+
+                List<ShopInfo> shopList = bussinessListToShopInfoList(activityInquiryIQ.getBussinessList());
+
+                searchActivity.setContentList(shopList);
+
             }
         }
+    }
+
+    private List<ShopInfo> bussinessListToShopInfoList(List<Bussiness> bussinessList) {
+        List<ShopInfo> shopInfoList = new ArrayList<ShopInfo>();
+
+        for(Bussiness bussiness : bussinessList) {
+            shopInfoList.add(bussiness.toShopInfo());
+        }
+
+        return shopInfoList;
+
     }
 }
