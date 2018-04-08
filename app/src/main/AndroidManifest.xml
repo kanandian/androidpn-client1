@@ -63,6 +63,7 @@
 			android:name=".ShopDetailsMore"
 			android:label="@string/title_activity_shop_details_more" >
 		</activity>
+		<activity android:name=".ShopCommentsActivity"></activity>
 		<activity
 			android:name=".RankingList"
 			android:label="@string/title_activity_paihangbang" >

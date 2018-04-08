@@ -1,6 +1,7 @@
 package org.androidpn.demoapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -8,6 +9,7 @@ import android.util.Log;
 import android.widget.ListView;
 
 import org.androidpn.IQ.InquiryIQ;
+import org.androidpn.adapter.CommentAdapter;
 import org.androidpn.adapter.ShopAdapter;
 import org.androidpn.model.Comment;
 import org.androidpn.utils.ActivityHolder;
@@ -20,13 +22,14 @@ import java.util.List;
  * Created by macpro on 2018/4/4.
  */
 
-public class ShopCommentActivity extends BaseActivity {
+public class ShopCommentsActivity extends BaseActivity {
 
     private static int UPDATE_UI = 1;
 
     private List<Comment> commentList = new ArrayList<Comment>();
 
     private ListView listComments;
+    private CommentAdapter adapter;
     private String bussinessId;
 
     private Handler handler = new Handler() {
@@ -35,7 +38,8 @@ public class ShopCommentActivity extends BaseActivity {
             super.handleMessage(msg);
 
             if(msg.what == UPDATE_UI) {
-
+                adapter = new CommentAdapter(ShopCommentsActivity.this, R.layout.list_comments, commentList);
+                listComments.setAdapter(adapter);
             }
         }
     };
@@ -44,6 +48,9 @@ public class ShopCommentActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopcomment);
+
+        Intent intent = getIntent();
+        bussinessId = intent.getStringExtra("bussinessId");
 
         listComments = (ListView) findViewById(R.id.list_comments);
 

@@ -39,7 +39,7 @@ public class CommentsIQProvider implements IQProvider {
                 }
                 commentList.add(comment);
             } else if (eventType == 3
-                    && "activity".equals(parser.getName())) {
+                    && "comment".equals(parser.getName())) {
                 done = true;
             }
         }

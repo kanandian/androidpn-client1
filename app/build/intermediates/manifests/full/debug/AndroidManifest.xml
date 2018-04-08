@@ -87,6 +87,7 @@
             android:name="org.androidpn.demoapp.ShopDetailsMore"
             android:label="@string/title_activity_shop_details_more" >
         </activity>
+        <activity android:name="org.androidpn.demoapp.ShopCommentsActivity" />
         <activity
             android:name="org.androidpn.demoapp.RankingList"
             android:label="@string/title_activity_paihangbang" >

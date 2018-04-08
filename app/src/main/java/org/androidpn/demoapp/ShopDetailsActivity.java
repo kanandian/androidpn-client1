@@ -251,6 +251,11 @@ public class ShopDetailsActivity extends BaseActivity {
 //				bund.putSerializable("ShopInfo", info);
 //				intent.putExtra("value", bund);
 //				startActivity(intent);
+				Intent intent = new Intent(ShopDetailsActivity.this, ShopCommentsActivity.class);
+				intent.putExtra("bussinessId", info.getSid());
+
+				startActivity(intent);
+
 			}
 			if (mID == R.id.Shop_details_bottom_img2) {
 				

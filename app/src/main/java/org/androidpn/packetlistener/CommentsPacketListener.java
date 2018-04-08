@@ -6,10 +6,11 @@ import android.util.Log;
 import org.androidpn.IQ.ActivityInquiryIQ;
 import org.androidpn.IQ.CommentsIQ;
 import org.androidpn.client.XmppManager;
-import org.androidpn.demoapp.ShopCommentActivity;
+import org.androidpn.demoapp.ShopCommentsActivity;
 import org.androidpn.demoapp.ShopListActivity;
 import org.androidpn.info.ShopInfo;
 import org.androidpn.model.Bussiness;
+import org.androidpn.model.Comment;
 import org.androidpn.utils.ActivityHolder;
 import org.jivesoftware.smack.PacketListener;
 import org.jivesoftware.smack.packet.Packet;
@@ -34,10 +35,12 @@ public class CommentsPacketListener implements PacketListener {
         if(packet instanceof CommentsIQ) {
             CommentsIQ commentsIQ = (CommentsIQ) packet;
             Activity activity = ActivityHolder.getInstance().getCurrentActivity();
-            if(activity instanceof ShopCommentActivity) {
-                ShopCommentActivity shopCommentActivity = (ShopCommentActivity) activity;
+            if(activity instanceof ShopCommentsActivity) {
+                ShopCommentsActivity shopCommentActivity = (ShopCommentsActivity) activity;
 
-                shopCommentActivity.setContentList(commentsIQ.getCommentList());
+                List<Comment> commentList = commentsIQ.getCommentList();
+
+                shopCommentActivity.setContentList(commentList);
             }
         }
     }
