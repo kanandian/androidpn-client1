@@ -40,6 +40,9 @@ public class LoginIQProvider implements IQProvider {
                 if ("mobile".equals(parser.getName())) {
                     loginResponseIQ.setMobile(parser.nextText());
                 }
+                if ("isrealuser".equals(parser.getName())) {
+                    Log.d("qzf:", "isrealuser: "+parser.nextText());
+                }
             } else if (eventType == 3
                     && "login".equals(parser.getName())) {
                 done = true;

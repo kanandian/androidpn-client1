@@ -812,6 +812,10 @@
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/search_more_morelist_item.xml"
     },
     {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/layout_layout_addbussiness.xml.flat",
+        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/layout_addbussiness.xml"
+    },
+    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_star_0_pressed.png.flat",
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/star_0_pressed.png"
     },

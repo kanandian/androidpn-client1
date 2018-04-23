@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="com.amap.api:location:3.8.0@jar">
+  <library name="Gradle: com.amap.api:location:3.8.0@jar">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amap.api/location/3.8.0/e6f7bc37e0cd684f23fa8d5ce5247d90aae5685f/location-3.8.0.jar!/" />
     </CLASSES>

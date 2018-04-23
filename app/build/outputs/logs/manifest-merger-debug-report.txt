@@ -4,7 +4,7 @@ ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/An
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-146:12
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-146:12
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-146:12
-MERGED from [com.android.volley:volley:1.0.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/d97cb1cce9b682d435d3e6deb7aa5dfa/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.volley:volley:1.0.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/f0db119ca5487cf2be1536686dae8aad/AndroidManifest.xml:2:1-11:12
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-146:12
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-146:12
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-146:12
@@ -24,8 +24,8 @@ INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main
 		INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml
 application
 ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:5:2-131:16
-MERGED from [com.android.volley:volley:1.0.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/d97cb1cce9b682d435d3e6deb7aa5dfa/AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.0.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/d97cb1cce9b682d435d3e6deb7aa5dfa/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/f0db119ca5487cf2be1536686dae8aad/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/f0db119ca5487cf2be1536686dae8aad/AndroidManifest.xml:9:5-20
 	android:label
 		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:5:45-77
 	android:icon
@@ -224,8 +224,8 @@ uses-sdk
 ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:132:2-40
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:132:2-40
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:132:2-40
-MERGED from [com.android.volley:volley:1.0.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/d97cb1cce9b682d435d3e6deb7aa5dfa/AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.0.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/d97cb1cce9b682d435d3e6deb7aa5dfa/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.0.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/f0db119ca5487cf2be1536686dae8aad/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.0.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/f0db119ca5487cf2be1536686dae8aad/AndroidManifest.xml:7:5-43
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:132:2-40
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:132:2-40
 	android:targetSdkVersion
