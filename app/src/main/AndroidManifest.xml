@@ -98,6 +98,7 @@
 		</activity>
 
 		<activity android:name=".TakeOutActivity"></activity>
+		<activity android:name=".TakeoutOrderDetailActivity"></activity>
 
 
 		<activity android:name=".BussinessInfoActivity"></activity>
