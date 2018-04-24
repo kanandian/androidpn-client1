@@ -38,6 +38,9 @@ public class ActivityIQProvider implements IQProvider {
                     if("imageURL".equals(parser.getAttributeName(i))) {
                         bussiness.setImageURL(parser.getAttributeValue(i));
                     }
+                    if("classification".equals(parser.getAttributeName(i))) {
+                        bussiness.setClassification(parser.getAttributeValue(i));
+                    }
                     if("tag".equals(parser.getAttributeName(i))) {
                         bussiness.setTag(parser.getAttributeValue(i));
                     }

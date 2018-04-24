@@ -360,11 +360,19 @@ public class ShopListActivity extends BaseActivity {
 	private class MainListOnItemClickListener implements OnItemClickListener {
 		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
                                 long arg3) {
-			Intent intent = new Intent(ShopListActivity.this, ShopDetailsActivity.class);
-			Bundle bund = new Bundle();
-			bund.putSerializable("ShopInfo",list.get(arg2));
-			intent.putExtra("value",bund);
-			startActivity(intent);
+			ShopInfo shopInfo = list.get(arg2);
+
+			if ("外卖".equals(shopInfo.getStype())) {
+				Intent intent = new Intent(ShopListActivity.this, TakeOutActivity.class);
+				intent.putExtra("shopInfo", shopInfo);
+				startActivity(intent);
+			} else {
+				Intent intent = new Intent(ShopListActivity.this, ShopDetailsActivity.class);
+				Bundle bund = new Bundle();
+				bund.putSerializable("ShopInfo", shopInfo);
+				intent.putExtra("value",bund);
+				startActivity(intent);
+			}
 		}
 	}
 

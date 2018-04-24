@@ -169,7 +169,8 @@ public class SearchActivity extends BaseActivity {
 				break;
 			case R.id.Search_more:
 				Intent intent5 = new Intent(SearchActivity.this,
-						SearchMoreActivity.class);
+						ShopListActivity.class);
+				intent5.putExtra("title", "外卖");
 				SearchActivity.this.startActivity(intent5);
 				break;
 //			case R.id.Search_list_souquancheng:
