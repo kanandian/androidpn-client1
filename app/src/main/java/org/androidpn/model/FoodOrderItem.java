@@ -1,6 +1,8 @@
 package org.androidpn.model;
 
-public class FoodOrderItem {
+import java.io.Serializable;
+
+public class FoodOrderItem implements Serializable {
     private long itemId;
     private String foodName;
     private double price;
@@ -9,6 +11,15 @@ public class FoodOrderItem {
     private long bussinessId;
 
     public FoodOrderItem() {
+
+    }
+
+    public FoodOrderItem(FoodMenuItem foodMenuItem, int count) {
+        this.itemId = foodMenuItem.getItemId();
+        this.foodName = foodMenuItem.getFoodName();
+        this.price = foodMenuItem.getPrice();
+        this.count = count;
+        this.bussinessId = foodMenuItem.getBussinessId();
 
     }
 

@@ -48,6 +48,9 @@ public class BussinessIQProvider implements IQProvider {
                 if ("des".equals(parser.getName())) {
                     bussiness.setDes(parser.nextText());
                 }
+                if ("holder".equals(parser.getName())) {
+                    bussiness.setHolder(parser.nextText());
+                }
             } else if (eventType == 3
                     && "bussiness".equals(parser.getName())) {
                 done = true;

@@ -20,6 +20,8 @@ public class Bussiness {
     private String level;
     private String des;
 
+    private String holder;
+
     public Bussiness() {
 
     }
@@ -108,6 +110,14 @@ public class Bussiness {
         this.des = des;
     }
 
+    public String getHolder() {
+        return holder;
+    }
+
+    public void setHolder(String holder) {
+        this.holder = holder;
+    }
+
     public ShopInfo toShopInfo() {
         ShopInfo shopInfo = new ShopInfo();
 
@@ -123,6 +133,7 @@ public class Bussiness {
         shopInfo.setSmoney(String.valueOf(this.getPrice()));
         shopInfo.setSaddress(this.getLocation().getAddress());
         shopInfo.setSlevel(this.getLevel());
+        shopInfo.setSholder(this.getHolder());
 
         return shopInfo;
     }

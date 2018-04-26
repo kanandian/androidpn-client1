@@ -59,6 +59,9 @@ public class ActivityIQProvider implements IQProvider {
                     if("des".equals(parser.getAttributeName(i))) {
                         bussiness.setDes(parser.getAttributeValue(i));
                     }
+                    if("holder".equals(parser.getAttributeName(i))) {
+                        bussiness.setHolder(parser.getAttributeValue(i));
+                    }
                 }
                 bussinessList.add(bussiness);
             } else if (eventType == 3

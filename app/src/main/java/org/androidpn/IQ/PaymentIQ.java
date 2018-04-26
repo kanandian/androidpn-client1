@@ -10,6 +10,7 @@ public class PaymentIQ extends IQ {
 
     private String fromUserName;
     private String toUserName;
+    private String bussinessId;
     private String price;
 
     @Override
@@ -22,6 +23,9 @@ public class PaymentIQ extends IQ {
         }
         if(toUserName != null){
             buf.append("<tousername>").append(toUserName).append("</tousername>");
+        }
+        if (bussinessId != null) {
+            buf.append("<bussinessid>").append(bussinessId).append("</bussinessid>");
         }
         if (price != null) {
             buf.append("<price>").append(price).append("</price>");
@@ -44,6 +48,14 @@ public class PaymentIQ extends IQ {
 
     public void setToUserName(String toUserName) {
         this.toUserName = toUserName;
+    }
+
+    public String getBussinessId() {
+        return bussinessId;
+    }
+
+    public void setBussinessId(String bussinessId) {
+        this.bussinessId = bussinessId;
     }
 
     public String getPrice() {
