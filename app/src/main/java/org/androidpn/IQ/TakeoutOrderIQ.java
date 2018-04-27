@@ -15,6 +15,7 @@ public class TakeoutOrderIQ extends IQ {
     private String totalPrice;
 
     private String bussinessId;
+    private String bussinessName;
 
     private String fromUserName;
     private String toUserName;
@@ -60,6 +61,9 @@ public class TakeoutOrderIQ extends IQ {
         }
         if (bussinessId != null) {
             buf.append("<bussinessid>").append(bussinessId).append("</bussinessid>");
+        }
+        if (bussinessName != null) {
+            buf.append("<bussinessname>").append(bussinessName).append("</bussinessname>");
         }
         if (fromUserName != null) {
             buf.append("<fromusername>").append(fromUserName).append("</fromusername>");
@@ -117,6 +121,14 @@ public class TakeoutOrderIQ extends IQ {
 
     public void setBussinessId(String bussinessId) {
         this.bussinessId = bussinessId;
+    }
+
+    public String getBussinessName() {
+        return bussinessName;
+    }
+
+    public void setBussinessName(String bussinessName) {
+        this.bussinessName = bussinessName;
     }
 
     public String getFromUserName() {

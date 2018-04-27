@@ -122,6 +122,10 @@ public class MyActivity extends BaseActivity {
 						LoginActivity.class);
 				startActivity(intent2);
 				break;
+				case R.id.My_list_yuding:
+					Intent intent3 = new Intent(MyActivity.this, TakeoutListActivity.class);
+					startActivity(intent3);
+					break;
 			}
 		}
 

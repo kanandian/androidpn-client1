@@ -27,7 +27,9 @@ import org.androidpn.IQ.CommentsIQ;
 import org.androidpn.IQ.FoodMenuIQ;
 import org.androidpn.IQ.LoginResponseIQ;
 import org.androidpn.IQ.NotificationIQ;
+import org.androidpn.IQ.PaymentResponseIQ;
 import org.androidpn.IQ.RegistrationResponseIQ;
+import org.androidpn.IQ.TakeoutListIQ;
 import org.androidpn.IQprovider.ActivityIQProvider;
 import org.androidpn.IQprovider.BussinessIQProvider;
 import org.androidpn.IQprovider.CommentsIQProvider;
@@ -36,13 +38,16 @@ import org.androidpn.IQprovider.LoginIQProvider;
 import org.androidpn.IQprovider.NotificationIQProvider;
 import org.androidpn.IQprovider.PaymentResponseIQProvider;
 import org.androidpn.IQprovider.RegistrationIQProvider;
+import org.androidpn.IQprovider.TakeoutListIQProvider;
 import org.androidpn.packetlistener.ActivityPacketListener;
 import org.androidpn.packetlistener.BussinessPacketListener;
 import org.androidpn.packetlistener.CommentsPacketListener;
 import org.androidpn.packetlistener.FoodMenuPacketListener;
 import org.androidpn.packetlistener.LoginReponsePacketListener;
 import org.androidpn.packetlistener.NotificationPacketListener;
+import org.androidpn.packetlistener.PaymentResponsePacketListener;
 import org.androidpn.packetlistener.RegistrationResponsePacketListener;
+import org.androidpn.packetlistener.TakeoutListPacketListener;
 import org.androidpn.utils.ActivityHolder;
 import org.jivesoftware.smack.ConnectionConfiguration;
 import org.jivesoftware.smack.ConnectionListener;
@@ -110,6 +115,10 @@ public class XmppManager {
 
     private PacketListener foodMenuPacketListener;
 
+    private PacketListener paymentResponsePacketListener;
+
+    private PacketListener takeoutListPacketListener;
+
     private Handler handler;
 
     private List<Runnable> taskList;
@@ -139,6 +148,8 @@ public class XmppManager {
         loginResponsePacketListener = new LoginReponsePacketListener(this);
         commentPacketListener = new CommentsPacketListener(this);
         foodMenuPacketListener = new FoodMenuPacketListener(this);
+        paymentResponsePacketListener = new PaymentResponsePacketListener(this);
+        takeoutListPacketListener = new TakeoutListPacketListener(this);
 
         handler = new Handler();
         taskList = new ArrayList<Runnable>();
@@ -233,6 +244,14 @@ public class XmppManager {
 
     public PacketListener getFoodMenuPacketListener() {
         return foodMenuPacketListener;
+    }
+
+    public PacketListener getPaymentResponsePacketListener() {
+        return paymentResponsePacketListener;
+    }
+
+    public PacketListener getTakeoutListPacketListener() {
+        return takeoutListPacketListener;
     }
 
     public void startReconnectionThread() {
@@ -397,6 +416,9 @@ public class XmppManager {
                     ProviderManager.getInstance().addIQProvider("payment",
                             "androidpn:iq:payment",
                             new PaymentResponseIQProvider());
+                    ProviderManager.getInstance().addIQProvider("order",
+                            "androidpn:order:takeout",
+                            new TakeoutListIQProvider());
 
                 } catch (XMPPException e) {
                     Log.e(LOGTAG, "XMPP connection failed", e);
@@ -554,6 +576,14 @@ public class XmppManager {
                     PacketFilter packetFilter6 = new PacketTypeFilter(FoodMenuIQ.class);
                     PacketListener packetListener6 = xmppManager.getFoodMenuPacketListener();
                     connection.addPacketListener(packetListener6, packetFilter6);
+
+                    PacketFilter packetFilter7 = new PacketTypeFilter(PaymentResponseIQ.class);
+                    PacketListener packetListener7 = xmppManager.getPaymentResponsePacketListener();
+                    connection.addPacketListener(packetListener7, packetFilter7);
+
+                    PacketFilter packetFilter8 = new PacketTypeFilter(TakeoutListIQ.class);
+                    PacketListener packetListener8 = xmppManager.getTakeoutListPacketListener();
+                    connection.addPacketListener(packetListener8, packetFilter8);
 
                     xmppManager.runTask();
 

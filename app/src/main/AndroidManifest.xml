@@ -100,6 +100,10 @@
 		<activity android:name=".TakeOutActivity"></activity>
 		<activity android:name=".TakeoutOrderDetailActivity"></activity>
 
+		<activity android:name=".OrderSuccessActivity"></activity>
+
+		<activity android:name=".TakeoutListActivity"></activity>
+
 
 		<activity android:name=".BussinessInfoActivity"></activity>
 		<activity android:name=".NavigationActivity"></activity>

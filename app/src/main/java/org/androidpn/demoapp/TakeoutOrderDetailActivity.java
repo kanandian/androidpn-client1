@@ -100,6 +100,7 @@ public class TakeoutOrderDetailActivity extends BaseActivity {
         takeoutOrderIQ.setMobile(mobile);
         takeoutOrderIQ.setTotalPrice(totalPrice);
         takeoutOrderIQ.setBussinessId(shopInfo.getSid());
+        takeoutOrderIQ.setBussinessName(shopInfo.getSname());
 
         takeoutOrderIQ.setFromUserName(UserInfoHolder.getInstance().getUserName());
         takeoutOrderIQ.setToUserName(shopInfo.getSholder());

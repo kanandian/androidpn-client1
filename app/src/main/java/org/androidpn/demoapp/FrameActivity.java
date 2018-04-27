@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,7 +20,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import org.androidpn.IQ.InquiryIQ;
 import org.androidpn.utils.ActivityHolder;
+import org.androidpn.utils.UserInfoHolder;
+import org.jivesoftware.smack.packet.IQ;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -223,6 +227,16 @@ public class FrameActivity extends ActivityGroup {
 		ActivityHolder.getInstance().setCurrentActivity(FrameActivity.this);
 
 		ActivityHolder.getInstance().refreshAllFrameAcrivity();
+
+		InquiryIQ inquiryIQ = new InquiryIQ();
+
+		inquiryIQ.setTarget("activity");
+		inquiryIQ.setTitle("perference:"+ UserInfoHolder.getInstance().getUserName());
+		inquiryIQ.setType(IQ.Type.GET);
+
+		Log.d("qzf's", "sendInquiryIQ: "+inquiryIQ.toXML());
+
+		ActivityHolder.getInstance().sendPacket(inquiryIQ);
 	}
 
 	/**
