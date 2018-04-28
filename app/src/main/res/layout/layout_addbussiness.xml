@@ -108,13 +108,25 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/Registration_mobile"
+                    android:id="@+id/edit_mobile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="0.2dp"
                     android:background="#FFFFFF"
                     android:hint="联系电话"
-                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:textColorHint="@color/hint_gray"
+                    android:textColor="@color/text_black"/>
+                
+                <EditText
+                    android:id="@+id/edit_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.2dp"
+                    android:background="#FFFFFF"
+                    android:hint="描述信息"
                     android:padding="10dp"
                     android:singleLine="true"
                     android:textSize="16sp"

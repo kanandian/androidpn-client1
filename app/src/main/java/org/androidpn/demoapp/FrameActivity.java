@@ -21,6 +21,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import org.androidpn.IQ.InquiryIQ;
+import org.androidpn.IQ.LoginIQ;
 import org.androidpn.utils.ActivityHolder;
 import org.androidpn.utils.UserInfoHolder;
 import org.jivesoftware.smack.packet.IQ;
@@ -56,6 +57,8 @@ public class FrameActivity extends ActivityGroup {
 		setContentView(R.layout.activity_frame);
 		ActivityHolder.getInstance().setCurrentActivity(FrameActivity.this);
 		initView();
+
+		sendLoginIQ();
 	}
 
 	// ��ʼ���ؼ�
@@ -178,6 +181,19 @@ public class FrameActivity extends ActivityGroup {
 			}
 		});
 
+	}
+
+	public void sendLoginIQ() {
+		LoginIQ loginIQ = new LoginIQ();
+
+		loginIQ.setUserName(UserInfoHolder.getInstance().getUserName());
+		loginIQ.setPassword(UserInfoHolder.getInstance().getPassword());
+
+		loginIQ.setType(IQ.Type.GET);
+
+		Log.d("qzf", "sendLoginIQ: "+loginIQ.toXML());
+
+		ActivityHolder.getInstance().sendPacket(loginIQ);
 	}
 
 	// ��viewpager����Ҫ��ʾ��viewʵ�������������Ұ���ص�view��ӵ�һ��list����

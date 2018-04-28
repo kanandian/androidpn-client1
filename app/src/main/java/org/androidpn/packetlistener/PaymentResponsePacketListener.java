@@ -6,6 +6,7 @@ import android.widget.Toast;
 
 import org.androidpn.IQ.PaymentResponseIQ;
 import org.androidpn.client.XmppManager;
+import org.androidpn.demoapp.AddBussinessActivity;
 import org.androidpn.demoapp.OrderSuccessActivity;
 import org.androidpn.utils.ActivityHolder;
 import org.jivesoftware.smack.PacketListener;
@@ -25,11 +26,17 @@ public class PaymentResponsePacketListener implements PacketListener {
         if (packet instanceof PaymentResponseIQ) {
             PaymentResponseIQ paymentResponseIQ = (PaymentResponseIQ) packet;
 
+            Activity activity = ActivityHolder.getInstance().getCurrentActivity();
+
             if (paymentResponseIQ.getErrCode() == 0) {
-                Intent intent = new Intent(ActivityHolder.getInstance().getCurrentActivity(), OrderSuccessActivity.class);
-                ActivityHolder.getInstance().getCurrentActivity().startActivity(intent);
+                if (activity instanceof AddBussinessActivity) {
+                    activity.finish();
+                    return;
+                }
+                Intent intent = new Intent(activity, OrderSuccessActivity.class);
+                activity.startActivity(intent);
             } else {
-                Toast.makeText(ActivityHolder.getInstance().getCurrentActivity(), paymentResponseIQ.getErrMsg(), Toast.LENGTH_LONG).show();
+                Toast.makeText(activity, paymentResponseIQ.getErrMsg(), Toast.LENGTH_LONG).show();
             }
 
         }

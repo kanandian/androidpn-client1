@@ -62,7 +62,7 @@ public class SearchActivity extends BaseActivity {
 		setContentView(R.layout.activity_search);
 		initView();
 
-		sendInquiryIQ();
+//		sendInquiryIQ();
 	}
 
 	private void initView() {

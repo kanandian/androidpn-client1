@@ -4,13 +4,14 @@ import org.jivesoftware.smack.packet.IQ;
 
 public class AddBussinessIQ extends IQ {
 
-    String businessName;
-    String imageURL;
-    String classification;
-    String tag;
-    String location;
-    String mobile;
-    String des;
+    private String businessName;
+    private String imageURL;
+    private String classification;
+    private String tag;
+    private String location;
+    private String mobile;
+    private String des;
+    private String holder;
 
     public AddBussinessIQ() {
 
@@ -41,6 +42,9 @@ public class AddBussinessIQ extends IQ {
         }
         if (des != null) {
             buf.append("<des>").append(des).append("</des>");
+        }
+        if (holder != null) {
+            buf.append("<holder>").append(holder).append("</holder>");
         }
         buf.append("</").append("bussiness").append("> ");
         return buf.toString();
@@ -100,5 +104,13 @@ public class AddBussinessIQ extends IQ {
 
     public void setDes(String des) {
         this.des = des;
+    }
+
+    public String getHolder() {
+        return holder;
+    }
+
+    public void setHolder(String holder) {
+        this.holder = holder;
     }
 }

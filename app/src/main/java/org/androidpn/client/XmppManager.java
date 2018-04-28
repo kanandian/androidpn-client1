@@ -49,6 +49,7 @@ import org.androidpn.packetlistener.PaymentResponsePacketListener;
 import org.androidpn.packetlistener.RegistrationResponsePacketListener;
 import org.androidpn.packetlistener.TakeoutListPacketListener;
 import org.androidpn.utils.ActivityHolder;
+import org.androidpn.utils.UserInfoHolder;
 import org.jivesoftware.smack.ConnectionConfiguration;
 import org.jivesoftware.smack.ConnectionListener;
 import org.jivesoftware.smack.PacketListener;
@@ -538,6 +539,9 @@ public class XmppManager {
                             xmppManager.getUsername(),
                             xmppManager.getPassword(), XMPP_RESOURCE_NAME);
                     Log.d(LOGTAG, "Loggedn in successfully");
+
+                    UserInfoHolder.getInstance().setUserName(xmppManager.getUsername());
+                    UserInfoHolder.getInstance().setPassword(xmppManager.getPassword());
 
                     // connection listener
                     if (xmppManager.getConnectionListener() != null) {

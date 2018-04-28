@@ -125,6 +125,7 @@
         <activity android:name="org.androidpn.demoapp.OrderSuccessActivity" />
         <activity android:name="org.androidpn.demoapp.TakeoutListActivity" />
         <activity android:name="org.androidpn.demoapp.MyBussinessesActivity" />
+        <activity android:name="org.androidpn.demoapp.AddBussinessActivity" />
         <activity android:name="org.androidpn.demoapp.BussinessInfoActivity" />
         <activity android:name="org.androidpn.demoapp.NavigationActivity" />
         <activity android:name="org.androidpn.demoapp.PersonalActivity" />

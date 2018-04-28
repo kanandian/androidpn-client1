@@ -357,7 +357,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="15dp"
                     android:paddingTop="8dp"
-                    android:text="   团购收藏"
+                    android:text="   新建店铺"
                     android:textColor="#666666"
                     android:textSize="18sp" />
             </LinearLayout>

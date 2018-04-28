@@ -71,6 +71,8 @@ public class LoginReponsePacketListener implements PacketListener {
                 UserInfoHolder.getInstance().setUserToConnection(userName);
 
                 ActivityHolder.getInstance().closeActivity();
+
+                ActivityHolder.getInstance().refreshAllFrameAcrivity();
             }
         }
     }

@@ -73,7 +73,6 @@ public class ActivityIQProvider implements IQProvider {
 
 
         activityInquiryIQ.setBussinessList(bussinessList);
-        Log.d("qzf", "parseIQ2: activityiq finished " + activityInquiryIQ.getBussinessList().get(0).getBussinessName());
         return activityInquiryIQ;
     }
 }

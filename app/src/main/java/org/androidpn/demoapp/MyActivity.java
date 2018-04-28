@@ -111,6 +111,11 @@ public class MyActivity extends BaseActivity {
 	private class MyOnclickListener implements View.OnClickListener {
 		public void onClick(View v) {
 			int mID = v.getId();
+
+			if (!UserInfoHolder.getInstance().isAuth() && (mID != R.id.My_register && mID != R.id.My_login)) {
+				Toast.makeText(MyActivity.this, "当前用户未登录！", Toast.LENGTH_SHORT).show();
+				return;
+			}
 			switch (mID) {
 			case R.id.My_register:
 				Intent intent = new Intent(MyActivity.this,
@@ -130,6 +135,10 @@ public class MyActivity extends BaseActivity {
 					Intent intent4 = new Intent(MyActivity.this, MyBussinessesActivity.class);
 					intent4.putExtra("title", UserInfoHolder.getInstance().getUserName());
 					startActivity(intent4);
+					break;
+				case R.id.My_list_tuangoushoucang:
+					Intent intent5 = new Intent(MyActivity.this, AddBussinessActivity.class);
+					startActivity(intent5);
 					break;
 			}
 		}
