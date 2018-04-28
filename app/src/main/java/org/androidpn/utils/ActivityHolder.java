@@ -92,7 +92,9 @@ public class ActivityHolder {
 
 
         } else {
-            connection.sendPacket(packet);
+            if (connection.isConnected()) {
+                connection.sendPacket(packet);
+            }
         }
     }
 

@@ -126,6 +126,11 @@ public class MyActivity extends BaseActivity {
 					Intent intent3 = new Intent(MyActivity.this, TakeoutListActivity.class);
 					startActivity(intent3);
 					break;
+				case R.id.My_list_caogao:
+					Intent intent4 = new Intent(MyActivity.this, MyBussinessesActivity.class);
+					intent4.putExtra("title", UserInfoHolder.getInstance().getUserName());
+					startActivity(intent4);
+					break;
 			}
 		}
 

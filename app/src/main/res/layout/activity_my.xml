@@ -315,7 +315,7 @@
                     android:gravity="center_vertical"
                     android:paddingBottom="8dp"
                     android:paddingTop="8dp"
-                    android:text="   草稿"
+                    android:text="   我的店铺"
                     android:textColor="#666666"
                     android:textSize="18sp" />
             </LinearLayout>

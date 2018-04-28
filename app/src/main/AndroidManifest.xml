@@ -104,6 +104,8 @@
 
 		<activity android:name=".TakeoutListActivity"></activity>
 
+		<activity android:name=".MyBussinessesActivity"></activity>
+
 
 		<activity android:name=".BussinessInfoActivity"></activity>
 		<activity android:name=".NavigationActivity"></activity>

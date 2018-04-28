@@ -9,6 +9,7 @@ import org.androidpn.client.LogUtil;
 import org.androidpn.client.XmppManager;
 import org.androidpn.demoapp.FrameActivity;
 import org.androidpn.demoapp.MainActivity;
+import org.androidpn.demoapp.MyBussinessesActivity;
 import org.androidpn.demoapp.SearchActivity;
 import org.androidpn.demoapp.ShopListActivity;
 import org.androidpn.info.ShopInfo;
@@ -59,6 +60,12 @@ public class ActivityPacketListener implements PacketListener {
                 searchActivity.setContentList(shopList);
                 Log.d("qzf:", "processPacket: SearchActivity");
 
+            } else if (activity instanceof MyBussinessesActivity) {
+                MyBussinessesActivity myBussinessesActivity = (MyBussinessesActivity) activity;
+
+                List<ShopInfo> shopInfoList = bussinessListToShopInfoList(activityInquiryIQ.getBussinessList());
+
+                myBussinessesActivity.setContentList(shopInfoList);
             }
         }
     }
