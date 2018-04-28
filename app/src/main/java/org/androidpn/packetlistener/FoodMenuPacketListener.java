@@ -4,6 +4,7 @@ import android.app.Activity;
 
 import org.androidpn.IQ.FoodMenuIQ;
 import org.androidpn.client.XmppManager;
+import org.androidpn.demoapp.EditTakeoutMenuActivity;
 import org.androidpn.demoapp.TakeOutActivity;
 import org.androidpn.utils.ActivityHolder;
 import org.jivesoftware.smack.PacketListener;
@@ -26,6 +27,9 @@ public class FoodMenuPacketListener implements PacketListener {
             if (activity instanceof TakeOutActivity) {
                 TakeOutActivity takeOutActivity = (TakeOutActivity) activity;
                 takeOutActivity.setContentList(foodMenuIQ.getFoodMenuItemList());
+            } else if (activity instanceof EditTakeoutMenuActivity) {
+                EditTakeoutMenuActivity editTakeoutMenuActivity = (EditTakeoutMenuActivity) activity;
+                editTakeoutMenuActivity.setContentList(foodMenuIQ.getFoodMenuItemList());
             }
         }
     }

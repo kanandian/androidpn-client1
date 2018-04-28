@@ -13,6 +13,7 @@ import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -92,6 +93,19 @@ public class MyBussinessesActivity extends BaseActivity {
         initModel2();
         // -----------------------------------------------------------------
         mAdapter = new ShopAdapter(list, MyBussinessesActivity.this);
+
+        mListView.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                ShopInfo shopInfo = list.get(i);
+
+                if ("外卖".equals(shopInfo.getStype())) {
+                    Intent intent = new Intent(MyBussinessesActivity.this, EditTakeoutMenuActivity.class);
+                    intent.putExtra("bussinessId", shopInfo.getSid());
+                    startActivity(intent);
+                }
+            }
+        });
     }
 
     @Override

@@ -108,6 +108,8 @@
 
 		<activity android:name=".AddBussinessActivity"></activity>
 
+		<activity android:name=".EditTakeoutMenuActivity"></activity>
+
 
 		<activity android:name=".BussinessInfoActivity"></activity>
 		<activity android:name=".NavigationActivity"></activity>
