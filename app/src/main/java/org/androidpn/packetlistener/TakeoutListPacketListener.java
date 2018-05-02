@@ -5,6 +5,8 @@ import android.app.Activity;
 import org.androidpn.IQ.TakeoutListIQ;
 import org.androidpn.client.XmppManager;
 import org.androidpn.demoapp.TakeoutListActivity;
+import org.androidpn.demoapp.TakeoutOrderActivity;
+import org.androidpn.model.TakeoutOrder;
 import org.androidpn.utils.ActivityHolder;
 import org.jivesoftware.smack.PacketListener;
 import org.jivesoftware.smack.packet.Packet;
@@ -26,6 +28,9 @@ public class TakeoutListPacketListener implements PacketListener {
             if (activity instanceof TakeoutListActivity) {
                 TakeoutListActivity takeoutListActivity = (TakeoutListActivity) activity;
                 takeoutListActivity.setContentList(takeoutListIQ.getTakeoutOrderList());
+            } else if (activity instanceof TakeoutOrderActivity) {
+                TakeoutOrderActivity takeoutOrderActivity = (TakeoutOrderActivity) activity;
+                takeoutOrderActivity.setContentList(takeoutListIQ.getTakeoutOrderList());
             }
         }
     }

@@ -36,6 +36,7 @@ import org.androidpn.IQprovider.CommentsIQProvider;
 import org.androidpn.IQprovider.FoodMenuIQProvider;
 import org.androidpn.IQprovider.LoginIQProvider;
 import org.androidpn.IQprovider.NotificationIQProvider;
+import org.androidpn.IQprovider.OrderDetailIQProvider;
 import org.androidpn.IQprovider.PaymentResponseIQProvider;
 import org.androidpn.IQprovider.RegistrationIQProvider;
 import org.androidpn.IQprovider.TakeoutListIQProvider;
@@ -420,6 +421,9 @@ public class XmppManager {
                     ProviderManager.getInstance().addIQProvider("order",
                             "androidpn:order:takeout",
                             new TakeoutListIQProvider());
+                    ProviderManager.getInstance().addIQProvider("order",
+                            "androidpn:iq:orderdetail",
+                            new OrderDetailIQProvider());
 
                 } catch (XMPPException e) {
                     Log.e(LOGTAG, "XMPP connection failed", e);

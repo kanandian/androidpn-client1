@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import org.androidpn.IQ.DeleteTakeoutMenuItemIQ;
+import org.androidpn.IQ.ManageTakeoutMenuItemIQ;
 import org.androidpn.demoapp.R;
 import org.androidpn.model.FoodMenuItem;
 import org.androidpn.utils.ActivityHolder;
@@ -62,20 +62,21 @@ public class EditTakeoutMenuAdapter extends BaseAdapter {
             public void onClick(View v) {
                 FoodMenuItem foodMenuItem = foodMenuItemList.get(pos);
 
-                sendDeleteInquiry(foodMenuItem.getItemId());
+                sendDeleteInquiry(foodMenuItem.getItemId(), foodMenuItem.getBussinessId());
 
-                foodMenuItemList.remove(pos);
-                notifyDataSetChanged();
-                mSideslipListView.turnNormal();
+//                foodMenuItemList.remove(pos);
+//                notifyDataSetChanged();
+//                mSideslipListView.turnNormal();
             }
         });
         return convertView;
     }
 
-    private void sendDeleteInquiry(long itemId) {
-        DeleteTakeoutMenuItemIQ deleteTakeoutMenuItemIQ = new DeleteTakeoutMenuItemIQ();
+    private void sendDeleteInquiry(long itemId, long bussinessId) {
+        ManageTakeoutMenuItemIQ deleteTakeoutMenuItemIQ = new ManageTakeoutMenuItemIQ();
         deleteTakeoutMenuItemIQ.setType(IQ.Type.SET);
 
+        deleteTakeoutMenuItemIQ.setBussinessId(String.valueOf(bussinessId));
         deleteTakeoutMenuItemIQ.setItemId(String.valueOf(itemId));
         deleteTakeoutMenuItemIQ.setTarget("delete");
 

@@ -2,11 +2,14 @@ package org.androidpn.demoapp;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.autonavi.ae.dice.InitConfig;
 
 import org.androidpn.utils.ActivityHolder;
 import org.androidpn.utils.UserInfoHolder;
@@ -105,6 +108,15 @@ public class MyActivity extends BaseActivity {
 			mMy_register.setVisibility(View.GONE);
 			mMy_login.setVisibility(View.GONE);
 			mMy_info.setVisibility(View.VISIBLE);
+		} else {
+//			Drawable drawable = getResources().getDrawable(R.drawable.arrow_profile);
+			mMy_logintoast.setText("点击右上角登陆");
+			mMy_logintoast.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.arrow_profile, 0);
+
+
+			mMy_register.setVisibility(View.VISIBLE);
+			mMy_login.setVisibility(View.VISIBLE);
+			mMy_info.setVisibility(View.GONE);
 		}
 	}
 

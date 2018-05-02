@@ -110,6 +110,10 @@
 
 		<activity android:name=".EditTakeoutMenuActivity"></activity>
 
+		<activity android:name=".TakeoutOrderActivity"></activity>
+
+		<activity android:name=".OrderDetailActivity"></activity>
+
 
 		<activity android:name=".BussinessInfoActivity"></activity>
 		<activity android:name=".NavigationActivity"></activity>

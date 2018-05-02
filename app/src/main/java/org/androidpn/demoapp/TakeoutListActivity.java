@@ -1,5 +1,6 @@
 package org.androidpn.demoapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -54,7 +55,11 @@ public class TakeoutListActivity extends BaseActivity {
         takeoutList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                TakeoutOrder takeoutOrder = takeoutOrders.get(i);
 
+                Intent intent = new Intent(TakeoutListActivity.this, OrderDetailActivity.class);
+                intent.putExtra("orderId", String.valueOf(takeoutOrder.getOrderId()));
+                startActivity(intent);
             }
         });
     }

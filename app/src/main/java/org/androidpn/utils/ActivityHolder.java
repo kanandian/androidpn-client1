@@ -100,9 +100,9 @@ public class ActivityHolder {
 
 
     public void startNaviActivity(Location location) {
-//        Intent intent = new Intent(this.getCurrentActivity(), NavigationActivity.class);
-//        intent.putExtra("location", location);
-//        this.getCurrentActivity().startActivity(intent);
+        Intent intent = new Intent(this.getCurrentActivity(), NavigationActivity.class);
+        intent.putExtra("location", location);
+        this.getCurrentActivity().startActivity(intent);
     }
 
 }

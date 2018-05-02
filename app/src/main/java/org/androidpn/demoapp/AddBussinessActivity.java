@@ -18,7 +18,7 @@ import org.jivesoftware.smack.packet.IQ;
 
 public class AddBussinessActivity extends BaseActivity {
 
-    private String[] classfications = {"美食", "景点", "酒店", "酒吧", "小吃", "外卖"};
+    private String[] classfications = {"美食", "景点", "酒店", "酒吧", "电影", "外卖"};
     private String[] tags = {};
 
     private EditText bussinessNameEdit;

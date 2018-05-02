@@ -100,7 +100,11 @@ public class MyBussinessesActivity extends BaseActivity {
                 ShopInfo shopInfo = list.get(i);
 
                 if ("外卖".equals(shopInfo.getStype())) {
-                    Intent intent = new Intent(MyBussinessesActivity.this, EditTakeoutMenuActivity.class);
+//                    Intent intent = new Intent(MyBussinessesActivity.this, EditTakeoutMenuActivity.class);
+//                    intent.putExtra("bussinessId", shopInfo.getSid());
+//                    startActivity(intent);
+
+                    Intent intent = new Intent(MyBussinessesActivity.this, TakeoutOrderActivity.class);
                     intent.putExtra("bussinessId", shopInfo.getSid());
                     startActivity(intent);
                 }
