@@ -114,6 +114,10 @@
 
 		<activity android:name=".OrderDetailActivity"></activity>
 
+		<activity android:name=".ShopCollectionActivity"></activity>
+
+		<activity android:name=".ShopNotificationActivity"></activity>
+
 
 		<activity android:name=".BussinessInfoActivity"></activity>
 		<activity android:name=".NavigationActivity"></activity>

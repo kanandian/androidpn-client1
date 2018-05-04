@@ -19,6 +19,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.androidpn.IQ.InquiryIQ;
 import org.androidpn.info.CommentsInfo;
 import org.androidpn.info.FoodInfo;
 import org.androidpn.info.ShopInfo;
@@ -31,6 +32,7 @@ import org.androidpn.utils.LoadImg;
 import org.androidpn.utils.Location;
 import org.androidpn.utils.MyJson;
 import org.androidpn.utils.UserInfoHolder;
+import org.jivesoftware.smack.packet.IQ;
 
 import java.util.ArrayList;
 
@@ -88,6 +90,8 @@ public class ShopDetailsActivity extends BaseActivity {
 	private View parent;
 	private PopupWindow popupWindow;
 
+	private boolean isCollected = false;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -99,11 +103,16 @@ public class ShopDetailsActivity extends BaseActivity {
 		Intent intent = getIntent();
 		Bundle bund = intent.getBundleExtra("value");
 		info = (ShopInfo) bund.getSerializable("ShopInfo");
+		initData();
 		initView();
 		// ������������
 		String endParames = Model.SHOPDETAILURL + "shopid=" + info.getSid();
 		http = new HttpGetThread(hand, endParames);
 		ThreadPoolUtils.execute(http);
+	}
+
+	public void initData() {
+
 	}
 
 	private void initView() {
@@ -224,13 +233,41 @@ public class ShopDetailsActivity extends BaseActivity {
 			}
 
 			if (mID == R.id.Shop_details_bottom_img2) {
-				if (UserInfoHolder.getInstance().isAuth()) {
+				if (!UserInfoHolder.getInstance().isAuth()) {
 					Toast.makeText(ShopDetailsActivity.this, "用户未登录，请先登录" ,Toast.LENGTH_SHORT).show();
 				} else {
 					Intent intent = new Intent(ShopDetailsActivity.this, PaymentActivity.class);
 					intent.putExtra("toUserName", info.getSholder());
 					startActivity(intent);
 				}
+			}
+
+			if (mID == R.id.Shop_details_off) {
+				if (!UserInfoHolder.getInstance().isAuth()) {
+					Toast.makeText(ShopDetailsActivity.this, "用户未登录，请先登录", Toast.LENGTH_SHORT).show();
+					return;
+				}
+				InquiryIQ inquiryIQ = new InquiryIQ();
+				inquiryIQ.setType(IQ.Type.SET);
+
+				inquiryIQ.setTarget("collection");
+				inquiryIQ.setTitle(UserInfoHolder.getInstance().getUserName());
+				inquiryIQ.setContent(info.getSid());
+
+
+				if (isCollected) {
+					mShop_details_off.setImageResource(R.drawable.ic_action_favorite_off);
+					isCollected = false;
+					inquiryIQ.setStatus(0);
+				} else {
+					mShop_details_off.setImageResource(R.drawable.star_1_pressed);
+					isCollected = true;
+					inquiryIQ.setStatus(1);
+				}
+
+				Log.d("collection ", "onClick: "+inquiryIQ.toXML());
+
+				ActivityHolder.getInstance().sendPacket(inquiryIQ);
 			}
 
 			if (mID == R.id.Shop_details_back) {
@@ -420,7 +457,7 @@ public class ShopDetailsActivity extends BaseActivity {
 								case 5:
 									mshop_details_dianping_star
 											.setImageResource(R.drawable.star5);
-									break;
+									break;n
 								}
 							}
 							if (ShopDetailsActivity.this.FoodList.size() > 0) {
@@ -444,6 +481,14 @@ public class ShopDetailsActivity extends BaseActivity {
 		};
 
 	};
+
+	public ShopInfo getInfo() {
+		return info;
+	}
+
+	public void setInfo(ShopInfo info) {
+		this.info = info;
+	}
 
 	// ֪��֧����ȯ����Ȼ���ж��Ƿ���ʾ�Լ���ʵ�޸�Ҫ��ʾ������
 	private void xianshitqdk() {

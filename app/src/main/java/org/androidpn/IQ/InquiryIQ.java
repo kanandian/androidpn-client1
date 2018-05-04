@@ -8,6 +8,7 @@ public class InquiryIQ extends IQ {
 	private String title = null;
 	private String content = null;
 	private String userName = null;
+	private int status = -1;
 
 	public InquiryIQ(){
 		
@@ -29,6 +30,9 @@ public class InquiryIQ extends IQ {
 		}
 		if (userName != null) {
 			buf.append("<username>").append(userName).append("</username>");
+		}
+		if (status != -1) {
+			buf.append("<status>").append(status).append("</status>");
 		}
         buf.append("</").append("inquiry").append("> ");
         return buf.toString();
@@ -65,5 +69,13 @@ public class InquiryIQ extends IQ {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
 	}
 }

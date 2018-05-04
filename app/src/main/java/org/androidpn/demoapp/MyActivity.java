@@ -150,6 +150,10 @@ public class MyActivity extends BaseActivity {
 					Intent intent5 = new Intent(MyActivity.this, AddBussinessActivity.class);
 					startActivity(intent5);
 					break;
+				case R.id.My_list_shanghuhushoucang:
+					Intent intent6 = new Intent(MyActivity.this, ShopCollectionActivity.class);
+					startActivity(intent6);
+					break;
 			}
 		}
 
