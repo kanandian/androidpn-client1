@@ -25,10 +25,8 @@ public class MyActivity extends BaseActivity {
 	// �ŷ�
 	private LinearLayout mMy_messagebtn;
 	// listview���͵�linearlayout��ť
-	private LinearLayout mMy_list_tuangou, mMy_list_huiyuanka, mMy_list_yuding,
-			mMy_list_menpiao, mMy_list_jiudian, mMy_list_caogao,
-			mMy_list_shanghushoucang, mMy_list_tuangoushoucang,
-			mMy_list_guanzhu, mMy_list_fensi;
+	private LinearLayout mMy_list_yuding,mMy_list_caogao,
+			mMy_list_shanghushoucang, mMy_list_tuangoushoucang;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -47,16 +45,16 @@ public class MyActivity extends BaseActivity {
 		mMy_comment = (TextView) findViewById(R.id.My_comment);
 		mMy_photo = (TextView) findViewById(R.id.My_photo);
 		mMy_messagebtn = (LinearLayout) findViewById(R.id.My_messagebtn);
-		mMy_list_tuangou = (LinearLayout) findViewById(R.id.My_list_tuangou);
-		mMy_list_huiyuanka = (LinearLayout) findViewById(R.id.My_list_huiyuanka);
+//		mMy_list_tuangou = (LinearLayout) findViewById(R.id.My_list_tuangou);
+//		mMy_list_huiyuanka = (LinearLayout) findViewById(R.id.My_list_huiyuanka);
 		mMy_list_yuding = (LinearLayout) findViewById(R.id.My_list_yuding);
-		mMy_list_menpiao = (LinearLayout) findViewById(R.id.My_list_menpiao);
-		mMy_list_jiudian = (LinearLayout) findViewById(R.id.My_list_jiudian);
+//		mMy_list_menpiao = (LinearLayout) findViewById(R.id.My_list_menpiao);
+//		mMy_list_jiudian = (LinearLayout) findViewById(R.id.My_list_jiudian);
 		mMy_list_caogao = (LinearLayout) findViewById(R.id.My_list_caogao);
 		mMy_list_shanghushoucang = (LinearLayout) findViewById(R.id.My_list_shanghuhushoucang);
 		mMy_list_tuangoushoucang = (LinearLayout) findViewById(R.id.My_list_tuangoushoucang);
-		mMy_list_guanzhu = (LinearLayout) findViewById(R.id.My_list_guanzhu);
-		mMy_list_fensi = (LinearLayout) findViewById(R.id.My_list_fensi);
+//		mMy_list_guanzhu = (LinearLayout) findViewById(R.id.My_list_guanzhu);
+//		mMy_list_fensi = (LinearLayout) findViewById(R.id.My_list_fensi);
 
 		mMy_logintoast = (TextView) findViewById(R.id.My_logintoast);
 
@@ -71,16 +69,16 @@ public class MyActivity extends BaseActivity {
 		mMy_comment.setOnClickListener(mOnclickListener);
 		mMy_photo.setOnClickListener(mOnclickListener);
 		mMy_messagebtn.setOnClickListener(mOnclickListener);
-		mMy_list_tuangou.setOnClickListener(mOnclickListener);
-		mMy_list_huiyuanka.setOnClickListener(mOnclickListener);
+//		mMy_list_tuangou.setOnClickListener(mOnclickListener);
+//		mMy_list_huiyuanka.setOnClickListener(mOnclickListener);
 		mMy_list_yuding.setOnClickListener(mOnclickListener);
-		mMy_list_menpiao.setOnClickListener(mOnclickListener);
-		mMy_list_jiudian.setOnClickListener(mOnclickListener);
+//		mMy_list_menpiao.setOnClickListener(mOnclickListener);
+//		mMy_list_jiudian.setOnClickListener(mOnclickListener);
 		mMy_list_caogao.setOnClickListener(mOnclickListener);
 		mMy_list_shanghushoucang.setOnClickListener(mOnclickListener);
 		mMy_list_tuangoushoucang.setOnClickListener(mOnclickListener);
-		mMy_list_guanzhu.setOnClickListener(mOnclickListener);
-		mMy_list_fensi.setOnClickListener(mOnclickListener);
+//		mMy_list_guanzhu.setOnClickListener(mOnclickListener);
+//		mMy_list_fensi.setOnClickListener(mOnclickListener);
 
 		mMy_info.setOnClickListener(new View.OnClickListener() {
 			@Override

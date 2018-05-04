@@ -10,6 +10,8 @@ public class Comment {
     private String userName;
     private String content;
 
+    private String createTime;
+
     public Comment() {
     }
 
@@ -35,5 +37,13 @@ public class Comment {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
     }
 }

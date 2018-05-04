@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -28,7 +29,7 @@ public class TakeoutOrderAdapter extends ArrayAdapter<FoodOrderItem> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         FoodOrderItem foodOrderItem = getItem(position);
-        RelativeLayout item = new RelativeLayout(getContext());
+        LinearLayout item = new LinearLayout(getContext());
         String inflater = Context.LAYOUT_INFLATER_SERVICE;
         LayoutInflater vi = (LayoutInflater)getContext().getSystemService(inflater);
         vi.inflate(resource, item, true);
@@ -39,7 +40,7 @@ public class TakeoutOrderAdapter extends ArrayAdapter<FoodOrderItem> {
 
         foodNameText.setText(foodOrderItem.getFoodName());
         countText.setText(String.valueOf(foodOrderItem.getCount()));
-        countText.setText(String.valueOf(foodOrderItem.getPrice()*foodOrderItem.getCount()));
+        priceText.setText(String.valueOf(foodOrderItem.getPrice()*foodOrderItem.getCount()));
 
         return item;
     }

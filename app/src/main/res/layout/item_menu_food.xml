@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#f4f4f4">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -8,11 +9,15 @@
         <TextView
             android:id="@+id/text_food_name"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#000000"/>
         <TextView
             android:id="@+id/text_food_price"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#000000"/>
     </LinearLayout>
 
     <LinearLayout
@@ -20,25 +25,29 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_alignParentRight="true">
-        <Button
+        <ImageView
             android:id="@+id/btn_sub"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:visibility="invisible"
-            android:text="减"/>
+            android:src="@drawable/minus"
+            />
         <TextView
             android:id="@+id/item_count"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:visibility="invisible"
             android:textSize="65px"
+            android:gravity="center"
             android:text="0"
+            android:textColor="#000000"
             />
-        <Button
+        <ImageView
             android:id="@+id/btn_add"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="加"/>
+            android:src="@drawable/add"
+            />
     </LinearLayout>
 
 

@@ -24,7 +24,7 @@ import org.jivesoftware.smack.packet.IQ;
 public class RegistrationActivity extends BaseActivity {
 
 	private ImageView mRegistration_back;
-	private EditText mRegistration_user, mRegistration_name, mRegistration_username,
+	private EditText mRegistration_name, mRegistration_username,
 			mRegistration_password, mRegistration_password2, mRegistration_mobile;
 	private TextView mRegistration_OK;
 
@@ -39,7 +39,6 @@ public class RegistrationActivity extends BaseActivity {
 
 	private void initView() {
 		mRegistration_back = (ImageView) findViewById(R.id.Registration_back);
-		mRegistration_user = (EditText) findViewById(R.id.Registration_user);
 		mRegistration_username = (EditText) findViewById(R.id.Registration_username);
 		mRegistration_name = (EditText) findViewById(R.id.Registration_name);
 		mRegistration_password = (EditText) findViewById(R.id.Registration_password);

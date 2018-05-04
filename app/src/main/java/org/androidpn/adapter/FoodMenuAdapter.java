@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -43,8 +45,8 @@ public class FoodMenuAdapter extends ArrayAdapter<FoodMenuItem> {
 
         final TextView countText = (TextView) item.findViewById(R.id.item_count);
 
-        Button addButton = (Button) item.findViewById(R.id.btn_add);
-        final Button subButton = (Button) item.findViewById(R.id.btn_sub);
+        ImageView addButton = (ImageView) item.findViewById(R.id.btn_add);
+        final ImageView subButton = (ImageView) item.findViewById(R.id.btn_sub);
 
         foodNameText.setText(foodMenuItem.getFoodName());
         foodPriceText.setText(String.valueOf(foodMenuItem.getPrice()));

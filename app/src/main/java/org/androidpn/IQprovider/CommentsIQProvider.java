@@ -36,6 +36,9 @@ public class CommentsIQProvider implements IQProvider {
                     if("content".equals(parser.getAttributeName(i))) {
                         comment.setContent(parser.getAttributeValue(i));
                     }
+                    if ("createtime".equals(parser.getAttributeName(i))) {
+                        comment.setCreateTime(parser.getAttributeValue(i));
+                    }
                 }
                 commentList.add(comment);
             } else if (eventType == 3

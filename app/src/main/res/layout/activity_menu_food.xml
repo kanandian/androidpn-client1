@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f4f4f4"
     android:orientation="vertical">
 
     <ListView
@@ -18,12 +19,14 @@
             android:id="@+id/text_total_price"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="共计：0元" />
+            android:text="共计：0元"
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/btn_account"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:background="@drawable/login_btn_bg"
             android:layout_alignParentRight="true"
             android:text="结算" />
     </RelativeLayout>

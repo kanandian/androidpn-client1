@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
 
+import org.androidpn.IQ.ResultModelIQ;
 import org.androidpn.utils.ActivityHolder;
 
 /**
@@ -37,6 +38,10 @@ public class BaseActivity extends Activity {
     }
 
     public void refresh() {
+
+    }
+
+    public void updateForResponse(ResultModelIQ resultModelIQ) {
 
     }
 }

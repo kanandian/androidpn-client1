@@ -2,11 +2,14 @@ package org.androidpn.demoapp;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.view.View;
 import android.view.Window;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import org.androidpn.IQ.InquiryIQ;
@@ -28,6 +31,8 @@ public class ShopCommentsActivity extends BaseActivity {
     private static int UPDATE_UI = 1;
 
     private List<Comment> commentList = new ArrayList<Comment>();
+
+    private ImageView backBtn;
 
     private ListView listComments;
     private CommentAdapter adapter;
@@ -54,6 +59,15 @@ public class ShopCommentsActivity extends BaseActivity {
         bussinessId = intent.getStringExtra("bussinessId");
 
         listComments = (ListView) findViewById(R.id.list_comments);
+
+        backBtn = (ImageView) findViewById(R.id.Login_back);
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ShopCommentsActivity.this.finish();
+            }
+        });
 
     }
 

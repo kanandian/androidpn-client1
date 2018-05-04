@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#c1c1c1">
+
+        <TextView
+            android:id="@+id/text_username"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#f4f4f4"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/text_createtime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#f4f4f4"
+            android:textColor="@color/text_black"
+            android:padding="10dp"
+            android:textSize="14dp"
+            />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/item_comment_content"
@@ -9,7 +38,10 @@
         android:layout_height="match_parent"
         android:background="#f4f4f4"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:padding="10dp"
+        android:textSize="32px"
         />
+
+
 
 </LinearLayout>

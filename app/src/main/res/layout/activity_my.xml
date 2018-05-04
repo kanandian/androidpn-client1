@@ -188,47 +188,47 @@
                     android:textSize="18sp" />
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/My_list_tuangou"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/my_tab_background"
-                android:paddingBottom="0dp"
-                android:paddingLeft="15dp" >
+            <!--<LinearLayout-->
+                <!--android:id="@+id/My_list_tuangou"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/my_tab_background"-->
+                <!--android:paddingBottom="0dp"-->
+                <!--android:paddingLeft="15dp" >-->
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/my_list_txt_background"
-                    android:drawableLeft="@drawable/my_coupon_user_icon_press"
-                    android:gravity="center_vertical"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
-                    android:text="   团购"
-                    android:textColor="#666666"
-                    android:textSize="18sp" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/my_list_txt_background"-->
+                    <!--android:drawableLeft="@drawable/my_coupon_user_icon_press"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingTop="8dp"-->
+                    <!--android:text="   团购"-->
+                    <!--android:textColor="#666666"-->
+                    <!--android:textSize="18sp" />-->
+            <!--</LinearLayout>-->
 
-            <LinearLayout
-                android:id="@+id/My_list_huiyuanka"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/my_tab_background"
-                android:paddingBottom="0dp"
-                android:paddingLeft="15dp" >
+            <!--<LinearLayout-->
+                <!--android:id="@+id/My_list_huiyuanka"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/my_tab_background"-->
+                <!--android:paddingBottom="0dp"-->
+                <!--android:paddingLeft="15dp" >-->
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/my_list_txt_background"
-                    android:drawableLeft="@drawable/my_card_icon_press"
-                    android:gravity="center_vertical"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
-                    android:text="   会员卡"
-                    android:textColor="#666666"
-                    android:textSize="18sp" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/my_list_txt_background"-->
+                    <!--android:drawableLeft="@drawable/my_card_icon_press"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingTop="8dp"-->
+                    <!--android:text="   会员卡"-->
+                    <!--android:textColor="#666666"-->
+                    <!--android:textSize="18sp" />-->
+            <!--</LinearLayout>-->
 
             <LinearLayout
                 android:id="@+id/My_list_yuding"
@@ -252,7 +252,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/My_list_menpiao"
+                android:id="@+id/My_list_shanghuhushoucang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/my_tab_background"
@@ -263,35 +263,56 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/my_list_txt_background"
-                    android:drawableLeft="@drawable/my_tickets_icon_press"
+                    android:drawableLeft="@drawable/my_favorite_icon_press"
                     android:gravity="center_vertical"
                     android:paddingBottom="8dp"
                     android:paddingTop="8dp"
-                    android:text="   门票"
+                    android:text="   收藏"
                     android:textColor="#666666"
                     android:textSize="18sp" />
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/My_list_jiudian"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/my_tab_background"
-                android:paddingBottom="0dp" >
+            <!--<LinearLayout-->
+                <!--android:id="@+id/My_list_menpiao"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/my_tab_background"-->
+                <!--android:paddingBottom="0dp"-->
+                <!--android:paddingLeft="15dp" >-->
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/my_list_txt_background"
-                    android:drawableLeft="@drawable/my_hotel_icon_press"
-                    android:gravity="center_vertical"
-                    android:paddingBottom="8dp"
-                    android:paddingLeft="15dp"
-                    android:paddingTop="8dp"
-                    android:text="   酒店"
-                    android:textColor="#666666"
-                    android:textSize="18sp" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/my_list_txt_background"-->
+                    <!--android:drawableLeft="@drawable/my_tickets_icon_press"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingTop="8dp"-->
+                    <!--android:text="   门票"-->
+                    <!--android:textColor="#666666"-->
+                    <!--android:textSize="18sp" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/My_list_jiudian"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/my_tab_background"-->
+                <!--android:paddingBottom="0dp" >-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/my_list_txt_background"-->
+                    <!--android:drawableLeft="@drawable/my_hotel_icon_press"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingLeft="15dp"-->
+                    <!--android:paddingTop="8dp"-->
+                    <!--android:text="   酒店"-->
+                    <!--android:textColor="#666666"-->
+                    <!--android:textSize="18sp" />-->
+            <!--</LinearLayout>-->
 
             <TextView
                 android:layout_width="match_parent"
@@ -320,26 +341,6 @@
                     android:textSize="18sp" />
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/My_list_shanghuhushoucang"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/my_tab_background"
-                android:paddingBottom="0dp"
-                android:paddingLeft="15dp" >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/my_list_txt_background"
-                    android:drawableLeft="@drawable/my_favorite_icon_press"
-                    android:gravity="center_vertical"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
-                    android:text="   客户收藏"
-                    android:textColor="#666666"
-                    android:textSize="18sp" />
-            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/My_list_tuangoushoucang"
@@ -368,47 +369,47 @@
                 android:background="#F4F4F4"
                 android:padding="2dp" />
 
-            <LinearLayout
-                android:id="@+id/My_list_guanzhu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/my_tab_background"
-                android:paddingBottom="0dp"
-                android:paddingLeft="15dp" >
+            <!--<LinearLayout-->
+                <!--android:id="@+id/My_list_guanzhu"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/my_tab_background"-->
+                <!--android:paddingBottom="0dp"-->
+                <!--android:paddingLeft="15dp" >-->
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/my_list_txt_background"
-                    android:drawableLeft="@drawable/my_focus_icon_press"
-                    android:gravity="center_vertical"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
-                    android:text="   关注"
-                    android:textColor="#666666"
-                    android:textSize="18sp" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/my_list_txt_background"-->
+                    <!--android:drawableLeft="@drawable/my_focus_icon_press"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingTop="8dp"-->
+                    <!--android:text="   关注"-->
+                    <!--android:textColor="#666666"-->
+                    <!--android:textSize="18sp" />-->
+            <!--</LinearLayout>-->
 
-            <LinearLayout
-                android:id="@+id/My_list_fensi"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/my_tab_background"
-                android:paddingBottom="0dp" >
+            <!--<LinearLayout-->
+                <!--android:id="@+id/My_list_fensi"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/my_tab_background"-->
+                <!--android:paddingBottom="0dp" >-->
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/my_list_txt_background"
-                    android:drawableLeft="@drawable/my_fans_icon_press"
-                    android:gravity="center_vertical"
-                    android:paddingBottom="8dp"
-                    android:paddingLeft="15dp"
-                    android:paddingTop="8dp"
-                    android:text="   粉丝"
-                    android:textColor="#666666"
-                    android:textSize="18sp" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/my_list_txt_background"-->
+                    <!--android:drawableLeft="@drawable/my_fans_icon_press"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingLeft="15dp"-->
+                    <!--android:paddingTop="8dp"-->
+                    <!--android:text="   粉丝"-->
+                    <!--android:textColor="#666666"-->
+                    <!--android:textSize="18sp" />-->
+            <!--</LinearLayout>-->
 
             <TextView
                 android:layout_width="match_parent"

@@ -38,8 +38,12 @@ public class CommentAdapter extends ArrayAdapter<Comment> {
         vi.inflate(resource, item, true);
 
         TextView content = (TextView) item.findViewById(R.id.item_comment_content);
+        TextView username = (TextView) item.findViewById(R.id.text_username);
+        TextView createtime = (TextView) item.findViewById(R.id.text_createtime);
 
-        content.setText(comment.getContent());
+        content.setText("   "+comment.getContent());
+        username.setText(comment.getUserName());
+        createtime.setText(comment.getCreateTime());
 
         return item;
 

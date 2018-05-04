@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -36,6 +37,8 @@ public class AddBussinessActivity extends BaseActivity {
     private String classification;
     private String tag;
 
+    private ImageView backBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +63,8 @@ public class AddBussinessActivity extends BaseActivity {
         desEdit = (EditText) findViewById(R.id.edit_des);
 
         addButton = (TextView) findViewById(R.id.btn_add_bussiness);
+
+        backBtn = (ImageView) findViewById(R.id.btn_back);
 
 
         classficationSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -87,6 +92,13 @@ public class AddBussinessActivity extends BaseActivity {
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
 
+            }
+        });
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AddBussinessActivity.this.finish();
             }
         });
 
