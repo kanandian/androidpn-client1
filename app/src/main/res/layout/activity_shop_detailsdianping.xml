@@ -63,11 +63,12 @@
             android:paddingBottom="20dp" >
 
             <RatingBar
-                android:id="@+id/shop_dianping_ratingbar"
+                android:id="@+id/ratingbar_comment"
                 style="@style/custom_ratingbar_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:stepSize="1"
                 android:numStars="5" />
 
             <LinearLayout
@@ -82,7 +83,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:background="#FFFFFF"
-                    android:hint="输入评价，人人为我，我为人人"
+                    android:textColorHint="@color/hint_gray"
+                    android:textColor="@color/text_black"
+                    android:hint="输入评价"
                     android:padding="10dp" />
 
                 <TextView
@@ -113,6 +116,8 @@
                     android:layout_marginBottom="0.2dp"
                     android:background="#FFFFFF"
                     android:hint="点击输入人均(选填)"
+                    android:textColorHint="@color/hint_gray"
+                    android:textColor="@color/text_black"
                     android:padding="10dp" />
             </LinearLayout>
 
