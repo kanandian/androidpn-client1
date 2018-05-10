@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "org.androidpn.demoapp"
-        minSdkVersion 8
+        minSdkVersion 19
         targetSdkVersion 19
         ndk {
 //            设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）

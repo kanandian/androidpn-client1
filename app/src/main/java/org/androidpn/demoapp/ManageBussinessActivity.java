@@ -49,6 +49,7 @@ public class ManageBussinessActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ManageBussinessActivity.this, UploadImageActivity.class);
+                intent.putExtra("bussinessid", shopInfo.getSid());
                 startActivity(intent);
             }
         });
