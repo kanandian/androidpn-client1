@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -13,6 +14,8 @@ import android.widget.TextView;
 
 import org.androidpn.IQ.AddBussinessIQ;
 import org.androidpn.utils.ActivityHolder;
+import org.androidpn.utils.Location;
+import org.androidpn.utils.LocationHolder;
 import org.androidpn.utils.TagsHolder;
 import org.androidpn.utils.UserInfoHolder;
 import org.jivesoftware.smack.packet.IQ;
@@ -28,6 +31,8 @@ public class AddBussinessActivity extends BaseActivity {
 
     private TextView addButton;
 
+    private TextView locationText;
+
     private ArrayAdapter<String> classficationAdapter;
     private ArrayAdapter<String> tagAdapter;
 
@@ -37,7 +42,11 @@ public class AddBussinessActivity extends BaseActivity {
     private String classification;
     private String tag;
 
+    private Button locateButton;
+
     private ImageView backBtn;
+
+    private Location location;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,9 +71,13 @@ public class AddBussinessActivity extends BaseActivity {
         mobileEdit = (EditText) findViewById(R.id.edit_mobile);
         desEdit = (EditText) findViewById(R.id.edit_des);
 
+        locationText = (TextView) findViewById(R.id.text_location);
+
         addButton = (TextView) findViewById(R.id.btn_add_bussiness);
 
         backBtn = (ImageView) findViewById(R.id.btn_back);
+
+        locateButton = (Button) findViewById(R.id.btn_locate);
 
 
         classficationSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -95,6 +108,14 @@ public class AddBussinessActivity extends BaseActivity {
             }
         });
 
+        locateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                location = LocationHolder.getInstance().getLocation();
+                locationText.setText(location.getAddress());
+            }
+        });
+
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -110,7 +131,7 @@ public class AddBussinessActivity extends BaseActivity {
             public void onClick(View view) {
                 String bussinessName = bussinessNameEdit.getText().toString();
                 String imageURL = "";
-                String location = "杭州:120,30";
+                String locationStr = location.toString();
                 String mobile = mobileEdit.getText().toString();
                 String des = desEdit.getText().toString();
 
@@ -121,7 +142,7 @@ public class AddBussinessActivity extends BaseActivity {
                 addBussinessIQ.setImageURL(imageURL);
                 addBussinessIQ.setClassification(classification);
                 addBussinessIQ.setTag(tag);
-                addBussinessIQ.setLocation(location);
+                addBussinessIQ.setLocation(locationStr);
                 addBussinessIQ.setMobile(mobile);
                 addBussinessIQ.setDes(des);
                 addBussinessIQ.setHolder(UserInfoHolder.getInstance().getUserName());
