@@ -228,7 +228,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_toLeftOf="@+id/shop_image_more"
-                    android:layout_toRightOf="@+id/shop_image_flag"
+                    android:layout_toRightOf="@+id/shop_image_flag1"
                     android:paddingBottom="13dp"
                     android:paddingTop="13dp"
                     android:text="13716551797"

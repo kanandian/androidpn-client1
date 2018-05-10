@@ -3,6 +3,7 @@ package org.androidpn.demoapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.amap.api.maps.model.LatLng;
 import com.amap.api.maps.model.Poi;
@@ -32,6 +33,7 @@ import com.autonavi.tbt.TrafficFacilityInfo;
 import org.androidpn.nav.callback.MyNaviInfoCallback;
 import org.androidpn.utils.ActivityHolder;
 import org.androidpn.utils.Location;
+import org.androidpn.utils.LocationHolder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,6 +47,8 @@ public class NavigationActivity extends BaseActivity implements AMapNaviViewList
     private AMapNaviView aMapNaviView;
     private AMapNavi aMapNavi;
 
+    private Location location;
+
     private List<NaviLatLng> sList;
     private List<NaviLatLng> eList;
 
@@ -55,11 +59,11 @@ public class NavigationActivity extends BaseActivity implements AMapNaviViewList
         setContentView(R.layout.activity_navi);
 
         Intent intent = getIntent();
-//        Location location = (Location) intent.getSerializableExtra("location");
-        Location location = new Location();
-        location.setAddress("1234");
-        location.setLongitude(120);
-        location.setLatitude(30);
+        location = (Location) intent.getSerializableExtra("location");
+//        Location location = new Location();
+//        location.setAddress(location.getAddress());
+//        location.setLongitude(location.getLongitude());
+//        location.setLatitude(location.getLatitude());
 
         aMapNaviView = (AMapNaviView) findViewById(R.id.view_navi);
         aMapNaviView.setAMapNaviViewListener(this);
@@ -99,6 +103,7 @@ public class NavigationActivity extends BaseActivity implements AMapNaviViewList
     protected void onDestroy() {
         super.onDestroy();
 
+        aMapNavi.destroy();
         aMapNaviView.onDestroy();
     }
 
@@ -154,27 +159,31 @@ public class NavigationActivity extends BaseActivity implements AMapNaviViewList
 
     @Override
     public void onInitNaviSuccess() {
-        /**
-         * 方法: int strategy=mAMapNavi.strategyConvert(congestion, avoidhightspeed, cost, hightspeed, multipleroute); 参数:
-         *
-         * @congestion 躲避拥堵
-         * @avoidhightspeed 不走高速
-         * @cost 避免收费
-         * @hightspeed 高速优先
-         * @multipleroute 多路径
-         *
-         *  说明: 以上参数都是boolean类型，其中multipleroute参数表示是否多条路线，如果为true则此策略会算出多条路线。
-         *  注意: 不走高速与高速优先不能同时为true 高速优先与避免收费不能同时为true
-         */
-        int strategy = 0;
-        try {
-            //再次强调，最后一个参数为true时代表多路径，否则代表单路径
-            strategy = aMapNavi.strategyConvert(true, false, false, false, false);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        // 驾车算路
-        aMapNavi.calculateDriveRoute(sList, eList, null, strategy);
+//        /**
+//         * 方法: int strategy=mAMapNavi.strategyConvert(congestion, avoidhightspeed, cost, hightspeed, multipleroute); 参数:
+//         *
+//         * @congestion 躲避拥堵
+//         * @avoidhightspeed 不走高速
+//         * @cost 避免收费
+//         * @hightspeed 高速优先
+//         * @multipleroute 多路径
+//         *
+//         *  说明: 以上参数都是boolean类型，其中multipleroute参数表示是否多条路线，如果为true则此策略会算出多条路线。
+//         *  注意: 不走高速与高速优先不能同时为true 高速优先与避免收费不能同时为true
+//         */
+//        int strategy = 0;
+//        try {
+//            //再次强调，最后一个参数为true时代表多路径，否则代表单路径
+//            strategy = aMapNavi.strategyConvert(true, false, false, false, false);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        // 驾车算路
+//        aMapNavi.calculateDriveRoute(sList, eList, null, strategy);
+        NaviLatLng from = LocationHolder.getInstance().getLocation().toNaviLatLng();
+        NaviLatLng to = location.toNaviLatLng();
+
+        aMapNavi.calculateWalkRoute(from, to);
     }
 
     @Override
@@ -214,7 +223,7 @@ public class NavigationActivity extends BaseActivity implements AMapNaviViewList
 
     @Override
     public void onCalculateRouteFailure(int i) {
-
+        Log.d("daohang", "onCalculateRouteFailure: ");
     }
 
     @Override

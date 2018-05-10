@@ -36,7 +36,7 @@ public class TakeoutListAdapter extends ArrayAdapter<TakeoutOrder> {
 
         bussinessNameText.setText(takeoutOrder.getBussinessName());
         foodSummaryText.setText(takeoutOrder.getFirstFoodName()+"等"+takeoutOrder.getItemCount()+"个商品");
-        priceText.setText(String.valueOf(takeoutOrder.getTotalPrice()));
+        priceText.setText(String.valueOf("￥"+takeoutOrder.getTotalPrice()));
 
 
         return item;

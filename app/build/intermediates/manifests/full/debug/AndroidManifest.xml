@@ -130,6 +130,9 @@
         <activity android:name="org.androidpn.demoapp.TakeoutOrderActivity" />
         <activity android:name="org.androidpn.demoapp.OrderDetailActivity" />
         <activity android:name="org.androidpn.demoapp.ShopCollectionActivity" />
+        <activity android:name="org.androidpn.demoapp.ShopNotificationActivity" />
+        <activity android:name="org.androidpn.demoapp.ManageBussinessActivity" />
+        <activity android:name="org.androidpn.demoapp.UploadImageActivity" />
         <activity android:name="org.androidpn.demoapp.BussinessInfoActivity" />
         <activity android:name="org.androidpn.demoapp.NavigationActivity" />
         <activity android:name="org.androidpn.demoapp.PersonalActivity" />

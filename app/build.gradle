@@ -35,6 +35,8 @@ android {
 dependencies {
     implementation files('/Users/macpro/AndroidStudioProjects/androidpn-client1/libs/asmack.jar')
 
+    compile 'com.android.volley:volley:1.1.0'    
+    
     compile fileTree(dir: 'libs', include: ['*.jar'])
     //3D地图so及jar
 //    compile 'com.amap.api:3dmap:latest.integration'

@@ -117,7 +117,7 @@
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: com.amap.api:location:3.8.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.volley:volley-1.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.volley:volley-1.1.0" level="project" />
     <orderEntry type="library" name="Gradle: com.amap.api:search:6.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-v4:19.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/macpro/AndroidStudioProjects/androidpn-client1/libs/asmack.jar:unspecified@jar" level="project" />

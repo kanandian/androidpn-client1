@@ -52,6 +52,9 @@ public class TakeoutListIQProvider implements IQProvider {
                     if("itemcount".equals(parser.getAttributeName(i))) {
                         takeoutOrder.setItemCount(Integer.parseInt(parser.getAttributeValue(i)));
                     }
+                    if ("orderstatus".equals(parser.getAttributeName(i))) {
+                        takeoutOrder.setOrderStatus(Integer.parseInt(parser.getAttributeValue(i)));
+                    }
                 }
                 takeoutOrderList.add(takeoutOrder);
             } else if (eventType == 3

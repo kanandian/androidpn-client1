@@ -99,16 +99,25 @@ public class MyBussinessesActivity extends BaseActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 ShopInfo shopInfo = list.get(i);
 
-                if ("外卖".equals(shopInfo.getStype())) {
+//                if ("外卖".equals(shopInfo.getStype())) {
 //                    Intent intent = new Intent(MyBussinessesActivity.this, EditTakeoutMenuActivity.class);
 //                    intent.putExtra("bussinessId", shopInfo.getSid());
 //                    startActivity(intent);
 
-                    Intent intent = new Intent(MyBussinessesActivity.this, TakeoutOrderActivity.class);
-                    intent.putExtra("bussinessId", shopInfo.getSid());
+//                    Intent intent = new Intent(MyBussinessesActivity.this, TakeoutOrderActivity.class);
+//                    intent.putExtra("bussinessId", shopInfo.getSid());
+//                    startActivity(intent);
+
+//                    Intent intent = new Intent(MyBussinessesActivity.this, TakeoutOrderActivity.class);
+//                    intent.putExtra("shopInfo", shopInfo);
+//                    startActivity(intent);
+
+                    Intent intent = new Intent(MyBussinessesActivity.this, ManageBussinessActivity.class);
+                    intent.putExtra("shopInfo", shopInfo);
                     startActivity(intent);
+
                 }
-            }
+//            }
         });
     }
 

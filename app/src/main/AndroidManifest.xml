@@ -118,6 +118,10 @@
 
 		<activity android:name=".ShopNotificationActivity"></activity>
 
+		<activity android:name=".ManageBussinessActivity"></activity>
+
+		<activity android:name=".UploadImageActivity"></activity>
+
 
 		<activity android:name=".BussinessInfoActivity"></activity>
 		<activity android:name=".NavigationActivity"></activity>

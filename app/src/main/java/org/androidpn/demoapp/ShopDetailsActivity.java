@@ -457,7 +457,7 @@ public class ShopDetailsActivity extends BaseActivity {
 								case 5:
 									mshop_details_dianping_star
 											.setImageResource(R.drawable.star5);
-									break;n
+									break;
 								}
 							}
 							if (ShopDetailsActivity.this.FoodList.size() > 0) {

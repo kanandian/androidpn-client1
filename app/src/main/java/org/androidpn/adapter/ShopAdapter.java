@@ -17,6 +17,8 @@ import android.widget.TextView;
 
 import com.amap.api.maps.AMapUtils;
 import com.amap.api.maps.model.LatLng;
+import com.android.volley.toolbox.ImageLoader;
+import com.android.volley.toolbox.NetworkImageView;
 
 import org.androidpn.demoapp.R;
 import org.androidpn.info.ShopInfo;
@@ -24,6 +26,7 @@ import org.androidpn.model.Model;
 import org.androidpn.utils.LoadImg;
 import org.androidpn.utils.Location;
 import org.androidpn.utils.LocationHolder;
+import org.androidpn.utils.VolleyUtil;
 
 /**
  * �����б��������
@@ -69,7 +72,7 @@ public class ShopAdapter extends BaseAdapter {
 			hold = new Holder();
 			view = View.inflate(ctx, R.layout.item_shop, null);
 			hold.mTitle = (TextView) view.findViewById(R.id.ShopItemTextView);
-			hold.mImage = (ImageView) view.findViewById(R.id.ShopItemImage);
+			hold.mImage = (NetworkImageView) view.findViewById(R.id.ShopItemImage);
 			hold.mMoney = (TextView) view.findViewById(R.id.ShopItemMoney);
 			hold.mAddress = (TextView) view.findViewById(R.id.ShopItemAddress);
 			hold.mStytle = (TextView) view.findViewById(R.id.ShopItemStytle);
@@ -109,6 +112,7 @@ public class ShopAdapter extends BaseAdapter {
 		hold.mQuan.setVisibility(View.GONE);
 		hold.mDing.setVisibility(View.GONE);
 		hold.mCard.setVisibility(View.GONE);
+
 //		if (list.get(arg0).getSflag_tuan().equals("1")) {
 //			hold.mTuan.setVisibility(View.VISIBLE);
 //		}
@@ -145,32 +149,43 @@ public class ShopAdapter extends BaseAdapter {
 //		}
 
 		// ����Ĭ����ʾ��ͼƬ
-		hold.mImage.setImageResource(R.drawable.shop_photo_frame);
+//		hold.mImage.setImageResource(R.drawable.shop_photo_frame);
 		// �����ȡͼƬ
-		Bitmap bit = loadImg.loadImage(hold.mImage, Model.SHOPLISTIMGURL
-				+ list.get(position).getIname(), new LoadImg.ImageDownloadCallBack() {
+//		Bitmap bit = loadImg.loadImage(hold.mImage, Model.SHOPLISTIMGURL
+//				+ list.get(position).getIname(), new LoadImg.ImageDownloadCallBack() {
+//			@Override
+//			public void onImageDownload(ImageView imageView, Bitmap bitmap) {
+//				if (hold.mImage.getTag().equals(
+//						Model.SHOPLISTIMGURL + list.get(position).getIname())) {
+//					hold.mImage.setImageBitmap(bitmap);
+//				}
+//			}
+//		});
+//		if (bit != null) {
+//			hold.mImage.setImageBitmap(bit);
+//		}
+
+
+		ImageLoader imageLoader = new ImageLoader(VolleyUtil.getInstance().getRequestQueue(), new ImageLoader.ImageCache() {
 			@Override
-			public void onImageDownload(ImageView imageView, Bitmap bitmap) {
-				// ���罻��ʱ�ص�������ֹ��λ
-				if (hold.mImage.getTag().equals(
-						Model.SHOPLISTIMGURL + list.get(position).getIname())) {
-					// �����������ػ���ͼƬ��ʾ
-					hold.mImage.setImageBitmap(bitmap);
-				}
+			public Bitmap getBitmap(String url) {
+				return null;
+			}
+
+			@Override
+			public void putBitmap(String url, Bitmap bitmap) {
+
 			}
 		});
-		// �ӱ��ػ�ȡ��
-		if (bit != null) {
-			// ���û���ͼƬ��ʾ
-			hold.mImage.setImageBitmap(bit);
-		}
+		hold.mImage.setImageUrl(shopInfo.getIname(), imageLoader);
 
 		return view;
 	}
 
 	static class Holder {
 		TextView mTitle, mMoney, mAddress, mStytle, mDistance;
-		ImageView mImage, mStar, mTuan, mQuan, mDing, mCard;
+		ImageView mStar, mTuan, mQuan, mDing, mCard;
+		NetworkImageView mImage;
 	}
 
 }

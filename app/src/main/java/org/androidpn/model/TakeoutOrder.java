@@ -14,6 +14,8 @@ public class TakeoutOrder {
 
     private String firstFoodName;
 
+    private int orderStatus;
+
     private int itemCount;
 
     public TakeoutOrder() {
@@ -81,6 +83,14 @@ public class TakeoutOrder {
 
     public void setFirstFoodName(String firstFoodName) {
         this.firstFoodName = firstFoodName;
+    }
+
+    public int getOrderStatus() {
+        return orderStatus;
+    }
+
+    public void setOrderStatus(int orderStatus) {
+        this.orderStatus = orderStatus;
     }
 
     public int getItemCount() {
