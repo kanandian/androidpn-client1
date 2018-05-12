@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import org.androidpn.demoapp.R;
 import org.androidpn.model.TakeoutOrder;
+import org.androidpn.utils.MessageFormatUtil;
 
 import java.util.List;
 
@@ -33,10 +34,14 @@ public class TakeoutListAdapter extends ArrayAdapter<TakeoutOrder> {
         TextView bussinessNameText = (TextView) item.findViewById(R.id.text_bussiness_name);
         TextView foodSummaryText = (TextView) item.findViewById(R.id.text_food_summary);
         TextView priceText = (TextView) item.findViewById(R.id.text_price);
+        TextView createTimeText = (TextView) item.findViewById(R.id.text_createtime);
+        TextView orderStatusText = (TextView) item.findViewById(R.id.text_order_status);
 
         bussinessNameText.setText(takeoutOrder.getBussinessName());
         foodSummaryText.setText(takeoutOrder.getFirstFoodName()+"等"+takeoutOrder.getItemCount()+"个商品");
         priceText.setText(String.valueOf("￥"+takeoutOrder.getTotalPrice()));
+        createTimeText.setText(takeoutOrder.getCreateTime());
+        orderStatusText.setText(MessageFormatUtil.getOrderStatus(takeoutOrder.getOrderStatus()));
 
 
         return item;

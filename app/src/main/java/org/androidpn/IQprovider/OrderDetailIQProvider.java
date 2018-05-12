@@ -68,6 +68,9 @@ public class OrderDetailIQProvider implements IQProvider {
                 if ("bussinessid".equals(parser.getName())) {
                     orderDetailIQ.setBussinessId(parser.nextText());
                 }
+                if ("orderstatus".equals(parser.getName())) {
+                    orderDetailIQ.setOrderStatus(parser.nextText());
+                }
             } else if (eventType == 3
                     && "order".equals(parser.getName())) {
                 done = true;

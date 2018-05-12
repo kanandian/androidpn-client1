@@ -55,6 +55,9 @@ public class TakeoutListIQProvider implements IQProvider {
                     if ("orderstatus".equals(parser.getAttributeName(i))) {
                         takeoutOrder.setOrderStatus(Integer.parseInt(parser.getAttributeValue(i)));
                     }
+                    if ("createtime".equals(parser.getAttributeName(i))) {
+                        takeoutOrder.setCreateTime(parser.getAttributeValue(i));
+                    }
                 }
                 takeoutOrderList.add(takeoutOrder);
             } else if (eventType == 3

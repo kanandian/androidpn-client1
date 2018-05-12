@@ -1,30 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="#f4f4f4"
     android:layout_height="match_parent" android:paddingTop="16dp" android:paddingBottom="16dp">
 
-    <TextView
-        android:id="@+id/text_bussiness_name"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#f4f4f4"
-        android:textColor="#000000"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/text_bussiness_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="#f4f4f4"
+            android:textColor="@color/text_black"/>
 
-    <TextView
-        android:id="@+id/text_food_summary"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#f4f4f4"
-        android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/text_food_summary"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="#f4f4f4"
+            android:textColor="@color/text_black"/>
 
-    <TextView
-        android:id="@+id/text_price"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#f4f4f4"
-        android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="#f4f4f4"
+            android:textColor="@color/text_black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_createtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f4f4f4"
+            android:padding="10dp"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:id="@+id/text_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f4f4f4"
+            android:padding="10dp"
+            android:textColor="@color/text_black"/>
+
+    </LinearLayout>
 
 </LinearLayout>

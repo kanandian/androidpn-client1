@@ -18,6 +18,8 @@ public class TakeoutOrder {
 
     private int itemCount;
 
+    private String createTime;
+
     public TakeoutOrder() {
     }
 
@@ -99,5 +101,13 @@ public class TakeoutOrder {
 
     public void setItemCount(int itemCount) {
         this.itemCount = itemCount;
+    }
+
+    public String getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
     }
 }

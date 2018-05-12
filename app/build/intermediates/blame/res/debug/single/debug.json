@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_index_checkin_pressed.png.flat",
-        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/main_index_checkin_pressed.png"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_notification.png.flat",
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable/notification.png"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_index_checkin_pressed.png.flat",
+        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/main_index_checkin_pressed.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_star5.png.flat",
@@ -24,12 +24,12 @@
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/emoji103.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_tab_bar_bg.9.png.flat",
-        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/tab_bar_bg.9.png"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_add.png.flat",
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable/add.png"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_tab_bar_bg.9.png.flat",
+        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/tab_bar_bg.9.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_detail_grouponicon.png.flat",
@@ -1064,6 +1064,10 @@
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable/search_input.xml"
     },
     {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/layout_item_takeout_bussiness.xml.flat",
+        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/item_takeout_bussiness.xml"
+    },
+    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_login.xml"
     },
@@ -1322,6 +1326,10 @@
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xxhdpi_outing_d.png.flat",
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xxhdpi/outing_d.png"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_border_line_while.xml.flat",
+        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable/border_line_while.xml"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_search_more_morelistselect.xml.flat",

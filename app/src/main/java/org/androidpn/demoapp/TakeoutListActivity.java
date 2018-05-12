@@ -64,6 +64,18 @@ public class TakeoutListActivity extends BaseActivity {
         });
     }
 
+    public void setTakeoutOrders(List<TakeoutOrder> takeoutOrders) {
+        this.takeoutOrders = takeoutOrders;
+    }
+
+    public List<TakeoutOrder> getTakeoutOrders() {
+        return takeoutOrders;
+    }
+
+    public ListView getTakeoutList() {
+        return takeoutList;
+    }
+
     @Override
     public void sendInquiryIQ() {
         super.sendInquiryIQ();
@@ -90,4 +102,5 @@ public class TakeoutListActivity extends BaseActivity {
             handler.sendMessage(msg);
         }
     }
+
 }
