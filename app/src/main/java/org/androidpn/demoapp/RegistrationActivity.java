@@ -7,11 +7,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.androidpn.IQ.InquiryIQ;
 import org.androidpn.IQ.RegisterIQ;
 import org.androidpn.client.Constants;
 import org.androidpn.utils.ActivityHolder;
@@ -25,10 +27,12 @@ public class RegistrationActivity extends BaseActivity {
 
 	private ImageView mRegistration_back;
 	private EditText mRegistration_name, mRegistration_username,
-			mRegistration_password, mRegistration_password2, mRegistration_mobile;
+			mRegistration_password, mRegistration_password2, mRegistration_mobile, vcodeEdit;
 	private TextView mRegistration_OK;
 
 	private SharedPreferences sharedPrefs;
+
+	private Button sendMessageButton;
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -49,6 +53,29 @@ public class RegistrationActivity extends BaseActivity {
 		MyOnClickLietener myonclick = new MyOnClickLietener();
 		mRegistration_back.setOnClickListener(myonclick);
 		mRegistration_OK.setOnClickListener(myonclick);
+
+		vcodeEdit = (EditText) findViewById(R.id.edit_vcode);
+		sendMessageButton = (Button) findViewById(R.id.btn_get_vcode);
+
+
+		sendMessageButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				String mobile = mRegistration_mobile.getText().toString();
+				String userName = UserInfoHolder.getInstance().getUserName();
+
+				InquiryIQ inquiryIQ = new InquiryIQ();
+				inquiryIQ.setType(IQ.Type.SET);
+
+				inquiryIQ.setTarget("sendmessage");
+				inquiryIQ.setTitle(mobile);
+				inquiryIQ.setUserName(userName);
+
+				Log.d("qzf", "getvcode"+inquiryIQ.toXML());
+
+				ActivityHolder.getInstance().sendPacket(inquiryIQ);
+			}
+		});
 
 		sharedPrefs = getSharedPreferences(Constants.SHARED_PREFERENCE_NAME,
 				Context.MODE_PRIVATE);
