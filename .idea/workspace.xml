@@ -9,7 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6950065f-008f-4337-8d8b-98e933cc2307" name="Default" comment="订单状态管理">
+    <list default="true" id="6950065f-008f-4337-8d8b-98e933cc2307" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
@@ -19,13 +19,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/org/androidpn/demoapp/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/org/androidpn/demoapp/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/DemoAppActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/DemoAppActivity.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/NavigationActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/NavigationActivity.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/RegisterIQ.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/RegisterIQ.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/ResultModelIQ.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/ResultModelIQ.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQprovider/AdminResponseIQProvider.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQprovider/AdminResponseIQProvider.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/RegistrationActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/RegistrationActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,11 +71,26 @@
       <file leaf-file-name="RegistrationActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/RegistrationActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="64" column="52" lean-forward="false" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
+            <state relative-caret-position="272">
+              <caret line="131" column="9" lean-forward="true" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
               <folding>
-                <element signature="e#2103#2614#0" expanded="true" />
-                <element signature="e#2613#2614#0" expanded="true" />
+                <element signature="e#2142#2653#0" expanded="true" />
+                <element signature="e#2652#2653#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterIQ.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/RegisterIQ.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-457">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="e#1278#1279#0" expanded="true" />
+                <element signature="e#1306#1307#0" expanded="true" />
+                <element signature="e#1348#1349#0" expanded="true" />
+                <element signature="e#1382#1383#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2006,9 +2018,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/BaseActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/ResultModelIQ.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQprovider/AdminResponseIQProvider.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/UpdateUserInfoIQ.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/PersonalActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/client/XmppManager.java" />
@@ -2055,8 +2064,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/MessageFormatUtil.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_takeout_bussiness.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/TakeoutBussinessListAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/RegistrationActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/RegisterIQ.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/ResultModelIQ.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQprovider/AdminResponseIQProvider.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/RegistrationActivity.java" />
       </list>
     </option>
   </component>
@@ -2233,7 +2245,7 @@
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.0.1" />
     <property name="device.picker.selection" value="Pixel_2_API_27" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.VCS" />
-    <property name="SearchEverywhereHistoryKey" value="registra&#9;PSI&#9;JAVA://org.androidpn.demoapp.RegistrationActivity&#10;regis&#9;PSI&#9;JAVA://org.androidpn.demoapp.RegisterActivity&#10;managebuss&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ManageBussinessActivity.java&#10;orderde&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/IQ/OrderDetailIQ.java&#10;search&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_search.xml&#10;image&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/UploadImageActivity.java&#10;addbuss&#9;PSI&#9;JAVA://org.androidpn.demoapp.AddBussinessActivity&#10;loca&#9;PSI&#9;JAVA://org.androidpn.utils.LocationHolder&#10;login&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_login.xml&#10;shopde&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopDetailsActivity.java&#10;collec&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopCollectionActivity.java&#10;manage&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ManageBussinessActivity.java&#10;bussiness&#9;PSI&#9;JAVA://org.androidpn.model.Bussiness&#10;upload&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/UploadImageActivity.java&#10;myb&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/MyBussinessesActivity.java&#10;urlmapp&#9;PSI&#9;JAVA://sun.misc.FileURLMapper&#10;gradle&#9;ACTION&#9;ActivateGradleToolWindow&#10;myac&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/MyActivity.java&#10;addbussinessacti&#9;PSI&#9;JAVA://org.androidpn.demoapp.AddBussinessActivity&#10;takeoutlistacti&#9;PSI&#9;JAVA://org.androidpn.demoapp.TakeoutListActivity&#10;noti&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/client/Notifier.java&#10;shopdetail&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopDetailsActivity.java&#10;notifi&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/packetlistener/NotificationPacketListener.java&#10;myactivity&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/MyActivity.java&#10;inqui&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/IQ/InquiryIQ.java&#10;shopdeta&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopDetailsActivity.java&#10;shopcom&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopCommentsActivity.java&#10;commentiq&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/IQ/CommentsIQ.java&#10;personal&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/PersonalActivity.java&#10;Base&#9;PSI&#9;JAVA://org.androidpn.demoapp.BaseActivity&#10;registrationactiv&#9;PSI&#9;JAVA://org.androidpn.demoapp.RegistrationActivity&#10;myacti&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/MyActivity.java&#10;frame&#9;PSI&#9;JAVA://org.androidpn.demoapp.FrameActivity&#10;takeoutorderde&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/TakeoutOrderDetailActivity.java&#10;takeoutlist&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/TakeoutListActivity.java&#10;item_&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/item_takeout.xml&#10;takeoutord&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/model/TakeoutOrder.java&#10;personalacti&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/PersonalActivity.java&#10;loginacti&#9;PSI&#9;JAVA://org.androidpn.demoapp.LoginActivity&#10;useri&#9;PSI&#9;JAVA://org.androidpn.utils.UserInfoHolder&#10;activity_login&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_login.xml&#10;baseactivi&#9;PSI&#9;JAVA://org.androidpn.demoapp.BaseActivity&#10;base&#9;FILE&#9;jar:///Users/macpro/Library/Android/sdk/platforms/android-19/android.jar!/android/widget/BaseAdapter.class&#10;shoplist&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopListActivity.java&#10;edittakeout&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/EditTakeoutMenuActivity.java&#10;submitlog&#9;PSI&#9;JAVA://org.androidpn.client.XmppManager#submitLoginTask&#10;shoplist.java&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopListActivity.java&#10;Bussiness&#9;PSI&#9;JAVA://org.androidpn.model.Bussiness&#10;loginTas&#9;PSI&#9;JAVA://org.androidpn.client.XmppManager.LoginTask&#10;addBuss&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/AddBussinessActivity.java" />
+    <property name="SearchEverywhereHistoryKey" value="regis&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/RegistrationActivity.java&#10;registra&#9;PSI&#9;JAVA://org.androidpn.demoapp.RegistrationActivity&#10;managebuss&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ManageBussinessActivity.java&#10;orderde&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/IQ/OrderDetailIQ.java&#10;search&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_search.xml&#10;image&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/UploadImageActivity.java&#10;addbuss&#9;PSI&#9;JAVA://org.androidpn.demoapp.AddBussinessActivity&#10;loca&#9;PSI&#9;JAVA://org.androidpn.utils.LocationHolder&#10;login&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_login.xml&#10;shopde&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopDetailsActivity.java&#10;collec&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopCollectionActivity.java&#10;manage&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ManageBussinessActivity.java&#10;bussiness&#9;PSI&#9;JAVA://org.androidpn.model.Bussiness&#10;upload&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/UploadImageActivity.java&#10;myb&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/MyBussinessesActivity.java&#10;urlmapp&#9;PSI&#9;JAVA://sun.misc.FileURLMapper&#10;gradle&#9;ACTION&#9;ActivateGradleToolWindow&#10;myac&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/MyActivity.java&#10;addbussinessacti&#9;PSI&#9;JAVA://org.androidpn.demoapp.AddBussinessActivity&#10;takeoutlistacti&#9;PSI&#9;JAVA://org.androidpn.demoapp.TakeoutListActivity&#10;noti&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/client/Notifier.java&#10;shopdetail&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopDetailsActivity.java&#10;notifi&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/packetlistener/NotificationPacketListener.java&#10;myactivity&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/MyActivity.java&#10;inqui&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/IQ/InquiryIQ.java&#10;shopdeta&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopDetailsActivity.java&#10;shopcom&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopCommentsActivity.java&#10;commentiq&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/IQ/CommentsIQ.java&#10;personal&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/PersonalActivity.java&#10;Base&#9;PSI&#9;JAVA://org.androidpn.demoapp.BaseActivity&#10;registrationactiv&#9;PSI&#9;JAVA://org.androidpn.demoapp.RegistrationActivity&#10;myacti&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/MyActivity.java&#10;frame&#9;PSI&#9;JAVA://org.androidpn.demoapp.FrameActivity&#10;takeoutorderde&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/TakeoutOrderDetailActivity.java&#10;takeoutlist&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/TakeoutListActivity.java&#10;item_&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/item_takeout.xml&#10;takeoutord&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/model/TakeoutOrder.java&#10;personalacti&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/PersonalActivity.java&#10;loginacti&#9;PSI&#9;JAVA://org.androidpn.demoapp.LoginActivity&#10;useri&#9;PSI&#9;JAVA://org.androidpn.utils.UserInfoHolder&#10;activity_login&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_login.xml&#10;baseactivi&#9;PSI&#9;JAVA://org.androidpn.demoapp.BaseActivity&#10;base&#9;FILE&#9;jar:///Users/macpro/Library/Android/sdk/platforms/android-19/android.jar!/android/widget/BaseAdapter.class&#10;shoplist&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopListActivity.java&#10;edittakeout&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/EditTakeoutMenuActivity.java&#10;submitlog&#9;PSI&#9;JAVA://org.androidpn.client.XmppManager#submitLoginTask&#10;shoplist.java&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopListActivity.java&#10;Bussiness&#9;PSI&#9;JAVA://org.androidpn.model.Bussiness&#10;loginTas&#9;PSI&#9;JAVA://org.androidpn.client.XmppManager.LoginTask&#10;addBuss&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/AddBussinessActivity.java" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
   </component>
@@ -2528,7 +2540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526094129333</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="发送验证码">
+      <created>1526110438718</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1526110438718</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2605,7 +2624,8 @@
     <MESSAGE value="导航功能以及一些完善" />
     <MESSAGE value="新建店铺界面定位功能" />
     <MESSAGE value="订单状态管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="订单状态管理" />
+    <MESSAGE value="发送验证码" />
+    <option name="LAST_COMMIT_MESSAGE" value="发送验证码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2618,35 +2638,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/RegistrationActivity.java</url>
-          <line>63</line>
+          <line>114</line>
           <properties />
-          <option name="timeStamp" value="104" />
+          <option name="timeStamp" value="106" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="105" />
+      <option name="time" value="107" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/packetlistener/FoodMenuPacketListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_menu.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amap.api/navi-3dmap/6.0.1_3dmap6.1.0/b35cd3332537fc80a12a38e0e3a67311215af561/navi-3dmap-6.0.1_3dmap6.1.0.jar!/com/amap/api/navi/AMapNavi.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
@@ -2951,14 +2952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/ResultModelIQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/raw/androidpn.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -3084,13 +3077,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/RegisterIQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-457">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#1278#1279#0" expanded="true" />
+            <element signature="e#1306#1307#0" expanded="true" />
+            <element signature="e#1348#1349#0" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/ResultModelIQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding>
+            <element signature="e#652#653#0" expanded="false" />
+            <element signature="e#696#697#0" expanded="false" />
+            <element signature="e#732#733#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/IQprovider/AdminResponseIQProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/RegistrationActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="64" column="52" lean-forward="false" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
+        <state relative-caret-position="272">
+          <caret line="131" column="9" lean-forward="true" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
           <folding>
-            <element signature="e#2103#2614#0" expanded="true" />
-            <element signature="e#2613#2614#0" expanded="true" />
+            <element signature="e#2142#2653#0" expanded="true" />
+            <element signature="e#2652#2653#0" expanded="true" />
           </folding>
         </state>
       </provider>

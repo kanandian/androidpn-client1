@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import org.androidpn.IQ.InquiryIQ;
 import org.androidpn.IQ.RegisterIQ;
+import org.androidpn.IQ.ResultModelIQ;
 import org.androidpn.client.Constants;
 import org.androidpn.utils.ActivityHolder;
 import org.androidpn.utils.UserInfoHolder;
@@ -100,6 +101,7 @@ public class RegistrationActivity extends BaseActivity {
 		String cpassword = mRegistration_password2.getText().toString();
 		String name = mRegistration_name.getText().toString();
 		String mobile = mRegistration_mobile.getText().toString();
+		String vcode = vcodeEdit.getText().toString();
 
 		String localName = sharedPrefs.getString(Constants.XMPP_USERNAME, "");
 		String localPassword = sharedPrefs.getString(Constants.XMPP_PASSWORD, "");
@@ -117,6 +119,8 @@ public class RegistrationActivity extends BaseActivity {
 			registerIQ.setLocalName(localName);
 			registerIQ.setLocalPassword(localPassword);
 
+			registerIQ.setVcode(vcode);
+
 			registerIQ.setType(IQ.Type.SET);
 
 			Log.d("Regsiter Packet", "sendRegisterIQ: "+registerIQ.toXML());
@@ -127,5 +131,19 @@ public class RegistrationActivity extends BaseActivity {
 
 		}
 
+	}
+
+	@Override
+	public void updateForResponse(ResultModelIQ resultModelIQ) {
+		super.updateForResponse(resultModelIQ);
+
+
+		if (resultModelIQ.getErrCode() == 0) {
+			if ("registration".equals(resultModelIQ.getAction())) {
+				RegistrationActivity.this.finish();
+			}
+		} else {
+			Toast.makeText(RegistrationActivity.this, resultModelIQ.getErrMsg(), Toast.LENGTH_LONG).show();
+		}
 	}
 }

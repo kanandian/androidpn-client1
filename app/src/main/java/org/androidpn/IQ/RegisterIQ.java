@@ -14,6 +14,7 @@ public class RegisterIQ extends IQ {
     String localPassword;
     String name;
     String mobile;
+    String vcode;
 
     public RegisterIQ() {
     }
@@ -66,6 +67,14 @@ public class RegisterIQ extends IQ {
         this.mobile = mobile;
     }
 
+    public String getVcode() {
+        return vcode;
+    }
+
+    public void setVcode(String vcode) {
+        this.vcode = vcode;
+    }
+
     @Override
     public String getChildElementXML() {
 //        StringBuilder buf = new StringBuilder();
@@ -101,6 +110,9 @@ public class RegisterIQ extends IQ {
         }
         if(mobile != null){
             buf.append("<mobile>").append(mobile).append("</mobile>");
+        }
+        if(vcode != null){
+            buf.append("<vcode>").append(vcode).append("</vcode>");
         }
         buf.append("</").append("registeration").append("> ");
         return buf.toString();

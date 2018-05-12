@@ -18,6 +18,9 @@ public class AdminResponseIQProvider implements IQProvider {
                 if ("errmessage".equals(parser.getName())) {
                     resultModelIQ.setErrMsg(parser.nextText());
                 }
+                if ("action".equals(parser.getName())) {
+                    resultModelIQ.setAction(parser.nextText());
+                }
             } else if (eventType == 3
                     && "admin".equals(parser.getName())) {
                 done = true;

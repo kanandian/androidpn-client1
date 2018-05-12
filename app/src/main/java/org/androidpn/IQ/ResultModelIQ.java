@@ -6,6 +6,7 @@ public class ResultModelIQ extends IQ {
 
     private int errCode;
     private String errMsg;
+    private String action;
 
     public ResultModelIQ() {
     }
@@ -29,5 +30,13 @@ public class ResultModelIQ extends IQ {
 
     public void setErrMsg(String errMsg) {
         this.errMsg = errMsg;
+    }
+
+    public String getAction() {
+        return action;
+    }
+
+    public void setAction(String action) {
+        this.action = action;
     }
 }
