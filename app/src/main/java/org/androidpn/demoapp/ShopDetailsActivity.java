@@ -54,7 +54,7 @@ public class ShopDetailsActivity extends BaseActivity {
 	private TextView mShop_details_name, mShop_details_money;
 	// ������ĵ���ʽ��ť
 	private LinearLayout mShop_details_bottom_img1, mShop_details_bottom_img2,
-			mShop_details_bottom_img3, mShop_details_bottom_img4;
+			mShop_details_bottom_img3, mShop_details_bottom_img4, mShop_details_bottom_img5;
 	// �����������������
 	private RelativeLayout mshop_details_address, mshop_details_phone,
 			mshop_details_ding, mshop_details_card, mshop_details_quan,
@@ -126,6 +126,7 @@ public class ShopDetailsActivity extends BaseActivity {
 		mShop_details_bottom_img2 = (LinearLayout) findViewById(R.id.Shop_details_bottom_img2);
 		mShop_details_bottom_img3 = (LinearLayout) findViewById(R.id.Shop_details_bottom_img3);
 		mShop_details_bottom_img4 = (LinearLayout) findViewById(R.id.Shop_details_bottom_img4);
+		mShop_details_bottom_img5 = (LinearLayout) findViewById(R.id.Shop_details_bottom_img5);
 		// ������Ϣ�ؼ�
 		mShop_details_name = (TextView) findViewById(R.id.Shop_details_name);
 		mShop_details_photo = (ImageView) findViewById(R.id.Shop_details_photo);
@@ -203,6 +204,21 @@ public class ShopDetailsActivity extends BaseActivity {
 
 
 		mshop_details_address.setOnClickListener(myOnClickListener);
+
+		if ("外卖".equals(info.getStype())) {
+			mShop_details_bottom_img4.setVisibility(View.GONE);
+			mShop_details_bottom_img5.setVisibility(View.VISIBLE);
+
+			mShop_details_bottom_img5.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View view) {
+					Intent intent = new Intent(ShopDetailsActivity.this, TakeOutActivity.class);
+					intent.putExtra("shopInfo", info);
+					startActivity(intent);
+				}
+			});
+		}
+
 
 		// ������̵�ͼƬ�ķ���
 		addImg();
@@ -331,28 +347,28 @@ public class ShopDetailsActivity extends BaseActivity {
 				if (arg1 == DialogInterface.BUTTON_POSITIVE) {
 					arg0.cancel();
 				}
-				switch (arg1) {
-				case 0:
-					Toast.makeText(ShopDetailsActivity.this,
-							"������Ϣ0:" + items[arg1], 1).show();
-					break;
-				case 1:
-					Toast.makeText(ShopDetailsActivity.this,
-							"������Ϣ1:" + items[arg1], 1).show();
-					break;
-				case 2:
-					Toast.makeText(ShopDetailsActivity.this,
-							"������Ϣ2:" + items[arg1], 1).show();
-					break;
-				case 3:
-					Toast.makeText(ShopDetailsActivity.this,
-							"������Ϣ3:" + items[arg1], 1).show();
-					break;
-				case 4:
-					Toast.makeText(ShopDetailsActivity.this,
-							"������Ϣ4:" + items[arg1], 1).show();
-					break;
-				}
+//				switch (arg1) {
+//				case 0:
+//					Toast.makeText(ShopDetailsActivity.this,
+//							"������Ϣ0:" + items[arg1], 1).show();
+//					break;
+//				case 1:
+//					Toast.makeText(ShopDetailsActivity.this,
+//							"������Ϣ1:" + items[arg1], 1).show();
+//					break;
+//				case 2:
+//					Toast.makeText(ShopDetailsActivity.this,
+//							"������Ϣ2:" + items[arg1], 1).show();
+//					break;
+//				case 3:
+//					Toast.makeText(ShopDetailsActivity.this,
+//							"������Ϣ3:" + items[arg1], 1).show();
+//					break;
+//				case 4:
+//					Toast.makeText(ShopDetailsActivity.this,
+//							"������Ϣ4:" + items[arg1], 1).show();
+//					break;
+//				}
 			}
 		};
 		builder.setItems(items, dialog);
@@ -384,9 +400,9 @@ public class ShopDetailsActivity extends BaseActivity {
 		public void handleMessage(android.os.Message msg) {
 			super.handleMessage(msg);
 			if (msg.what == 404) {
-				Toast.makeText(ShopDetailsActivity.this, "�Ҳ�����ַ", 1).show();
+//				Toast.makeText(ShopDetailsActivity.this, "�Ҳ�����ַ", 1).show();
 			} else if (msg.what == 100) {
-				Toast.makeText(ShopDetailsActivity.this, "����ʧ��", 1).show();
+//				Toast.makeText(ShopDetailsActivity.this, "����ʧ��", 1).show();
 			} else if (msg.what == 200) {
 				String result = (String) msg.obj;
 				Log.e("result", "result:" + result);

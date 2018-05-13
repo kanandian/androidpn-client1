@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_notification.png.flat",
-        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable/notification.png"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_index_checkin_pressed.png.flat",
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/main_index_checkin_pressed.png"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_notification.png.flat",
+        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable/notification.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_star5.png.flat",
@@ -24,12 +24,12 @@
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/emoji103.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_add.png.flat",
-        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable/add.png"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_tab_bar_bg.9.png.flat",
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/tab_bar_bg.9.png"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_add.png.flat",
+        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable/add.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_detail_grouponicon.png.flat",

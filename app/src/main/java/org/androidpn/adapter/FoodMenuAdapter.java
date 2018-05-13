@@ -35,7 +35,7 @@ public class FoodMenuAdapter extends ArrayAdapter<FoodMenuItem> {
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         FoodMenuItem foodMenuItem = getItem(position);
-        RelativeLayout item = new RelativeLayout(getContext());
+        LinearLayout item = new LinearLayout(getContext());
         String inflater = Context.LAYOUT_INFLATER_SERVICE;
         LayoutInflater vi = (LayoutInflater)getContext().getSystemService(inflater);
         vi.inflate(resource, item, true);

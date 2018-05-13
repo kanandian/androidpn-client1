@@ -362,17 +362,23 @@ public class ShopListActivity extends BaseActivity {
                                 long arg3) {
 			ShopInfo shopInfo = list.get(arg2);
 
-			if ("外卖".equals(shopInfo.getStype())) {
-				Intent intent = new Intent(ShopListActivity.this, TakeOutActivity.class);
-				intent.putExtra("shopInfo", shopInfo);
-				startActivity(intent);
-			} else {
-				Intent intent = new Intent(ShopListActivity.this, ShopDetailsActivity.class);
-				Bundle bund = new Bundle();
-				bund.putSerializable("ShopInfo", shopInfo);
-				intent.putExtra("value",bund);
-				startActivity(intent);
-			}
+//			if ("外卖".equals(shopInfo.getStype())) {
+//				Intent intent = new Intent(ShopListActivity.this, TakeOutActivity.class);
+//				intent.putExtra("shopInfo", shopInfo);
+//				startActivity(intent);
+//			} else {
+//				Intent intent = new Intent(ShopListActivity.this, ShopDetailsActivity.class);
+//				Bundle bund = new Bundle();
+//				bund.putSerializable("ShopInfo", shopInfo);
+//				intent.putExtra("value",bund);
+//				startActivity(intent);
+//			}
+
+			Intent intent = new Intent(ShopListActivity.this, ShopDetailsActivity.class);
+			Bundle bund = new Bundle();
+			bund.putSerializable("ShopInfo",list.get(arg2));
+			intent.putExtra("value",bund);
+			startActivity(intent);
 		}
 	}
 
