@@ -369,26 +369,26 @@
                 android:background="#F4F4F4"
                 android:padding="2dp" />
 
-            <!--<LinearLayout-->
-                <!--android:id="@+id/My_list_guanzhu"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:background="@drawable/my_tab_background"-->
-                <!--android:paddingBottom="0dp"-->
-                <!--android:paddingLeft="15dp" >-->
+            <LinearLayout
+                android:id="@+id/My_list_guanzhu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp" >
 
-                <!--<TextView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:background="@drawable/my_list_txt_background"-->
-                    <!--android:drawableLeft="@drawable/my_focus_icon_press"-->
-                    <!--android:gravity="center_vertical"-->
-                    <!--android:paddingBottom="8dp"-->
-                    <!--android:paddingTop="8dp"-->
-                    <!--android:text="   关注"-->
-                    <!--android:textColor="#666666"-->
-                    <!--android:textSize="18sp" />-->
-            <!--</LinearLayout>-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_list_txt_background"
+                    android:drawableLeft="@drawable/my_focus_icon_press"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="   发现"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
 
             <!--<LinearLayout-->
                 <!--android:id="@+id/My_list_fensi"-->

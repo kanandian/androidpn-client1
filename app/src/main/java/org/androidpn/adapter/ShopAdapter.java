@@ -1,5 +1,6 @@
 package org.androidpn.adapter;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 import android.content.Context;
@@ -102,7 +103,20 @@ public class ShopAdapter extends BaseAdapter {
 			LatLng latLng1 = new LatLng(location.getLatitude(), location.getLongitude());
 			LatLng latLng2 = new LatLng(shopInfo.getLatitude(), shopInfo.getLongitude());
 			float distance = AMapUtils.calculateLineDistance(latLng1,latLng2);
-			hold.mDistance.setText(String.valueOf(distance));
+			String distanceStr = "";
+			if (distance < 1000) {
+				distanceStr = ((int) distance)+"米";
+			} else {
+
+				int   scale  =   1;//设置位数
+				int   roundingMode  =  4;//表示四舍五入，可以选择其他舍值方式，例如去尾，等等.
+				BigDecimal bd  =   new  BigDecimal((double)distance/1000);
+				bd   =  bd.setScale(scale,roundingMode);
+				distance   =  bd.floatValue();
+				distanceStr = distance+"千米";
+
+			}
+			hold.mDistance.setText(distanceStr);
 
 		}
 

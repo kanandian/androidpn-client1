@@ -15,7 +15,7 @@ android {
         targetSdkVersion 19
         ndk {
 //            设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
-            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","arm64-v8a","x86_64"
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","x86_64"
         }
     }
 
@@ -38,14 +38,14 @@ dependencies {
     compile 'com.android.volley:volley:1.1.0'    
     
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    //3D地图so及jar
+    //3D地图so及jar    navi导航SDK 5.0.0以后版本包含了3D地图SDK，所以请不要同时引入 map3d 和 navi SDK。
 //    compile 'com.amap.api:3dmap:latest.integration'
     //定位功能
-    compile 'com.amap.api:location:latest.integration'
+    compile 'com.amap.api:location:3.8.0'
     //搜索功能
-    compile 'com.amap.api:search:latest.integration'
+    compile 'com.amap.api:search:6.1.0'
     //导航功能
-    compile 'com.amap.api:navi-3dmap:latest.integration'
+    compile 'com.amap.api:navi-3dmap:6.0.1_3dmap6.1.0'
 
     //TabLayout
 //    compile 'com.android.support:design:22.2.0'
@@ -53,6 +53,8 @@ dependencies {
 //    compile 'com.android.support:support-v4:23.0.1'
 
     compile 'com.android.support:support-v4:19.1.0'
+
+//    compile 'com.carson_ho:SearchLayout:1.0.1'
 
 
     //volley

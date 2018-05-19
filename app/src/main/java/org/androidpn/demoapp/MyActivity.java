@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.autonavi.ae.dice.InitConfig;
 
+import org.androidpn.IQ.InquiryIQ;
 import org.androidpn.utils.ActivityHolder;
 import org.androidpn.utils.UserInfoHolder;
 
@@ -25,7 +26,7 @@ public class MyActivity extends BaseActivity {
 	// �ŷ�
 	private LinearLayout mMy_messagebtn;
 	// listview���͵�linearlayout��ť
-	private LinearLayout mMy_list_yuding,mMy_list_caogao,
+	private LinearLayout mMy_list_yuding,mMy_list_caogao,mMy_list_guanzhu,
 			mMy_list_shanghushoucang, mMy_list_tuangoushoucang;
 
 	@Override
@@ -53,7 +54,7 @@ public class MyActivity extends BaseActivity {
 		mMy_list_caogao = (LinearLayout) findViewById(R.id.My_list_caogao);
 		mMy_list_shanghushoucang = (LinearLayout) findViewById(R.id.My_list_shanghuhushoucang);
 		mMy_list_tuangoushoucang = (LinearLayout) findViewById(R.id.My_list_tuangoushoucang);
-//		mMy_list_guanzhu = (LinearLayout) findViewById(R.id.My_list_guanzhu);
+		mMy_list_guanzhu = (LinearLayout) findViewById(R.id.My_list_guanzhu);
 //		mMy_list_fensi = (LinearLayout) findViewById(R.id.My_list_fensi);
 
 		mMy_logintoast = (TextView) findViewById(R.id.My_logintoast);
@@ -77,7 +78,7 @@ public class MyActivity extends BaseActivity {
 		mMy_list_caogao.setOnClickListener(mOnclickListener);
 		mMy_list_shanghushoucang.setOnClickListener(mOnclickListener);
 		mMy_list_tuangoushoucang.setOnClickListener(mOnclickListener);
-//		mMy_list_guanzhu.setOnClickListener(mOnclickListener);
+		mMy_list_guanzhu.setOnClickListener(mOnclickListener);
 //		mMy_list_fensi.setOnClickListener(mOnclickListener);
 
 		mMy_info.setOnClickListener(new View.OnClickListener() {
@@ -153,6 +154,10 @@ public class MyActivity extends BaseActivity {
 				case R.id.My_list_shanghuhushoucang:
 					Intent intent6 = new Intent(MyActivity.this, ShopCollectionActivity.class);
 					startActivity(intent6);
+					break;
+				case R.id.My_list_guanzhu:
+					Intent intent7 = new Intent(MyActivity.this, ShowMapActivity.class);
+					startActivity(intent7);
 					break;
 			}
 		}

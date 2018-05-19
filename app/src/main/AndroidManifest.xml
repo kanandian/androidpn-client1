@@ -122,6 +122,10 @@
 
 		<activity android:name=".UploadImageActivity"></activity>
 
+		<activity android:name=".ShowMapActivity"></activity>
+
+		<activity android:name=".SearchViewActivity" android:theme="@style/MyStyle"></activity>
+
 
 		<activity android:name=".BussinessInfoActivity"></activity>
 		<activity android:name=".NavigationActivity"></activity>

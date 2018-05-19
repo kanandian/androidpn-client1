@@ -12,6 +12,7 @@ import org.androidpn.demoapp.MainActivity;
 import org.androidpn.demoapp.MyBussinessesActivity;
 import org.androidpn.demoapp.SearchActivity;
 import org.androidpn.demoapp.ShopListActivity;
+import org.androidpn.demoapp.ShowMapActivity;
 import org.androidpn.info.ShopInfo;
 import org.androidpn.model.Bussiness;
 import org.androidpn.utils.ActivityHolder;
@@ -66,6 +67,12 @@ public class ActivityPacketListener implements PacketListener {
                 List<ShopInfo> shopInfoList = bussinessListToShopInfoList(activityInquiryIQ.getBussinessList());
 
                 myBussinessesActivity.setContentList(shopInfoList);
+            } else if (activity instanceof ShowMapActivity) {
+                ShowMapActivity showMapActivity = (ShowMapActivity) activity;
+
+                List<ShopInfo> shopInfoList = bussinessListToShopInfoList(activityInquiryIQ.getBussinessList());
+
+                showMapActivity.setContentList(shopInfoList);
             }
         }
     }
