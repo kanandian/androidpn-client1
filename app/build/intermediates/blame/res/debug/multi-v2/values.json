@@ -36,20 +36,20 @@
                 {
                     "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "12,27,38,-1",
-                        "startColumns": "4,4,4,-1",
-                        "startOffsets": "263,608,1119,-1",
-                        "endLines": "24,29,42,-1",
-                        "endColumns": "12,12,12,-1",
-                        "endOffsets": "567,765,1322,-1"
+                        "startLines": "44,12,27,-1,-1",
+                        "startColumns": "4,4,4,-1,-1",
+                        "startOffsets": "1330,263,608,-1,-1",
+                        "endLines": "55,24,29,-1,-1",
+                        "endColumns": "12,12,12,-1,-1",
+                        "endOffsets": "1963,567,765,-1,-1"
                     },
                     "to": {
-                        "startLines": "185,198,201,206",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "6037,6334,6494,6698",
-                        "endLines": "197,200,205,211",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "6329,6489,6693,7031"
+                        "startLines": "185,197,210,213,218",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "6037,6664,6961,7121,7325",
+                        "endLines": "196,209,212,217,223",
+                        "endColumns": "12,12,12,12,12",
+                        "endOffsets": "6659,6956,7116,7320,7658"
                     }
                 },
                 {

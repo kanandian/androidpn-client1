@@ -16,6 +16,9 @@ public class LoginResponseIQ extends IQ {
     private String name;
     private String mobile;
 
+    private boolean isRealUser;
+    private String imageURL;
+
     public LoginResponseIQ() {
         this.isError = false;
     }
@@ -66,6 +69,22 @@ public class LoginResponseIQ extends IQ {
 
     public void setMobile(String mobile) {
         this.mobile = mobile;
+    }
+
+    public boolean isRealUser() {
+        return isRealUser;
+    }
+
+    public void setRealUser(boolean realUser) {
+        isRealUser = realUser;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
     }
 
     @Override

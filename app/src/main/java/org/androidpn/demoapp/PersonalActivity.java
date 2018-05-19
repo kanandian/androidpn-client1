@@ -1,5 +1,6 @@
 package org.androidpn.demoapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -24,6 +25,7 @@ public class PersonalActivity extends BaseActivity {
 
     private TextView updateButton;
     private TextView logoutButton;
+    private TextView updateImageButton;
 
     private String name;
     private String mobile;
@@ -44,6 +46,7 @@ public class PersonalActivity extends BaseActivity {
 
         updateButton = (TextView) findViewById(R.id.btn_update_info);
         logoutButton = (TextView) findViewById(R.id.btn_logout);
+        updateImageButton = (TextView) findViewById(R.id.btn_update_image);
 
         nameEdit.setText(UserInfoHolder.getInstance().getName());
         mobileEdit.setText(UserInfoHolder.getInstance().getMobile());
@@ -76,6 +79,16 @@ public class PersonalActivity extends BaseActivity {
                 UserInfoHolder.getInstance().setAuth(false);
                 ActivityHolder.getInstance().closeActivity();
                 ActivityHolder.getInstance().refreshAllFrameAcrivity();
+            }
+        });
+
+        updateImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PersonalActivity.this, UploadImageActivity.class);
+                intent.putExtra("imageName", UserInfoHolder.getInstance().getUserName());
+                intent.putExtra("target", "user");
+                startActivity(intent);
             }
         });
     }

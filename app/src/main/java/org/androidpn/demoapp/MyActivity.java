@@ -2,6 +2,7 @@ package org.androidpn.demoapp;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
@@ -9,11 +10,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.toolbox.ImageLoader;
+import com.android.volley.toolbox.NetworkImageView;
 import com.autonavi.ae.dice.InitConfig;
 
 import org.androidpn.IQ.InquiryIQ;
 import org.androidpn.utils.ActivityHolder;
 import org.androidpn.utils.UserInfoHolder;
+import org.androidpn.utils.VolleyUtil;
 
 /**
  * �ҵ�ģ��
@@ -28,6 +32,8 @@ public class MyActivity extends BaseActivity {
 	// listview���͵�linearlayout��ť
 	private LinearLayout mMy_list_yuding,mMy_list_caogao,mMy_list_guanzhu,
 			mMy_list_shanghushoucang, mMy_list_tuangoushoucang;
+
+	private NetworkImageView imageView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +64,8 @@ public class MyActivity extends BaseActivity {
 //		mMy_list_fensi = (LinearLayout) findViewById(R.id.My_list_fensi);
 
 		mMy_logintoast = (TextView) findViewById(R.id.My_logintoast);
+
+		imageView = (NetworkImageView) findViewById(R.id.My_head);
 
 
 		MyOnclickListener mOnclickListener = new MyOnclickListener();
@@ -107,6 +115,22 @@ public class MyActivity extends BaseActivity {
 			mMy_register.setVisibility(View.GONE);
 			mMy_login.setVisibility(View.GONE);
 			mMy_info.setVisibility(View.VISIBLE);
+
+			String imageURL = UserInfoHolder.getInstance().getImageURL();
+			if (imageURL != null && !"".equals(imageURL)) {
+				ImageLoader imageLoader = new ImageLoader(VolleyUtil.getInstance().getRequestQueue(), new ImageLoader.ImageCache() {
+					@Override
+					public Bitmap getBitmap(String url) {
+						return null;
+					}
+
+					@Override
+					public void putBitmap(String url, Bitmap bitmap) {
+
+					}
+				});
+				imageView.setImageUrl(imageURL.replace("localhost", ActivityHolder.getInstance().getConnection().getHost()), imageLoader);
+			}
 		} else {
 //			Drawable drawable = getResources().getDrawable(R.drawable.arrow_profile);
 			mMy_logintoast.setText("点击右上角登陆");

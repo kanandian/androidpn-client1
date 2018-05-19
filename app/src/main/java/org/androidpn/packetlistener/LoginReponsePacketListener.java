@@ -7,9 +7,12 @@ import android.util.Log;
 import android.widget.Toast;
 
 import org.androidpn.IQ.LoginResponseIQ;
+import org.androidpn.IQ.ResultModelIQ;
 import org.androidpn.client.Constants;
 import org.androidpn.client.XmppManager;
+import org.androidpn.demoapp.LoginActivity;
 import org.androidpn.utils.ActivityHolder;
+import org.androidpn.utils.Location;
 import org.androidpn.utils.UserInfoHolder;
 import org.jivesoftware.smack.PacketListener;
 import org.jivesoftware.smack.XMPPConnection;
@@ -38,12 +41,21 @@ public class LoginReponsePacketListener implements PacketListener {
             LoginResponseIQ loginResponseIQ = (LoginResponseIQ) packet;
 
             if (loginResponseIQ.isError()) {
-                Toast.makeText(ActivityHolder.getInstance().getCurrentActivity(), loginResponseIQ.getMessage(), Toast.LENGTH_LONG);
+                Activity activity = ActivityHolder.getInstance().getCurrentActivity();
+                if (activity instanceof LoginActivity) {
+                    LoginActivity loginActivity = (LoginActivity) activity;
+                    ResultModelIQ resultModelIQ = new ResultModelIQ();
+                    resultModelIQ.setErrCode(1);
+                    resultModelIQ.setErrMsg(loginResponseIQ.getMessage());
+                    loginActivity.updateForResponse(resultModelIQ);
+                }
             } else {
                 String userName = loginResponseIQ.getUserName();
                 String password = loginResponseIQ.getPassword();
                 String name = loginResponseIQ.getName();
                 String mobile = loginResponseIQ.getMobile();
+                String imageURL = loginResponseIQ.getImageURL();
+                boolean isRealUser = loginResponseIQ.isRealUser();
 
                 UserInfoHolder userInfoHolder = UserInfoHolder.getInstance();
 
@@ -52,7 +64,9 @@ public class LoginReponsePacketListener implements PacketListener {
                 userInfoHolder.setPassword(password);
                 userInfoHolder.setName(name);
                 userInfoHolder.setMobile(mobile);
-                userInfoHolder.setAuth(true);
+                userInfoHolder.setImageURL(imageURL);
+                userInfoHolder.setAuth(isRealUser);
+
 
 
                 //设置SharePerfrence中的数据
@@ -70,7 +84,14 @@ public class LoginReponsePacketListener implements PacketListener {
                 //修改xmppconnection中的数据
                 UserInfoHolder.getInstance().setUserToConnection(userName);
 
-                ActivityHolder.getInstance().closeActivity();
+                Activity activity = ActivityHolder.getInstance().getCurrentActivity();
+                if (activity instanceof LoginActivity) {
+                    LoginActivity loginActivity = (LoginActivity) activity;
+                    ResultModelIQ resultModelIQ = new ResultModelIQ();
+                    resultModelIQ.setErrCode(0);
+                    resultModelIQ.setErrMsg(loginResponseIQ.getMessage());
+                    loginActivity.updateForResponse(resultModelIQ);
+                }
 
                 ActivityHolder.getInstance().refreshAllFrameAcrivity();
             }

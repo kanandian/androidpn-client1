@@ -24,6 +24,7 @@ import com.android.volley.toolbox.NetworkImageView;
 import org.androidpn.demoapp.R;
 import org.androidpn.info.ShopInfo;
 import org.androidpn.model.Model;
+import org.androidpn.utils.ActivityHolder;
 import org.androidpn.utils.LoadImg;
 import org.androidpn.utils.Location;
 import org.androidpn.utils.LocationHolder;
@@ -191,7 +192,7 @@ public class ShopAdapter extends BaseAdapter {
 
 			}
 		});
-		hold.mImage.setImageUrl(shopInfo.getIname(), imageLoader);
+		hold.mImage.setImageUrl(shopInfo.getIname().replace("localhost", ActivityHolder.getInstance().getConnection().getHost()), imageLoader);
 
 		return view;
 	}

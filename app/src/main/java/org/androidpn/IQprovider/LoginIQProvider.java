@@ -26,7 +26,7 @@ public class LoginIQProvider implements IQProvider {
             if (eventType == 2) {
                 if ("message".equals(parser.getName())) {
                     loginResponseIQ.setMessage(parser.nextText());
-                    loginResponseIQ.setError(false);
+                    loginResponseIQ.setError(true);
                 }
                 if ("userName".equals(parser.getName())) {
                     loginResponseIQ.setUserName(parser.nextText());
@@ -40,8 +40,18 @@ public class LoginIQProvider implements IQProvider {
                 if ("mobile".equals(parser.getName())) {
                     loginResponseIQ.setMobile(parser.nextText());
                 }
-                if ("isrealuser".equals(parser.getName())) {
-                    Log.d("qzf:", "isrealuser: "+parser.nextText());
+                if ("person".equals(parser.getName())) {
+//                    loginResponseIQ.setRealUser(Boolean.parseBoolean(parser.nextText()));
+                    String person = parser.nextText();
+                    if ("1".equals(person)) {
+                        loginResponseIQ.setRealUser(true);
+                    } else {
+                        loginResponseIQ.setRealUser(false);
+                    }
+//                    Log.d("qzf:", "isrealuser: "+parser.nextText());
+                }
+                if ("imageURL".equals(parser.getName())) {
+                    loginResponseIQ.setImageURL(parser.nextText());
                 }
             } else if (eventType == 3
                     && "login".equals(parser.getName())) {

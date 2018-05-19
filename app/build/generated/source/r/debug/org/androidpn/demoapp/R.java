@@ -764,9 +764,10 @@ public final class R {
     public static final int title_activity_tuan_details=0x7f080016;
   }
   public static final class style {
-    public static final int AppBaseTheme=0x7f090000;
-    public static final int AppTheme=0x7f090001;
-    public static final int MyStyle=0x7f090002;
-    public static final int custom_ratingbar_style=0x7f090003;
+    public static final int AlertDialog=0x7f090000;
+    public static final int AppBaseTheme=0x7f090001;
+    public static final int AppTheme=0x7f090002;
+    public static final int MyStyle=0x7f090003;
+    public static final int custom_ratingbar_style=0x7f090004;
   }
 }

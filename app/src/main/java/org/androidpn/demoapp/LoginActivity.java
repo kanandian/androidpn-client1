@@ -1,8 +1,12 @@
 package org.androidpn.demoapp;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
@@ -12,7 +16,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import org.androidpn.IQ.LoginIQ;
+import org.androidpn.IQ.ResultModelIQ;
+import org.androidpn.adapter.CommentAdapter;
 import org.androidpn.utils.ActivityHolder;
+import org.androidpn.utils.MessageFormatUtil;
 import org.jivesoftware.smack.packet.IQ;
 
 /**
@@ -22,9 +29,40 @@ import org.jivesoftware.smack.packet.IQ;
 
 public class LoginActivity extends BaseActivity {
 
+	private final static int UPDATE_UI = 0;
+
 	private ImageView mLogin_back;
 	private EditText mLogin_user, mLogin_password;
 	private TextView mLogin_OK, mLogin_wangjimima, mLogin_zhuce;
+
+	private Handler handler = new Handler() {
+		@Override
+		public void handleMessage(Message msg) {
+			super.handleMessage(msg);
+
+			if(msg.what == UPDATE_UI) {
+				Object obj = msg.obj;
+				if (obj instanceof ResultModelIQ) {
+					ResultModelIQ resultModelIQ = (ResultModelIQ) obj;
+					if (resultModelIQ.getErrCode() == 1) {
+						AlertDialog.Builder dialog = new AlertDialog.Builder(LoginActivity.this, R.style.AlertDialog);
+						dialog.setTitle("警告");
+						dialog.setMessage(resultModelIQ.getErrMsg());
+						dialog.setCancelable(false);
+						dialog.setPositiveButton("ok", new DialogInterface.OnClickListener() {
+							@Override
+							public void onClick(DialogInterface dialogInterface, int i) {
+
+							}
+						});
+						dialog.show();
+					} else if (resultModelIQ.getErrCode() == 0) {
+						LoginActivity.this.finish();
+					}
+				}
+			}
+		}
+	};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -82,5 +120,16 @@ public class LoginActivity extends BaseActivity {
 		Log.d("qzf", "sendLoginIQ: "+loginIQ.toXML());
 
 		ActivityHolder.getInstance().sendPacket(loginIQ);
+	}
+
+
+	@Override
+	public void updateForResponse(ResultModelIQ resultModelIQ) {
+		super.updateForResponse(resultModelIQ);
+
+		Message msg = new Message();
+		msg.what = UPDATE_UI;
+		msg.obj = resultModelIQ;
+		handler.sendMessage(msg);
 	}
 }
