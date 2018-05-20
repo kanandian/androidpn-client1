@@ -4,6 +4,7 @@ import org.jivesoftware.smack.packet.IQ;
 
 public class CommentIQ extends IQ {
 
+    private String userId;
     private String bussinessId;
     private String fromUserName;
     private String content;
@@ -19,6 +20,9 @@ public class CommentIQ extends IQ {
         StringBuilder buf = new StringBuilder();
         buf.append("<").append("comment").append(" xmlns=\"").append(
                 "androidpn:comment:admin").append("\">");
+        if(userId != null){
+            buf.append("<userid>").append(userId).append("</userid>");
+        }
         if(bussinessId != null){
             buf.append("<bussinessid>").append(bussinessId).append("</bussinessid>");
         }
@@ -39,6 +43,14 @@ public class CommentIQ extends IQ {
         }
         buf.append("</").append("comment").append("> ");
         return buf.toString();
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public String getBussinessId() {

@@ -70,14 +70,13 @@ public class Model {
 	public static String[] SHOPLIST_TOPLIST = new String[] { "ȫ���̻�", "�Ź��̻�",
 			"��Ԥ���̻�", "��Ա���̻�", "�Ż�ȯ�̻�", "�����̻�" };
 	// shoplist�������ı�
-	public static String[] SHOPLIST_THREELIST = { "Ĭ������", "�������", "�������",
-			"�������", "��ζ���", "��������", "�������", "�������", "�������" };
+	public static String[] SHOPLIST_THREELIST = {"美食", "景点", "酒店", "酒吧", "电影", "外卖"};
 	// shoplist�������ı�
 	public static String[] SHOPLIST_PLACE = new String[] { "����", "ȫ����������",
 			"������", "������", "�ϸ���", "�㷻��", "ƽ����", "�ɱ���", "������", "����" };
 	// ��ʳȫ����������2
 	public static String[][] SHOPLIST_PLACESTREET = new String[][] {
-			{ "500��", "1000��", "2000��", "5000��" },
+			{ "1000米以内", "3000米以内", "5000米以内", "8000米以内", "8000米以上" },
 			{ "ȫ������", "������", "������", "����", "������", "���ս�", "��������", "«�ҽ�/������",
 					"����·", "ѧ��·", "������·", "���½�", "���Ͼ���", "�ϼ���", "����·����",
 					"��������վ", "Ⱥ������", "����Ժ", "������", },
@@ -95,6 +94,10 @@ public class Model {
 	public static String[] PAIHANGBANG_TOPLIST = new String[] { "�������а�",
 			"�����������а�", "�������а�", "�������а�", "�˶��������а�", "�Ƶ����а�", "����������а�" };
 	// ���������
+
+	public static String[] DISTANCE_CONDITION = { "1000米以内", "3000米以内", "5000米以内", "8000米以内", "8000米以上" };
+	public static String[] CLASSIFICATION_CONDITION = {"美食", "景点", "酒店", "酒吧", "电影", "外卖"};
+
 	public static int image1[] = { R.drawable.emoji000, R.drawable.emoji001,
 			R.drawable.emoji002, R.drawable.emoji003, R.drawable.emoji004,
 			R.drawable.emoji005, R.drawable.emoji006, R.drawable.emoji007,

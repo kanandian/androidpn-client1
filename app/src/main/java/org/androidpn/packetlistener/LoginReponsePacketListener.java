@@ -50,6 +50,7 @@ public class LoginReponsePacketListener implements PacketListener {
                     loginActivity.updateForResponse(resultModelIQ);
                 }
             } else {
+                String userId = loginResponseIQ.getUserId();
                 String userName = loginResponseIQ.getUserName();
                 String password = loginResponseIQ.getPassword();
                 String name = loginResponseIQ.getName();
@@ -60,6 +61,7 @@ public class LoginReponsePacketListener implements PacketListener {
                 UserInfoHolder userInfoHolder = UserInfoHolder.getInstance();
 
                 //设置UserInfoHolder中的数据
+                userInfoHolder.setUserId(userId);
                 userInfoHolder.setUserName(userName);
                 userInfoHolder.setPassword(password);
                 userInfoHolder.setName(name);

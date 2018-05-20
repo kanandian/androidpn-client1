@@ -45,20 +45,20 @@ public class ShopListActivity extends BaseActivity {
 	private static final int UPDATE_UI = 0;
 
 
-	private ListView mListView, mShoplist_toplist, mShoplist_threelist,
+	private ListView mListView, mShoplist_toplist, mShoplist_threelist, mshoplist_threelist0,
 			mShoplist_onelist2, mShoplist_twolist2, mShoplist_onelist1,
 			mShoplist_twolist1;
 	private ImageView mShoplist_back;
 	private LinearLayout mShoplist_shanghuleixing, mShoplist_mainlist2,
 			mShoplist_mainlist1;
-	private TextView mShoplist_title_textbtn1, mShoplist_title_textbtn2,
+	private TextView mShoplist_title_textbtn1,
 			mShoplist_title_textbtn3;
 	private MyGet myGet = new MyGet();
 	private MyJson myJson = new MyJson();
 	private List<ShopInfo> list = new ArrayList<ShopInfo>();
 	private ShopAdapter mAdapter = null;
 	private SearchMoreAdapter topadapter = null;
-	private SearchMoreAdapter threeadapter = null;
+	private SearchMoreAdapter threeadapter = null, threeadapter0 = null;
 	private SearchMoreAdapter twoadapter1 = null;
 	private SearchMainAdapter oneadapter1 = null;
 	private SearchMoreAdapter twoadapter2 = null;
@@ -110,7 +110,7 @@ public class ShopListActivity extends BaseActivity {
 		mShoplist_title_txt = (TextView) findViewById(R.id.Shoplist_title_txt);
 		mSearch_city_img = (ImageView) findViewById(R.id.Search_city_img);
 		mShoplist_title_textbtn1 = (TextView) findViewById(R.id.Shoplist_title_textbtn1);
-		mShoplist_title_textbtn2 = (TextView) findViewById(R.id.Shoplist_title_textbtn2);
+//		mShoplist_title_textbtn2 = (TextView) findViewById(R.id.Shoplist_title_textbtn2);
 		mShoplist_title_textbtn3 = (TextView) findViewById(R.id.Shoplist_title_textbtn3);
 		mShoplist_toplist = (ListView) findViewById(R.id.Shoplist_toplist);
 		mShoplist_mainlist1 = (LinearLayout) findViewById(R.id.Shoplist_mainlist1);
@@ -120,13 +120,14 @@ public class ShopListActivity extends BaseActivity {
 		mShoplist_onelist2 = (ListView) findViewById(R.id.Shoplist_onelist2);
 		mShoplist_twolist2 = (ListView) findViewById(R.id.Shoplist_twolist2);
 		mShoplist_threelist = (ListView) findViewById(R.id.Shoplist_threelist);
+		mshoplist_threelist0 = (ListView) findViewById(R.id.Shoplist_threelist0);
 		mListView = (ListView) findViewById(R.id.ShopListView);
 
 		MyOnclickListener mOnclickListener = new MyOnclickListener();
 		mShoplist_back.setOnClickListener(mOnclickListener);
 		mShoplist_shanghuleixing.setOnClickListener(mOnclickListener);
 		mShoplist_title_textbtn1.setOnClickListener(mOnclickListener);
-		mShoplist_title_textbtn2.setOnClickListener(mOnclickListener);
+//		mShoplist_title_textbtn2.setOnClickListener(mOnclickListener);
 		mShoplist_title_textbtn3.setOnClickListener(mOnclickListener);
 		// -----------------------------------------------------------------
 		initModel1();
@@ -137,24 +138,28 @@ public class ShopListActivity extends BaseActivity {
 		oneadapter2.setSelectItem(0);
 		topadapter = new SearchMoreAdapter(ShopListActivity.this,Model.SHOPLIST_TOPLIST,R.layout.shop_list2_item);
 		threeadapter = new SearchMoreAdapter(ShopListActivity.this,Model.SHOPLIST_THREELIST,R.layout.shop_list2_item);
+		threeadapter0 = new SearchMoreAdapter(ShopListActivity.this,Model.DISTANCE_CONDITION,R.layout.shop_list2_item);
 		mShoplist_toplist.setAdapter(topadapter);
 		mShoplist_onelist1.setAdapter(oneadapter1);
 		initAdapter1(Model.SHOPLIST_PLACESTREET[0]);
 		mShoplist_onelist2.setAdapter(oneadapter2);
 		initAdapter2(Model.MORELISTTXT[0]);
 		mShoplist_threelist.setAdapter(threeadapter);
+		mshoplist_threelist0.setAdapter(threeadapter0);
 		TopListOnItemclick topListOnItemclick = new TopListOnItemclick();
 		Onelistclick1 onelistclick1 = new Onelistclick1();
 		Twolistclick1 twolistclick1 = new Twolistclick1();
 		Onelistclick2 onelistclick2 = new Onelistclick2();
-		Twolistclick2 twolistclick2 = new Twolistclick2();
+//		Twolistclick2 twolistclick2 = new Twolistclick2();
 		ThreeListOnItemclick threeListOnItemClick = new ThreeListOnItemclick();
+		ThreeListOnItemclick0 threeListOnItemclick0 = new ThreeListOnItemclick0();
 		mShoplist_toplist.setOnItemClickListener(topListOnItemclick);
 		mShoplist_onelist1.setOnItemClickListener(onelistclick1);
 		mShoplist_twolist1.setOnItemClickListener(twolistclick1);
 		mShoplist_onelist2.setOnItemClickListener(onelistclick2);
-		mShoplist_twolist2.setOnItemClickListener(twolistclick2);
+//		mShoplist_twolist2.setOnItemClickListener(twolistclick2);
 		mShoplist_threelist.setOnItemClickListener(threeListOnItemClick);
+		mshoplist_threelist0.setOnItemClickListener(threeListOnItemclick0);
 		// -----------------------------------------------------------------
 		mAdapter = new ShopAdapter(list, ShopListActivity.this);
 		ListBottem = new Button(ShopListActivity.this);
@@ -260,42 +265,42 @@ public class ShopListActivity extends BaseActivity {
 				threelistview = false;
 
 			}
-			if (mID == R.id.Shoplist_title_textbtn2) {
-				Drawable drawable = null;
-				if (!mainlistview2) {
-					drawable = getResources().getDrawable(
-							R.drawable.ic_arrow_up_black);
-					mShoplist_mainlist2.setVisibility(View.VISIBLE);
-					twoadapter2.notifyDataSetChanged();
-					mainlistview2 = true;
-				} else {
-					drawable = getResources().getDrawable(
-							R.drawable.ic_arrow_down_black);
-					mShoplist_mainlist2.setVisibility(View.GONE);
-					mainlistview2 = false;
-				}
-				// ��һ������Ҫ��,���򲻻���ʾ.
-				drawable.setBounds(0, 0, drawable.getMinimumWidth(),
-						drawable.getMinimumHeight());
-				mShoplist_title_textbtn2.setCompoundDrawables(null, null,
-						drawable, null);
-			} else {
-				Drawable drawable = getResources().getDrawable(
-						R.drawable.ic_arrow_down_black);
-				drawable.setBounds(0, 0, drawable.getMinimumWidth(),
-						drawable.getMinimumHeight());
-				mShoplist_title_textbtn2.setCompoundDrawables(null, null,
-						drawable, null);
-				mShoplist_mainlist2.setVisibility(View.GONE);
-				mainlistview2 = false;
-			}
+//			if (mID == R.id.Shoplist_title_textbtn2) {
+//				Drawable drawable = null;
+//				if (!mainlistview2) {
+//					drawable = getResources().getDrawable(
+//							R.drawable.ic_arrow_up_black);
+//					mShoplist_mainlist2.setVisibility(View.VISIBLE);
+//					twoadapter2.notifyDataSetChanged();
+//					mainlistview2 = true;
+//				} else {
+//					drawable = getResources().getDrawable(
+//							R.drawable.ic_arrow_down_black);
+//					mShoplist_mainlist2.setVisibility(View.GONE);
+//					mainlistview2 = false;
+//				}
+//				// ��һ������Ҫ��,���򲻻���ʾ.
+//				drawable.setBounds(0, 0, drawable.getMinimumWidth(),
+//						drawable.getMinimumHeight());
+////				mShoplist_title_textbtn2.setCompoundDrawables(null, null,
+////						drawable, null);
+//			} else {
+//				Drawable drawable = getResources().getDrawable(
+//						R.drawable.ic_arrow_down_black);
+//				drawable.setBounds(0, 0, drawable.getMinimumWidth(),
+//						drawable.getMinimumHeight());
+//				mShoplist_title_textbtn2.setCompoundDrawables(null, null,
+//						drawable, null);
+//				mShoplist_mainlist2.setVisibility(View.GONE);
+//				mainlistview2 = false;
+//			}
 			if (mID == R.id.Shoplist_title_textbtn1) {
 				Drawable drawable = null;
 				if (!mainlistview1) {
 					drawable = getResources().getDrawable(
 							R.drawable.ic_arrow_up_black);
-					mShoplist_mainlist1.setVisibility(View.VISIBLE);
-					twoadapter1.notifyDataSetChanged();
+					mshoplist_threelist0.setVisibility(View.VISIBLE);
+					threeadapter0.notifyDataSetChanged();
 					mainlistview1 = true;
 				} else {
 					drawable = getResources().getDrawable(
@@ -429,22 +434,22 @@ public class ShopListActivity extends BaseActivity {
 		}
 	}
 
-	private class Twolistclick2 implements OnItemClickListener {
-		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
-                                long arg3) {
-			twoadapter2.setSelectItem(arg2);
-			Drawable drawable = getResources().getDrawable(
-					R.drawable.ic_arrow_down_black);
-			drawable.setBounds(0, 0, drawable.getMinimumWidth(),
-					drawable.getMinimumHeight());
-			mShoplist_title_textbtn2.setCompoundDrawables(null, null, drawable,
-					null);
-			int position = oneadapter2.getSelectItem();
-			mShoplist_title_textbtn2.setText(Model.MORELISTTXT[position][arg2]);
-			mShoplist_mainlist2.setVisibility(View.GONE);
-			mainlistview2 = false;
-		}
-	}
+//	private class Twolistclick2 implements OnItemClickListener {
+//		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+//                                long arg3) {
+//			twoadapter2.setSelectItem(arg2);
+//			Drawable drawable = getResources().getDrawable(
+//					R.drawable.ic_arrow_down_black);
+//			drawable.setBounds(0, 0, drawable.getMinimumWidth(),
+//					drawable.getMinimumHeight());
+//			mShoplist_title_textbtn2.setCompoundDrawables(null, null, drawable,
+//					null);
+//			int position = oneadapter2.getSelectItem();
+//			mShoplist_title_textbtn2.setText(Model.MORELISTTXT[position][arg2]);
+//			mShoplist_mainlist2.setVisibility(View.GONE);
+//			mainlistview2 = false;
+//		}
+//	}
 
 	private void initModel1() {
 		mainList1 = new ArrayList<Map<String, Object>>();
@@ -493,6 +498,22 @@ public class ShopListActivity extends BaseActivity {
 		}
 	}
 
+	private class ThreeListOnItemclick0 implements OnItemClickListener {
+		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+								long arg3) {
+			threeadapter0.setSelectItem(arg2);
+			Drawable drawable = getResources().getDrawable(
+					R.drawable.ic_arrow_down_black);
+			drawable.setBounds(0, 0, drawable.getMinimumWidth(),
+					drawable.getMinimumHeight());
+			mShoplist_title_textbtn1.setCompoundDrawables(null, null, drawable,
+					null);
+			mShoplist_title_textbtn1.setText(Model.DISTANCE_CONDITION[arg2]);
+			mshoplist_threelist0.setVisibility(View.GONE);
+			mainlistview1 = false;
+		}
+	}
+
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (keyCode == KeyEvent.KEYCODE_BACK) {
 			if (toplistview == true) {
@@ -518,15 +539,15 @@ public class ShopListActivity extends BaseActivity {
 						drawable, null);
 				mShoplist_mainlist1.setVisibility(View.GONE);
 				mainlistview1 = false;
-			} else if (mainlistview2 == true) {
-				Drawable drawable = getResources().getDrawable(
-						R.drawable.ic_arrow_down_black);
-				drawable.setBounds(0, 0, drawable.getMinimumWidth(),
-						drawable.getMinimumHeight());
-				mShoplist_title_textbtn2.setCompoundDrawables(null, null,
-						drawable, null);
-				mShoplist_mainlist2.setVisibility(View.GONE);
-				mainlistview2 = false;
+//			} else if (mainlistview2 == true) {
+//				Drawable drawable = getResources().getDrawable(
+//						R.drawable.ic_arrow_down_black);
+//				drawable.setBounds(0, 0, drawable.getMinimumWidth(),
+//						drawable.getMinimumHeight());
+//				mShoplist_title_textbtn2.setCompoundDrawables(null, null,
+//						drawable, null);
+//				mShoplist_mainlist2.setVisibility(View.GONE);
+//				mainlistview2 = false;
 			} else {
 				ShopListActivity.this.finish();
 			}

@@ -8,6 +8,7 @@ import org.jivesoftware.smack.packet.IQ;
 
 public class LoginResponseIQ extends IQ {
 
+    private String userId;
     private boolean isError;
     private String message;
 
@@ -37,6 +38,14 @@ public class LoginResponseIQ extends IQ {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public String getUserName() {

@@ -11,6 +11,7 @@ import java.lang.reflect.Field;
 public class UserInfoHolder {
     private static UserInfoHolder userInfoHolder = null;
 
+    private String userId;
     private String userName;
     private String password;
 
@@ -36,6 +37,14 @@ public class UserInfoHolder {
         }
 
         return userInfoHolder;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public String getUserName() {

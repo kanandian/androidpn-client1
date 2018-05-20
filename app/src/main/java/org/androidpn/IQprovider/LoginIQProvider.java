@@ -28,6 +28,9 @@ public class LoginIQProvider implements IQProvider {
                     loginResponseIQ.setMessage(parser.nextText());
                     loginResponseIQ.setError(true);
                 }
+                if ("userId".equals(parser.getName())) {
+                    loginResponseIQ.setUserId(parser.nextText());
+                }
                 if ("userName".equals(parser.getName())) {
                     loginResponseIQ.setUserName(parser.nextText());
                 }

@@ -69,32 +69,32 @@
                 android:gravity="center_horizontal"
                 android:padding="10dp"
                 android:singleLine="true"
-                android:text="全部地区"
+                android:text="距离"
                 android:textColor="#666666" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/tuan_tab_linear_background"
-            android:paddingBottom="0.5dp"
-            android:paddingLeft="0dp"
-            android:paddingRight="0.5dp"
-            android:paddingTop="0dp" >
-
-            <TextView
-                android:id="@+id/Shoplist_title_textbtn2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/my_tab_background"
-                android:drawableRight="@drawable/ic_arrow_down_black"
-                android:gravity="center_horizontal"
-                android:padding="10dp"
-                android:singleLine="true"
-                android:text="美食"
-                android:textColor="#666666" />
-        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/tuan_tab_linear_background"-->
+            <!--android:paddingBottom="0.5dp"-->
+            <!--android:paddingLeft="0dp"-->
+            <!--android:paddingRight="0.5dp"-->
+            <!--android:paddingTop="0dp" >-->
+<!---->
+            <!--<TextView-->
+                <!--android:id="@+id/Shoplist_title_textbtn2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/my_tab_background"-->
+                <!--android:drawableRight="@drawable/ic_arrow_down_black"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:padding="10dp"-->
+                <!--android:singleLine="true"-->
+                <!--android:text="美食"-->
+                <!--android:textColor="#666666" />-->
+        <!--</LinearLayout>-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -115,7 +115,7 @@
                 android:gravity="center_horizontal"
                 android:padding="10dp"
                 android:singleLine="true"
-                android:text="默认排序"
+                android:text="分类"
                 android:textColor="#666666" />
         </LinearLayout>
     </LinearLayout>
@@ -136,6 +136,17 @@
         android:divider="@null"
         android:listSelector="@drawable/search_more_morelistselect"
         android:padding="10dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/Shoplist_threelist0"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/middlelinearlayout"
+        android:background="#ffffff"
+        android:divider="@null"
+        android:listSelector="@drawable/search_more_morelistselect"
+        android:padding="3dp"
         android:visibility="gone" />
 
     <ListView

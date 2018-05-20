@@ -436,8 +436,8 @@ public final class R {
     public static final int Shoplist_onelist2=0x7f050080;
     public static final int Shoplist_shanghuleixing=0x7f050081;
     public static final int Shoplist_threelist=0x7f050082;
-    public static final int Shoplist_title_textbtn1=0x7f050083;
-    public static final int Shoplist_title_textbtn2=0x7f050084;
+    public static final int Shoplist_threelist0=0x7f050083;
+    public static final int Shoplist_title_textbtn1=0x7f050084;
     public static final int Shoplist_title_textbtn3=0x7f050085;
     public static final int Shoplist_title_txt=0x7f050086;
     public static final int Shoplist_toplist=0x7f050087;

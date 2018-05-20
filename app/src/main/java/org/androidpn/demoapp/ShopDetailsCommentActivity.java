@@ -105,6 +105,7 @@ public class ShopDetailsCommentActivity extends BaseActivity {
 		commentIQ.setStar(String.valueOf(star));
 		commentIQ.setFromUserName(UserInfoHolder.getInstance().getUserName());
 		commentIQ.setImageURL(UserInfoHolder.getInstance().getImageURL());
+		commentIQ.setUserId(UserInfoHolder.getInstance().getUserId());
 
 		Log.d("qzf's log", "sendInquiryIQ: "+commentIQ.toXML());
 
