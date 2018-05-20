@@ -137,6 +137,7 @@
         <activity
             android:name="org.androidpn.demoapp.SearchViewActivity"
             android:theme="@style/MyStyle" />
+        <activity android:name="org.androidpn.demoapp.PaymentActivity" />
         <activity android:name="org.androidpn.demoapp.BussinessInfoActivity" />
         <activity android:name="org.androidpn.demoapp.NavigationActivity" />
         <activity android:name="org.androidpn.demoapp.PersonalActivity" />

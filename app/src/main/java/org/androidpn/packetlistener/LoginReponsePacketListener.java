@@ -93,7 +93,6 @@ public class LoginReponsePacketListener implements PacketListener {
                     loginActivity.updateForResponse(resultModelIQ);
                 }
 
-                ActivityHolder.getInstance().refreshAllFrameAcrivity();
             }
         }
     }

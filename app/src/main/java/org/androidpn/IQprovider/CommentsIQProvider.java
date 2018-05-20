@@ -1,5 +1,6 @@
 package org.androidpn.IQprovider;
 
+import android.content.Intent;
 import android.util.Log;
 
 import org.androidpn.IQ.CommentsIQ;
@@ -38,6 +39,12 @@ public class CommentsIQProvider implements IQProvider {
                     }
                     if ("createtime".equals(parser.getAttributeName(i))) {
                         comment.setCreateTime(parser.getAttributeValue(i));
+                    }
+                    if ("imageurl".equals(parser.getAttributeName(i))) {
+                        comment.setImageURL(parser.getAttributeValue(i));
+                    }
+                    if ("star".equals(parser.getAttributeName(i))) {
+                        comment.setStar(Integer.valueOf(parser.getAttributeValue(i)));
                     }
                 }
                 commentList.add(comment);

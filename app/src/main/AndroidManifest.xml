@@ -126,6 +126,8 @@
 
 		<activity android:name=".SearchViewActivity" android:theme="@style/MyStyle"></activity>
 
+		<activity android:name=".PaymentActivity"></activity>
+
 
 		<activity android:name=".BussinessInfoActivity"></activity>
 		<activity android:name=".NavigationActivity"></activity>

@@ -9,6 +9,7 @@ public class CommentIQ extends IQ {
     private String content;
     private String star;
     private String amount;
+    private String imageURL;
 
     public CommentIQ() {
     }
@@ -32,6 +33,9 @@ public class CommentIQ extends IQ {
         }
         if (amount != null) {
             buf.append("<amount>").append(amount).append("</amount>");
+        }
+        if (imageURL != null) {
+            buf.append("<imageurl>").append(imageURL).append("</imageurl>");
         }
         buf.append("</").append("comment").append("> ");
         return buf.toString();
@@ -75,5 +79,13 @@ public class CommentIQ extends IQ {
 
     public void setAmount(String amount) {
         this.amount = amount;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
     }
 }

@@ -19,6 +19,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Network;
+import com.android.volley.toolbox.NetworkImageView;
+
 import org.androidpn.IQ.InquiryIQ;
 import org.androidpn.info.CommentsInfo;
 import org.androidpn.info.FoodInfo;
@@ -31,6 +34,7 @@ import org.androidpn.utils.ActivityHolder;
 import org.androidpn.utils.LoadImg;
 import org.androidpn.utils.Location;
 import org.androidpn.utils.MyJson;
+import org.androidpn.utils.NetworkImageUtil;
 import org.androidpn.utils.UserInfoHolder;
 import org.jivesoftware.smack.packet.IQ;
 
@@ -50,7 +54,9 @@ public class ShopDetailsActivity extends BaseActivity {
 	private ArrayList<FoodInfo> FoodList;
 	// top�͵��̵�����
 	private ImageView mShop_details_back, mShop_details_share,
-			mShop_details_off, mShop_details_photo, mShop_details_star;
+			mShop_details_off, mShop_details_star;
+
+	private NetworkImageView mShop_details_photo;
 	private TextView mShop_details_name, mShop_details_money;
 	// ������ĵ���ʽ��ť
 	private LinearLayout mShop_details_bottom_img1, mShop_details_bottom_img2,
@@ -129,7 +135,7 @@ public class ShopDetailsActivity extends BaseActivity {
 		mShop_details_bottom_img5 = (LinearLayout) findViewById(R.id.Shop_details_bottom_img5);
 		// ������Ϣ�ؼ�
 		mShop_details_name = (TextView) findViewById(R.id.Shop_details_name);
-		mShop_details_photo = (ImageView) findViewById(R.id.Shop_details_photo);
+		mShop_details_photo = (NetworkImageView) findViewById(R.id.Shop_details_photo);
 		mShop_details_star = (ImageView) findViewById(R.id.Shop_details_star);
 		mShop_details_money = (TextView) findViewById(R.id.Shop_details_money);
 		// ������Ϣ����ĵ�ַ���绰����������ȯ���ſؼ�
@@ -379,19 +385,7 @@ public class ShopDetailsActivity extends BaseActivity {
 
 	// ���ͼƬ����
 	private void addImg() {
-		mShop_details_photo.setTag(Model.SHOPLISTIMGURL + info.getIname());
-		Bitmap bit = loadImg.loadImage(mShop_details_photo,
-				Model.SHOPLISTIMGURL + info.getIname(),
-				new LoadImg.ImageDownloadCallBack() {
-					public void onImageDownload(ImageView imageView,
-							Bitmap bitmap) {
-						// ����Ҫ����tag����ͼƬ��������img��������
-						mShop_details_photo.setImageBitmap(bitmap);
-					}
-				});
-		if (bit != null) {
-			mShop_details_photo.setImageBitmap(bit);
-		}
+		NetworkImageUtil.requestImage(mShop_details_photo, info.getIname());
 	}
 
 	// �̷߳�����Ϣ

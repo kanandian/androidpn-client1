@@ -79,7 +79,7 @@
                     android:orientation="horizontal"
                     android:padding="7dp" >
 
-                    <ImageView
+                    <com.android.volley.toolbox.NetworkImageView
                         android:id="@+id/Shop_details_photo"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -90,8 +90,7 @@
                         android:paddingBottom="11dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:paddingTop="9dp"
-                        android:src="@drawable/f20" />
+                        android:paddingTop="9dp" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"

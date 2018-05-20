@@ -12,6 +12,9 @@ public class Comment {
 
     private String createTime;
 
+    private int star;
+    private String imageURL;
+
     public Comment() {
     }
 
@@ -45,5 +48,21 @@ public class Comment {
 
     public void setCreateTime(String createTime) {
         this.createTime = createTime;
+    }
+
+    public int getStar() {
+        return star;
+    }
+
+    public void setStar(int star) {
+        this.star = star;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
     }
 }
