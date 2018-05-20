@@ -122,5 +122,6 @@
     <orderEntry type="library" name="Gradle: com.android.support:support-v4:19.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/macpro/AndroidStudioProjects/androidpn-client1/libs/asmack.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.amap.api:navi-3dmap:6.0.1_3dmap6.1.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.litepal.android:core-1.6.1" level="project" />
   </component>
 </module>

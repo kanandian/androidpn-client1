@@ -11,18 +11,27 @@ import android.widget.ListView;
 import android.widget.SearchView;
 
 import org.androidpn.IQ.InquiryIQ;
+import org.androidpn.entity.SearchHistory;
 import org.androidpn.utils.ActivityHolder;
+import org.androidpn.utils.UserInfoHolder;
 import org.jivesoftware.smack.packet.IQ;
+import org.litepal.crud.DataSupport;
+
+import java.util.Date;
+import java.util.List;
 
 public class SearchViewActivity extends Activity implements SearchView.OnQueryTextListener{
     private SearchView searchView;
     private ListView listView;
-    private final String[] mStrings = {"aaaa","bbbb","cccc","dddd"};
+    private String[] mStrings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_view);
+
+        prepareData();
+
         searchView = (SearchView) findViewById(R.id.search_view);
         listView = (ListView) findViewById(R.id.list_view);
         listView.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,mStrings));
@@ -40,9 +49,27 @@ public class SearchViewActivity extends Activity implements SearchView.OnQueryTe
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //将选择的列表项内容填到搜索框中
-                searchView.setQuery(mStrings[position],false);
+                String query = mStrings[position];
+                if ("清除历史搜索记录".equals(query)) {
+                    DataSupport.deleteAll(SearchHistory.class);
+                    mStrings = new String[]{};
+                    listView.setAdapter(new ArrayAdapter<String>(SearchViewActivity.this,android.R.layout.simple_list_item_1,mStrings));
+                } else {
+                    searchView.setQuery(query,false);
+                }
             }
         });
+    }
+
+    public void prepareData() {
+        List<SearchHistory> searchHistoryList = DataSupport.findAll(SearchHistory.class);
+        mStrings = new String[searchHistoryList.size()+1];
+
+        for (int i=0;i<searchHistoryList.size();i++) {
+            SearchHistory searchHistory = searchHistoryList.get(i);
+            mStrings[i] = searchHistory.getKey();
+        }
+        mStrings[searchHistoryList.size()] = "清除历史搜索记录";
     }
 
     /**
@@ -53,6 +80,17 @@ public class SearchViewActivity extends Activity implements SearchView.OnQueryTe
     @Override
     public boolean onQueryTextSubmit(String query) {
 //        Toast.makeText(SearchViewActivity.this,"您的选择是"+query, Toast.LENGTH_SHORT).show();
+
+        SearchHistory history = DataSupport.where("key = ?", query).findFirst(SearchHistory.class);
+
+        if (history == null) {
+            SearchHistory searchHistory = new SearchHistory();
+            searchHistory.setKey(query);
+            searchHistory.setUserName(UserInfoHolder.getInstance().getUserName());
+            searchHistory.setCreateTime(new Date().getTime());
+            searchHistory.save();
+        }
+
         InquiryIQ inquiryIQ = new InquiryIQ();
         inquiryIQ.setType(IQ.Type.GET);
 

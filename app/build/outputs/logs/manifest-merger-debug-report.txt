@@ -5,6 +5,7 @@ INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-177:12
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-177:12
 MERGED from [com.android.volley:volley:1.1.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/93d53ba5aba1120c5758a6b11d10a6cb/AndroidManifest.xml:2:1-11:12
+MERGED from [org.litepal.android:core:1.6.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/core-1.6.1.aar/8f6100277145de666ade57b709498bc8/AndroidManifest.xml:2:1-16:12
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-177:12
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-177:12
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-177:12
@@ -26,10 +27,16 @@ application
 ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:5:2-162:16
 MERGED from [com.android.volley:volley:1.1.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/93d53ba5aba1120c5758a6b11d10a6cb/AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.1.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/93d53ba5aba1120c5758a6b11d10a6cb/AndroidManifest.xml:9:5-20
+MERGED from [org.litepal.android:core:1.6.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/core-1.6.1.aar/8f6100277145de666ade57b709498bc8/AndroidManifest.xml:11:5-14:19
+MERGED from [org.litepal.android:core:1.6.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/core-1.6.1.aar/8f6100277145de666ade57b709498bc8/AndroidManifest.xml:11:5-14:19
 	android:label
 		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:5:45-77
+	android:allowBackup
+		ADDED from [org.litepal.android:core:1.6.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/core-1.6.1.aar/8f6100277145de666ade57b709498bc8/AndroidManifest.xml:12:9-35
 	android:icon
 		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:5:15-44
+	android:name
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:5:78-123
 meta-data#com.amap.api.v2.apikey
 ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:6:3-8:65
 	android:value
@@ -292,6 +299,8 @@ INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:163:2-40
 MERGED from [com.android.volley:volley:1.1.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/93d53ba5aba1120c5758a6b11d10a6cb/AndroidManifest.xml:7:5-43
 MERGED from [com.android.volley:volley:1.1.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/93d53ba5aba1120c5758a6b11d10a6cb/AndroidManifest.xml:7:5-43
+MERGED from [org.litepal.android:core:1.6.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/core-1.6.1.aar/8f6100277145de666ade57b709498bc8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.litepal.android:core:1.6.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/core-1.6.1.aar/8f6100277145de666ade57b709498bc8/AndroidManifest.xml:7:5-9:41
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:163:2-40
 INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:163:2-40
 	android:targetSdkVersion
