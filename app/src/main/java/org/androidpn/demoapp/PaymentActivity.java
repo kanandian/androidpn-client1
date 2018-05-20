@@ -19,13 +19,15 @@ import org.jivesoftware.smack.packet.IQ;
  * Created by macpro on 2018/4/3.
  */
 
-public class PaymentActivity extends Activity {
+public class PaymentActivity extends BaseActivity {
 
     private EditText amountEdit;
 
     private Button paymentBtn;
 
     private String toUserName;
+    private String bussinessId;
+    private String bussinessName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,8 @@ public class PaymentActivity extends Activity {
 
         Intent intent = getIntent();
         toUserName = intent.getStringExtra("toUserName");
+        bussinessId = intent.getStringExtra("bussinessId");
+        bussinessName = intent.getStringExtra("bussinessName");
 
         amountEdit = (EditText) findViewById(R.id.edit_amount);
         paymentBtn = (Button) findViewById(R.id.btn_payment);
@@ -52,9 +56,13 @@ public class PaymentActivity extends Activity {
         String fromUserName = UserInfoHolder.getInstance().getUserName();
 
         PaymentIQ paymentIQ = new PaymentIQ();
+        paymentIQ.setType(IQ.Type.SET);
+
         paymentIQ.setFromUserName(fromUserName);
         paymentIQ.setToUserName(toUserName);
-        paymentIQ.setType(IQ.Type.SET);
+        paymentIQ.setPrice(amount);
+        paymentIQ.setBussinessId(bussinessId);
+        paymentIQ.setBussinessName(bussinessName);
 
         Log.d("qzf's log", "sendPaymentIQ: "+paymentIQ.toXML());
 

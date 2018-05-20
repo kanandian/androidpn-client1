@@ -260,6 +260,8 @@ public class ShopDetailsActivity extends BaseActivity {
 				} else {
 					Intent intent = new Intent(ShopDetailsActivity.this, PaymentActivity.class);
 					intent.putExtra("toUserName", info.getSholder());
+					intent.putExtra("bussinessId", info.getSid());
+					intent.putExtra("bussinessName", info.getSname());
 					startActivity(intent);
 				}
 			}

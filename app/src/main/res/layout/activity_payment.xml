@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#f4f4f4"
     android:layout_height="match_parent">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/text_black"
         android:text="请输入付款金额"/>
 
     <EditText
         android:id="@+id/edit_amount"
         android:layout_width="match_parent"
-        android:layout_height="100px" />
+        android:layout_height="100px"
+        android:textColor="@color/text_black"
+        android:textColorHint="@color/hint_gray"
+        android:hint="在此填写支付金额"/>
 
     <Button
         android:id="@+id/btn_payment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="付款"/>
+        android:background="@drawable/login_btn_bg"
+        android:text="付  款"/>
 
 </LinearLayout>

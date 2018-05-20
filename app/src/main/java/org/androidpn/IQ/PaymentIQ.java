@@ -12,6 +12,7 @@ public class PaymentIQ extends IQ {
     private String toUserName;
     private String bussinessId;
     private String price;
+    private String bussinessName;
 
     @Override
     public String getChildElementXML() {
@@ -29,6 +30,9 @@ public class PaymentIQ extends IQ {
         }
         if (price != null) {
             buf.append("<price>").append(price).append("</price>");
+        }
+        if (bussinessName != null) {
+            buf.append("<bussinessname>").append(bussinessId).append("</bussinessname>");
         }
         buf.append("</").append("payment").append("> ");
         return buf.toString();
@@ -64,5 +68,13 @@ public class PaymentIQ extends IQ {
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    public String getBussinessName() {
+        return bussinessName;
+    }
+
+    public void setBussinessName(String bussinessName) {
+        this.bussinessName = bussinessName;
     }
 }
