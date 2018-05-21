@@ -13,6 +13,8 @@ import org.androidpn.utils.ActivityHolder;
 
 public class BaseActivity extends Activity {
 
+    public static final int UPDATE_UI = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -2851,65 +2851,57 @@
                 {
                     "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/values/dimens.xml",
                     "from": {
-                        "startLines": "3,4",
-                        "startColumns": "4,4",
-                        "startOffsets": "89,147",
-                        "endColumns": "57,55",
-                        "endOffsets": "142,198"
+                        "startLines": "-1,-1",
+                        "startColumns": "-1,-1",
+                        "startOffsets": "-1,-1"
                     },
                     "to": {
-                        "startLines": "160,161",
+                        "startLines": "162,163",
                         "startColumns": "4,4",
-                        "startOffsets": "4382,4440",
+                        "startOffsets": "4469,4527",
                         "endColumns": "57,55",
-                        "endOffsets": "4435,4491"
+                        "endOffsets": "4522,4578"
                     }
                 },
                 {
                     "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/values/mcolors.xml",
                     "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,99",
-                        "endColumns": "43,44",
-                        "endOffsets": "94,139"
+                        "startLines": "5,-1,-1,4",
+                        "startColumns": "4,-1,-1,4",
+                        "startOffsets": "189,-1,-1,144",
+                        "endColumns": "41,-1,-1,44",
+                        "endOffsets": "226,-1,-1,184"
                     },
                     "to": {
-                        "startLines": "158,159",
-                        "startColumns": "4,4",
-                        "startOffsets": "4293,4337",
-                        "endColumns": "43,44",
-                        "endOffsets": "4332,4377"
+                        "startLines": "158,159,160,161",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "4293,4335,4379,4424",
+                        "endColumns": "41,43,44,44",
+                        "endOffsets": "4330,4374,4419,4464"
                     }
                 },
                 {
                     "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "44,12,27,38,31",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "1330,263,608,1119,773",
-                        "endLines": "55,24,29,42,36",
-                        "endColumns": "12,12,12,12,12",
-                        "endOffsets": "1963,567,765,1322,1111"
+                        "startLines": "-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1"
                     },
                     "to": {
-                        "startLines": "185,197,210,213,218",
+                        "startLines": "187,199,202,205,210",
                         "startColumns": "4,4,4,4,4",
-                        "startOffsets": "6037,6664,6961,7121,7325",
-                        "endLines": "196,209,212,217,223",
+                        "startOffsets": "6124,6438,6521,6593,6797",
+                        "endLines": "198,201,204,209,215",
                         "endColumns": "12,12,12,12,12",
-                        "endOffsets": "6659,6956,7116,7320,7658"
+                        "endOffsets": "6433,6516,6588,6792,7130"
                     }
                 },
                 {
                     "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/values/arrays.xml",
                     "from": {
-                        "startLines": "81,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "2362,167",
-                        "endLines": "158,80",
-                        "endColumns": "19,19",
-                        "endOffsets": "4400,2357"
+                        "startLines": "-1,-1",
+                        "startColumns": "-1,-1",
+                        "startOffsets": "-1,-1"
                     },
                     "to": {
                         "startLines": "2,80",
@@ -2923,18 +2915,16 @@
                 {
                     "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/values/strings.xml",
                     "from": {
-                        "startLines": "6,2,3,9,4,10,19,7,12,11,17,24,23,18,13,14,16,22,21,15,20,8,25",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "221,55,108,396,174,449,1059,274,573,516,915,1444,1367,982,634,708,838,1275,1185,776,1122,335,1521",
-                        "endColumns": "52,52,65,52,45,66,62,60,60,56,66,76,76,76,73,67,76,91,89,61,62,60,75",
-                        "endOffsets": "269,103,169,444,215,511,1117,330,629,568,977,1516,1439,1054,703,771,910,1362,1270,833,1180,391,1592"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
-                        "startLines": "162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184",
+                        "startLines": "164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "4496,4549,4602,4668,4721,4767,4834,4897,4958,5019,5076,5143,5220,5297,5374,5448,5516,5593,5685,5775,5837,5900,5961",
+                        "startOffsets": "4583,4636,4689,4755,4808,4854,4921,4984,5045,5106,5163,5230,5307,5384,5461,5535,5603,5680,5772,5862,5924,5987,6048",
                         "endColumns": "52,52,65,52,45,66,62,60,60,56,66,76,76,76,73,67,76,91,89,61,62,60,75",
-                        "endOffsets": "4544,4597,4663,4716,4762,4829,4892,4953,5014,5071,5138,5215,5292,5369,5443,5511,5588,5680,5770,5832,5895,5956,6032"
+                        "endOffsets": "4631,4684,4750,4803,4849,4916,4979,5040,5101,5158,5225,5302,5379,5456,5530,5598,5675,5767,5857,5919,5982,6043,6119"
                     }
                 }
             ]

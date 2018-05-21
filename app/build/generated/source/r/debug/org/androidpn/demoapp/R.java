@@ -13,10 +13,12 @@ public final class R {
     public static final int default_smiley_texts=0x7f010001;
   }
   public static final class color {
-    public static final int hint_gray=0x7f020000;
-    public static final int my_title_textcolor=0x7f020001;
-    public static final int search_bottem_textcolor=0x7f020002;
-    public static final int text_black=0x7f020003;
+    public static final int bg_main=0x7f020000;
+    public static final int hint_gray=0x7f020001;
+    public static final int my_title_textcolor=0x7f020002;
+    public static final int search_bottem_textcolor=0x7f020003;
+    public static final int text_black=0x7f020004;
+    public static final int text_price=0x7f020005;
   }
   public static final class dimen {
     public static final int activity_horizontal_margin=0x7f030000;

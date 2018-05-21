@@ -9,6 +9,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
@@ -23,6 +24,8 @@ import com.android.volley.Network;
 import com.android.volley.toolbox.NetworkImageView;
 
 import org.androidpn.IQ.InquiryIQ;
+import org.androidpn.IQ.ResultModelIQ;
+import org.androidpn.adapter.CommentAdapter;
 import org.androidpn.info.CommentsInfo;
 import org.androidpn.info.FoodInfo;
 import org.androidpn.info.ShopInfo;
@@ -97,6 +100,19 @@ public class ShopDetailsActivity extends BaseActivity {
 	private PopupWindow popupWindow;
 
 	private boolean isCollected = false;
+
+	private Handler handler = new Handler() {
+		@Override
+		public void handleMessage(Message msg) {
+			super.handleMessage(msg);
+
+			if(msg.what == UPDATE_UI) {
+				if (isCollected) {
+					mShop_details_off.setImageResource(R.drawable.star_1_pressed);
+				}
+			}
+		}
+	};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -230,6 +246,36 @@ public class ShopDetailsActivity extends BaseActivity {
 		addImg();
 		// �ж��Ƿ�Ҫ��ʾ������ȯ�����Ŀؼ�����
 		xianshitqdk();
+	}
+
+	@Override
+	public void sendInquiryIQ() {
+		super.sendInquiryIQ();
+
+		InquiryIQ inquiryIQ = new InquiryIQ();
+		inquiryIQ.setType(IQ.Type.GET);
+
+		inquiryIQ.setTarget("bussiness");
+		inquiryIQ.setTitle(info.getSid());
+		inquiryIQ.setUserName(UserInfoHolder.getInstance().getUserName());
+
+		Log.d("qzf", "sendInquiryIQ: "+inquiryIQ.toXML());
+
+		ActivityHolder.getInstance().sendPacket(inquiryIQ);
+
+
+	}
+
+	@Override
+	public void updateForResponse(ResultModelIQ resultModelIQ) {
+		super.updateForResponse(resultModelIQ);
+
+		if (resultModelIQ.getErrCode() == 2) {
+			Message msg = new Message();
+			msg.what = UPDATE_UI;
+			this.isCollected = true;
+			handler.sendMessage(msg);
+		}
 	}
 
 	// �ؼ��ļ����¼�

@@ -44,20 +44,20 @@
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-ldrtl-xxhdpi/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_design_ic_visibility_off.xml.flat",
-        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/design-27.0.0.aar/48764ae8a597c3ac5f0c249399b5ee1c/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_ab_share_pack_holo_dark.9.png.flat",
-        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png"
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_design_ic_visibility_off.xml.flat",
+        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/design-27.0.0.aar/48764ae8a597c3ac5f0c249399b5ee1c/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_ab_share_pack_holo_dark.9.png.flat",
+        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_icon_category.png.flat",
@@ -80,12 +80,12 @@
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-ldrtl-xhdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_star4.png.flat",
-        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/star4.png"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_nav_main_selected.png.flat",
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable/nav_main_selected.png"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_star4.png.flat",
+        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/star4.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_emoji004.png.flat",
@@ -116,20 +116,20 @@
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xxhdpi/tuan_info_line.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
-        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/layout_list_comments.xml.flat",
-        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/list_comments.xml"
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
+        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_navigation_empty_icon.xml.flat",
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/design-27.0.0.aar/48764ae8a597c3ac5f0c249399b5ee1c/res/drawable/navigation_empty_icon.xml"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/layout_list_comments.xml.flat",
+        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/list_comments.xml"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/layout-v16_notification_template_custom_big.xml.flat",
@@ -156,24 +156,24 @@
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-mdpi/abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-mdpi/abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/layout_design_menu_item_action_area.xml.flat",
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/b2e3d937dac1a7087a7c34cdf54d1225/res/layout/design_menu_item_action_area.xml"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_list_selector_disabled_holo_light.9.png.flat",
-        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-mdpi/abc_list_selector_disabled_holo_light.9.png"
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-mdpi/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/layout_activity_manage_bussiness.xml.flat",
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_manage_bussiness.xml"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_list_selector_disabled_holo_light.9.png.flat",
+        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-mdpi/abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-v21_design_bottom_navigation_item_background.xml.flat",
@@ -208,12 +208,12 @@
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/icon_checkin_u.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-xxhdpi/abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_list_background.xml.flat",
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable/list_background.xml"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-xxhdpi/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xxhdpi_tuandetailsimg.png.flat",
@@ -276,24 +276,24 @@
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/star_0_normal.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
-        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_emoji222.png.flat",
+        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/emoji222.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_emoji022.png.flat",
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/emoji022.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_emoji222.png.flat",
-        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/emoji222.png"
-    },
-    {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_detail_grouponicon_big.png.flat",
-        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/detail_grouponicon_big.png"
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/color-v23_abc_tint_switch_thumb.xml.flat",
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/color-v23/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_detail_grouponicon_big.png.flat",
+        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/detail_grouponicon_big.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_category_50.png.flat",
@@ -408,12 +408,12 @@
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable/outing.xml"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ab_share_pack_holo_dark.9.png.flat",
-        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xxhdpi_food_d.png.flat",
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xxhdpi/food_d.png"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ab_share_pack_holo_dark.9.png.flat",
+        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_emoji304.png.flat",
@@ -444,12 +444,12 @@
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-xhdpi/abc_ic_menu_moreoverflow_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_design_ic_visibility.png.flat",
-        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/design-27.0.0.aar/48764ae8a597c3ac5f0c249399b5ee1c/res/drawable-mdpi-v4/design_ic_visibility.png"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-v23_abc_control_background_material.xml.flat",
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-v23/abc_control_background_material.xml"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_design_ic_visibility.png.flat",
+        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/design-27.0.0.aar/48764ae8a597c3ac5f0c249399b5ee1c/res/drawable-mdpi-v4/design_ic_visibility.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -616,12 +616,12 @@
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xxhdpi/hotel_d.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_input_normal.9.png.flat",
-        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/input_normal.9.png"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_emoji308.png.flat",
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-hdpi/emoji308.png"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_input_normal.9.png.flat",
+        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/input_normal.9.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -656,12 +656,12 @@
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-ldpi/icon.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xxhdpi_my_tab_background_u.png.flat",
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xxhdpi/my_tab_background_u.png"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -784,12 +784,12 @@
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-mdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ic_search_api_mtrl_alpha.png.flat",
-        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-xhdpi/abc_ic_search_api_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ic_search_api_mtrl_alpha.png.flat",
+        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-xhdpi/abc_ic_search_api_mtrl_alpha.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/layout_activity_menu_food.xml.flat",
@@ -800,12 +800,12 @@
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-xhdpi/abc_ic_go_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_abc_ic_ab_back_material.xml.flat",
-        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable/abc_ic_ab_back_material.xml"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/color_design_tint_password_toggle.xml.flat",
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/design-27.0.0.aar/48764ae8a597c3ac5f0c249399b5ee1c/res/color/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_abc_ic_ab_back_material.xml.flat",
+        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_list_background_imgbg.xml.flat",
@@ -860,12 +860,12 @@
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/design-22.2.0.aar/0e23ebd207fd09b3ec34404567de1dcf/res/layout/design_navigation_item_header.xml"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/anim_snackbar_out.xml.flat",
-        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/design-22.2.0.aar/0e23ebd207fd09b3ec34404567de1dcf/res/anim/snackbar_out.xml"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/anim_snackbar_out.xml.flat",
+        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/design-22.2.0.aar/0e23ebd207fd09b3ec34404567de1dcf/res/anim/snackbar_out.xml"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_star1.png.flat",
@@ -884,20 +884,20 @@
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/ic_booking_reward_big.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ab_share_pack_holo_light.9.png.flat",
-        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_my_hotel_icon_press.png.flat",
         "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/my_hotel_icon_press.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_btn_radio_to_on_mtrl_015.png.flat",
-        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-mdpi/abc_btn_radio_to_on_mtrl_015.png"
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ab_share_pack_holo_light.9.png.flat",
+        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-hdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/drawable-mdpi/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-hdpi_emoji101.png.flat",
@@ -988,12 +988,12 @@
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable-hdpi-v4/abc_list_focused_holo.9.png"
     },
     {
-        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_icon_photo_u.png.flat",
-        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/icon_photo_u.png"
-    },
-    {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable_abc_ic_menu_overflow_material.xml.flat",
         "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-xhdpi_icon_photo_u.png.flat",
+        "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/drawable-xhdpi/icon_photo_u.png"
     },
     {
         "merged": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",

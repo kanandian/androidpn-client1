@@ -50,12 +50,14 @@ public class EditTakeoutMenuAdapter extends BaseAdapter {
             convertView = View.inflate(activity, R.layout.item_food_menu, null);
             viewHolder = new ViewHolder();
             viewHolder.textView = (TextView) convertView.findViewById(R.id.textView);
+            viewHolder.priceView = (TextView) convertView.findViewById(R.id.text_price);
             viewHolder.txtv_delete = (TextView) convertView.findViewById(R.id.txtv_delete);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
         viewHolder.textView.setText(foodMenuItemList.get(position).getFoodName());
+        viewHolder.priceView.setText(String.valueOf(foodMenuItemList.get(position).getPrice()));
         final int pos = position;
         viewHolder.txtv_delete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,6 +90,7 @@ public class EditTakeoutMenuAdapter extends BaseAdapter {
 
 class ViewHolder {
     public TextView textView;
+    public TextView priceView;
     public TextView txtv_delete;
 }
 

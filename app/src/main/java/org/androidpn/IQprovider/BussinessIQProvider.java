@@ -2,6 +2,7 @@ package org.androidpn.IQprovider;
 
 import org.androidpn.IQ.BussinessIQ;
 import org.androidpn.IQ.NotificationIQ;
+import org.androidpn.IQ.ResultModelIQ;
 import org.androidpn.model.Bussiness;
 import org.jivesoftware.smack.packet.IQ;
 import org.jivesoftware.smack.provider.IQProvider;
@@ -19,6 +20,7 @@ public class BussinessIQProvider implements IQProvider {
 
     @Override
     public IQ parseIQ(XmlPullParser parser) throws Exception {
+        ResultModelIQ resultModelIQ = new ResultModelIQ();
         BussinessIQ bussinessIQ = new BussinessIQ();
         Bussiness bussiness = new Bussiness();
         for (boolean done = false; !done;) {
@@ -51,6 +53,16 @@ public class BussinessIQProvider implements IQProvider {
                 if ("holder".equals(parser.getName())) {
                     bussiness.setHolder(parser.nextText());
                 }
+                if ("collected".equals(parser.getName())) {
+                    String tag = parser.nextText();
+                    if ("1".equals(tag)) {
+                        resultModelIQ.setErrCode(2);
+                        resultModelIQ.setErrMsg("已收藏");
+                    } else {
+                        resultModelIQ.setErrCode(0);
+                        resultModelIQ.setErrMsg("未收藏");
+                    }
+                }
             } else if (eventType == 3
                     && "bussiness".equals(parser.getName())) {
                 done = true;
@@ -59,6 +71,6 @@ public class BussinessIQProvider implements IQProvider {
 
         bussinessIQ.setBussiness(bussiness);
 
-        return bussinessIQ;
+        return resultModelIQ;
     }
 }
