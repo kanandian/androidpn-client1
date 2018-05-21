@@ -10,11 +10,14 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.android.volley.toolbox.NetworkImageView;
+
 import org.androidpn.IQ.InquiryIQ;
 import org.androidpn.demoapp.R;
 import org.androidpn.model.TakeoutOrder;
 import org.androidpn.utils.ActivityHolder;
 import org.androidpn.utils.MessageFormatUtil;
+import org.androidpn.utils.NetworkImageUtil;
 import org.jivesoftware.smack.packet.IQ;
 
 import java.util.List;
@@ -36,6 +39,7 @@ public class TakeoutBussinessListAdapter extends ArrayAdapter<TakeoutOrder> {
         LayoutInflater vi = (LayoutInflater)getContext().getSystemService(inflater);
         vi.inflate(resource, item, true);
 
+        NetworkImageView imageView = (NetworkImageView) item.findViewById(R.id.img_bussiness);
         TextView bussinessNameText = (TextView) item.findViewById(R.id.text_bussiness_name);
         TextView foodSummaryText = (TextView) item.findViewById(R.id.text_food_summary);
         TextView priceText = (TextView) item.findViewById(R.id.text_price);
@@ -43,6 +47,8 @@ public class TakeoutBussinessListAdapter extends ArrayAdapter<TakeoutOrder> {
         TextView orderStatusText = (TextView) item.findViewById(R.id.text_order_status);
         Button nextButton = (Button) item.findViewById(R.id.btn_next);
         Button rejectButton = (Button) item.findViewById(R.id.btn_reject_order);
+
+        NetworkImageUtil.requestImage(imageView, takeoutOrder.getImageURL());
 
         bussinessNameText.setText(takeoutOrder.getBussinessName());
         foodSummaryText.setText(takeoutOrder.getFirstFoodName()+"等"+takeoutOrder.getItemCount()+"个商品");

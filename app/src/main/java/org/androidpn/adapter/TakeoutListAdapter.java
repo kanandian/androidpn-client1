@@ -8,9 +8,12 @@ import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.android.volley.toolbox.NetworkImageView;
+
 import org.androidpn.demoapp.R;
 import org.androidpn.model.TakeoutOrder;
 import org.androidpn.utils.MessageFormatUtil;
+import org.androidpn.utils.NetworkImageUtil;
 
 import java.util.List;
 
@@ -31,11 +34,15 @@ public class TakeoutListAdapter extends ArrayAdapter<TakeoutOrder> {
         LayoutInflater vi = (LayoutInflater)getContext().getSystemService(inflater);
         vi.inflate(resource, item, true);
 
+        NetworkImageView imageView = (NetworkImageView) item.findViewById(R.id.img_bussiness);
         TextView bussinessNameText = (TextView) item.findViewById(R.id.text_bussiness_name);
         TextView foodSummaryText = (TextView) item.findViewById(R.id.text_food_summary);
         TextView priceText = (TextView) item.findViewById(R.id.text_price);
         TextView createTimeText = (TextView) item.findViewById(R.id.text_createtime);
         TextView orderStatusText = (TextView) item.findViewById(R.id.text_order_status);
+
+
+        NetworkImageUtil.requestImage(imageView, takeoutOrder.getImageURL());
 
         bussinessNameText.setText(takeoutOrder.getBussinessName());
         foodSummaryText.setText(takeoutOrder.getFirstFoodName()+"等"+takeoutOrder.getItemCount()+"个商品");

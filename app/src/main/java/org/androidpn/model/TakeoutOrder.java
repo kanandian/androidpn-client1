@@ -20,6 +20,8 @@ public class TakeoutOrder {
 
     private String createTime;
 
+    private String imageURL;
+
     public TakeoutOrder() {
     }
 
@@ -109,5 +111,13 @@ public class TakeoutOrder {
 
     public void setCreateTime(String createTime) {
         this.createTime = createTime;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
     }
 }
