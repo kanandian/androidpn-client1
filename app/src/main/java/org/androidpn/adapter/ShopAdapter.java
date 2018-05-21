@@ -1,6 +1,8 @@
 package org.androidpn.adapter;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import android.content.Context;
@@ -10,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -36,29 +40,105 @@ import org.androidpn.utils.VolleyUtil;
  *
  */
 
-public class ShopAdapter extends BaseAdapter {
+public class ShopAdapter extends BaseAdapter implements Filterable {
 
-	private List<ShopInfo> list;
+	private final List<ShopInfo> list;
 	private Context ctx;
-	private LoadImg loadImg;
+	private List<ShopInfo> searchList;
 
-	public ShopAdapter(List<ShopInfo> list, Context ctx) {
+	private Filter filter;
+
+	public ShopAdapter(final List<ShopInfo> list, Context ctx) {
 		this.list = list;
 		this.ctx = ctx;
-		// ʵ������ȡͼƬ����
-		loadImg = new LoadImg(ctx);
+		searchList = new ArrayList<ShopInfo>(list);
+
+		filter = new Filter() {
+			@Override
+			protected FilterResults performFiltering(CharSequence charSequence) {
+				String content = charSequence.toString().toLowerCase();
+				FilterResults results = new FilterResults();
+				List<ShopInfo> shopInfoList = new ArrayList<ShopInfo>();
+
+				if (content.contains("classification")) {
+					String key = content.split("[:]")[1];
+					for (ShopInfo shopInfo : list) {
+						if (shopInfo.getSname().contains(key)) {
+							shopInfoList.add(shopInfo);
+						} else if (shopInfo.getStype().contains(key)) {
+							shopInfoList.add(shopInfo);
+						}
+					}
+				} else if (content.contains("distance")){
+					Location location = LocationHolder.getInstance().getLocation();
+					String key = content.split("[:]")[1];
+					if ("4".equals(key)) {
+						for (ShopInfo shopInfo : list) {
+							LatLng latLng1 = new LatLng(location.getLatitude(), location.getLongitude());
+							LatLng latLng2 = new LatLng(shopInfo.getLatitude(), shopInfo.getLongitude());
+							float distance = AMapUtils.calculateLineDistance(latLng1,latLng2);
+
+							if (distance >= 8000) {
+								shopInfoList.add(shopInfo);
+							}
+						}
+					} else {
+						int maxDistance = 8000;
+						if ("0".equals(key)) {
+							maxDistance = 1000;
+						} else if ("1".equals(key)) {
+							maxDistance = 3000;
+						} else if ("2".equals(key)) {
+							maxDistance = 5000;
+						} else if ("3".equals(key)) {
+							maxDistance = 8000;
+						}
+						for (ShopInfo shopInfo : list) {
+							LatLng latLng1 = new LatLng(location.getLatitude(), location.getLongitude());
+							LatLng latLng2 = new LatLng(shopInfo.getLatitude(), shopInfo.getLongitude());
+							float distance = AMapUtils.calculateLineDistance(latLng1,latLng2);
+
+							if (distance < maxDistance) {
+								shopInfoList.add(shopInfo);
+							}
+						}
+
+					}
+				}
+
+				results.values = shopInfoList;
+				results.count = shopInfoList.size();
+				return results;
+			}
+
+			@Override
+			protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+				searchList.clear();
+				searchList.addAll((Collection<? extends ShopInfo>) filterResults.values);
+				if (filterResults.count > 0) {
+					notifyDataSetChanged();
+				} else {
+					notifyDataSetInvalidated();
+				}
+			}
+		};
+	}
+
+	public void showAllProduct() {
+		searchList = new ArrayList<ShopInfo>(list);
+		notifyDataSetChanged();
 	}
 
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
-		return list.size();
+		return searchList.size();
 	}
 
 	@Override
 	public Object getItem(int arg0) {
 		// TODO Auto-generated method stub
-		return list.get(arg0);
+		return searchList.get(arg0);
 	}
 
 	@Override
@@ -91,7 +171,7 @@ public class ShopAdapter extends BaseAdapter {
 			hold = (Holder) view.getTag();
 		}
 
-		ShopInfo shopInfo = list.get(position);
+		ShopInfo shopInfo = searchList.get(position);
 
 		hold.mTitle.setText(shopInfo.getSname());
 		hold.mImage.setTag(Model.SHOPLISTIMGURL + shopInfo.getIname());
@@ -195,6 +275,11 @@ public class ShopAdapter extends BaseAdapter {
 		hold.mImage.setImageUrl(shopInfo.getIname().replace("localhost", ActivityHolder.getInstance().getConnection().getHost()), imageLoader);
 
 		return view;
+	}
+
+	@Override
+	public Filter getFilter() {
+		return filter;
 	}
 
 	static class Holder {

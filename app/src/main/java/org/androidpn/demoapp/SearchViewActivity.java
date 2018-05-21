@@ -55,7 +55,7 @@ public class SearchViewActivity extends Activity implements SearchView.OnQueryTe
                     mStrings = new String[]{};
                     listView.setAdapter(new ArrayAdapter<String>(SearchViewActivity.this,android.R.layout.simple_list_item_1,mStrings));
                 } else {
-                    searchView.setQuery(query,false);
+                    searchView.setQuery(query,true);
                 }
             }
         });

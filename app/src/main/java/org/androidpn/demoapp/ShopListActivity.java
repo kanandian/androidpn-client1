@@ -42,9 +42,6 @@ import java.util.Map;
  * */
 public class ShopListActivity extends BaseActivity {
 
-	private static final int UPDATE_UI = 0;
-
-
 	private ListView mListView, mShoplist_toplist, mShoplist_threelist, mshoplist_threelist0,
 			mShoplist_onelist2, mShoplist_twolist2, mShoplist_onelist1,
 			mShoplist_twolist1;
@@ -88,6 +85,8 @@ public class ShopListActivity extends BaseActivity {
 			if(msg.what == UPDATE_UI) {
 				mAdapter = new ShopAdapter(list, ShopListActivity.this);
 				mListView.setAdapter(mAdapter);
+				mShoplist_title_textbtn3.setText(title);
+				mAdapter.getFilter().filter("classification:"+title);
 			}
 		}
 	};
@@ -190,7 +189,7 @@ public class ShopListActivity extends BaseActivity {
 
 		InquiryIQ inquiryIQ = new InquiryIQ();
 		inquiryIQ.setTarget("activity");
-		inquiryIQ.setTitle(title);
+		inquiryIQ.setTitle("main");
 		inquiryIQ.setType(IQ.Type.GET);
 
 		Log.d("qzf", "sendInquiryIQ: "+inquiryIQ.toXML());
@@ -492,9 +491,21 @@ public class ShopListActivity extends BaseActivity {
 					drawable.getMinimumHeight());
 			mShoplist_title_textbtn3.setCompoundDrawables(null, null, drawable,
 					null);
-			mShoplist_title_textbtn3.setText(Model.SHOPLIST_THREELIST[arg2]);
+			String key = Model.SHOPLIST_THREELIST[arg2];
+			mShoplist_title_textbtn3.setText(key);
 			mShoplist_threelist.setVisibility(View.GONE);
 			threelistview = false;
+
+			mAdapter.getFilter().filter("classification:"+key);
+
+			drawable = getResources().getDrawable(
+					R.drawable.ic_arrow_down_black);
+			drawable.setBounds(0, 0, drawable.getMinimumWidth(),
+					drawable.getMinimumHeight());
+			mShoplist_title_textbtn1.setCompoundDrawables(null, null,
+					drawable, null);
+			mShoplist_title_textbtn1.setText("距离");
+
 		}
 	}
 
@@ -508,9 +519,20 @@ public class ShopListActivity extends BaseActivity {
 					drawable.getMinimumHeight());
 			mShoplist_title_textbtn1.setCompoundDrawables(null, null, drawable,
 					null);
-			mShoplist_title_textbtn1.setText(Model.DISTANCE_CONDITION[arg2]);
+			String key = Model.DISTANCE_CONDITION[arg2];
+			mShoplist_title_textbtn1.setText(key);
 			mshoplist_threelist0.setVisibility(View.GONE);
 			mainlistview1 = false;
+
+			mAdapter.getFilter().filter("distance:"+arg2);
+
+			drawable = getResources().getDrawable(
+					R.drawable.ic_arrow_down_black);
+			drawable.setBounds(0, 0, drawable.getMinimumWidth(),
+					drawable.getMinimumHeight());
+			mShoplist_title_textbtn3.setCompoundDrawables(null, null,
+					drawable, null);
+			mShoplist_title_textbtn3.setText("分类");
 		}
 	}
 
