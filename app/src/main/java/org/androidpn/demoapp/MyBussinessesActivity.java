@@ -1,36 +1,23 @@
 package org.androidpn.demoapp;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import org.androidpn.IQ.InquiryIQ;
-import org.androidpn.adapter.SearchMainAdapter;
-import org.androidpn.adapter.SearchMoreAdapter;
 import org.androidpn.adapter.ShopAdapter;
 import org.androidpn.info.ShopInfo;
 import org.androidpn.model.Model;
-import org.androidpn.net.MyGet;
-import org.androidpn.net.ThreadPoolUtils;
-import org.androidpn.thread.HttpGetThread;
 import org.androidpn.utils.ActivityHolder;
-import org.androidpn.utils.MyJson;
 import org.jivesoftware.smack.packet.IQ;
 
 import java.util.ArrayList;

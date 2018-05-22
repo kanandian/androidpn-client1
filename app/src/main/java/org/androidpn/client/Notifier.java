@@ -114,8 +114,8 @@ public class Notifier {
             PendingIntent contentIntent = PendingIntent.getActivity(context, random.nextInt(),
                     intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-            notification.setLatestEventInfo(context, title, message,
-                    contentIntent);
+//            notification.setLatestEventInfo(context, title, message,
+//                    contentIntent);
             notificationManager.notify(random.nextInt(), notification);
 
             //            Intent clickIntent = new Intent(

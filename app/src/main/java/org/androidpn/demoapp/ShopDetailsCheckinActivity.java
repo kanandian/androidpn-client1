@@ -1,6 +1,5 @@
 package org.androidpn.demoapp;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -25,7 +24,6 @@ import org.androidpn.adapter.FaceGridAdapter;
 import org.androidpn.info.ShopInfo;
 import org.androidpn.model.Model;
 import org.androidpn.net.ThreadPoolUtils;
-import org.androidpn.thread.HttpPostThread;
 import org.androidpn.utils.SmileyParser;
 
 import java.text.SimpleDateFormat;
@@ -146,20 +144,20 @@ public class ShopDetailsCheckinActivity extends BaseActivity {
 				+ "\"signcontent\":\"" + signcontent + "\","
 				+ "\"signlevel\":\"" + signlevel + "\"," + "\"signimage\":\""
 				+ signimage + "\"," + "\"signtime\":\"" + signtime + "\"}";
-		ThreadPoolUtils.execute(new HttpPostThread(hand, Model.SIGNURL, "1",
-				json));
+//		ThreadPoolUtils.execute(new HttpPostThread(hand, Model.SIGNURL, "1",
+//				json));
 	}
 
-	Handler hand = new Handler() {
-		public void handleMessage(android.os.Message msg) {
-			super.handleMessage(msg);
-			if (msg.what == 200) {
-				Toast.makeText(ShopDetailsCheckinActivity.this, "ǩ���ɹ�", 1)
-						.show();
-				finish();
-			}
-		}
-	};
+//	Handler hand = new Handler() {
+//		public void handleMessage(android.os.Message msg) {
+//			super.handleMessage(msg);
+//			if (msg.what == 200) {
+//				Toast.makeText(ShopDetailsCheckinActivity.this, "ǩ���ɹ�", 1)
+//						.show();
+//				finish();
+//			}
+//		}
+//	};
 
 	// ����viewpager���е�view
 	private void createView() {

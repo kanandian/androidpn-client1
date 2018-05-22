@@ -1,6 +1,5 @@
 package org.androidpn.demoapp;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -12,7 +11,6 @@ import org.androidpn.info.SignInfo;
 import org.androidpn.model.Model;
 import org.androidpn.myview.MyScrollListView;
 import org.androidpn.net.ThreadPoolUtils;
-import org.androidpn.thread.HttpGetThread;
 import org.androidpn.utils.MyJson;
 
 import java.util.ArrayList;
@@ -59,7 +57,7 @@ public class CheckinActivity extends BaseActivity {
 		signAdapter2 = new SignAdapter(rightlist, CheckinActivity.this);
 		left.setAdapter(signAdapter1);
 		right.setAdapter(signAdapter2);
-		ThreadPoolUtils.execute(new HttpGetThread(hand, Model.SELECTSIGNURL));
+//		ThreadPoolUtils.execute(new HttpGetThread(hand, Model.SELECTSIGNURL));
 	}
 
 	private class MyOnclickListener implements View.OnClickListener {

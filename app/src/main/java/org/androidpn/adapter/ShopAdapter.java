@@ -7,17 +7,12 @@ import java.util.List;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 
 import com.amap.api.maps.AMapUtils;
@@ -29,7 +24,6 @@ import org.androidpn.demoapp.R;
 import org.androidpn.info.ShopInfo;
 import org.androidpn.model.Model;
 import org.androidpn.utils.ActivityHolder;
-import org.androidpn.utils.LoadImg;
 import org.androidpn.utils.Location;
 import org.androidpn.utils.LocationHolder;
 import org.androidpn.utils.VolleyUtil;

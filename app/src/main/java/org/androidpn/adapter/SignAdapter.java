@@ -4,7 +4,6 @@ import java.util.List;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -15,7 +14,6 @@ import android.widget.TextView;
 import org.androidpn.demoapp.R;
 import org.androidpn.info.SignInfo;
 import org.androidpn.model.Model;
-import org.androidpn.utils.LoadImg;
 import org.androidpn.utils.SmileyParser;
 
 /**
@@ -28,7 +26,7 @@ public class SignAdapter extends BaseAdapter {
 
 	private List<SignInfo> list;
 	private Context ctx;
-	private LoadImg loadImg;
+//	private LoadImg loadImg;
 	private String[] mFaceValue;
 	final String arrText1[] = new String[20];
 	final String arrText2[] = new String[20];
@@ -39,7 +37,7 @@ public class SignAdapter extends BaseAdapter {
 	public SignAdapter(List<SignInfo> list, Context ctx) {
 		this.list = list;
 		this.ctx = ctx;
-		loadImg = new LoadImg(ctx);
+//		loadImg = new LoadImg(ctx);
 		mFaceValue = this.ctx.getResources().getStringArray(
 				R.array.default_smiley_texts);
 		initModel();
@@ -129,26 +127,26 @@ public class SignAdapter extends BaseAdapter {
 			hold.mImg.setVisibility(View.GONE);
 		}
 		// �����ȡͼƬ
-		Bitmap bit = loadImg.loadImage(hold.mImg, Model.SIGNLISTIMGURL
-				+ list.get(arg0).getSignimage(), new LoadImg.ImageDownloadCallBack() {
-			@Override
-			public void onImageDownload(ImageView imageView, Bitmap bitmap) {
-				// ���罻��ʱ�ص�������ֹ��λ
-				if (hold.mImg.getTag().equals(
-						Model.SIGNLISTIMGURL + list.get(arg0).getSignimage())) {
-					hold.mImg.setVisibility(View.VISIBLE);
-					// �����������ػ���ͼƬ��ʾ
-					hold.mImg.setImageBitmap(bitmap);
-				}
-			}
-		});
+//		Bitmap bit = loadImg.loadImage(hold.mImg, Model.SIGNLISTIMGURL
+//				+ list.get(arg0).getSignimage(), new LoadImg.ImageDownloadCallBack() {
+//			@Override
+//			public void onImageDownload(ImageView imageView, Bitmap bitmap) {
+//				// ���罻��ʱ�ص�������ֹ��λ
+//				if (hold.mImg.getTag().equals(
+//						Model.SIGNLISTIMGURL + list.get(arg0).getSignimage())) {
+//					hold.mImg.setVisibility(View.VISIBLE);
+//					// �����������ػ���ͼƬ��ʾ
+//					hold.mImg.setImageBitmap(bitmap);
+//				}
+//			}
+//		});
 
 		// �ӱ��ػ�ȡ��
-		if (bit != null) {
-			// ���û���ͼƬ��ʾ
-			hold.mImg.setVisibility(View.VISIBLE);
-			hold.mImg.setImageBitmap(bit);
-		}
+//		if (bit != null) {
+//			// ���û���ͼƬ��ʾ
+//			hold.mImg.setVisibility(View.VISIBLE);
+//			hold.mImg.setImageBitmap(bit);
+//		}
 
 		return arg1;
 	}

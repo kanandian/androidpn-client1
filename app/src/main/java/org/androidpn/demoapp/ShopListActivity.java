@@ -1,6 +1,5 @@
 package org.androidpn.demoapp;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -25,9 +24,7 @@ import org.androidpn.adapter.SearchMoreAdapter;
 import org.androidpn.adapter.ShopAdapter;
 import org.androidpn.info.ShopInfo;
 import org.androidpn.model.Model;
-import org.androidpn.net.MyGet;
 import org.androidpn.net.ThreadPoolUtils;
-import org.androidpn.thread.HttpGetThread;
 import org.androidpn.utils.ActivityHolder;
 import org.androidpn.utils.MyJson;
 import org.jivesoftware.smack.packet.IQ;
@@ -50,7 +47,6 @@ public class ShopListActivity extends BaseActivity {
 			mShoplist_mainlist1;
 	private TextView mShoplist_title_textbtn1,
 			mShoplist_title_textbtn3;
-	private MyGet myGet = new MyGet();
 	private MyJson myJson = new MyJson();
 	private List<ShopInfo> list = new ArrayList<ShopInfo>();
 	private ShopAdapter mAdapter = null;
@@ -162,25 +158,12 @@ public class ShopListActivity extends BaseActivity {
 		// -----------------------------------------------------------------
 		mAdapter = new ShopAdapter(list, ShopListActivity.this);
 		ListBottem = new Button(ShopListActivity.this);
-		ListBottem.setText("������ظ���");
-		ListBottem.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				if (flag && listBottemFlag) {
-					url = Model.SHOPURL + "start=" + mStart + "&end=" + mEnd;
-					ThreadPoolUtils.execute(new HttpGetThread(hand, url));
-					listBottemFlag = false;
-				} else if (!listBottemFlag)
-					Toast.makeText(ShopListActivity.this, "���������Ժ�", Toast.LENGTH_SHORT).show();
-			}
-		});
 		mListView.addFooterView(ListBottem, null, false);
 		ListBottem.setVisibility(View.GONE);
 		mListView.setAdapter(mAdapter);
 		mListView.setOnItemClickListener(new MainListOnItemClickListener());
 		// ƴ���ַ�������
 		url = Model.SHOPURL + "start=" + mStart + "&end=" + mEnd;
-		ThreadPoolUtils.execute(new HttpGetThread(hand, url));
 	}
 
 	@Override
@@ -325,41 +308,6 @@ public class ShopListActivity extends BaseActivity {
 		}
 	}
 
-	Handler hand = new Handler() {
-		public void handleMessage(android.os.Message msg) {
-			super.handleMessage(msg);
-			if (msg.what == 404) {
-				Toast.makeText(ShopListActivity.this, "�Ҳ�����ַ", 1).show();
-				listBottemFlag = true;
-			} else if (msg.what == 100) {
-				Toast.makeText(ShopListActivity.this, "����ʧ��", 1).show();
-				listBottemFlag = true;
-			} else if (msg.what == 200) {
-				String result = (String) msg.obj;
-				// ��activity���л�ȡ���罻��������
-				if (result != null) {
-					// 1���������󷵻ص�����
-					List<ShopInfo> newList = myJson.getShopList(result);
-					if (newList != null) {
-						if (newList.size() == 5) {
-							ListBottem.setVisibility(View.VISIBLE);
-							mStart += 5;
-							mEnd += 5;
-						} else {
-							ListBottem.setVisibility(View.GONE);
-						}
-						for (ShopInfo info : newList) {
-							list.add(info);
-						}
-						mAdapter.notifyDataSetChanged();
-						listBottemFlag = true;
-						mAdapter.notifyDataSetChanged();
-					}
-				}
-				mAdapter.notifyDataSetChanged();
-			}
-		};
-	};
 
 	private class MainListOnItemClickListener implements OnItemClickListener {
 		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,

@@ -20,6 +20,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import android.Manifest;
 import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -27,7 +28,9 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.content.pm.PackageManager;
 import android.os.IBinder;
+import android.support.v4.app.ActivityCompat;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -36,7 +39,7 @@ import android.util.Log;
  * Service that continues to run in background and respond to the push 
  * notification events from the server. This should be registered as service
  * in AndroidManifest.xml. 
- * 
+ *
  * @author Sehwan Noh (devnoh@gmail.com)
  */
 public class NotificationService extends Service {
@@ -90,6 +93,16 @@ public class NotificationService extends Service {
                 Context.MODE_PRIVATE);
 
         // Get deviceId
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
         deviceId = telephonyManager.getDeviceId();
         // Log.d(LOGTAG, "deviceId=" + deviceId);
         Editor editor = sharedPrefs.edit();

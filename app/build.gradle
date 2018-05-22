@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 android {
-    compileSdkVersion 19
+    compileSdkVersion 24
     buildToolsVersion "27.0.3"
 
     sourceSets {
@@ -12,7 +12,7 @@ android {
     defaultConfig {
         applicationId "org.androidpn.demoapp"
         minSdkVersion 19
-        targetSdkVersion 19
+        targetSdkVersion 24
         ndk {
 //            设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
             abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","x86_64"
@@ -47,12 +47,16 @@ dependencies {
     //导航功能
     compile 'com.amap.api:navi-3dmap:6.0.1_3dmap6.1.0'
 
+    compile 'com.android.support:appcompat-v7:24.2.1'
+
+
     //TabLayout
 //    compile 'com.android.support:design:22.2.0'
     //ViewPage
 //    compile 'com.android.support:support-v4:23.0.1'
 
-    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
 
 //    compile 'com.carson_ho:SearchLayout:1.0.1'
 //    compile 'cn.pedant.sweetalert:library:1.3'

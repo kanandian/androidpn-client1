@@ -1,6 +1,5 @@
 package org.androidpn.demoapp;
 
-import android.app.Activity;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +11,6 @@ import android.widget.TextView;
 import org.androidpn.info.ShopInfo;
 import org.androidpn.model.Model;
 import org.androidpn.myview.MyScrollView;
-import org.androidpn.utils.LoadImg;
 
 /**
  * �Ź�����ģ��
@@ -22,7 +20,7 @@ import org.androidpn.utils.LoadImg;
 public class TuanDetailsActivity extends BaseActivity implements MyScrollView.OnScrollListener {
 
 	private ShopInfo Values;
-	private LoadImg loadImg;
+//	private LoadImg loadImg;
 	private ImageView mTuan_details_back, mTuan_details_share,
 			mTuan_details_off, mTuan_details_img;
 	private MyScrollView mTuan_details_scroll;
@@ -39,18 +37,18 @@ public class TuanDetailsActivity extends BaseActivity implements MyScrollView.On
 		Bundle bund = getIntent().getBundleExtra("value");
 		Values = (ShopInfo) bund.getSerializable("ShopInfo");
 		initView();
-		loadImg = new LoadImg(TuanDetailsActivity.this);
+//		loadImg = new LoadImg(TuanDetailsActivity.this);
 		mTuan_details_img.setTag(Model.SHOPLISTIMGURL + Values.getIname());
-		Bitmap bit = loadImg.loadImage(mTuan_details_img, Model.SHOPLISTIMGURL
-				+ Values.getIname(), new LoadImg.ImageDownloadCallBack() {
-			@Override
-			public void onImageDownload(ImageView imageView, Bitmap bitmap) {
-				mTuan_details_img.setImageBitmap(bitmap);
-			}
-		});
-		if (bit != null) {
-			mTuan_details_img.setImageBitmap(bit);
-		}
+//		Bitmap bit = loadImg.loadImage(mTuan_details_img, Model.SHOPLISTIMGURL
+//				+ Values.getIname(), new LoadImg.ImageDownloadCallBack() {
+//			@Override
+//			public void onImageDownload(ImageView imageView, Bitmap bitmap) {
+//				mTuan_details_img.setImageBitmap(bitmap);
+//			}
+//		});
+//		if (bit != null) {
+//			mTuan_details_img.setImageBitmap(bit);
+//		}
 	}
 
 	private void initView() {

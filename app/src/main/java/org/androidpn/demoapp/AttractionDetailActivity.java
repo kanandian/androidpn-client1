@@ -1,6 +1,5 @@
 package org.androidpn.demoapp;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
@@ -8,8 +7,6 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
@@ -25,13 +22,9 @@ import org.androidpn.info.ShopInfo;
 import org.androidpn.info.SignInfo;
 import org.androidpn.model.Model;
 import org.androidpn.net.ThreadPoolUtils;
-import org.androidpn.thread.HttpGetThread;
 import org.androidpn.utils.ActivityHolder;
-import org.androidpn.utils.LoadImg;
 import org.androidpn.utils.Location;
-import org.androidpn.utils.MyJson;
 import org.androidpn.utils.UserInfoHolder;
-import org.w3c.dom.Attr;
 
 import java.util.ArrayList;
 
@@ -41,8 +34,8 @@ import java.util.ArrayList;
 public class AttractionDetailActivity extends BaseActivity {
 
     private ShopInfo info = null;
-    private LoadImg loadImg;
-    private HttpGetThread http = null;
+//    private LoadImg loadImg;
+//    private HttpGetThread http = null;
     private ArrayList<SignInfo> SignList;
     private ArrayList<CommentsInfo> CommentsList;
     private ArrayList<FoodInfo> FoodList;
@@ -94,7 +87,7 @@ public class AttractionDetailActivity extends BaseActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_attraction_details);
         // ��ʼ��ͼƬ�첽������
-        loadImg = new LoadImg(AttractionDetailActivity.this);
+//        loadImg = new LoadImg(AttractionDetailActivity.this);
         // ��ȡ���б��д��ݹ���������
         Intent intent = getIntent();
         Bundle bund = intent.getBundleExtra("value");
@@ -102,7 +95,7 @@ public class AttractionDetailActivity extends BaseActivity {
         initView();
         // ������������
         String endParames = Model.SHOPDETAILURL + "shopid=" + info.getSid();
-        ThreadPoolUtils.execute(http);
+//        ThreadPoolUtils.execute(http);
     }
 
     private void initView() {
@@ -195,7 +188,7 @@ public class AttractionDetailActivity extends BaseActivity {
         mshop_details_address.setOnClickListener(myOnClickListener);
 
         // ������̵�ͼƬ�ķ���
-        addImg();
+//        addImg();
         // �ж��Ƿ�Ҫ��ʾ������ȯ�����Ŀؼ�����
         xianshitqdk();
     }
@@ -302,21 +295,21 @@ public class AttractionDetailActivity extends BaseActivity {
     }
 
     // ���ͼƬ����
-    private void addImg() {
-        mShop_details_photo.setTag(Model.SHOPLISTIMGURL + info.getIname());
-        Bitmap bit = loadImg.loadImage(mShop_details_photo,
-                Model.SHOPLISTIMGURL + info.getIname(),
-                new LoadImg.ImageDownloadCallBack() {
-                    public void onImageDownload(ImageView imageView,
-                                                Bitmap bitmap) {
-                        // ����Ҫ����tag����ͼƬ��������img��������
-                        mShop_details_photo.setImageBitmap(bitmap);
-                    }
-                });
-        if (bit != null) {
-            mShop_details_photo.setImageBitmap(bit);
-        }
-    }
+//    private void addImg() {
+//        mShop_details_photo.setTag(Model.SHOPLISTIMGURL + info.getIname());
+//        Bitmap bit = loadImg.loadImage(mShop_details_photo,
+//                Model.SHOPLISTIMGURL + info.getIname(),
+//                new LoadImg.ImageDownloadCallBack() {
+//                    public void onImageDownload(ImageView imageView,
+//                                                Bitmap bitmap) {
+//                        // ����Ҫ����tag����ͼƬ��������img��������
+//                        mShop_details_photo.setImageBitmap(bitmap);
+//                    }
+//                });
+//        if (bit != null) {
+//            mShop_details_photo.setImageBitmap(bit);
+//        }
+//    }
 
 
 

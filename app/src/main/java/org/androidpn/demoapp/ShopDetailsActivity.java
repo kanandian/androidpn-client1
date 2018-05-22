@@ -1,11 +1,9 @@
 package org.androidpn.demoapp;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -20,21 +18,17 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.Network;
 import com.android.volley.toolbox.NetworkImageView;
 
 import org.androidpn.IQ.InquiryIQ;
 import org.androidpn.IQ.ResultModelIQ;
-import org.androidpn.adapter.CommentAdapter;
 import org.androidpn.info.CommentsInfo;
 import org.androidpn.info.FoodInfo;
 import org.androidpn.info.ShopInfo;
 import org.androidpn.info.SignInfo;
 import org.androidpn.model.Model;
 import org.androidpn.net.ThreadPoolUtils;
-import org.androidpn.thread.HttpGetThread;
 import org.androidpn.utils.ActivityHolder;
-import org.androidpn.utils.LoadImg;
 import org.androidpn.utils.Location;
 import org.androidpn.utils.MyJson;
 import org.androidpn.utils.NetworkImageUtil;
@@ -49,8 +43,8 @@ import java.util.ArrayList;
 public class ShopDetailsActivity extends BaseActivity {
 
 	private ShopInfo info = null;
-	private LoadImg loadImg;
-	private HttpGetThread http = null;
+//	private LoadImg loadImg;
+//	private HttpGetThread http = null;
 	private MyJson myJson = new MyJson();
 	private ArrayList<SignInfo> SignList;
 	private ArrayList<CommentsInfo> CommentsList;
@@ -120,7 +114,7 @@ public class ShopDetailsActivity extends BaseActivity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_shop_details);
 		// ��ʼ��ͼƬ�첽������
-		loadImg = new LoadImg(ShopDetailsActivity.this);
+//		loadImg = new LoadImg(ShopDetailsActivity.this);
 		// ��ȡ���б��д��ݹ���������
 		Intent intent = getIntent();
 		Bundle bund = intent.getBundleExtra("value");
@@ -129,8 +123,8 @@ public class ShopDetailsActivity extends BaseActivity {
 		initView();
 		// ������������
 		String endParames = Model.SHOPDETAILURL + "shopid=" + info.getSid();
-		http = new HttpGetThread(hand, endParames);
-		ThreadPoolUtils.execute(http);
+//		http = new HttpGetThread(hand, endParames);
+//		ThreadPoolUtils.execute(http);
 	}
 
 	public void initData() {
