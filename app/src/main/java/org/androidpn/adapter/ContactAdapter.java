@@ -19,6 +19,7 @@ import com.android.volley.toolbox.Volley;
 import org.androidpn.demoapp.R;
 import org.androidpn.model.Bussiness;
 import org.androidpn.model.Contact;
+import org.androidpn.utils.ActivityHolder;
 import org.androidpn.utils.DateFormatUtil;
 
 import java.util.List;
@@ -27,21 +28,22 @@ public class ContactAdapter extends ArrayAdapter<Contact> {
 
     private int resource;
     private RequestQueue requestQueue;
-    ImageLoader imageLoader = new ImageLoader(requestQueue, new ImageLoader.ImageCache() {
-        @Override
-        public void putBitmap(String url, Bitmap bitmap) {
-        }
-
-        @Override
-        public Bitmap getBitmap(String url) {
-            return null;
-        }
-    });
+    ImageLoader imageLoader;
 
     public ContactAdapter(Context context, List<Contact> contactList) {
         super(context, R.layout.item_my_message, contactList);
         this.resource = R.layout.item_my_message;
         requestQueue = Volley.newRequestQueue(getContext());
+        imageLoader = new ImageLoader(requestQueue, new ImageLoader.ImageCache() {
+            @Override
+            public void putBitmap(String url, Bitmap bitmap) {
+            }
+
+            @Override
+            public Bitmap getBitmap(String url) {
+                return null;
+            }
+        });
     }
 
     @NonNull
@@ -57,7 +59,9 @@ public class ContactAdapter extends ArrayAdapter<Contact> {
         TextView userText = (TextView) item.findViewById(R.id.text_contact_name);
         TextView timeText = (TextView) item.findViewById(R.id.text_time);
 
-        imageView.setImageUrl(contact.getImageURL(), imageLoader);
+        if (contact.getImageURL() != null) {
+            imageView.setImageUrl(contact.getImageURL().replace("localhost", ActivityHolder.getInstance().getConnection().getHost()), imageLoader);
+        }
         userText.setText(contact.getFromUserName());
         timeText.setText(DateFormatUtil.getFormatTime(contact.getCreateTime()));
 

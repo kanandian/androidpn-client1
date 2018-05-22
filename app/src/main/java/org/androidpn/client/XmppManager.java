@@ -25,6 +25,7 @@ import org.androidpn.IQ.ActivityInquiryIQ;
 import org.androidpn.IQ.BussinessIQ;
 import org.androidpn.IQ.CommentsIQ;
 import org.androidpn.IQ.FoodMenuIQ;
+import org.androidpn.IQ.ImageURLIQ;
 import org.androidpn.IQ.LoginResponseIQ;
 import org.androidpn.IQ.NotificationIQ;
 import org.androidpn.IQ.OrderDetailIQ;
@@ -37,6 +38,7 @@ import org.androidpn.IQprovider.AdminResponseIQProvider;
 import org.androidpn.IQprovider.BussinessIQProvider;
 import org.androidpn.IQprovider.CommentsIQProvider;
 import org.androidpn.IQprovider.FoodMenuIQProvider;
+import org.androidpn.IQprovider.ImageURLIQProvider;
 import org.androidpn.IQprovider.LoginIQProvider;
 import org.androidpn.IQprovider.NotificationIQProvider;
 import org.androidpn.IQprovider.OrderDetailIQProvider;
@@ -47,6 +49,7 @@ import org.androidpn.packetlistener.ActivityPacketListener;
 import org.androidpn.packetlistener.BussinessPacketListener;
 import org.androidpn.packetlistener.CommentsPacketListener;
 import org.androidpn.packetlistener.FoodMenuPacketListener;
+import org.androidpn.packetlistener.ImageURLPacketListener;
 import org.androidpn.packetlistener.LoginReponsePacketListener;
 import org.androidpn.packetlistener.NotificationPacketListener;
 import org.androidpn.packetlistener.OrderDetailPacketListener;
@@ -130,6 +133,8 @@ public class XmppManager {
 
     private PacketListener resultModelPacketListener;
 
+    private PacketListener imageURLPacketListener;
+
     private Handler handler;
 
     private List<Runnable> taskList;
@@ -163,6 +168,7 @@ public class XmppManager {
         takeoutListPacketListener = new TakeoutListPacketListener(this);
         orderDetailPacketListener = new OrderDetailPacketListener(this);
         resultModelPacketListener = new ResultModelPacketListener(this);
+        imageURLPacketListener = new ImageURLPacketListener();
 
         handler = new Handler();
         taskList = new ArrayList<Runnable>();
@@ -273,6 +279,10 @@ public class XmppManager {
 
     public PacketListener getResultModelPacketListener() {
         return resultModelPacketListener;
+    }
+
+    public PacketListener getImageURLPacketListener() {
+        return imageURLPacketListener;
     }
 
     public void startReconnectionThread() {
@@ -446,6 +456,9 @@ public class XmppManager {
                     ProviderManager.getInstance().addIQProvider("admin",
                             "androidpn:admin:operation",
                             new AdminResponseIQProvider());
+                    ProviderManager.getInstance().addIQProvider("image",
+                            "androidpn:iq:inquiry",
+                            new ImageURLIQProvider());
 
                 } catch (XMPPException e) {
                     Log.e(LOGTAG, "XMPP connection failed", e);
@@ -622,6 +635,10 @@ public class XmppManager {
                     PacketFilter packetFilter10 = new PacketTypeFilter(ResultModelIQ.class);
                     PacketListener packetListener10 = xmppManager.getResultModelPacketListener();
                     connection.addPacketListener(packetListener10, packetFilter10);
+
+                    PacketFilter packetFilter11 = new PacketTypeFilter(ImageURLIQ.class);
+                    PacketListener packetListener11 = xmppManager.getImageURLPacketListener();
+                    connection.addPacketListener(packetListener11, packetFilter11);
 
                     xmppManager.runTask();
 

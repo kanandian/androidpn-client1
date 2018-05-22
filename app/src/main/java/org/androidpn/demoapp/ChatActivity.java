@@ -50,6 +50,8 @@ import butterknife.ButterKnife;
 
 public class ChatActivity extends BaseAppCompatActivity {
 
+    private final static int UPDATE_IMAGE = 1;
+
     @Bind(R.id.chat_list)
     EasyRecyclerView chatList;
 //    @Bind(R.id.emotion_voice)
@@ -102,6 +104,8 @@ public class ChatActivity extends BaseAppCompatActivity {
                 messageInfos.add(messageInfo);
                 chatAdapter.add(messageInfo);
                 chatList.scrollToPosition(chatAdapter.getCount() - 1);
+            } else if (msg.what == UPDATE_IMAGE) {
+                LoadData();
             }
         }
     };
@@ -290,7 +294,7 @@ public class ChatActivity extends BaseAppCompatActivity {
     /**
      * 构造聊天数据
      */
-    private void LoadData() {
+    public void LoadData() {
         messageInfos = new ArrayList<>();
 
         List<ChatMessage> chatMessages = DataSupport.where("target = ? and userName = ?", toJID, UserInfoHolder.getInstance().getUserName()).find(ChatMessage.class);
@@ -337,7 +341,7 @@ public class ChatActivity extends BaseAppCompatActivity {
 //        messageInfo3.setSendState(Constants.CHAT_ITEM_SEND_ERROR);
 //        messageInfo3.setHeader("http://img.dongqiudi.com/uploads/avatar/2014/10/20/8MCTb0WBFG_thumb_1413805282863.jpg");
 //        messageInfos.add(messageInfo3);
-
+        chatAdapter.clear();
         chatAdapter.addAll(messageInfos);
     }
 
@@ -376,6 +380,12 @@ public class ChatActivity extends BaseAppCompatActivity {
         handler.sendMessage(msg);
     }
 
+    public void updateImage() {
+        android.os.Message msg = new android.os.Message();
+        msg.what = UPDATE_IMAGE;
+        handler.sendMessage(msg);
+    }
+
     @Override
     public void onBackPressed() {
 //        if (!mDetector.interceptBackPress()) {
@@ -389,5 +399,9 @@ public class ChatActivity extends BaseAppCompatActivity {
         ButterKnife.unbind(this);
 //        EventBus.getDefault().removeStickyEvent(this);
 //        EventBus.getDefault().unregister(this);
+    }
+
+    public String getToJID() {
+        return toJID;
     }
 }

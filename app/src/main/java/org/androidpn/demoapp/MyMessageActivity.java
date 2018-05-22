@@ -2,12 +2,14 @@ package org.androidpn.demoapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.Message;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
 import org.androidpn.adapter.ContactAdapter;
+import org.androidpn.enity.MessageInfo;
 import org.androidpn.entity.ChatMessage;
 import org.androidpn.model.Contact;
 import org.androidpn.utils.ActivityHolder;
@@ -23,6 +25,17 @@ public class MyMessageActivity extends BaseActivity {
     private ContactAdapter adapter;
 
     private List<Contact> contactList;
+
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(android.os.Message msg) {
+            super.handleMessage(msg);
+
+            if(msg.what == UPDATE_UI) {
+                loadMessage();
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +68,12 @@ public class MyMessageActivity extends BaseActivity {
     public void refresh() {
         super.refresh();
         loadMessage();
+    }
+
+    public void updateImage() {
+        Message msg = new Message();
+        msg.what = UPDATE_UI;
+        handler.sendMessage(msg);
     }
 
     public void loadMessage() {

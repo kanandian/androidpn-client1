@@ -105,6 +105,20 @@ public class FrameActivity extends ActivityGroup {
 					 		contact = contacts.get(0);
 						}
 
+						contact.setUnReadCount(contact.getUnReadCount()+1);
+
+					 	if (contact.getImageURL() == null || "".equals(contact.getImageURL())) {
+					 		InquiryIQ inquiryIQ = new InquiryIQ();
+					 		inquiryIQ.setType(IQ.Type.GET);
+
+					 		inquiryIQ.setTarget("image");
+					 		inquiryIQ.setTitle(contact.getFromUserName());
+
+							Log.d("qzf", "processMessage: "+inquiryIQ.toXML());
+
+							ActivityHolder.getInstance().sendPacket(inquiryIQ);
+						}
+
 
 						Activity activity = ActivityHolder.getInstance().getCurrentActivity();
 					 	if (activity instanceof ChatActivity) {
@@ -115,6 +129,10 @@ public class FrameActivity extends ActivityGroup {
 							messageInfo.setHeader(contact.getImageURL());
 
 							chatActivity.addChatMessage(messageInfo);
+						} else if (activity instanceof FrameActivity) {
+					 		FrameActivity frameActivity = (FrameActivity) activity;
+							MyMessageActivity myMessageActivity = (MyMessageActivity) frameActivity.getLocalActivityManager().getActivity("sign");
+							myMessageActivity.updateImage();
 						}
 
 					}

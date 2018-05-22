@@ -10,9 +10,14 @@ public class Contact extends DataSupport implements Serializable {
     private long createTime;
     private String userName;
 
+    private int unReadCount;
+
+    private String lastUnRead;
+
     private String fromJID;
 
     public Contact() {
+        unReadCount = 0;
     }
 
     public String getFromUserName() {
@@ -53,5 +58,21 @@ public class Contact extends DataSupport implements Serializable {
 
     public void setFromJID(String fromJID) {
         this.fromJID = fromJID;
+    }
+
+    public int getUnReadCount() {
+        return unReadCount;
+    }
+
+    public void setUnReadCount(int unReadCount) {
+        this.unReadCount = unReadCount;
+    }
+
+    public String getLastUnRead() {
+        return lastUnRead;
+    }
+
+    public void setLastUnRead(String lastUnRead) {
+        this.lastUnRead = lastUnRead;
     }
 }
