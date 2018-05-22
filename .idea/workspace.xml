@@ -9,20 +9,80 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6950065f-008f-4337-8d8b-98e933cc2307" name="Default" comment="店铺列表筛选">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_24_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_24_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_24_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_24_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_24_2_1_jar.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_24_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_24_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_24_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_24_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_24_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_24_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_24_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ChatActivity.java" />
+    <list default="true" id="6950065f-008f-4337-8d8b-98e933cc2307" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_3_7_0_jar.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_butterknife_7_0_1_jar.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jude_easyrecyclerview_4_2_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_greenrobot_eventbus_3_0_0_jar.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/ChatAdapter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/CommonFragmentPagerAdapter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/EmotionGridViewAdapter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/EmotionPagerAdapter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/holder/ChatAcceptViewHolder.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/holder/ChatSendViewHolder.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/base/BaseFragment.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/base/MyApplication.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/BaseAppCompatActivity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/FullImageActivity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/enity/FullImageInfo.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/enity/MessageInfo.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/fragment/ChatEmotionFragment.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/fragment/ChatFunctionFragment.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/AudioRecoderUtils.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/CheckPermissionUtils.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/Constants.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/EmotionUtils.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/GifOpenHelper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/GlobalOnItemClickManagerUtils.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/MediaManager.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/PopupWindowFactory.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/Utils.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/BubbleDrawable.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/BubbleImageView.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/EmotionInputDetector.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/GifTextView.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/IndicatorView.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/NoScrollViewPager.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/StateButton.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_circle_gary.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_circle_white.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/compose_emotion_delete.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/corners_edit.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/corners_edit_white.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/msg_state_fail_resend.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/record_microphone.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/record_microphone_bj.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/voice_left.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/voice_right.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_full_image.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_chat_emotion.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_chat_function.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/include_reply_layout.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_chat_accept.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_chat_send.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_microphone.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/chatfrom_bg_normal.9.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/chatto_bg_normal.9.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/icon_chat_add.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/icon_chat_expression.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/icon_chat_photo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/icon_chat_photograph.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/icon_chat_voice.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/icon_voice_left1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/icon_voice_left2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/icon_voice_left3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/icon_voice_right1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/icon_voice_right2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/icon_voice_right3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/record_bottom.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/record_top.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/attr.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" />
@@ -34,87 +94,35 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_19_1_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/androidpn-client1.iml" afterPath="$PROJECT_DIR$/androidpn-client1.iml" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/org/androidpn/demoapp/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/org/androidpn/demoapp/R.java" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/IQ/ActivityInquiryIQ.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/IQ/ActivityInquiryIQ.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/IQ/BussinessIQ.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/IQ/BussinessIQ.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/IQ/InquiryIQ.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/IQ/InquiryIQ.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/IQ/NotificationIQ.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/IQ/NotificationIQ.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/IQprovider/ActivityIQProvider.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/IQprovider/ActivityIQProvider.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/IQprovider/BussinessIQProvider.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/IQprovider/BussinessIQProvider.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/IQprovider/NotificationIQProvider.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/IQprovider/NotificationIQProvider.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/ConnectivityReceiver.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/ConnectivityReceiver.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/Constants.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/Constants.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/InvalidFormatException.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/InvalidFormatException.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/LogUtil.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/LogUtil.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationDetailsActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationDetailsActivity$1.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationDetailsActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationDetailsActivity.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationReceiver.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationReceiver.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationService$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationService$1.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationService$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationService$2.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationService$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationService$3.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationService$TaskSubmitter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationService$TaskSubmitter.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationService$TaskTracker.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationService$TaskTracker.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationService.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationService.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationSettingsActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationSettingsActivity$1.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationSettingsActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/NotificationSettingsActivity.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/Notifier.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/Notifier.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/PersistentConnectionListener.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/PersistentConnectionListener.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/PhoneStateChangeListener.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/PhoneStateChangeListener.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/ReconnectionThread$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/ReconnectionThread$1.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/ReconnectionThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/ReconnectionThread.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/ServiceManager$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/ServiceManager$1.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/ServiceManager.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/ServiceManager.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$1.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$ConnectTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$ConnectTask.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$LoginTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$LoginTask.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$RegisterTask$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$RegisterTask$1.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$RegisterTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager$RegisterTask.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/client/XmppManager.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/BussinessInfoActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/BussinessInfoActivity.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/DemoAppActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/DemoAppActivity$1.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/DemoAppActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/DemoAppActivity.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/EntryActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/EntryActivity$1.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/EntryActivity$StartActivityThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/EntryActivity$StartActivityThread.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/EntryActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/EntryActivity.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/MainActivity.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/NavigationActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/demoapp/NavigationActivity.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/model/Bussiness.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/model/Bussiness.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/utils/Location.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/androidpn/utils/Location.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javaPrecompile/debug/annotationProcessors.json" afterPath="$PROJECT_DIR$/app/build/intermediates/javaPrecompile/debug/annotationProcessors.json" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/ShopAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/ShopAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/SignAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/SignAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/client/NotificationService.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/client/NotificationService.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/client/Notifier.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/client/Notifier.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/client/ServiceManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/client/ServiceManager.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/AttractionDetailActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/AttractionDetailActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/CheckinActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/CheckinActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/MyBussinessesActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/MyBussinessesActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/RankingList_bzrm.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/RankingList_bzrm.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/ViewPagerAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/ViewPagerAdapter.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ChatActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ChatActivity.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopDetailsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopDetailsActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopDetailsCheckinActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopDetailsCheckinActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopListActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopListActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/TuanActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/TuanActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/TuanDetailsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/TuanDetailsActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/net/DownBitmap.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/net/MyGet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/net/MyPost.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/thread/HttpGetThread.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/thread/HttpPostThread.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/LoadImg.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/myfragment/MyFragmentone.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/myfragment/MyFragmentthree.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/androidpn/myfragment/MyFragmenttwo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/mcolors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/mcolors.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -147,11 +155,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ShopListActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopListActivity.java">
+      <file leaf-file-name="ChatActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ChatActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="315" column="0" lean-forward="false" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
+            <state relative-caret-position="410">
+              <caret line="118" column="73" lean-forward="true" selection-start-line="118" selection-start-column="73" selection-end-line="118" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -160,28 +178,18 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="44" column="10" lean-forward="false" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+            <state relative-caret-position="607">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RankingList_bzrm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/RankingList_bzrm.java">
+      <file leaf-file-name="ChatSendViewHolder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/holder/ChatSendViewHolder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TuanActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/TuanActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="106" column="39" lean-forward="false" selection-start-line="106" selection-start-column="39" selection-end-line="106" selection-end-column="39" />
+            <state relative-caret-position="322">
+              <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -189,53 +197,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckinActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/CheckinActivity.java">
+      <file leaf-file-name="include_reply_layout.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_reply_layout.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="60" column="5" lean-forward="false" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+            <state relative-caret-position="369">
+              <caret line="97" column="39" lean-forward="false" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="39" />
               <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmotionInputDetector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/EmotionInputDetector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="119" column="44" lean-forward="false" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
+              <folding>
+                <element signature="e#4087#5098#0" expanded="true" />
+                <element signature="e#5097#5098#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShopDetailsCheckinActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopDetailsCheckinActivity.java">
+      <file leaf-file-name="activity_chat.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_chat.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="248" column="24" lean-forward="false" selection-start-line="248" selection-start-column="24" selection-end-line="248" selection-end-column="24" />
+            <state relative-caret-position="165">
+              <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/client/ServiceManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="76" column="46" lean-forward="true" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntryActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/EntryActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="74" column="32" lean-forward="false" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Notifier.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/client/Notifier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="773">
-              <caret line="118" column="37" lean-forward="false" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
-              <folding />
-            </state>
+          <provider editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
@@ -254,13 +251,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>TakeoutListIQ.class</find>
-      <find>padding</find>
-      <find>@color</find>
-      <find>查看订单</find>
       <find>TakeoutListIQ</find>
       <find>androidpn:admin:operation</find>
-      <find>Shop_details_bottom_img4</find>
       <find>外卖</find>
       <find>android:testOnly</find>
       <find>My_list_guanzhu</find>
@@ -284,6 +276,11 @@
       <find>Shoplist_title_textbtn3</find>
       <find>Shoplist_title_textbtn1</find>
       <find>smack</find>
+      <find>报错</find>
+      <find>Shop_details_bottom_img4</find>
+      <find>com.rance.chatui.widget.StateButton</find>
+      <find>com.rance.chatui.widget.NoScrollViewPager</find>
+      <find>com.rance.chatui</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -2161,57 +2158,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_comments.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_shop_details.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_my.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/PaymentIQ.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_order_success.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/PaymentActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_payment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_my_bussinesses.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/assets/litepal.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/entity/SearchHistory.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/model/Model.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_shoplist.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/LoginResponseIQ.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/UserInfoHolder.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/packetlistener/LoginReponsePacketListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQprovider/LoginIQProvider.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopCommentsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/CommentIQ.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopDetailsCommentActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/raw/androidpn.properties" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/MyJson.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/model/TakeoutOrder.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQprovider/TakeoutListIQProvider.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_takeout_bussiness.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_takeout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/TakeoutBussinessListAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/TakeoutListAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/mcolors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_food_menu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/EditTakeoutMenuAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/IQprovider/BussinessIQProvider.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/BaseActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/SearchViewActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/ShopAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ChatActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/client/Notifier.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/thread/HttpGetThread.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopListActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/RankingList_bzrm.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/TuanActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/SignAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopDetailsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/TuanDetailsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/AttractionDetailActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/CheckinActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopDetailsCheckinActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/client/NotificationService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/client/ServiceManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/EmotionPagerAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/base/MyApplication.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/enity/MessageInfo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/PopupWindowFactory.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/BubbleDrawable.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/FullImageActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/mcolors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/IndicatorView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/GifTextView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/EmotionUtils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/EmotionInputDetector.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/BubbleImageView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/ChatAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/holder/ChatAcceptViewHolder.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/EmotionGridViewAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/holder/ChatSendViewHolder.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/ViewPagerAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/fragment/ChatEmotionFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/fragment/ChatFunctionFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/StateButton.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/GlobalOnItemClickManagerUtils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopDetailsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_chat.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/include_reply_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_chat_emotion.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_chat_accept.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_chat_send.xml" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ChatActivity.java" />
       </list>
     </option>
   </component>
@@ -2310,7 +2307,7 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="androidpn-client1" type="b2602c69:ProjectViewProjectNode" />
@@ -2318,8 +2315,8 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="androidpn" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="drawable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="androidpn-client1" type="b2602c69:ProjectViewProjectNode" />
@@ -2327,9 +2324,35 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="androidpn" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="mipmap-hdpi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="androidpn-client1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="androidpn-client1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="mipmap-mdpi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="androidpn-client1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="androidpn-client1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="mipmap-xhdpi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="androidpn-client1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="androidpn-client1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="values" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="androidpn-client1" type="b2602c69:ProjectViewProjectNode" />
@@ -2348,16 +2371,22 @@
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.0.1" />
     <property name="device.picker.selection" value="Pixel_2_API_27" />
     <property name="settings.editor.selected.configurable" value="instant.run" />
-    <property name="SearchEverywhereHistoryKey" value="model&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/model/Model.java&#10;activity_&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_shoplist.xml&#10;shoplist&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopListActivity.java&#10;bussiness&#9;PSI&#9;JAVA://org.androidpn.model.Bussiness&#10;shopadap&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/adapter/ShopAdapter.java&#10;searchview&#9;PSI&#9;JAVA://org.androidpn.demoapp.SearchViewActivity&#10;baseac&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/BaseActivity.java&#10;shopdetail&#9;PSI&#9;JAVA://org.androidpn.demoapp.ShopDetailsActivity&#10;manage&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ManageBussinessActivity.java&#10;managemenu&#9;PSI&#9;JAVA://org.androidpn.IQ.ManageTakeoutMenuItemIQ&#10;takeoutlistac&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/TakeoutListActivity.java&#10;activity_my&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_my.xml&#10;myac&#9;PSI&#9;JAVA://org.androidpn.demoapp.MyActivity&#10;my&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/utils/MyJson.java&#10;shopdetailcomm&#9;PSI&#9;JAVA://org.androidpn.demoapp.ShopDetailsCommentActivity&#10;shopcomment&#9;PSI&#9;JAVA://org.androidpn.demoapp.ShopCommentsActivity&#10;loginiqpro&#9;PSI&#9;JAVA://org.androidpn.IQprovider.LoginIQProvider&#10;user&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/utils/UserInfoHolder.java&#10;loginre&#9;PSI&#9;JAVA://org.androidpn.packetlistener.LoginReponsePacketListener&#10;addbuss&#9;PSI&#9;JAVA://org.androidpn.demoapp.AddBussinessActivity&#10;activity_shoplist&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_shoplist.xml&#10;location&#9;PSI&#9;JAVA://org.androidpn.utils.LocationHolder&#10;succe&#9;PSI&#9;JAVA://org.androidpn.demoapp.OrderSuccessActivity&#10;activity_login&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_login.xml&#10;activity_pay&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_payment.xml&#10;activity_paymetn&#9;null&#9;null&#10;addacti&#9;PSI&#9;JAVA://org.androidpn.demoapp.AddBussinessActivity&#10;payment&#9;PSI&#9;JAVA://org.androidpn.demoapp.PaymentActivity&#10;frameacti&#9;PSI&#9;JAVA://org.androidpn.demoapp.FrameActivity&#10;activity&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_my.xml&#10;item_sh&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/item_shop.xml&#10;activity_m&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_my.xml&#10;login&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/LoginActivity.java&#10;shopcommentac&#9;PSI&#9;JAVA://org.androidpn.demoapp.ShopDetailsCommentActivity&#10;shopada&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/adapter/ShopAdapter.java&#10;item&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/item_shop.xml&#10;com&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopCommentsActivity.java&#10;activitymy&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_my.xml&#10;base&#9;PSI&#9;JAVA://org.androidpn.demoapp.BaseActivity&#10;image&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/UploadImageActivity.java&#10;mana&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ManageBussinessActivity.java&#10;shopa&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/adapter/ShopAdapter.java&#10;upload&#9;PSI&#9;JAVA://org.androidpn.demoapp.UploadImageActivity&#10;search&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/SearchActivity.java&#10;searchac&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/SearchActivity.java&#10;searchacti&#9;PSI&#9;JAVA://org.androidpn.demoapp.SearchViewActivity&#10;activityshow&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_show_map.xml&#10;showma&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShowMapActivity.java&#10;searchactivity&#9;PSI&#9;JAVA://org.androidpn.demoapp.SearchActivity&#10;userin&#9;PSI&#9;JAVA://org.androidpn.utils.UserInfoHolder" />
+    <property name="SearchEverywhereHistoryKey" value="build&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/build.gradle&#10;build.g&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/build.gradle&#10;build.gradle&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/build.gradle&#10;chat&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ChatActivity.java&#10;shopdetail&#9;PSI&#9;JAVA://org.androidpn.demoapp.ShopDetailsActivity&#10;shopdeta&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopDetailsCheckinActivity.java&#10;chatacti&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ChatActivity.java&#10;chatac&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ChatActivity.java&#10;model&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/model/Model.java&#10;activity_&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_shoplist.xml&#10;shoplist&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopListActivity.java&#10;bussiness&#9;PSI&#9;JAVA://org.androidpn.model.Bussiness&#10;shopadap&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/adapter/ShopAdapter.java&#10;searchview&#9;PSI&#9;JAVA://org.androidpn.demoapp.SearchViewActivity&#10;baseac&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/BaseActivity.java&#10;manage&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ManageBussinessActivity.java&#10;managemenu&#9;PSI&#9;JAVA://org.androidpn.IQ.ManageTakeoutMenuItemIQ&#10;takeoutlistac&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/TakeoutListActivity.java&#10;activity_my&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_my.xml&#10;myac&#9;PSI&#9;JAVA://org.androidpn.demoapp.MyActivity&#10;my&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/utils/MyJson.java&#10;shopdetailcomm&#9;PSI&#9;JAVA://org.androidpn.demoapp.ShopDetailsCommentActivity&#10;shopcomment&#9;PSI&#9;JAVA://org.androidpn.demoapp.ShopCommentsActivity&#10;loginiqpro&#9;PSI&#9;JAVA://org.androidpn.IQprovider.LoginIQProvider&#10;user&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/utils/UserInfoHolder.java&#10;loginre&#9;PSI&#9;JAVA://org.androidpn.packetlistener.LoginReponsePacketListener&#10;addbuss&#9;PSI&#9;JAVA://org.androidpn.demoapp.AddBussinessActivity&#10;activity_shoplist&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_shoplist.xml&#10;location&#9;PSI&#9;JAVA://org.androidpn.utils.LocationHolder&#10;succe&#9;PSI&#9;JAVA://org.androidpn.demoapp.OrderSuccessActivity&#10;activity_login&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_login.xml&#10;activity_pay&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_payment.xml&#10;activity_paymetn&#9;null&#9;null&#10;addacti&#9;PSI&#9;JAVA://org.androidpn.demoapp.AddBussinessActivity&#10;payment&#9;PSI&#9;JAVA://org.androidpn.demoapp.PaymentActivity&#10;frameacti&#9;PSI&#9;JAVA://org.androidpn.demoapp.FrameActivity&#10;activity&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_my.xml&#10;item_sh&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/item_shop.xml&#10;activity_m&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_my.xml&#10;login&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/LoginActivity.java&#10;shopcommentac&#9;PSI&#9;JAVA://org.androidpn.demoapp.ShopDetailsCommentActivity&#10;shopada&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/adapter/ShopAdapter.java&#10;item&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/item_shop.xml&#10;com&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ShopCommentsActivity.java&#10;activitymy&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/layout/activity_my.xml&#10;base&#9;PSI&#9;JAVA://org.androidpn.demoapp.BaseActivity&#10;image&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/UploadImageActivity.java&#10;mana&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/demoapp/ManageBussinessActivity.java&#10;shopa&#9;FILE&#9;file:///Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/java/org/androidpn/adapter/ShopAdapter.java&#10;upload&#9;PSI&#9;JAVA://org.androidpn.demoapp.UploadImageActivity" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.profiler.active" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.androidpn.demoapp" />
+      <recent name="org.androidpn.utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/values" />
+      <recent name="$PROJECT_DIR$/app/src/main/res" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/org/androidpn" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2730,7 +2759,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526899199047</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="android版本更新">
+      <created>1526955623034</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1526955623034</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2747,36 +2783,36 @@
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33981577" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31876862" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27507448" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25239617" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33981577" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18051118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31876862" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27507448" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25239617" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -2793,8 +2829,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="外卖点餐（未完成）" />
-    <MESSAGE value="外卖点餐" />
     <MESSAGE value="订单列表" />
     <MESSAGE value="我的店铺" />
     <MESSAGE value="添加店铺" />
@@ -2818,7 +2852,9 @@
     <MESSAGE value="我的订单添加图片" />
     <MESSAGE value="收藏功能完善" />
     <MESSAGE value="店铺列表筛选" />
-    <option name="LAST_COMMIT_MESSAGE" value="店铺列表筛选" />
+    <MESSAGE value="android版本更新" />
+    <MESSAGE value="聊天界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="聊天界面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2830,278 +2866,12 @@
           <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="147" />
+      <option name="time" value="148" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/TakeoutOrderActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="29" column="65" lean-forward="false" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/MyBussinessesActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="84" column="25" lean-forward="false" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_takeout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ManageBussinessActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="67" column="82" lean-forward="false" selection-start-line="67" selection-start-column="82" selection-end-line="67" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/EditTakeoutMenuActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="48" column="43" lean-forward="false" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/client/XmppManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="423" column="32" lean-forward="false" selection-start-line="423" selection-start-column="32" selection-end-line="423" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/ResultModelIQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/BaseActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopCommentsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding>
-            <element signature="e#1013#1364#0" expanded="false" />
-            <element signature="e#1363#1364#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-19/android.jar!/android/widget/ArrayAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/model/Bussiness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="135" column="46" lean-forward="true" selection-start-line="135" selection-start-column="46" selection-end-line="135" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/EditTakeoutMenuAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="66" column="49" lean-forward="false" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopDetailsCommentActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="43" column="47" lean-forward="false" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/packetlistener/ResultModelPacketListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/IQprovider/BussinessIQProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="73" column="29" lean-forward="false" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/IQ/InquiryIQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="33" />
-          <folding>
-            <element signature="e#1542#1543#0" expanded="false" />
-            <element signature="e#1573#1574#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/mcolors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_food_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/ShopAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="81" column="59" lean-forward="false" selection-start-line="81" selection-start-column="59" selection-end-line="81" selection-end-column="59" />
-          <folding>
-            <element signature="e#1518#1528#0" expanded="false" />
-            <element signature="e#8263#8264#0" expanded="false" />
-            <element signature="e#8283#8284#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/SearchViewActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-          <folding>
-            <element signature="e#1640#2297#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_shoplist.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="58" column="37" lean-forward="false" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/model/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="72" column="37" lean-forward="false" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/asmack.jar!/org/jivesoftware/smack/packet/Message.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1724">
-          <caret line="297" column="38" lean-forward="false" selection-start-line="297" selection-start-column="38" selection-end-line="297" selection-end-column="38" />
-          <folding>
-            <marker date="1522736778070" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1522736778070" expanded="false" signature="153:378" ph="..." />
-            <marker date="1522736778070" expanded="true" signature="620:772" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="804:980" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="1031:1233" ph="{...}" />
-            <marker date="1522736778070" expanded="false" signature="1268:1279" ph=" { " />
-            <marker date="1522736778070" expanded="false" signature="1296:1302" ph=" }" />
-            <marker date="1522736778070" expanded="true" signature="1347:1511" ph="{...}" />
-            <marker date="1522736778070" expanded="false" signature="1543:1554" ph=" { " />
-            <marker date="1522736778070" expanded="false" signature="1591:1597" ph=" }" />
-            <marker date="1522736778070" expanded="true" signature="1645:1777" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="1842:2184" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="2239:2312" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="2357:2510" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="2583:2821" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="2873:3238" ph="{...}" />
-            <marker date="1522736778070" expanded="false" signature="3297:3308" ph=" { " />
-            <marker date="1522736778070" expanded="false" signature="3345:3351" ph=" }" />
-            <marker date="1522736778070" expanded="true" signature="3405:3879" ph="{...}" />
-            <marker date="1522736778070" expanded="false" signature="3908:3919" ph=" { " />
-            <marker date="1522736778070" expanded="false" signature="3953:3959" ph=" }" />
-            <marker date="1522736778070" expanded="true" signature="4004:4121" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="4180:4505" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="4555:4626" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="4665:4806" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="4870:5085" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="5134:5480" ph="{...}" />
-            <marker date="1522736778070" expanded="false" signature="5530:5541" ph=" { " />
-            <marker date="1522736778070" expanded="false" signature="5573:5579" ph=" }" />
-            <marker date="1522736778070" expanded="true" signature="5630:6075" ph="{...}" />
-            <marker date="1522736778070" expanded="false" signature="6106:6117" ph=" { " />
-            <marker date="1522736778070" expanded="false" signature="6136:6142" ph=" }" />
-            <marker date="1522736778070" expanded="false" signature="6184:6195" ph=" { " />
-            <marker date="1522736778070" expanded="false" signature="6216:6222" ph=" }" />
-            <marker date="1522736778070" expanded="false" signature="6255:6266" ph=" { " />
-            <marker date="1522736778070" expanded="false" signature="6287:6293" ph=" }" />
-            <marker date="1522736778070" expanded="false" signature="6339:6350" ph=" { " />
-            <marker date="1522736778070" expanded="false" signature="6375:6381" ph=" }" />
-            <marker date="1522736778070" expanded="true" signature="6437:6691" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="6719:9295" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="9333:10865" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="10893:11272" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="11303:12815" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="11425:11782" ph="{...}" />
-            <marker date="1522736778070" expanded="false" signature="11819:11834" ph=" { " />
-            <marker date="1522736778070" expanded="false" signature="11855:11865" ph=" }" />
-            <marker date="1522736778070" expanded="false" signature="11901:11916" ph=" { " />
-            <marker date="1522736778070" expanded="false" signature="11936:11946" ph=" }" />
-            <marker date="1522736778070" expanded="true" signature="11988:12598" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="12630:12809" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="12849:14117" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="12974:13331" ph="{...}" />
-            <marker date="1522736778070" expanded="false" signature="13368:13383" ph=" { " />
-            <marker date="1522736778070" expanded="false" signature="13404:13414" ph=" }" />
-            <marker date="1522736778070" expanded="false" signature="13450:13465" ph=" { " />
-            <marker date="1522736778070" expanded="false" signature="13485:13495" ph=" }" />
-            <marker date="1522736778070" expanded="true" signature="13537:13930" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="13962:14111" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="14147:14484" ph="{...}" />
-            <marker date="1522736778070" expanded="true" signature="14255:14266" ph="{}" />
-            <marker date="1522736778070" expanded="true" signature="14327:14478" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/CommonFragmentPagerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -3109,176 +2879,239 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ChatActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/EmotionPagerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="36" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/client/Notifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="118" column="37" lean-forward="false" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/net/MyGet.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/base/MyApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/net/DownBitmap.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/base/BaseFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/enity/FullImageInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/enity/MessageInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/AudioRecoderUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/CheckPermissionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/GifOpenHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/MediaManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/PopupWindowFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/FullImageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/net/MyPost.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="240">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/net/PostUploadRequest.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/attr.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/net/IsNet.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_full_image.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_circle_gary.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/net/ResponseListener.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/BubbleDrawable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="-1017">
+          <caret line="89" column="1" lean-forward="false" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/net/ThreadPoolUtils.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="269">
+          <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="44" column="10" lean-forward="false" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+        <state relative-caret-position="30">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/thread/HttpGetThread.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/EmotionUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/thread/HttpPostThread.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/GlobalOnItemClickManagerUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="315" column="0" lean-forward="false" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/RankingList_bzrm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/utils/LoadImg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/SignAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="157" column="23" lean-forward="true" selection-start-line="157" selection-start-column="23" selection-end-line="157" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopDetailsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="206" column="53" lean-forward="true" selection-start-line="206" selection-start-column="53" selection-end-line="206" selection-end-column="53" />
+        <state relative-caret-position="255">
+          <caret line="17" column="51" lean-forward="true" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/TuanDetailsActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/fragment/ChatFunctionFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/AttractionDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="191" column="19" lean-forward="true" selection-start-line="191" selection-start-column="19" selection-end-line="191" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/TuanActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="106" column="39" lean-forward="false" selection-start-line="106" selection-start-column="39" selection-end-line="106" selection-end-column="39" />
+        <state relative-caret-position="450">
+          <caret line="154" column="64" lean-forward="false" selection-start-line="154" selection-start-column="64" selection-end-line="154" selection-end-column="64" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/CheckinActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/fragment/ChatEmotionFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="60" column="5" lean-forward="false" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+        <state relative-caret-position="429">
+          <caret line="139" column="19" lean-forward="false" selection-start-line="139" selection-start-column="19" selection-end-line="139" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/ViewPagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/holder/ChatAcceptViewHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/EmotionGridViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="59" column="47" lean-forward="false" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/ChatAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -3291,45 +3124,217 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/DemoAppActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-24/android.jar!/android/content/Context.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="341" column="34" lean-forward="false" selection-start-line="341" selection-start-column="34" selection-end-line="341" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/client/NotificationService.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_shop_details.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
-          <caret line="157" column="0" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <caret line="876" column="23" lean-forward="false" selection-start-line="876" selection-start-column="23" selection-end-line="876" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ShopDetailsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="53" column="50" lean-forward="false" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="133" column="48" lean-forward="false" selection-start-line="133" selection-start-column="48" selection-end-line="133" selection-end-column="48" />
           <folding>
-            <element signature="e#5609#5610#0" expanded="false" />
-            <element signature="e#5656#5657#0" expanded="false" />
+            <element signature="e#260#278#0" expanded="false" />
+            <element signature="e#501#519#0" expanded="false" />
+            <element signature="e#1196#1225#0" expanded="false" />
+            <element signature="e#1306#1338#0" expanded="false" />
+            <element signature="e#1414#1441#0" expanded="false" />
+            <element signature="e#1519#1548#0" expanded="false" />
+            <element signature="e#1693#1729#0" expanded="false" />
+            <element signature="e#1814#1851#0" expanded="false" />
+            <element signature="e#1930#1969#0" expanded="false" />
+            <element signature="e#2050#2092#0" expanded="false" />
+            <element signature="e#2230#2266#0" expanded="false" />
+            <element signature="e#2352#2389#0" expanded="false" />
+            <element signature="e#2468#2498#0" expanded="false" />
+            <element signature="e#2590#2634#0" expanded="false" />
+            <element signature="e#2726#2771#0" expanded="false" />
+            <element signature="e#2853#2894#0" expanded="false" />
+            <element signature="e#2976#3017#0" expanded="false" />
+            <element signature="e#3102#3139#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/EntryActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/mcolors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="74" column="32" lean-forward="false" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+        <state relative-caret-position="210">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/client/ServiceManager.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jude/easyrecyclerview/4.2.3/e08c0b39696a5fc1451fb3d944134fd402eeab02/easyrecyclerview-4.2.3-sources.jar!/com/jude/easyrecyclerview/EasyRecyclerView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="76" column="46" lean-forward="true" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
+        <state relative-caret-position="75">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/StateButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_chat_send.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="50" column="62" lean-forward="true" selection-start-line="50" selection-start-column="62" selection-end-line="50" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/NoScrollViewPager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_chat_emotion.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/IndicatorView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_chat_accept.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/GifTextView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/BubbleImageView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/widget/EmotionInputDetector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="119" column="44" lean-forward="false" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
+          <folding>
+            <element signature="e#4087#5098#0" expanded="true" />
+            <element signature="e#5097#5098#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/org/androidpn/demoapp/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="3848" column="28" lean-forward="false" selection-start-line="3848" selection-start-column="28" selection-end-line="3848" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_chat.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_reply_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="97" column="39" lean-forward="false" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/adapter/holder/ChatSendViewHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/androidpn/demoapp/ChatActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="118" column="73" lean-forward="true" selection-start-line="118" selection-start-column="73" selection-end-line="118" selection-end-column="73" />
           <folding />
         </state>
       </provider>

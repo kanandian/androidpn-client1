@@ -370,7 +370,9 @@ public class ShopDetailsActivity extends BaseActivity {
 				startActivity(intent);
 			}
 			if (mID == R.id.Shop_details_bottom_img4) {
-				creatPopupWindow();
+//				creatPopupWindow();
+				Intent intent = new Intent(ShopDetailsActivity.this, ChatActivity.class);
+				startActivity(intent);
 			}
 			if(mID == R.id.shop_details_tuan){
 				Intent intent = new Intent(ShopDetailsActivity.this,

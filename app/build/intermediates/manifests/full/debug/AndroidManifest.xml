@@ -140,6 +140,18 @@
             android:name="org.androidpn.demoapp.SearchViewActivity"
             android:theme="@style/MyStyle" />
         <activity android:name="org.androidpn.demoapp.PaymentActivity" />
+        <activity
+            android:name="org.androidpn.demoapp.ChatActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="org.androidpn.demoapp.FullImageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity android:name="org.androidpn.demoapp.BussinessInfoActivity" />
         <activity android:name="org.androidpn.demoapp.NavigationActivity" />
         <activity android:name="org.androidpn.demoapp.PersonalActivity" />

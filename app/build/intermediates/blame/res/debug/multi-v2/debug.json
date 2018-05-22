@@ -104,102 +104,6 @@
             ]
         },
         {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-si_values-si.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-si/values-si.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1965",
-                        "endColumns": "100",
-                        "endOffsets": "2061"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-si/values-si.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,215,322,429,517,622,738,827,914,998,1107,1212,1310,1420,1519,1625,1784,1883",
-                        "endColumns": "109,106,106,87,104,115,88,86,83,108,104,97,109,98,105,158,98,81",
-                        "endOffsets": "210,317,424,512,617,733,822,909,993,1102,1207,1305,1415,1514,1620,1779,1878,1960"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-ky_values-ky.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-ky/values-ky.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1943",
-                        "endColumns": "100",
-                        "endOffsets": "2039"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-ky/values-ky.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,209,304,423,507,614,731,809,888,969,1079,1186,1284,1390,1497,1598,1759,1862",
-                        "endColumns": "103,94,118,83,106,116,77,78,80,109,106,97,105,106,100,160,102,80",
-                        "endOffsets": "204,299,418,502,609,726,804,883,964,1074,1181,1279,1385,1492,1593,1754,1857,1938"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-te_values-te.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-te/values-te.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,219,328,439,529,634,759,841,923,1007,1120,1228,1327,1438,1540,1657,1823,1924",
-                        "endColumns": "113,108,110,89,104,124,81,81,83,112,107,98,110,101,116,165,100,81",
-                        "endOffsets": "214,323,434,524,629,754,836,918,1002,1115,1223,1322,1433,1535,1652,1818,1919,2001"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-te/values-te.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2006",
-                        "endColumns": "100",
-                        "endOffsets": "2102"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-da_values-da.arsc.flat",
             "map": [
                 {
@@ -210,70 +114,6 @@
                         "startOffsets": "55,158,266,389,488,600,683,783,896,973,1050,1129,1238,1346,1442,1556,1658,1759,1875,1972,2051",
                         "endColumns": "102,107,122,98,111,82,99,112,76,76,78,108,107,95,113,101,100,115,96,78,100",
                         "endOffsets": "153,261,384,483,595,678,778,891,968,1045,1124,1233,1341,1437,1551,1653,1754,1870,1967,2046,2147"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-bs_values-bs.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-bs/values-bs.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,224,333,440,526,630,752,834,915,1001,1104,1209,1307,1412,1525,1630,1805,1902",
-                        "endColumns": "118,108,106,85,103,121,81,80,85,102,104,97,104,112,104,174,96,83",
-                        "endOffsets": "219,328,435,521,625,747,829,910,996,1099,1204,1302,1407,1520,1625,1800,1897,1981"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-bs/values-bs.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1986",
-                        "endColumns": "100",
-                        "endOffsets": "2082"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-bn_values-bn.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-bn/values-bn.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,214,326,432,526,631,760,838,916,1003,1113,1221,1320,1430,1536,1649,1814,1919",
-                        "endColumns": "108,111,105,93,104,128,77,77,86,109,107,98,109,105,112,164,104,81",
-                        "endOffsets": "209,321,427,521,626,755,833,911,998,1108,1216,1315,1425,1531,1644,1809,1914,1996"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-bn/values-bn.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2001",
-                        "endColumns": "100",
-                        "endOffsets": "2097"
                     }
                 }
             ]
@@ -309,28 +149,6 @@
             ]
         },
         {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-xlarge-land-v4_values-xlarge-land-v4.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/values-xlarge-land/values.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "56",
-                        "endColumns": "63",
-                        "endOffsets": "115"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "63",
-                        "endOffsets": "114"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-cs_values-cs.arsc.flat",
             "map": [
                 {
@@ -341,28 +159,6 @@
                         "startOffsets": "55,162,271,395,497,606,692,797,914,995,1076,1160,1264,1373,1472,1578,1688,1795,1917,2015,2097",
                         "endColumns": "106,108,123,101,108,85,104,116,80,80,83,103,108,98,105,109,106,121,97,81,100",
                         "endOffsets": "157,266,390,492,601,687,792,909,990,1071,1155,1259,1368,1467,1573,1683,1790,1912,2010,2092,2193"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-w500dp-v13_values-w500dp-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/values-w500dp/values.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "56",
-                        "endColumns": "54",
-                        "endOffsets": "106"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "54",
-                        "endOffsets": "105"
                     }
                 }
             ]
@@ -465,28 +261,6 @@
             ]
         },
         {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-w600dp-v13_values-w600dp-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/values-w600dp/values.xml",
-                    "from": {
-                        "startLines": "3,5",
-                        "startColumns": "4,4",
-                        "startOffsets": "56,121",
-                        "endColumns": "63,54",
-                        "endOffsets": "115,171"
-                    },
-                    "to": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,119",
-                        "endColumns": "63,54",
-                        "endOffsets": "114,169"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-v21_values-v21.arsc.flat",
             "map": [
                 {
@@ -552,53 +326,6 @@
             ]
         },
         {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-v24_values-v24.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/values-v24/values-v24.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,212,347,416,480,549",
-                        "endColumns": "156,134,68,63,68,69",
-                        "endOffsets": "207,342,411,475,544,614"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-my_values-my.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-my/values-my.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,214,319,436,529,641,769,847,926,1012,1135,1247,1349,1475,1586,1696,1856,1956",
-                        "endColumns": "108,104,116,92,111,127,77,78,85,122,111,101,125,110,109,159,99,83",
-                        "endOffsets": "209,314,431,524,636,764,842,921,1007,1130,1242,1344,1470,1581,1691,1851,1951,2035"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-my/values-my.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2040",
-                        "endColumns": "100",
-                        "endOffsets": "2136"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-lt_values-lt.arsc.flat",
             "map": [
                 {
@@ -624,54 +351,6 @@
                         "startOffsets": "55,150,257,380,473,573,655,752,860,936,1012,1090,1186,1282,1377,1474,1569,1667,1780,1874,1952",
                         "endColumns": "94,106,122,92,99,81,96,107,75,75,77,95,95,94,96,94,97,112,93,77,101",
                         "endOffsets": "145,252,375,468,568,650,747,855,931,1007,1085,1181,1277,1372,1469,1564,1662,1775,1869,1947,2049"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-v25_values-v25.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/values-v25/values-v25.xml",
-                    "from": {
-                        "startLines": "2,3,4,6",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,126,209,308",
-                        "endLines": "2,3,5,7",
-                        "endColumns": "70,82,12,12",
-                        "endOffsets": "121,204,303,414"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-gl_values-gl.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-gl/values-gl.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1972",
-                        "endColumns": "100",
-                        "endOffsets": "2068"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-gl/values-gl.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,217,329,437,522,624,750,834,915,997,1104,1213,1312,1420,1524,1631,1790,1890",
-                        "endColumns": "111,111,107,84,101,125,83,80,81,106,108,98,107,103,106,158,99,81",
-                        "endOffsets": "212,324,432,517,619,745,829,910,992,1099,1208,1307,1415,1519,1626,1785,1885,1967"
                     }
                 }
             ]
@@ -717,38 +396,6 @@
                         "startOffsets": "55,166,274,397,502,610,697,801,912,990,1069,1149,1261,1370,1467,1576,1679,1786,1908,2009,2089",
                         "endColumns": "110,107,122,104,107,86,103,110,77,78,79,111,108,96,108,102,106,121,100,79,100",
                         "endOffsets": "161,269,392,497,605,692,796,907,985,1064,1144,1256,1365,1462,1571,1674,1781,1903,2004,2084,2185"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-mr_values-mr.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-mr/values-mr.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,216,322,429,519,620,735,812,890,970,1082,1184,1280,1389,1490,1605,1762,1867",
-                        "endColumns": "110,105,106,89,100,114,76,77,79,111,101,95,108,100,114,156,104,79",
-                        "endOffsets": "211,317,424,514,615,730,807,885,965,1077,1179,1275,1384,1485,1600,1757,1862,1942"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-mr/values-mr.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1947",
-                        "endColumns": "100",
-                        "endOffsets": "2043"
                     }
                 }
             ]
@@ -845,70 +492,6 @@
             ]
         },
         {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-km_values-km.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-km/values-km.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1943",
-                        "endColumns": "100",
-                        "endOffsets": "2039"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-km/values-km.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,208,308,420,507,611,729,806,883,966,1070,1175,1275,1385,1492,1600,1762,1860",
-                        "endColumns": "102,99,111,86,103,117,76,76,82,103,104,99,109,106,107,161,97,82",
-                        "endOffsets": "203,303,415,502,606,724,801,878,961,1065,1170,1270,1380,1487,1595,1757,1855,1938"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-az_values-az.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-az/values-az.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1958",
-                        "endColumns": "100",
-                        "endOffsets": "2054"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-az/values-az.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,213,312,424,512,619,733,814,893,978,1085,1192,1292,1401,1505,1615,1773,1875",
-                        "endColumns": "107,98,111,87,106,113,80,78,84,106,106,99,108,103,109,157,101,82",
-                        "endOffsets": "208,307,419,507,614,728,809,888,973,1080,1187,1287,1396,1500,1610,1768,1870,1953"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-de_values-de.arsc.flat",
             "map": [
                 {
@@ -977,53 +560,6 @@
                         "endLines": "4",
                         "endColumns": "12",
                         "endOffsets": "201"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-v16_values-v16.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/2dcc77f0bd2e7d95aa222ef9a78d62da/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-is_values-is.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-is/values-is.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1916",
-                        "endColumns": "100",
-                        "endOffsets": "2012"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-is/values-is.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,205,302,414,499,600,714,794,874,955,1065,1173,1271,1380,1479,1582,1737,1835",
-                        "endColumns": "99,96,111,84,100,113,79,79,80,109,107,97,108,98,102,154,97,80",
-                        "endOffsets": "200,297,409,494,595,709,789,869,950,1060,1168,1266,1375,1474,1577,1732,1830,1911"
                     }
                 }
             ]
@@ -1118,38 +654,6 @@
                         "startOffsets": "55,173,281,404,509,616,702,810,930,1007,1084,1166,1277,1381,1480,1595,1708,1811,1929,2032,2114",
                         "endColumns": "117,107,122,104,106,85,107,119,76,76,81,110,103,98,114,112,102,117,102,81,100",
                         "endOffsets": "168,276,399,504,611,697,805,925,1002,1079,1161,1272,1376,1475,1590,1703,1806,1924,2027,2109,2210"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-mn_values-mn.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-mn/values-mn.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,218,318,431,518,624,736,818,900,982,1091,1195,1292,1400,1501,1604,1763,1860",
-                        "endColumns": "112,99,112,86,105,111,81,81,81,108,103,96,107,100,102,158,96,80",
-                        "endOffsets": "213,313,426,513,619,731,813,895,977,1086,1190,1287,1395,1496,1599,1758,1855,1936"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-mn/values-mn.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1941",
-                        "endColumns": "100",
-                        "endOffsets": "2037"
                     }
                 }
             ]
@@ -1260,38 +764,6 @@
             ]
         },
         {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-hy_values-hy.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-hy/values-hy.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1945",
-                        "endColumns": "100",
-                        "endOffsets": "2041"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-hy/values-hy.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,208,309,419,508,614,729,811,892,977,1084,1191,1290,1400,1507,1607,1764,1863",
-                        "endColumns": "102,100,109,88,105,114,81,80,84,106,106,98,109,106,99,156,98,81",
-                        "endOffsets": "203,304,414,503,609,724,806,887,972,1079,1186,1285,1395,1502,1602,1759,1858,1940"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-ky-rKG_values-ky-rKG.arsc.flat",
             "map": [
                 {
@@ -1302,28 +774,6 @@
                         "startOffsets": "55,159,267,390,485,604,688,795,912,990,1069,1150,1260,1367,1465,1571,1678,1779,1903,2006,2087",
                         "endColumns": "103,107,122,94,118,83,106,116,77,78,80,109,106,97,105,106,100,123,102,80,100",
                         "endOffsets": "154,262,385,480,599,683,790,907,985,1064,1145,1255,1362,1460,1566,1673,1774,1898,2001,2082,2183"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-w480dp-v13_values-w480dp-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/values-w480dp/values.xml",
-                    "from": {
-                        "startLines": "3,4",
-                        "startColumns": "4,4",
-                        "startOffsets": "56,118",
-                        "endColumns": "61,71",
-                        "endOffsets": "113,185"
-                    },
-                    "to": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,117",
-                        "endColumns": "61,71",
-                        "endOffsets": "112,184"
                     }
                 }
             ]
@@ -1354,60 +804,6 @@
                         "startOffsets": "55,175,283,406,512,619,708,809,927,1010,1090,1177,1284,1396,1498,1606,1713,1823,1948,2048,2133",
                         "endColumns": "119,107,122,105,106,88,100,117,82,79,86,106,111,101,107,106,109,124,99,84,100",
                         "endOffsets": "170,278,401,507,614,703,804,922,1005,1085,1172,1279,1391,1493,1601,1708,1818,1943,2043,2128,2229"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-be_values-be.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-be/values-be.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "108",
-                        "endOffsets": "159"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1974",
-                        "endColumns": "108",
-                        "endOffsets": "2078"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-be/values-be.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,225,328,444,530,638,756,835,913,996,1102,1208,1306,1414,1519,1624,1793,1893",
-                        "endColumns": "119,102,115,85,107,117,78,77,82,105,105,97,107,104,104,168,99,80",
-                        "endOffsets": "220,323,439,525,633,751,830,908,991,1097,1203,1301,1409,1514,1619,1788,1888,1969"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-w360dp-v13_values-w360dp-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/values-w360dp/values.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "56",
-                        "endColumns": "54",
-                        "endOffsets": "106"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "54",
-                        "endOffsets": "105"
                     }
                 }
             ]
@@ -1473,38 +869,6 @@
             ]
         },
         {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-ms_values-ms.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-ms/values-ms.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1945",
-                        "endColumns": "100",
-                        "endOffsets": "2041"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-ms/values-ms.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,216,321,429,516,620,731,809,888,968,1080,1189,1286,1395,1498,1605,1764,1865",
-                        "endColumns": "110,104,107,86,103,110,77,78,79,111,108,96,108,102,106,158,100,79",
-                        "endOffsets": "211,316,424,511,615,726,804,883,963,1075,1184,1281,1390,1493,1600,1759,1860,1940"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
@@ -1520,49 +884,6 @@
             ]
         },
         {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-v26_values-v26.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/design-27.0.0.aar/48764ae8a597c3ac5f0c249399b5ee1c/res/values-v26/values-v26.xml",
-                    "from": {
-                        "startLines": "2,6",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,299",
-                        "endLines": "5,6",
-                        "endColumns": "12,96",
-                        "endOffsets": "294,391"
-                    },
-                    "to": {
-                        "startLines": "16,21",
-                        "startColumns": "4,4",
-                        "startOffsets": "896,1233",
-                        "endLines": "19,21",
-                        "endColumns": "12,96",
-                        "endOffsets": "1135,1325"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-v26/values-v26.xml",
-                    "from": {
-                        "startLines": "2,3,4,8,12,16",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,130,217,431,657,896",
-                        "endLines": "2,3,7,11,15,16",
-                        "endColumns": "74,86,12,12,12,92",
-                        "endOffsets": "125,212,426,652,891,984"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,8,12,20",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,130,217,431,657,1140",
-                        "endLines": "2,3,7,11,15,20",
-                        "endColumns": "74,86,12,12,12,92",
-                        "endOffsets": "125,212,426,652,891,1228"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-kn-rIN_values-kn-rIN.arsc.flat",
             "map": [
                 {
@@ -1573,38 +894,6 @@
                         "startOffsets": "55,173,281,404,516,629,717,824,951,1028,1105,1187,1303,1414,1513,1626,1730,1844,1970,2070,2152",
                         "endColumns": "117,107,122,111,112,87,106,126,76,76,81,115,110,98,112,103,113,125,99,81,100",
                         "endOffsets": "168,276,399,511,624,712,819,946,1023,1100,1182,1298,1409,1508,1621,1725,1839,1965,2065,2147,2248"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-kn_values-kn.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-kn/values-kn.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,223,335,448,536,643,770,847,924,1006,1122,1233,1332,1445,1549,1663,1827,1927",
-                        "endColumns": "117,111,112,87,106,126,76,76,81,115,110,98,112,103,113,163,99,81",
-                        "endOffsets": "218,330,443,531,638,765,842,919,1001,1117,1228,1327,1440,1544,1658,1822,1922,2004"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-kn/values-kn.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2009",
-                        "endColumns": "100",
-                        "endOffsets": "2105"
                     }
                 }
             ]
@@ -1695,21 +984,6 @@
                         "startOffsets": "55,175,283,406,515,623,708,809,932,1017,1099,1181,1293,1405,1506,1614,1721,1828,1950,2050,2132",
                         "endColumns": "119,107,122,108,107,84,100,122,84,81,81,111,111,100,107,106,106,121,99,81,100",
                         "endOffsets": "170,278,401,510,618,703,804,927,1012,1094,1176,1288,1400,1501,1609,1716,1823,1945,2045,2127,2228"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-en-rCA_values-en-rCA.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-en-rCA/values-en-rCA.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,209,309,417,501,601,716,793,869,951,1054,1158,1257,1362,1465,1569,1725,1825",
-                        "endColumns": "103,99,107,83,99,114,76,75,81,102,103,98,104,102,103,155,99,81",
-                        "endOffsets": "204,304,412,496,596,711,788,864,946,1049,1153,1252,1357,1460,1564,1720,1820,1902"
                     }
                 }
             ]
@@ -1851,53 +1125,6 @@
             ]
         },
         {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-en-rXC_values-en-rXC.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-en-rXC/values-en-rXC.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,310,510,719,904,1106,1321,1494,1671,1855,2059,2264,2465,2672,2874,3079,3351,3551",
-                        "endColumns": "204,199,208,184,201,214,172,176,183,203,204,200,206,201,204,271,199,178",
-                        "endOffsets": "305,505,714,899,1101,1316,1489,1666,1850,2054,2259,2460,2667,2869,3074,3346,3546,3725"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-eu_values-eu.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-eu/values-eu.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,214,312,422,508,614,738,825,909,991,1100,1210,1309,1418,1524,1635,1806,1905",
-                        "endColumns": "108,97,109,85,105,123,86,83,81,108,109,98,108,105,110,170,98,81",
-                        "endOffsets": "209,307,417,503,609,733,820,904,986,1095,1205,1304,1413,1519,1630,1801,1900,1982"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-eu/values-eu.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1987",
-                        "endColumns": "100",
-                        "endOffsets": "2083"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-lo-rLA_values-lo-rLA.arsc.flat",
             "map": [
                 {
@@ -1939,70 +1166,6 @@
                         "startOffsets": "55,152,259,380,473,578,660,758,866,943,1019,1097,1199,1298,1393,1496,1591,1687,1798,1895,1973",
                         "endColumns": "96,106,120,92,104,81,97,107,76,75,77,101,98,94,102,94,95,110,96,77,100",
                         "endOffsets": "147,254,375,468,573,655,753,861,938,1014,1092,1194,1293,1388,1491,1586,1682,1793,1890,1968,2069"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-uz_values-uz.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-uz/values-uz.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1965",
-                        "endColumns": "100",
-                        "endOffsets": "2061"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-uz/values-uz.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,210,314,428,514,625,741,821,900,984,1093,1200,1301,1409,1514,1621,1782,1881",
-                        "endColumns": "104,103,113,85,110,115,79,78,83,108,106,100,107,104,106,160,98,83",
-                        "endOffsets": "205,309,423,509,620,736,816,895,979,1088,1195,1296,1404,1509,1616,1777,1876,1960"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-lo_values-lo.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-lo/values-lo.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,208,305,412,497,602,714,791,869,949,1056,1153,1251,1356,1459,1563,1720,1816",
-                        "endColumns": "102,96,106,84,104,111,76,77,79,106,96,97,104,102,103,156,95,80",
-                        "endOffsets": "203,300,407,492,597,709,786,864,944,1051,1148,1246,1351,1454,1558,1715,1811,1892"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-lo/values-lo.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1897",
-                        "endColumns": "100",
-                        "endOffsets": "1993"
                     }
                 }
             ]
@@ -2063,38 +1226,6 @@
                         "startOffsets": "55,162,270,393,500,608,695,798,917,1002,1086,1170,1278,1387,1487,1600,1707,1811,1928,2025,2108",
                         "endColumns": "106,107,122,106,107,86,102,118,84,83,83,107,108,99,112,106,103,116,96,82,100",
                         "endOffsets": "157,265,388,495,603,690,793,912,997,1081,1165,1273,1382,1482,1595,1702,1806,1923,2020,2103,2204"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-ka_values-ka.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-ka/values-ka.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,214,318,429,517,622,735,819,901,984,1097,1204,1302,1415,1519,1623,1780,1878",
-                        "endColumns": "108,103,110,87,104,112,83,81,82,112,106,97,112,103,103,156,97,80",
-                        "endOffsets": "209,313,424,512,617,730,814,896,979,1092,1199,1297,1410,1514,1618,1775,1873,1954"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-ka/values-ka.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1959",
-                        "endColumns": "100",
-                        "endOffsets": "2055"
                     }
                 }
             ]
@@ -2252,38 +1383,6 @@
             ]
         },
         {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-sq_values-sq.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-sq/values-sq.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,219,319,431,518,628,751,832,911,994,1100,1205,1303,1409,1512,1628,1782,1881",
-                        "endColumns": "113,99,111,86,109,122,80,78,82,105,104,97,105,102,115,153,98,80",
-                        "endOffsets": "214,314,426,513,623,746,827,906,989,1095,1200,1298,1404,1507,1623,1777,1876,1957"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-sq/values-sq.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1962",
-                        "endColumns": "100",
-                        "endOffsets": "2058"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-zu_values-zu.arsc.flat",
             "map": [
                 {
@@ -2294,70 +1393,6 @@
                         "startOffsets": "55,163,271,394,501,615,703,806,933,1013,1093,1179,1283,1389,1487,1594,1700,1806,1926,2022,2103",
                         "endColumns": "107,107,122,106,113,87,102,126,79,79,85,103,105,97,106,105,105,119,95,80,100",
                         "endOffsets": "158,266,389,496,610,698,801,928,1008,1088,1174,1278,1384,1482,1589,1695,1801,1921,2017,2098,2199"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-mk_values-mk.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-mk/values-mk.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1961",
-                        "endColumns": "100",
-                        "endOffsets": "2057"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-mk/values-mk.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,213,317,425,511,616,735,818,900,987,1093,1200,1301,1408,1519,1623,1779,1877",
-                        "endColumns": "107,103,107,85,104,118,82,81,86,105,106,100,106,110,103,155,97,83",
-                        "endOffsets": "208,312,420,506,611,730,813,895,982,1088,1195,1296,1403,1514,1618,1774,1872,1956"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-kk_values-kk.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-kk/values-kk.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,217,320,430,515,621,740,821,901,982,1085,1190,1288,1395,1504,1604,1770,1869",
-                        "endColumns": "111,102,109,84,105,118,80,79,80,102,104,97,106,108,99,165,98,80",
-                        "endOffsets": "212,315,425,510,616,735,816,896,977,1080,1185,1283,1390,1499,1599,1765,1864,1945"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-kk/values-kk.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1950",
-                        "endColumns": "100",
-                        "endOffsets": "2046"
                     }
                 }
             ]
@@ -2417,18 +1452,18 @@
                 {
                     "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/values/dimens.xml",
                     "from": {
-                        "startLines": "3,4",
-                        "startColumns": "4,4",
-                        "startOffsets": "89,147",
-                        "endColumns": "57,55",
-                        "endOffsets": "142,198"
+                        "startLines": "6,7,8,10,9,17,15,16,14,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "282,340,396,508,453,742,657,698,613,571",
+                        "endColumns": "57,55,56,43,54,41,40,43,43,41",
+                        "endOffsets": "335,391,448,547,503,779,693,737,652,608"
                     },
                     "to": {
-                        "startLines": "614,615",
-                        "startColumns": "4,4",
-                        "startOffsets": "44951,45009",
-                        "endColumns": "57,55",
-                        "endOffsets": "45004,45060"
+                        "startLines": "642,643,644,645,646,690,694,695,696,697",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "47981,48039,48095,48152,48196,51089,51311,51352,51396,51440",
+                        "endColumns": "57,55,56,43,54,41,40,43,43,41",
+                        "endOffsets": "48034,48090,48147,48191,48246,51126,51347,51391,51435,51477"
                     }
                 },
                 {
@@ -2441,11 +1476,11 @@
                         "endOffsets": "442,518,590,656"
                     },
                     "to": {
-                        "startLines": "656,657,658,668",
+                        "startLines": "687,688,689,704",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "47680,47755,47831,48394",
+                        "startOffsets": "50866,50941,51017,51793",
                         "endColumns": "74,75,71,65",
-                        "endOffsets": "47750,47826,47898,48455"
+                        "endOffsets": "50936,51012,51084,51854"
                     }
                 },
                 {
@@ -2459,48 +1494,48 @@
                         "endOffsets": "105,150,199,240,295,353,415,483,561,642,703,778,854,931,1009,1094,1176,1252,1328,1405,1483,1589,1695,1774,1854,1911,1969,2043,2118,2183,2249,2321,2394,2461,2529,2633,2739,2798,2857,2916,2975,3034,3088,3142,3195,3249,3303,3357,3411,3485,3564,3637,3711,3782,3854,3926,3999,4056,4114,4187,4261,4335,4410,4482,4555,4625,4696,24374,24443,24513,24587,24663,24727,24804,24880,24957,25021,25086,25155,25232,25307,25376,25444,25521,25587,25684,25749,25818,25917,25988,26047,26105,26162,26221,26292,26364,26436,26508,26580,26648,26716,26775,26838,26928,27019,27079,27145,27212,27278,27348,27412,27465,27578,27636,27699,27764,27829,27904,27977,28049,28098,28159,28220,28281,28343,28407,28471,28535,28600,28663,28723,28784,28850,28909,28969,29031,29102,29162,29230,29316,29403,29493,29580,29668,29730,29791,29848,29920,29977,30025,30074,30125,30159,30206,30255,30301,30333,30397,30459,30519,30589,30663,30741,30834,30904,30982,31036,31106,31191,31239,31285,31356,31434,31512,31584,31658,31732,31806,31886,31959,32028,32100,32177,32229,32302,32376,32445,32520,32594,32668,32757,32827,32880,32951,33029,33119,33207,33303,33804,33893,34140,34421,34706,35099,35576,35798,36020,36288,36515,36745,36975,37205,37435,37662,37901,38127,38372,38602,38850,39069,39352,39560,39691,39918,40164,40389,40636,40857,41102,41378,41679,42003,42294,42608,42745,42876,42981,43185,43393,43664,43776,43888,43993,44110,44324,44470,44610,44696,45044,45132,45362,45780,46013,46095,46193,46810,46910,47146,47570,47809,47903,47992,48229,50180,50422,50524,50761,52843,63004,64255,74515,75778,77043,77579,77909,79174,79430,79666,80213,80707,81312,81510,82090,82654,83029,83147,83685,83842,84016,84336,84592,84762,84903,84967,85249,85535,86211,86475,86813,87166,87260,87446,87752,88014,88139,88266,88505,88716,88835,89028,89205,89660,89841,89963,90222,90335,90522,90624,91068,91192,91467,91975,92471,93348,93642,94212,94361,95093,95265,95601,96659,96937,100115,103436,103498,104128,104742,104828,104941,105170,105330,105482,105653,105820,106063,106233,106406,106577,106851,107050,107255,107585,107669,107765,107861,107959,108059,108161,108263,108365,108467,108569,108669,108765,108877,109006,109129,109260,109391,109489,109603,109697,109837,109971,110067,110179,110279,110395,110491,110603,110743,110879,111043,111173,111331,111481,111622,111766,111901,112013,112141,112277,112409,112539,112669,112781,112921,112989,113062,113136,113209,113283,113429,113573,113711,113777,113867,113943,114047,114137,114239,114347,114455,114555,114635,114727,114825,114935,115013,115119,115211,115315,115425,115547,115710,115867,115947,116047,116137,116247,116341,116447,116539,116639,116751,116865,116981,117097,117191,117305,117417,117519,117639,117761,117843,117947,118067,118193,118291,118385,118473,118585,118701,118823,118935,119110,119226,119312,119404,119516,119640,119707,119833,119901,120029,120173,120301,120370,120465,120580,120693,120792,120901,121012,121123,121224,121329,121429,121559,121650,121773,121867,121979,122065,122169,122265,122353,122471,122575,122679,122805,122893,123001,123101,123191,123301,123385,123487,123571,123625,123689,123795,123905,123989,124109"
                     },
                     "to": {
-                        "startLines": "158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,178,179,180,181,182,183,184,185,196,197,198,199,200,201,202,203,204,205,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,542,543,544,545,546,547,548,549,550,551,552,553,554,555,556,557,558,559,560,561,562,563,564,565,566,567,568,569,570,571,572,573,574,575,576,577,578,579,580,581,582,583,584,585,586,587,588,589,590,591,592,593,594,595,596,597,598,599,600,601,602,603,604,605,606,607,608,609,610,611,612,613,651,652,653,654,655,659,660,661,662,663,664,665,666,667,669,670,671,672,674,675,678,680,681,682,683,684,685,686,687,688,689,690,691,692,693,694,695,696,697,698,699,700,701,702,703,704,705,706,707,708,709,710,711,719,721,752,753,754,755,776,783,784,788,792,797,803,810,814,818,823,827,831,835,839,843,847,851,855,859,863,867,871,876,880,883,887,891,895,899,903,907,911,915,919,923,927,928,929,930,933,936,940,941,942,943,944,947,949,951,953,958,959,963,969,973,974,976,987,988,992,998,1002,1003,1004,1008,1034,1038,1039,1043,1070,1229,1251,1410,1432,1454,1461,1466,1488,1493,1498,1508,1517,1526,1530,1537,1545,1552,1553,1562,1565,1568,1573,1577,1581,1584,1585,1589,1593,1603,1608,1615,1621,1622,1625,1629,1634,1636,1638,1641,1644,1646,1650,1653,1660,1663,1666,1670,1672,1676,1678,1684,1686,1690,1698,1706,1718,1724,1733,1736,1747,1750,1755,1769,1792,1834,1877,1878,1888,1897,1898,1900,1904,1907,1910,1913,1916,1920,1923,1926,1929,1933,1936,1940,1944,1945,1946,1947,1948,1949,1950,1951,1952,1953,1954,1955,1956,1957,1958,1959,1960,1961,1962,1963,1964,1966,1968,1969,1970,1971,1972,1973,1974,1976,1977,1979,1980,1982,1984,1985,1987,1988,1989,1990,1992,1993,1994,1995,1996,2019,2020,2021,2022,2023,2024,2026,2028,2030,2031,2032,2033,2034,2035,2036,2037,2038,2039,2040,2041,2042,2044,2045,2046,2047,2048,2049,2051,2055,2083,2084,2085,2086,2087,2088,2089,2090,2092,2094,2096,2098,2100,2101,2102,2103,2105,2107,2109,2110,2111,2112,2113,2114,2115,2116,2117,2118,2119,2120,2123,2124,2125,2126,2128,2130,2131,2133,2134,2136,2138,2140,2141,2142,2143,2144,2145,2146,2147,2148,2149,2150,2151,2153,2154,2155,2156,2158,2159,2160,2161,2162,2164,2166,2168,2170,2171,2172,2173,2174,2175,2176,2177,2178,2179,2180,2181,2182,2183",
+                        "startLines": "158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,180,181,182,183,184,185,186,187,201,202,203,204,206,207,208,209,210,211,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,570,571,572,573,574,575,576,577,578,579,580,581,582,583,584,585,586,587,588,589,590,591,592,593,594,595,596,597,598,599,600,601,602,603,604,605,606,607,608,609,610,611,612,613,614,615,616,617,618,619,620,621,622,623,624,625,626,627,628,629,630,631,632,633,634,635,636,637,638,639,640,641,682,683,684,685,686,691,692,693,698,699,700,701,702,703,705,706,707,708,710,711,714,716,717,718,719,720,721,722,723,724,725,726,727,728,729,730,731,732,733,734,735,736,737,738,739,740,741,742,743,744,745,746,747,755,757,788,789,790,791,815,822,823,827,831,836,842,849,853,857,862,866,870,874,878,882,886,890,894,898,902,906,910,915,919,922,926,930,934,938,942,946,950,954,958,962,966,967,968,969,972,975,979,980,981,982,983,986,988,990,992,997,998,1002,1008,1012,1013,1015,1026,1027,1031,1037,1041,1042,1043,1047,1073,1077,1078,1082,1109,1268,1290,1449,1471,1493,1500,1505,1527,1532,1537,1547,1556,1565,1569,1576,1584,1591,1592,1601,1604,1607,1612,1616,1620,1623,1624,1628,1632,1642,1647,1654,1660,1661,1664,1668,1673,1675,1677,1680,1683,1685,1689,1692,1699,1702,1705,1709,1711,1715,1717,1723,1725,1729,1737,1745,1757,1763,1772,1775,1786,1789,1794,1808,1831,1873,1916,1917,1927,1936,1937,1939,1943,1946,1949,1952,1955,1959,1962,1965,1968,1972,1975,1979,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2005,2007,2008,2009,2010,2011,2012,2013,2015,2016,2018,2019,2021,2023,2024,2026,2027,2028,2029,2031,2032,2033,2034,2035,2058,2059,2060,2061,2062,2063,2065,2067,2069,2070,2071,2072,2073,2074,2075,2076,2077,2078,2079,2080,2081,2083,2084,2085,2086,2087,2088,2090,2094,2122,2123,2124,2125,2126,2127,2128,2129,2131,2133,2135,2137,2139,2140,2141,2142,2144,2146,2148,2149,2150,2151,2152,2153,2154,2155,2156,2157,2158,2159,2162,2163,2164,2165,2167,2169,2170,2172,2173,2175,2177,2179,2180,2181,2182,2183,2184,2185,2186,2187,2188,2189,2190,2192,2193,2194,2195,2197,2198,2199,2200,2201,2203,2205,2207,2209,2210,2211,2212,2213,2214,2215,2216,2217,2218,2219,2220,2221,2222",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "4293,4348,4393,4442,4483,4538,4596,4658,4726,4804,4885,4946,5021,5097,5174,5252,5337,5419,5495,5613,5690,5768,5874,5980,6059,6139,6196,6953,7027,7102,7167,7233,7305,7378,7445,7513,7617,7767,7826,7885,7944,8003,8062,8116,8170,8223,8277,8331,8385,8439,8513,8592,8665,8739,8810,8882,8954,9027,9084,9142,9215,9289,9363,9438,9510,9583,9653,40026,40095,40164,40234,40308,40384,40448,40525,40601,40678,40742,40807,40876,40953,41028,41097,41165,41242,41308,41405,41470,41539,41638,41709,41768,41826,41883,41942,42013,42085,42157,42229,42301,42369,42437,42496,42559,42649,42740,42800,42866,42933,42999,43069,43133,43186,43299,43357,43420,43485,43550,43625,43698,43770,43819,43880,43941,44002,44064,44128,44192,44256,44321,44384,44444,44505,44571,44630,44690,44752,44823,44883,47242,47328,47415,47505,47592,47903,47965,48026,48083,48155,48212,48260,48309,48360,48460,48507,48556,48602,48682,48746,48936,49059,49129,49203,49281,49374,49444,49522,49576,49646,49731,49779,49825,49896,49974,50052,50124,50198,50272,50346,50426,50499,50568,50640,50717,50769,50842,50916,50985,51060,51134,51208,51297,51945,52044,54012,54090,54180,54268,55108,55609,55698,55945,56226,56511,56904,57381,57603,57825,58093,58320,58550,58780,59010,59240,59467,59706,59932,60177,60407,60655,60874,61157,61365,61496,61723,61969,62194,62441,62662,62907,63183,63484,63808,64099,64413,64550,64681,64786,64990,65198,65469,65581,65693,65798,65915,66129,66275,66415,66501,66849,66937,67167,67585,67818,67900,67998,68615,68715,68951,69375,69614,69708,69797,70034,71985,72227,72329,72566,74648,84809,86060,96320,97583,98848,99384,99714,100979,101235,101471,102018,102512,103117,103315,103895,104459,104834,104952,105490,105647,105821,106141,106397,106567,106708,106772,107054,107340,108016,108280,108618,108971,109065,109251,109557,109819,109944,110071,110310,110521,110640,110833,111010,111465,111646,111768,112027,112140,112327,112429,112873,112997,113272,113780,114276,115153,115447,116017,116166,116898,117070,117406,118464,119691,122869,126190,126252,126882,127496,127582,127695,127924,128084,128236,128407,128574,128817,128987,129160,129331,129605,129804,130009,130339,130423,130519,130615,130713,130813,130915,131017,131119,131221,131323,131423,131519,131631,131760,131883,132014,132145,132243,132357,132451,132591,132725,132821,132933,133033,133149,133245,133357,133497,133633,133797,133927,134085,134235,134376,134520,134655,134767,134895,135031,135163,135293,135423,135535,137034,137102,137175,137249,137322,137396,137542,137686,137824,137890,137980,138056,138160,138250,138352,138460,138568,138668,138748,138840,138938,139048,139126,139232,139324,139428,139538,139660,139823,141343,141423,141523,141613,141723,141817,141923,142015,142115,142227,142341,142457,142573,142667,142781,142893,142995,143115,143237,143319,143423,143543,143669,143767,143861,143949,144061,144177,144299,144411,144586,144702,144788,144880,144992,145116,145183,145309,145377,145505,145649,145777,145846,145941,146056,146169,146268,146377,146488,146599,146700,146805,146905,147035,147126,147249,147343,147455,147541,147645,147741,147829,147947,148051,148155,148281,148369,148477,148577,148667,148777,148861,148963,149047,149101,149165,149271,149381,149465",
-                        "endLines": "158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,178,179,180,181,182,183,184,185,196,197,198,199,200,201,202,203,204,205,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,542,543,544,545,546,547,548,549,550,551,552,553,554,555,556,557,558,559,560,561,562,563,564,565,566,567,568,569,570,571,572,573,574,575,576,577,578,579,580,581,582,583,584,585,586,587,588,589,590,591,592,593,594,595,596,597,598,599,600,601,602,603,604,605,606,607,608,609,610,611,612,613,651,652,653,654,655,659,660,661,662,663,664,665,666,667,669,670,671,672,674,675,678,680,681,682,683,684,685,686,687,688,689,690,691,692,693,694,695,696,697,698,699,700,701,702,703,704,705,706,707,708,709,710,711,719,721,752,753,754,755,782,783,787,791,796,802,809,813,817,822,826,830,834,838,842,846,850,854,858,862,866,870,875,879,882,886,890,894,898,902,906,910,914,918,922,926,927,928,929,932,935,939,940,941,942,943,946,948,950,952,957,958,962,968,972,973,975,986,987,991,997,1001,1002,1003,1007,1033,1037,1038,1042,1069,1228,1250,1409,1431,1453,1460,1465,1487,1492,1497,1507,1516,1525,1529,1536,1544,1551,1552,1561,1564,1567,1572,1576,1580,1583,1584,1588,1592,1602,1607,1614,1620,1621,1624,1628,1633,1635,1637,1640,1643,1645,1649,1652,1659,1662,1665,1669,1671,1675,1677,1683,1685,1689,1697,1705,1717,1723,1732,1735,1746,1749,1754,1768,1773,1833,1876,1877,1887,1896,1897,1899,1903,1906,1909,1912,1915,1919,1922,1925,1928,1932,1935,1939,1943,1944,1945,1946,1947,1948,1949,1950,1951,1952,1953,1954,1955,1956,1957,1958,1959,1960,1961,1962,1963,1965,1967,1968,1969,1970,1971,1972,1973,1975,1976,1978,1979,1981,1983,1984,1986,1987,1988,1989,1991,1992,1993,1994,1995,1996,2019,2020,2021,2022,2023,2025,2027,2029,2030,2031,2032,2033,2034,2035,2036,2037,2038,2039,2040,2041,2043,2044,2045,2046,2047,2048,2050,2054,2058,2083,2084,2085,2086,2087,2088,2089,2091,2093,2095,2097,2099,2100,2101,2102,2104,2106,2108,2109,2110,2111,2112,2113,2114,2115,2116,2117,2118,2119,2122,2123,2124,2125,2127,2129,2130,2132,2133,2135,2137,2139,2140,2141,2142,2143,2144,2145,2146,2147,2148,2149,2150,2152,2153,2154,2155,2157,2158,2159,2160,2161,2163,2165,2167,2169,2170,2171,2172,2173,2174,2175,2176,2177,2178,2179,2180,2181,2182,2183",
+                        "startOffsets": "4293,4348,4393,4442,4483,4538,4596,4658,4726,4804,4885,4946,5021,5097,5174,5252,5337,5419,5495,5698,5775,5853,5959,6065,6144,6224,6281,7182,7256,7331,7396,7509,7581,7654,7721,7789,7893,8043,8102,8161,8220,8279,8338,8392,8446,8499,8553,8607,8661,8715,8789,8868,8941,9015,9086,9158,9230,9303,9360,9418,9491,9565,9639,9714,9786,9859,9929,43056,43125,43194,43264,43338,43414,43478,43555,43631,43708,43772,43837,43906,43983,44058,44127,44195,44272,44338,44435,44500,44569,44668,44739,44798,44856,44913,44972,45043,45115,45187,45259,45331,45399,45467,45526,45589,45679,45770,45830,45896,45963,46029,46099,46163,46216,46329,46387,46450,46515,46580,46655,46728,46800,46849,46910,46971,47032,47094,47158,47222,47286,47351,47414,47474,47535,47601,47660,47720,47782,47853,47913,50428,50514,50601,50691,50778,51131,51193,51254,51482,51554,51611,51659,51708,51759,51859,51906,51955,52001,52081,52145,52335,52458,52528,52602,52680,52773,52843,52921,52975,53045,53130,53178,53224,53295,53373,53451,53523,53597,53671,53745,53825,53898,53967,54039,54116,54168,54241,54315,54384,54459,54533,54607,54696,55344,55443,57411,57489,57579,57667,58666,59167,59256,59503,59784,60069,60462,60939,61161,61383,61651,61878,62108,62338,62568,62798,63025,63264,63490,63735,63965,64213,64432,64715,64923,65054,65281,65527,65752,65999,66220,66465,66741,67042,67366,67657,67971,68108,68239,68344,68548,68756,69027,69139,69251,69356,69473,69687,69833,69973,70059,70407,70495,70725,71143,71376,71458,71556,72173,72273,72509,72933,73172,73266,73355,73592,75543,75785,75887,76124,78206,88367,89618,99878,101141,102406,102942,103272,104537,104793,105029,105576,106070,106675,106873,107453,108017,108392,108510,109048,109205,109379,109699,109955,110125,110266,110330,110612,110898,111574,111838,112176,112529,112623,112809,113115,113377,113502,113629,113868,114079,114198,114391,114568,115023,115204,115326,115585,115698,115885,115987,116431,116555,116830,117338,117834,118711,119005,119575,119724,120456,120628,120964,122022,123249,126427,129748,129810,130440,131054,131140,131253,131482,131642,131794,131965,132132,132375,132545,132718,132889,133163,133362,133567,133897,133981,134077,134173,134271,134371,134473,134575,134677,134779,134881,134981,135077,135189,135318,135441,135572,135703,135801,135915,136009,136149,136283,136379,136491,136591,136707,136803,136915,137055,137191,137355,137485,137643,137793,137934,138078,138213,138325,138453,138589,138721,138851,138981,139093,140592,140660,140733,140807,140880,140954,141100,141244,141382,141448,141538,141614,141718,141808,141910,142018,142126,142226,142306,142398,142496,142606,142684,142790,142882,142986,143096,143218,143381,144901,144981,145081,145171,145281,145375,145481,145573,145673,145785,145899,146015,146131,146225,146339,146451,146553,146673,146795,146877,146981,147101,147227,147325,147419,147507,147619,147735,147857,147969,148144,148260,148346,148438,148550,148674,148741,148867,148935,149063,149207,149335,149404,149499,149614,149727,149826,149935,150046,150157,150258,150363,150463,150593,150684,150807,150901,151013,151099,151203,151299,151387,151505,151609,151713,151839,151927,152035,152135,152225,152335,152419,152521,152605,152659,152723,152829,152939,153023",
+                        "endLines": "158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,180,181,182,183,184,185,186,187,201,202,203,204,206,207,208,209,210,211,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,570,571,572,573,574,575,576,577,578,579,580,581,582,583,584,585,586,587,588,589,590,591,592,593,594,595,596,597,598,599,600,601,602,603,604,605,606,607,608,609,610,611,612,613,614,615,616,617,618,619,620,621,622,623,624,625,626,627,628,629,630,631,632,633,634,635,636,637,638,639,640,641,682,683,684,685,686,691,692,693,698,699,700,701,702,703,705,706,707,708,710,711,714,716,717,718,719,720,721,722,723,724,725,726,727,728,729,730,731,732,733,734,735,736,737,738,739,740,741,742,743,744,745,746,747,755,757,788,789,790,791,821,822,826,830,835,841,848,852,856,861,865,869,873,877,881,885,889,893,897,901,905,909,914,918,921,925,929,933,937,941,945,949,953,957,961,965,966,967,968,971,974,978,979,980,981,982,985,987,989,991,996,997,1001,1007,1011,1012,1014,1025,1026,1030,1036,1040,1041,1042,1046,1072,1076,1077,1081,1108,1267,1289,1448,1470,1492,1499,1504,1526,1531,1536,1546,1555,1564,1568,1575,1583,1590,1591,1600,1603,1606,1611,1615,1619,1622,1623,1627,1631,1641,1646,1653,1659,1660,1663,1667,1672,1674,1676,1679,1682,1684,1688,1691,1698,1701,1704,1708,1710,1714,1716,1722,1724,1728,1736,1744,1756,1762,1771,1774,1785,1788,1793,1807,1812,1872,1915,1916,1926,1935,1936,1938,1942,1945,1948,1951,1954,1958,1961,1964,1967,1971,1974,1978,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2004,2006,2007,2008,2009,2010,2011,2012,2014,2015,2017,2018,2020,2022,2023,2025,2026,2027,2028,2030,2031,2032,2033,2034,2035,2058,2059,2060,2061,2062,2064,2066,2068,2069,2070,2071,2072,2073,2074,2075,2076,2077,2078,2079,2080,2082,2083,2084,2085,2086,2087,2089,2093,2097,2122,2123,2124,2125,2126,2127,2128,2130,2132,2134,2136,2138,2139,2140,2141,2143,2145,2147,2148,2149,2150,2151,2152,2153,2154,2155,2156,2157,2158,2161,2162,2163,2164,2166,2168,2169,2171,2172,2174,2176,2178,2179,2180,2181,2182,2183,2184,2185,2186,2187,2188,2189,2191,2192,2193,2194,2196,2197,2198,2199,2200,2202,2204,2206,2208,2209,2210,2211,2212,2213,2214,2215,2216,2217,2218,2219,2220,2221,2222",
                         "endColumns": "54,44,48,40,54,57,61,67,77,80,60,74,75,76,77,84,81,75,75,76,77,105,105,78,79,56,57,73,74,64,65,71,72,66,67,103,105,58,58,58,58,58,53,53,52,53,53,53,53,73,78,72,73,70,71,71,72,56,57,72,73,73,74,71,72,69,70,68,68,69,73,75,63,76,75,76,63,64,68,76,74,68,67,76,65,96,64,68,98,70,58,57,56,58,70,71,71,71,71,67,67,58,62,89,90,59,65,66,65,69,63,52,112,57,62,64,64,74,72,71,48,60,60,60,61,63,63,63,64,62,59,60,65,58,59,61,70,59,67,85,86,89,86,87,61,60,56,71,56,47,48,50,33,46,48,45,31,63,61,59,69,73,77,92,69,77,53,69,84,47,45,70,77,77,71,73,73,73,79,72,68,71,76,51,72,73,68,74,73,73,88,69,52,70,77,89,87,95,12,88,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,136,130,104,12,12,12,111,111,104,116,12,12,12,12,12,87,12,12,12,81,12,12,99,12,12,12,93,88,12,12,12,101,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,117,12,12,12,12,12,12,12,63,12,12,12,12,12,12,93,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,61,12,12,85,12,12,12,12,12,12,12,12,12,12,12,12,12,12,83,95,95,97,99,101,101,101,101,101,99,95,111,128,122,130,130,97,113,93,12,12,95,111,99,115,95,111,12,135,12,129,12,12,140,12,134,111,127,12,131,129,129,111,139,67,72,73,72,73,12,12,12,65,89,75,103,89,101,107,107,99,79,91,97,12,77,105,91,103,109,12,12,12,79,99,89,109,93,105,91,12,12,12,12,12,93,113,111,12,12,12,81,103,119,125,97,93,87,111,115,121,111,12,115,85,91,12,12,66,12,67,12,12,12,68,94,114,112,98,108,110,110,100,104,99,12,90,122,93,12,85,103,95,87,12,12,12,12,87,107,99,89,109,83,101,83,53,63,105,109,83,119",
-                        "endOffsets": "4343,4388,4437,4478,4533,4591,4653,4721,4799,4880,4941,5016,5092,5169,5247,5332,5414,5490,5566,5685,5763,5869,5975,6054,6134,6191,6249,7022,7097,7162,7228,7300,7373,7440,7508,7612,7718,7821,7880,7939,7998,8057,8111,8165,8218,8272,8326,8380,8434,8508,8587,8660,8734,8805,8877,8949,9022,9079,9137,9210,9284,9358,9433,9505,9578,9648,9719,40090,40159,40229,40303,40379,40443,40520,40596,40673,40737,40802,40871,40948,41023,41092,41160,41237,41303,41400,41465,41534,41633,41704,41763,41821,41878,41937,42008,42080,42152,42224,42296,42364,42432,42491,42554,42644,42735,42795,42861,42928,42994,43064,43128,43181,43294,43352,43415,43480,43545,43620,43693,43765,43814,43875,43936,43997,44059,44123,44187,44251,44316,44379,44439,44500,44566,44625,44685,44747,44818,44878,44946,47323,47410,47500,47587,47675,47960,48021,48078,48150,48207,48255,48304,48355,48389,48502,48551,48597,48629,48741,48803,48991,49124,49198,49276,49369,49439,49517,49571,49641,49726,49774,49820,49891,49969,50047,50119,50193,50267,50341,50421,50494,50563,50635,50712,50764,50837,50911,50980,51055,51129,51203,51292,51362,51993,52110,54085,54175,54263,54359,55604,55693,55940,56221,56506,56899,57376,57598,57820,58088,58315,58545,58775,59005,59235,59462,59701,59927,60172,60402,60650,60869,61152,61360,61491,61718,61964,62189,62436,62657,62902,63178,63479,63803,64094,64408,64545,64676,64781,64985,65193,65464,65576,65688,65793,65910,66124,66270,66410,66496,66844,66932,67162,67580,67813,67895,67993,68610,68710,68946,69370,69609,69703,69792,70029,71980,72222,72324,72561,74643,84804,86055,96315,97578,98843,99379,99709,100974,101230,101466,102013,102507,103112,103310,103890,104454,104829,104947,105485,105642,105816,106136,106392,106562,106703,106767,107049,107335,108011,108275,108613,108966,109060,109246,109552,109814,109939,110066,110305,110516,110635,110828,111005,111460,111641,111763,112022,112135,112322,112424,112868,112992,113267,113775,114271,115148,115442,116012,116161,116893,117065,117401,118459,118737,122864,126185,126247,126877,127491,127577,127690,127919,128079,128231,128402,128569,128812,128982,129155,129326,129600,129799,130004,130334,130418,130514,130610,130708,130808,130910,131012,131114,131216,131318,131418,131514,131626,131755,131878,132009,132140,132238,132352,132446,132586,132720,132816,132928,133028,133144,133240,133352,133492,133628,133792,133922,134080,134230,134371,134515,134650,134762,134890,135026,135158,135288,135418,135530,135670,137097,137170,137244,137317,137391,137537,137681,137819,137885,137975,138051,138155,138245,138347,138455,138563,138663,138743,138835,138933,139043,139121,139227,139319,139423,139533,139655,139818,139975,141418,141518,141608,141718,141812,141918,142010,142110,142222,142336,142452,142568,142662,142776,142888,142990,143110,143232,143314,143418,143538,143664,143762,143856,143944,144056,144172,144294,144406,144581,144697,144783,144875,144987,145111,145178,145304,145372,145500,145644,145772,145841,145936,146051,146164,146263,146372,146483,146594,146695,146800,146900,147030,147121,147244,147338,147450,147536,147640,147736,147824,147942,148046,148150,148276,148364,148472,148572,148662,148772,148856,148958,149042,149096,149160,149266,149376,149460,149580"
+                        "endOffsets": "4343,4388,4437,4478,4533,4591,4653,4721,4799,4880,4941,5016,5092,5169,5247,5332,5414,5490,5566,5770,5848,5954,6060,6139,6219,6276,6334,7251,7326,7391,7457,7576,7649,7716,7784,7888,7994,8097,8156,8215,8274,8333,8387,8441,8494,8548,8602,8656,8710,8784,8863,8936,9010,9081,9153,9225,9298,9355,9413,9486,9560,9634,9709,9781,9854,9924,9995,43120,43189,43259,43333,43409,43473,43550,43626,43703,43767,43832,43901,43978,44053,44122,44190,44267,44333,44430,44495,44564,44663,44734,44793,44851,44908,44967,45038,45110,45182,45254,45326,45394,45462,45521,45584,45674,45765,45825,45891,45958,46024,46094,46158,46211,46324,46382,46445,46510,46575,46650,46723,46795,46844,46905,46966,47027,47089,47153,47217,47281,47346,47409,47469,47530,47596,47655,47715,47777,47848,47908,47976,50509,50596,50686,50773,50861,51188,51249,51306,51549,51606,51654,51703,51754,51788,51901,51950,51996,52028,52140,52202,52390,52523,52597,52675,52768,52838,52916,52970,53040,53125,53173,53219,53290,53368,53446,53518,53592,53666,53740,53820,53893,53962,54034,54111,54163,54236,54310,54379,54454,54528,54602,54691,54761,55392,55509,57484,57574,57662,57758,59162,59251,59498,59779,60064,60457,60934,61156,61378,61646,61873,62103,62333,62563,62793,63020,63259,63485,63730,63960,64208,64427,64710,64918,65049,65276,65522,65747,65994,66215,66460,66736,67037,67361,67652,67966,68103,68234,68339,68543,68751,69022,69134,69246,69351,69468,69682,69828,69968,70054,70402,70490,70720,71138,71371,71453,71551,72168,72268,72504,72928,73167,73261,73350,73587,75538,75780,75882,76119,78201,88362,89613,99873,101136,102401,102937,103267,104532,104788,105024,105571,106065,106670,106868,107448,108012,108387,108505,109043,109200,109374,109694,109950,110120,110261,110325,110607,110893,111569,111833,112171,112524,112618,112804,113110,113372,113497,113624,113863,114074,114193,114386,114563,115018,115199,115321,115580,115693,115880,115982,116426,116550,116825,117333,117829,118706,119000,119570,119719,120451,120623,120959,122017,122295,126422,129743,129805,130435,131049,131135,131248,131477,131637,131789,131960,132127,132370,132540,132713,132884,133158,133357,133562,133892,133976,134072,134168,134266,134366,134468,134570,134672,134774,134876,134976,135072,135184,135313,135436,135567,135698,135796,135910,136004,136144,136278,136374,136486,136586,136702,136798,136910,137050,137186,137350,137480,137638,137788,137929,138073,138208,138320,138448,138584,138716,138846,138976,139088,139228,140655,140728,140802,140875,140949,141095,141239,141377,141443,141533,141609,141713,141803,141905,142013,142121,142221,142301,142393,142491,142601,142679,142785,142877,142981,143091,143213,143376,143533,144976,145076,145166,145276,145370,145476,145568,145668,145780,145894,146010,146126,146220,146334,146446,146548,146668,146790,146872,146976,147096,147222,147320,147414,147502,147614,147730,147852,147964,148139,148255,148341,148433,148545,148669,148736,148862,148930,149058,149202,149330,149399,149494,149609,149722,149821,149930,150041,150152,150253,150358,150458,150588,150679,150802,150896,151008,151094,151198,151294,151382,151500,151604,151708,151834,151922,152030,152130,152220,152330,152414,152516,152600,152654,152718,152824,152934,153018,153138"
                     }
                 },
                 {
                     "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/values/mcolors.xml",
                     "from": {
-                        "startLines": "5,2,3,4",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "189,55,99,144",
-                        "endColumns": "41,43,44,44",
-                        "endOffsets": "226,94,139,184"
+                        "startLines": "14,5,11,9,7,8,15,2,3,19,21,4,20,18,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "482,189,416,330,232,279,527,55,99,637,727,144,684,592,376",
+                        "endColumns": "44,41,39,45,46,50,46,43,44,46,43,44,42,44,39",
+                        "endOffsets": "522,226,451,371,274,325,569,94,139,679,766,184,722,632,411"
                     },
                     "to": {
-                        "startLines": "177,206,237,238",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "5571,7723,9724,9769",
-                        "endColumns": "41,43,44,44",
-                        "endOffsets": "5608,7762,9764,9809"
+                        "startLines": "177,178,179,188,189,190,205,212,243,244,245,246,247,248,249",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "5571,5616,5658,6339,6385,6432,7462,7999,10000,10045,10092,10136,10181,10224,10269",
+                        "endColumns": "44,41,39,45,46,50,46,43,44,46,43,44,42,44,39",
+                        "endOffsets": "5611,5653,5693,6380,6427,6478,7504,8038,10040,10087,10131,10176,10219,10264,10304"
                     }
                 },
                 {
                     "source": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "44,12,27,38,31",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "1330,263,608,1119,773",
-                        "endLines": "55,24,29,42,36",
-                        "endColumns": "12,12,12,12,12",
-                        "endOffsets": "1963,567,765,1322,1111"
+                        "startLines": "44,12,58,38,31,72,65",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "1390,263,2069,1179,833,2709,2396",
+                        "endLines": "55,24,63,42,36,77,70",
+                        "endColumns": "12,12,12,12,12,12,12",
+                        "endOffsets": "2023,567,2388,1382,1171,3000,2701"
                     },
                     "to": {
-                        "startLines": "740,760,773,1787,2239",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "53385,54651,54948,119487,152973",
-                        "endLines": "751,772,775,1791,2244",
-                        "endColumns": "12,12,12,12,12",
-                        "endOffsets": "54007,54943,55103,119686,153306"
+                        "startLines": "776,796,809,1826,2278,2284,2290",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "56784,58050,58347,123045,156531,156869,157160",
+                        "endLines": "787,808,814,1830,2283,2289,2295",
+                        "endColumns": "12,12,12,12,12,12,12",
+                        "endOffsets": "57406,58342,58661,123244,156864,157155,157460"
                     }
                 },
                 {
@@ -2532,11 +1567,11 @@
                         "endOffsets": "269,103,169,444,215,511,1117,330,629,568,977,1516,1439,1054,703,771,910,1362,1270,833,1180,391,1592"
                     },
                     "to": {
-                        "startLines": "712,713,717,718,720,722,723,724,725,726,727,728,729,730,731,732,733,734,735,736,737,738,739",
+                        "startLines": "748,749,753,754,756,758,759,760,761,762,763,764,765,766,767,768,769,770,771,772,773,774,775",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "51367,51420,51826,51892,51998,52115,52182,52245,52306,52367,52424,52491,52568,52645,52722,52796,52864,52941,53033,53123,53185,53248,53309",
+                        "startOffsets": "54766,54819,55225,55291,55397,55514,55581,55644,55705,55766,55823,55890,55967,56044,56121,56195,56263,56340,56432,56522,56584,56647,56708",
                         "endColumns": "52,52,65,52,45,66,62,60,60,56,66,76,76,76,73,67,76,91,89,61,62,60,75",
-                        "endOffsets": "51415,51468,51887,51940,52039,52177,52240,52301,52362,52419,52486,52563,52640,52717,52791,52859,52936,53028,53118,53180,53243,53304,53380"
+                        "endOffsets": "54814,54867,55286,55339,55438,55576,55639,55700,55761,55818,55885,55962,56039,56116,56190,56258,56335,56427,56517,56579,56642,56703,56779"
                     }
                 },
                 {
@@ -2550,76 +1585,12 @@
                         "endOffsets": "131,195,261,331,401,471,541,608,678,749,11089,11168,11241,11304,11375,11437,11503,11570,11637,11693,11744,11797,11849,11903,11966,12025,12087,12146,12206,12269,12344,12416,12487,12543,12614,12671,12728,12794,12858,12929,12986,13039,13102,13154,13212,13260,13326,13388,13451,13596,13717,13804,14091,14245,14836,15037,15129,15308,15476,15651,15904,16195,16349,16707,16874,17244,17404,17558,17658,18073,18280,18439,19004,19365,19494,20161,20341,20946"
                     },
                     "to": {
-                        "startLines": "186,187,188,189,190,191,192,193,194,195,616,617,618,619,620,621,622,623,624,625,626,627,628,629,630,631,632,633,634,635,636,637,638,639,640,641,642,643,644,645,646,647,648,649,650,673,676,677,679,714,715,716,756,1774,1777,1997,2000,2001,2004,2007,2010,2014,2059,2062,2067,2070,2075,2079,2184,2186,2193,2197,2200,2209,2215,2218,2227,2231",
+                        "startLines": "191,192,193,194,195,196,197,198,199,200,647,648,649,650,651,652,653,654,655,656,657,658,659,660,661,662,663,664,665,666,667,668,669,670,671,672,673,674,675,676,677,678,679,680,681,709,712,713,715,750,751,752,792,1813,1816,2036,2039,2040,2043,2046,2049,2053,2098,2101,2106,2109,2114,2118,2223,2225,2232,2236,2239,2248,2254,2257,2266,2270",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "6254,6335,6399,6465,6535,6605,6675,6745,6812,6882,45065,45119,45198,45271,45334,45405,45467,45533,45600,45667,45723,45774,45827,45879,45933,45996,46055,46117,46176,46236,46299,46374,46446,46517,46573,46644,46701,46758,46824,46888,46959,47016,47069,47132,47184,48634,48808,48874,48996,51473,51618,51739,54364,118742,118896,135675,135876,135968,136147,136315,136490,136743,139980,140134,140492,140659,141029,141189,149585,149685,150100,150307,150466,151031,151392,151521,152188,152368",
-                        "endLines": "186,187,188,189,190,191,192,193,194,195,616,617,618,619,620,621,622,623,624,625,626,627,628,629,630,631,632,633,634,635,636,637,638,639,640,641,642,643,644,645,646,647,648,649,650,673,676,677,679,714,715,716,759,1776,1786,1999,2000,2003,2006,2009,2013,2018,2061,2066,2069,2074,2078,2082,2185,2192,2196,2199,2208,2214,2217,2226,2230,2238",
+                        "startOffsets": "6483,6564,6628,6694,6764,6834,6904,6974,7041,7111,48251,48305,48384,48457,48520,48591,48653,48719,48786,48853,48909,48960,49013,49065,49119,49182,49241,49303,49362,49422,49485,49560,49632,49703,49759,49830,49887,49944,50010,50074,50145,50202,50255,50318,50370,52033,52207,52273,52395,54872,55017,55138,57763,122300,122454,139233,139434,139526,139705,139873,140048,140301,143538,143692,144050,144217,144587,144747,153143,153243,153658,153865,154024,154589,154950,155079,155746,155926",
+                        "endLines": "191,192,193,194,195,196,197,198,199,200,647,648,649,650,651,652,653,654,655,656,657,658,659,660,661,662,663,664,665,666,667,668,669,670,671,672,673,674,675,676,677,678,679,680,681,709,712,713,715,750,751,752,795,1815,1825,2038,2039,2042,2045,2048,2052,2057,2100,2105,2108,2113,2117,2121,2224,2231,2235,2238,2247,2253,2256,2265,2269,2277",
                         "endColumns": "80,63,65,69,69,69,69,66,69,70,53,78,72,62,70,61,65,66,66,55,50,52,51,53,62,58,61,58,59,62,74,71,70,55,70,56,56,65,63,70,56,52,62,51,57,47,65,61,62,144,120,86,12,12,12,12,91,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12",
-                        "endOffsets": "6330,6394,6460,6530,6600,6670,6740,6807,6877,6948,45114,45193,45266,45329,45400,45462,45528,45595,45662,45718,45769,45822,45874,45928,45991,46050,46112,46171,46231,46294,46369,46441,46512,46568,46639,46696,46753,46819,46883,46954,47011,47064,47127,47179,47237,48677,48869,48931,49054,51613,51734,51821,54646,118891,119482,135871,135963,136142,136310,136485,136738,137029,140129,140487,140654,141024,141184,141338,149680,150095,150302,150461,151026,151387,151516,152183,152363,152968"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-gu_values-gu.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-gu/values-gu.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1937",
-                        "endColumns": "100",
-                        "endOffsets": "2033"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-gu/values-gu.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,214,318,425,512,613,736,813,891,971,1077,1179,1276,1385,1484,1594,1754,1857",
-                        "endColumns": "108,103,106,86,100,122,76,77,79,105,101,96,108,98,109,159,102,79",
-                        "endOffsets": "209,313,420,507,608,731,808,886,966,1072,1174,1271,1380,1479,1589,1749,1852,1932"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-pa_values-pa.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-pa/values-pa.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1900",
-                        "endColumns": "100",
-                        "endOffsets": "1996"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-pa/values-pa.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,208,305,410,496,596,709,786,862,941,1042,1146,1243,1352,1451,1561,1720,1820",
-                        "endColumns": "102,96,104,85,99,112,76,75,78,100,103,96,108,98,109,158,99,79",
-                        "endOffsets": "203,300,405,491,591,704,781,857,936,1037,1141,1238,1347,1446,1556,1715,1815,1895"
+                        "endOffsets": "6559,6623,6689,6759,6829,6899,6969,7036,7106,7177,48300,48379,48452,48515,48586,48648,48714,48781,48848,48904,48955,49008,49060,49114,49177,49236,49298,49357,49417,49480,49555,49627,49698,49754,49825,49882,49939,50005,50069,50140,50197,50250,50313,50365,50423,52076,52268,52330,52453,55012,55133,55220,58045,122449,123040,139429,139521,139700,139868,140043,140296,140587,143687,144045,144212,144582,144742,144896,153238,153653,153860,154019,154584,154945,155074,155741,155921,156526"
                     }
                 }
             ]
@@ -2685,28 +1656,6 @@
             ]
         },
         {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-w720dp-v13_values-w720dp-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.0.aar/60e9ed589569db96a7ca2ff8477a73ff/res/values-w720dp/values.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "56",
-                        "endColumns": "76",
-                        "endOffsets": "128"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "76",
-                        "endOffsets": "127"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-ldltr-v21_values-ldltr-v21.arsc.flat",
             "map": [
                 {
@@ -2767,38 +1716,6 @@
             ]
         },
         {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-ml_values-ml.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-ml/values-ml.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,224,342,457,550,655,787,864,940,1022,1133,1239,1337,1451,1551,1662,1821,1922",
-                        "endColumns": "118,117,114,92,104,131,76,75,81,110,105,97,113,99,110,158,100,81",
-                        "endOffsets": "219,337,452,545,650,782,859,935,1017,1128,1234,1332,1446,1546,1657,1816,1917,1999"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-ml/values-ml.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2004",
-                        "endColumns": "100",
-                        "endOffsets": "2100"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-en-rAU_values-en-rAU.arsc.flat",
             "map": [
                 {
@@ -2809,38 +1726,6 @@
                         "startOffsets": "55,159,267,390,490,598,682,782,897,974,1050,1132,1235,1339,1438,1543,1646,1750,1869,1969,2051",
                         "endColumns": "103,107,122,99,107,83,99,114,76,75,81,102,103,98,104,102,103,118,99,81,100",
                         "endOffsets": "154,262,385,485,593,677,777,892,969,1045,1127,1230,1334,1433,1538,1641,1745,1864,1964,2046,2147"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-ne_values-ne.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-ne/values-ne.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2049",
-                        "endColumns": "100",
-                        "endOffsets": "2145"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-ne/values-ne.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,210,314,422,513,620,747,841,931,1019,1129,1245,1348,1463,1565,1680,1851,1963",
-                        "endColumns": "104,103,107,90,106,126,93,89,87,109,115,102,114,101,114,170,111,85",
-                        "endOffsets": "205,309,417,508,615,742,836,926,1014,1124,1240,1343,1458,1560,1675,1846,1958,2044"
                     }
                 }
             ]
@@ -2871,102 +1756,6 @@
                         "startOffsets": "55,173,281,404,510,617,707,808,923,1000,1078,1158,1270,1372,1468,1577,1678,1793,1916,2021,2101",
                         "endColumns": "117,107,122,105,106,89,100,114,76,77,79,111,101,95,108,100,114,122,104,79,100",
                         "endOffsets": "168,276,399,505,612,702,803,918,995,1073,1153,1265,1367,1463,1572,1673,1788,1911,2016,2096,2197"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-ta_values-ta.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-ta/values-ta.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,219,324,439,528,635,761,839,916,998,1100,1204,1301,1411,1513,1620,1777,1877",
-                        "endColumns": "113,104,114,88,106,125,77,76,81,101,103,96,109,101,106,156,99,79",
-                        "endOffsets": "214,319,434,523,630,756,834,911,993,1095,1199,1296,1406,1508,1615,1772,1872,1952"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-ta/values-ta.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1957",
-                        "endColumns": "100",
-                        "endOffsets": "2053"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-ur_values-ur.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-ur/values-ur.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "102",
-                        "endOffsets": "153"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1958",
-                        "endColumns": "102",
-                        "endOffsets": "2056"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-ur/values-ur.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,215,321,430,516,620,740,816,892,977,1085,1194,1296,1407,1507,1615,1780,1878",
-                        "endColumns": "109,105,108,85,103,119,75,75,84,107,108,101,110,99,107,164,97,79",
-                        "endOffsets": "210,316,425,511,615,735,811,887,972,1080,1189,1291,1402,1502,1610,1775,1873,1953"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/intermediates/res/merged/debug/values-et_values-et.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/fcb149387c660caeae498b7e7e45e138/res/values-et/values-et.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1965",
-                        "endColumns": "100",
-                        "endOffsets": "2061"
-                    }
-                },
-                {
-                    "source": "/Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/79931ae8662b94b24ccdeb2a0ba27d3e/res/values-et/values-et.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,222,329,440,526,628,745,825,903,986,1097,1202,1301,1411,1512,1615,1781,1883",
-                        "endColumns": "116,106,110,85,101,116,79,77,82,110,104,98,109,100,102,165,101,81",
-                        "endOffsets": "217,324,435,521,623,740,820,898,981,1092,1197,1296,1406,1507,1610,1776,1878,1960"
                     }
                 }
             ]
