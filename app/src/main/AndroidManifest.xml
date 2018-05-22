@@ -141,6 +141,8 @@
 			android:windowSoftInputMode="stateHidden|adjustPan"
 			android:theme="@android:style/Theme.Translucent" />
 
+		<activity android:name=".MyMessageActivity"></activity>
+
 
 		<activity android:name=".BussinessInfoActivity"></activity>
 		<activity android:name=".NavigationActivity"></activity>

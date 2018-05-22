@@ -271,6 +271,10 @@ public class ShopAdapter extends BaseAdapter implements Filterable {
 		return view;
 	}
 
+	public List<ShopInfo> getSearchList() {
+		return searchList;
+	}
+
 	@Override
 	public Filter getFilter() {
 		return filter;

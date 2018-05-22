@@ -19,14 +19,25 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.androidpn.IQ.InquiryIQ;
 import org.androidpn.IQ.LoginIQ;
+import org.androidpn.enity.MessageInfo;
+import org.androidpn.entity.ChatMessage;
+import org.androidpn.model.Contact;
 import org.androidpn.utils.ActivityHolder;
+import org.androidpn.utils.Constants;
 import org.androidpn.utils.UserInfoHolder;
+import org.jivesoftware.smack.Chat;
+import org.jivesoftware.smack.ChatManagerListener;
+import org.jivesoftware.smack.MessageListener;
 import org.jivesoftware.smack.packet.IQ;
+import org.jivesoftware.smack.packet.Message;
+import org.litepal.crud.DataSupport;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -35,9 +46,9 @@ import java.util.List;
  * */
 public class FrameActivity extends ActivityGroup {
 
-	private LinearLayout mMyBottemSearchBtn, mMyBottemMyBtn;
-	private ImageView mMyBottemSearchImg, mMyBottemMyImg;
-	private TextView mMyBottemSearchTxt,
+	private LinearLayout mMyBottemSearchBtn, mMyBottemCheckinBtn, mMyBottemMyBtn;
+	private ImageView mMyBottemSearchImg, mMyBottemMyImg, mMyBottemCheckinImg;
+	private TextView mMyBottemSearchTxt, mMyBottemCheckinTxt,
 			mMyBottemMyTxt;
 	private List<View> list = new ArrayList<View>();// �൱������Դ
 	private View view = null;
@@ -56,6 +67,60 @@ public class FrameActivity extends ActivityGroup {
 		ActivityHolder.getInstance().setCurrentActivity(FrameActivity.this);
 		initView();
 
+//		DataSupport.deleteAll(Contact.class);
+//		DataSupport.deleteAll(ChatMessage.class);
+
+		ActivityHolder.getInstance().getConnection().getChatManager().addChatListener(new ChatManagerListener() {
+			@Override
+			public void chatCreated(Chat chat, boolean b) {
+				chat.addMessageListener(new MessageListener() {
+					@Override
+					public void processMessage(Chat chat, Message message) {
+//						Toast.makeText(ActivityHolder.getInstance().getCurrentActivity(), message.getBody(), Toast.LENGTH_LONG).show();
+						String fromUserName = message.getFrom().split("[@]")[0];
+						String userName = message.getTo().split("[@]")[0];
+
+						ChatMessage chatMessage = new ChatMessage();
+						chatMessage.setContent(message.getBody());
+						chatMessage.setCreateTime(new Date().getTime());
+						chatMessage.setFromUserName(fromUserName);
+						chatMessage.setUserName(userName);
+						chatMessage.setFromJID(message.getFrom());
+						chatMessage.setTag(1);
+						chatMessage.setTarget(fromUserName);
+
+						chatMessage.save();
+
+						Contact contact = null;
+					 	List<Contact> contacts = DataSupport.where("fromUserName = ?", fromUserName).find(Contact.class);
+					 	if (contacts == null || contacts.isEmpty()) {
+					 		contact = new Contact();
+					 		contact.setCreateTime(new Date().getTime());
+					 		contact.setFromUserName(fromUserName);
+					 		contact.setUserName(userName);
+					 		contact.setFromJID(message.getFrom());
+
+					 		contact.save();
+						} else {
+					 		contact = contacts.get(0);
+						}
+
+
+						Activity activity = ActivityHolder.getInstance().getCurrentActivity();
+					 	if (activity instanceof ChatActivity) {
+					 		ChatActivity chatActivity = (ChatActivity) activity;
+							MessageInfo messageInfo = new MessageInfo();
+							messageInfo.setContent(message.getBody());
+							messageInfo.setType(Constants.CHAT_ITEM_TYPE_LEFT);
+							messageInfo.setHeader(contact.getImageURL());
+
+							chatActivity.addChatMessage(messageInfo);
+						}
+
+					}
+				});
+			}
+		});
 		sendLoginIQ();
 	}
 
@@ -65,19 +130,19 @@ public class FrameActivity extends ActivityGroup {
 		// ������linearlayoutΪ��ť���õĿؼ�
 		mMyBottemSearchBtn = (LinearLayout) findViewById(R.id.MyBottemSearchBtn);
 //		mMyBottemTuanBtn = (LinearLayout) findViewById(R.id.MyBottemTuanBtn);
-//		mMyBottemCheckinBtn = (LinearLayout) findViewById(R.id.MyBottemCheckinBtn);
+		mMyBottemCheckinBtn = (LinearLayout) findViewById(R.id.MyBottemCheckinBtn);
 		mMyBottemMyBtn = (LinearLayout) findViewById(R.id.MyBottemMyBtn);
 //		mMyBottemMoreBtn = (LinearLayout) findViewById(R.id.MyBottemMoreBtn);
 		// ����linearlayout�е�imageview
 		mMyBottemSearchImg = (ImageView) findViewById(R.id.MyBottemSearchImg);
 //		mMyBottemTuanImg = (ImageView) findViewById(R.id.MyBottemTuanImg);
-//		mMyBottemCheckinImg = (ImageView) findViewById(R.id.MyBottemCheckinImg);
+		mMyBottemCheckinImg = (ImageView) findViewById(R.id.MyBottemCheckinImg);
 		mMyBottemMyImg = (ImageView) findViewById(R.id.MyBottemMyImg);
 //		mMyBottemMoreImg = (ImageView) findViewById(R.id.MyBottemMoreImg);
 //		 ����linearlayout�е�textview
 		mMyBottemSearchTxt = (TextView) findViewById(R.id.MyBottemSearchTxt);
 //		mMyBottemTuanTxt = (TextView) findViewById(R.id.MyBottemTuanTxt);
-//		mMyBottemCheckinTxt = (TextView) findViewById(R.id.MyBottemCheckinTxt);
+		mMyBottemCheckinTxt = (TextView) findViewById(R.id.MyBottemCheckinTxt);
 		mMyBottemMyTxt = (TextView) findViewById(R.id.MyBottemMyTxt);
 //		mMyBottemMoreTxt = (TextView) findViewById(R.id.MyBottemMoreTxt);
 		createView();
@@ -126,7 +191,7 @@ public class FrameActivity extends ActivityGroup {
 		MyBtnOnclick mytouchlistener = new MyBtnOnclick();
 		mMyBottemSearchBtn.setOnClickListener(mytouchlistener);
 //		mMyBottemTuanBtn.setOnClickListener(mytouchlistener);
-//		mMyBottemCheckinBtn.setOnClickListener(mytouchlistener);
+		mMyBottemCheckinBtn.setOnClickListener(mytouchlistener);
 		mMyBottemMyBtn.setOnClickListener(mytouchlistener);
 //		mMyBottemMoreBtn.setOnClickListener(mytouchlistener);
 
@@ -148,11 +213,11 @@ public class FrameActivity extends ActivityGroup {
 //					mMyBottemTuanImg
 //							.setImageResource(R.drawable.main_index_tuan_pressed);
 //					mMyBottemTuanTxt.setTextColor(Color.parseColor("#FF8C00"));
-//				} else if (flag == 2) {
-//					mMyBottemCheckinImg
-//							.setImageResource(R.drawable.main_index_checkin_pressed);
-//					mMyBottemCheckinTxt.setTextColor(Color
-//							.parseColor("#FF8C00"));
+				} else if (flag == 2) {
+					mMyBottemCheckinImg
+							.setImageResource(R.drawable.main_index_checkin_pressed);
+					mMyBottemCheckinTxt.setTextColor(Color
+							.parseColor("#FF8C00"));
 				} else if (flag == 3) {
 					mMyBottemMyImg
 							.setImageResource(R.drawable.main_index_my_pressed);
@@ -214,7 +279,7 @@ public class FrameActivity extends ActivityGroup {
 		view2 = FrameActivity.this
 				.getLocalActivityManager()
 				.startActivity("sign",
-						new Intent(FrameActivity.this, CheckinActivity.class))
+						new Intent(FrameActivity.this, MyMessageActivity.class))
 				.getDecorView();
 		view2.setTag(2);
 		list.add(view2);
@@ -277,13 +342,13 @@ public class FrameActivity extends ActivityGroup {
 //						.setImageResource(R.drawable.main_index_tuan_pressed);
 //				mMyBottemTuanTxt.setTextColor(Color.parseColor("#FF8C00"));
 //				break;
-//			case R.id.MyBottemCheckinBtn:
-//				mViewPager.setCurrentItem(2);
-//				initBottemBtn();
-//				mMyBottemCheckinImg
-//						.setImageResource(R.drawable.main_index_checkin_pressed);
-//				mMyBottemCheckinTxt.setTextColor(Color.parseColor("#FF8C00"));
-//				break;
+			case R.id.MyBottemCheckinBtn:
+				mViewPager.setCurrentItem(2);
+				initBottemBtn();
+				mMyBottemCheckinImg
+						.setImageResource(R.drawable.main_index_checkin_pressed);
+				mMyBottemCheckinTxt.setTextColor(Color.parseColor("#FF8C00"));
+				break;
 			case R.id.MyBottemMyBtn:
 				mViewPager.setCurrentItem(3);
 				initBottemBtn();
@@ -310,15 +375,15 @@ public class FrameActivity extends ActivityGroup {
 	private void initBottemBtn() {
 		mMyBottemSearchImg.setImageResource(R.drawable.search_bottem_search);
 //		mMyBottemTuanImg.setImageResource(R.drawable.search_bottem_tuan);
-//		mMyBottemCheckinImg.setImageResource(R.drawable.search_bottem_checkin);
+		mMyBottemCheckinImg.setImageResource(R.drawable.search_bottem_checkin);
 		mMyBottemMyImg.setImageResource(R.drawable.search_bottem_my);
 //		mMyBottemMoreImg.setImageResource(R.drawable.search_bottem_more);
 		mMyBottemSearchTxt.setTextColor(getResources().getColor(
 				R.color.search_bottem_textcolor));
 //		mMyBottemTuanTxt.setTextColor(getResources().getColor(
 //				R.color.search_bottem_textcolor));
-//		mMyBottemCheckinTxt.setTextColor(getResources().getColor(
-//				R.color.search_bottem_textcolor));
+		mMyBottemCheckinTxt.setTextColor(getResources().getColor(
+				R.color.search_bottem_textcolor));
 		mMyBottemMyTxt.setTextColor(getResources().getColor(
 				R.color.search_bottem_textcolor));
 //		mMyBottemMoreTxt.setTextColor(getResources().getColor(

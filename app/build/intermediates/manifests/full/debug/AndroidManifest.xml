@@ -152,6 +152,7 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent"
             android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="org.androidpn.demoapp.MyMessageActivity" />
         <activity android:name="org.androidpn.demoapp.BussinessInfoActivity" />
         <activity android:name="org.androidpn.demoapp.NavigationActivity" />
         <activity android:name="org.androidpn.demoapp.PersonalActivity" />

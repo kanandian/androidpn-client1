@@ -9,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -18,26 +19,29 @@ import android.widget.Toast;
 import com.jude.easyrecyclerview.EasyRecyclerView;
 
 import org.androidpn.adapter.ChatAdapter;
+import org.androidpn.adapter.CommentAdapter;
 import org.androidpn.adapter.CommonFragmentPagerAdapter;
 import org.androidpn.enity.FullImageInfo;
 import org.androidpn.enity.MessageInfo;
+import org.androidpn.entity.ChatMessage;
 import org.androidpn.fragment.ChatEmotionFragment;
 import org.androidpn.fragment.ChatFunctionFragment;
+import org.androidpn.model.Contact;
 import org.androidpn.utils.ActivityHolder;
 import org.androidpn.utils.Constants;
 import org.androidpn.utils.GlobalOnItemClickManagerUtils;
 import org.androidpn.utils.MediaManager;
+import org.androidpn.utils.UserInfoHolder;
 import org.androidpn.widget.EmotionInputDetector;
 import org.androidpn.widget.NoScrollViewPager;
 import org.androidpn.widget.StateButton;
-import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
-import org.greenrobot.eventbus.ThreadMode;
 import org.jivesoftware.smack.Chat;
 import org.jivesoftware.smack.ChatManager;
 import org.jivesoftware.smack.XMPPException;
 import org.jivesoftware.smack.packet.Message;
+import org.litepal.crud.DataSupport;
 
+import java.util.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,24 +52,26 @@ public class ChatActivity extends BaseAppCompatActivity {
 
     @Bind(R.id.chat_list)
     EasyRecyclerView chatList;
-    @Bind(R.id.emotion_voice)
-    ImageView emotionVoice;
+//    @Bind(R.id.emotion_voice)
+//    ImageView emotionVoice;
     @Bind(R.id.edit_text)
     EditText editText;
-    @Bind(R.id.voice_text)
-    TextView voiceText;
-    @Bind(R.id.emotion_button)
-    ImageView emotionButton;
-    @Bind(R.id.emotion_add)
-    ImageView emotionAdd;
-    @Bind(R.id.emotion_send)
-    StateButton emotionSend;
-    @Bind(R.id.viewpager)
-    NoScrollViewPager viewpager;
-    @Bind(R.id.emotion_layout)
-    RelativeLayout emotionLayout;
+    @Bind(R.id.btn_send_message)
+    Button sendButton;
+//    @Bind(R.id.voice_text)
+//    TextView voiceText;
+//    @Bind(R.id.emotion_button)
+//    ImageView emotionButton;
+//    @Bind(R.id.emotion_add)
+//    ImageView emotionAdd;
+//    @Bind(R.id.emotion_send)
+//    StateButton emotionSend;
+//    @Bind(R.id.viewpager)
+//    NoScrollViewPager viewpager;
+//    @Bind(R.id.emotion_layout)
+//    RelativeLayout emotionLayout;
 
-    private EmotionInputDetector mDetector;
+//    private EmotionInputDetector mDetector;
     private ArrayList<Fragment> fragments;
     private ChatEmotionFragment chatEmotionFragment;
     private ChatFunctionFragment chatFunctionFragment;
@@ -83,7 +89,22 @@ public class ChatActivity extends BaseAppCompatActivity {
     private ChatManager chatManager;
     private Chat chat;
 
+    private Contact contact;
     private String toJID;
+
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(android.os.Message msg) {
+            super.handleMessage(msg);
+
+            if(msg.what == UPDATE_UI) {
+                MessageInfo messageInfo = (MessageInfo) msg.obj;
+                messageInfos.add(messageInfo);
+                chatAdapter.add(messageInfo);
+                chatList.scrollToPosition(chatAdapter.getCount() - 1);
+            }
+        }
+    };
 
 
     @Override
@@ -92,16 +113,52 @@ public class ChatActivity extends BaseAppCompatActivity {
         setContentView(R.layout.activity_chat);
 
         ButterKnife.bind(this);
-        EventBus.getDefault().register(this);
+//        EventBus.getDefault().register(this);
+        initData();
         initWidget();
     }
 
     private void initData() {
         Intent intent = getIntent();
-        toJID = intent.getStringExtra("JID");
+        contact = (Contact) intent.getSerializableExtra("contact");
+        toJID = contact.getFromUserName();
 
         chatManager = ActivityHolder.getInstance().getConnection().getChatManager();
         chat = chatManager.createChat(toJID, null);
+
+        sendButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String content  = editText.getText().toString();
+                MessageInfo messageInfo = new MessageInfo();
+                messageInfo.setContent(content);
+                messageInfo.setType(Constants.CHAT_ITEM_TYPE_RIGHT);
+                messageInfo.setHeader(UserInfoHolder.getInstance().getImageURL());
+                messageInfos.add(messageInfo);
+                chatAdapter.add(messageInfo);
+                chatList.scrollToPosition(chatAdapter.getCount() - 1);
+
+                try {
+                    sendMessage(content);
+                } catch (XMPPException e) {
+                    messageInfo.setSendState(Constants.CHAT_ITEM_SEND_ERROR);
+                    chatAdapter.notifyDataSetChanged();
+                    e.printStackTrace();
+                }
+
+                ChatMessage chatMessage = new ChatMessage();
+                chatMessage.setTag(0);
+                chatMessage.setUserName(UserInfoHolder.getInstance().getUserName());
+                chatMessage.setFromUserName(UserInfoHolder.getInstance().getUserName());
+                chatMessage.setCreateTime(new Date().getTime());
+                chatMessage.setContent(content);
+                chatMessage.setTarget(contact.getFromUserName());
+
+                chatMessage.save();
+
+                editText.setText("");
+            }
+        });
     }
 
     public void sendMessage(String content) throws XMPPException {
@@ -127,20 +184,20 @@ public class ChatActivity extends BaseAppCompatActivity {
         chatFunctionFragment = new ChatFunctionFragment();
         fragments.add(chatFunctionFragment);
         adapter = new CommonFragmentPagerAdapter(getSupportFragmentManager(), fragments);
-        viewpager.setAdapter(adapter);
-        viewpager.setCurrentItem(0);
+//        viewpager.setAdapter(adapter);
+//        viewpager.setCurrentItem(0);
 
-        mDetector = EmotionInputDetector.with(this)
-                .setEmotionView(emotionLayout)
-                .setViewPager(viewpager)
-                .bindToContent(chatList)
-                .bindToEditText(editText)
-                .bindToEmotionButton(emotionButton)
-                .bindToAddButton(emotionAdd)
-                .bindToSendButton(emotionSend)
-                .bindToVoiceButton(emotionVoice)
-                .bindToVoiceText(voiceText)
-                .build();
+//        mDetector = EmotionInputDetector.with(this)
+//                .setEmotionView(emotionLayout)
+//                .setViewPager(viewpager)
+//                .bindToContent(chatList)
+//                .bindToEditText(editText)
+//                .bindToEmotionButton(emotionButton)
+//                .bindToAddButton(emotionAdd)
+//                .bindToSendButton(emotionSend)
+//                .bindToVoiceButton(emotionVoice)
+//                .bindToVoiceText(voiceText)
+//                .build();
 
         GlobalOnItemClickManagerUtils globalOnItemClickListener = GlobalOnItemClickManagerUtils.getInstance(this);
         globalOnItemClickListener.attachToEditText(editText);
@@ -160,8 +217,8 @@ public class ChatActivity extends BaseAppCompatActivity {
                         break;
                     case RecyclerView.SCROLL_STATE_DRAGGING:
                         chatAdapter.handler.removeCallbacksAndMessages(null);
-                        mDetector.hideEmotionLayout(false);
-                        mDetector.hideSoftInput();
+//                        mDetector.hideEmotionLayout(false);
+//                        mDetector.hideSoftInput();
                         break;
                     default:
                         break;
@@ -196,7 +253,7 @@ public class ChatActivity extends BaseAppCompatActivity {
             fullImageInfo.setWidth(view.getWidth());
             fullImageInfo.setHeight(view.getHeight());
             fullImageInfo.setImageUrl(messageInfos.get(position).getImageUrl());
-            EventBus.getDefault().postSticky(fullImageInfo);
+//            EventBus.getDefault().postSticky(fullImageInfo);
             startActivity(new Intent(ChatActivity.this, FullImageActivity.class));
             overridePendingTransition(0, 0);
         }
@@ -236,75 +293,101 @@ public class ChatActivity extends BaseAppCompatActivity {
     private void LoadData() {
         messageInfos = new ArrayList<>();
 
-        MessageInfo messageInfo = new MessageInfo();
-        messageInfo.setContent("你好，欢迎使用Rance的聊天界面框架");
-        messageInfo.setType(Constants.CHAT_ITEM_TYPE_LEFT);
-        messageInfo.setHeader("http://tupian.enterdesk.com/2014/mxy/11/2/1/12.jpg");
-        messageInfos.add(messageInfo);
+        List<ChatMessage> chatMessages = DataSupport.where("target = ? and userName = ?", toJID, UserInfoHolder.getInstance().getUserName()).find(ChatMessage.class);
 
-        MessageInfo messageInfo1 = new MessageInfo();
-        messageInfo1.setFilepath("http://www.trueme.net/bb_midi/welcome.wav");
-        messageInfo1.setVoiceTime(3000);
-        messageInfo1.setType(Constants.CHAT_ITEM_TYPE_RIGHT);
-        messageInfo1.setSendState(Constants.CHAT_ITEM_SEND_SUCCESS);
-        messageInfo1.setHeader("http://img.dongqiudi.com/uploads/avatar/2014/10/20/8MCTb0WBFG_thumb_1413805282863.jpg");
-        messageInfos.add(messageInfo1);
 
-        MessageInfo messageInfo2 = new MessageInfo();
-        messageInfo2.setImageUrl("http://img4.imgtn.bdimg.com/it/u=1800788429,176707229&fm=21&gp=0.jpg");
-        messageInfo2.setType(Constants.CHAT_ITEM_TYPE_LEFT);
-        messageInfo2.setHeader("http://tupian.enterdesk.com/2014/mxy/11/2/1/12.jpg");
-        messageInfos.add(messageInfo2);
+        for (ChatMessage chatMessage : chatMessages) {
+            MessageInfo messageInfo = new MessageInfo();
+            messageInfo.setContent(chatMessage.getContent());
 
-        MessageInfo messageInfo3 = new MessageInfo();
-        messageInfo3.setContent("[微笑][色][色][色]");
-        messageInfo3.setType(Constants.CHAT_ITEM_TYPE_RIGHT);
-        messageInfo3.setSendState(Constants.CHAT_ITEM_SEND_ERROR);
-        messageInfo3.setHeader("http://img.dongqiudi.com/uploads/avatar/2014/10/20/8MCTb0WBFG_thumb_1413805282863.jpg");
-        messageInfos.add(messageInfo3);
+            if (chatMessage.getTag() == 1) {
+                messageInfo.setImageUrl(contact.getImageURL());
+                messageInfo.setType(Constants.CHAT_ITEM_TYPE_LEFT);
+            } else if (chatMessage.getTag() == 0) {
+                messageInfo.setImageUrl(UserInfoHolder.getInstance().getImageURL());
+                messageInfo.setType(Constants.CHAT_ITEM_TYPE_RIGHT);
+            }
+            messageInfos.add(messageInfo);
+        }
+
+
+//        MessageInfo messageInfo = new MessageInfo();
+//        messageInfo.setContent("你好，欢迎使用Rance的聊天界面框架");
+//        messageInfo.setType(Constants.CHAT_ITEM_TYPE_LEFT);
+//        messageInfo.setHeader("http://tupian.enterdesk.com/2014/mxy/11/2/1/12.jpg");
+//        messageInfos.add(messageInfo);
+//
+//        MessageInfo messageInfo1 = new MessageInfo();
+//        messageInfo1.setFilepath("http://www.trueme.net/bb_midi/welcome.wav");
+//        messageInfo1.setVoiceTime(3000);
+//        messageInfo1.setType(Constants.CHAT_ITEM_TYPE_RIGHT);
+//        messageInfo1.setSendState(Constants.CHAT_ITEM_SEND_SUCCESS);
+//        messageInfo1.setHeader("http://img.dongqiudi.com/uploads/avatar/2014/10/20/8MCTb0WBFG_thumb_1413805282863.jpg");
+//        messageInfos.add(messageInfo1);
+//
+//        MessageInfo messageInfo2 = new MessageInfo();
+//        messageInfo2.setImageUrl("http://img4.imgtn.bdimg.com/it/u=1800788429,176707229&fm=21&gp=0.jpg");
+//        messageInfo2.setType(Constants.CHAT_ITEM_TYPE_LEFT);
+//        messageInfo2.setHeader("http://tupian.enterdesk.com/2014/mxy/11/2/1/12.jpg");
+//        messageInfos.add(messageInfo2);
+//
+//        MessageInfo messageInfo3 = new MessageInfo();
+//        messageInfo3.setContent("[微笑][色][色][色]");
+//        messageInfo3.setType(Constants.CHAT_ITEM_TYPE_RIGHT);
+//        messageInfo3.setSendState(Constants.CHAT_ITEM_SEND_ERROR);
+//        messageInfo3.setHeader("http://img.dongqiudi.com/uploads/avatar/2014/10/20/8MCTb0WBFG_thumb_1413805282863.jpg");
+//        messageInfos.add(messageInfo3);
 
         chatAdapter.addAll(messageInfos);
     }
 
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    public void MessageEventBus(final MessageInfo messageInfo) {
-        messageInfo.setHeader("http://img.dongqiudi.com/uploads/avatar/2014/10/20/8MCTb0WBFG_thumb_1413805282863.jpg");
-        messageInfo.setType(Constants.CHAT_ITEM_TYPE_RIGHT);
-        messageInfo.setSendState(Constants.CHAT_ITEM_SENDING);
-        messageInfos.add(messageInfo);
-        chatAdapter.add(messageInfo);
-        chatList.scrollToPosition(chatAdapter.getCount() - 1);
-        new Handler().postDelayed(new Runnable() {
-            public void run() {
-                messageInfo.setSendState(Constants.CHAT_ITEM_SEND_SUCCESS);
-                chatAdapter.notifyDataSetChanged();
-            }
-        }, 2000);
-        new Handler().postDelayed(new Runnable() {
-            public void run() {
-                MessageInfo message = new MessageInfo();
-                message.setContent("这是模拟消息回复");
-                message.setType(Constants.CHAT_ITEM_TYPE_LEFT);
-                message.setHeader("http://tupian.enterdesk.com/2014/mxy/11/2/1/12.jpg");
-                messageInfos.add(message);
-                chatAdapter.add(message);
-                chatList.scrollToPosition(chatAdapter.getCount() - 1);
-            }
-        }, 3000);
+//    @Subscribe(threadMode = ThreadMode.MAIN)
+//    public void MessageEventBus(final MessageInfo messageInfo) {
+//        messageInfo.setHeader("http://img.dongqiudi.com/uploads/avatar/2014/10/20/8MCTb0WBFG_thumb_1413805282863.jpg");
+//        messageInfo.setType(Constants.CHAT_ITEM_TYPE_RIGHT);
+//        messageInfo.setSendState(Constants.CHAT_ITEM_SENDING);
+//        messageInfos.add(messageInfo);
+//        chatAdapter.add(messageInfo);
+//        chatList.scrollToPosition(chatAdapter.getCount() - 1);
+//        new Handler().postDelayed(new Runnable() {
+//            public void run() {
+//                messageInfo.setSendState(Constants.CHAT_ITEM_SEND_SUCCESS);
+//                chatAdapter.notifyDataSetChanged();
+//            }
+//        }, 2000);
+//        new Handler().postDelayed(new Runnable() {
+//            public void run() {
+//                MessageInfo message = new MessageInfo();
+//                message.setContent("这是模拟消息回复");
+//                message.setType(Constants.CHAT_ITEM_TYPE_LEFT);
+//                message.setHeader("http://tupian.enterdesk.com/2014/mxy/11/2/1/12.jpg");
+//                messageInfos.add(message);
+//                chatAdapter.add(message);
+//                chatList.scrollToPosition(chatAdapter.getCount() - 1);
+//            }
+//        }, 3000);
+//    }
+
+    public void addChatMessage(MessageInfo messageInfo) {
+
+        android.os.Message msg = new android.os.Message();
+        msg.what = UPDATE_UI;
+        msg.obj = messageInfo;
+        handler.sendMessage(msg);
     }
 
     @Override
     public void onBackPressed() {
-        if (!mDetector.interceptBackPress()) {
+//        if (!mDetector.interceptBackPress()) {
             super.onBackPressed();
-        }
+//        }
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         ButterKnife.unbind(this);
-        EventBus.getDefault().removeStickyEvent(this);
-        EventBus.getDefault().unregister(this);
+//        EventBus.getDefault().removeStickyEvent(this);
+//        EventBus.getDefault().unregister(this);
     }
 }

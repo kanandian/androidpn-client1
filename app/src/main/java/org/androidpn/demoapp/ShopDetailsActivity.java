@@ -26,6 +26,7 @@ import org.androidpn.info.CommentsInfo;
 import org.androidpn.info.FoodInfo;
 import org.androidpn.info.ShopInfo;
 import org.androidpn.info.SignInfo;
+import org.androidpn.model.Contact;
 import org.androidpn.model.Model;
 import org.androidpn.net.ThreadPoolUtils;
 import org.androidpn.utils.ActivityHolder;
@@ -34,8 +35,11 @@ import org.androidpn.utils.MyJson;
 import org.androidpn.utils.NetworkImageUtil;
 import org.androidpn.utils.UserInfoHolder;
 import org.jivesoftware.smack.packet.IQ;
+import org.litepal.crud.DataSupport;
 
+import java.util.Date;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * ��������ģ��
@@ -372,6 +376,22 @@ public class ShopDetailsActivity extends BaseActivity {
 			if (mID == R.id.Shop_details_bottom_img4) {
 //				creatPopupWindow();
 				Intent intent = new Intent(ShopDetailsActivity.this, ChatActivity.class);
+				List<Contact> contacts = DataSupport.where("fromUserName = ?", info.getSholder()).find(Contact.class);
+
+				Contact contact = null;
+				if (contacts != null && !contacts.isEmpty()) {
+					contact = contacts.get(0);
+				} else {
+					contact = new Contact();
+					contact.setFromUserName(info.getSholder());
+					contact.setUserName(UserInfoHolder.getInstance().getUserName());
+					contact.setCreateTime(new Date().getTime());
+
+					contact.save();
+				}
+
+				intent.putExtra("contact", contact);
+
 				startActivity(intent);
 			}
 			if(mID == R.id.shop_details_tuan){

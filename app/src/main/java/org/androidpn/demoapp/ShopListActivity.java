@@ -312,7 +312,7 @@ public class ShopListActivity extends BaseActivity {
 	private class MainListOnItemClickListener implements OnItemClickListener {
 		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
                                 long arg3) {
-			ShopInfo shopInfo = list.get(arg2);
+			ShopInfo shopInfo = mAdapter.getSearchList().get(arg2);
 
 //			if ("外卖".equals(shopInfo.getStype())) {
 //				Intent intent = new Intent(ShopListActivity.this, TakeOutActivity.class);
@@ -328,7 +328,7 @@ public class ShopListActivity extends BaseActivity {
 
 			Intent intent = new Intent(ShopListActivity.this, ShopDetailsActivity.class);
 			Bundle bund = new Bundle();
-			bund.putSerializable("ShopInfo",list.get(arg2));
+			bund.putSerializable("ShopInfo",shopInfo);
 			intent.putExtra("value",bund);
 			startActivity(intent);
 		}

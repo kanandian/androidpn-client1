@@ -77,6 +77,7 @@ public class PersonalActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 UserInfoHolder.getInstance().setAuth(false);
+                UserInfoHolder.getInstance().setImageURL("");
                 ActivityHolder.getInstance().closeActivity();
                 ActivityHolder.getInstance().refreshAllFrameAcrivity();
             }
