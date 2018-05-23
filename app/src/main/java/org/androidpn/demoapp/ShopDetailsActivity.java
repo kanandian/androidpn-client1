@@ -381,6 +381,23 @@ public class ShopDetailsActivity extends BaseActivity {
 				Contact contact = null;
 				if (contacts != null && !contacts.isEmpty()) {
 					contact = contacts.get(0);
+					for (Contact contact1 : contacts) {
+						if (contact1.getUserName().equals(UserInfoHolder.getInstance().getUserName())) {
+							contact = contact1;
+							break;
+						}
+					}
+					if (!contact.getUserName().equals(UserInfoHolder.getInstance().getUserName())) {
+						String fromUserName = contact.getFromUserName();
+						String imageURL = contact.getImageURL();
+						contact = new Contact();
+						contact.setFromUserName(fromUserName);
+						contact.setUserName(UserInfoHolder.getInstance().getUserName());
+						contact.setCreateTime(new Date().getTime());
+						contact.setImageURL(imageURL);
+
+						contact.save();
+					}
 				} else {
 					contact = new Contact();
 					contact.setFromUserName(info.getSholder());

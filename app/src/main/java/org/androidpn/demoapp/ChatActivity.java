@@ -21,6 +21,7 @@ import com.jude.easyrecyclerview.EasyRecyclerView;
 import org.androidpn.adapter.ChatAdapter;
 import org.androidpn.adapter.CommentAdapter;
 import org.androidpn.adapter.CommonFragmentPagerAdapter;
+import org.androidpn.client.XmppManager;
 import org.androidpn.enity.FullImageInfo;
 import org.androidpn.enity.MessageInfo;
 import org.androidpn.entity.ChatMessage;
@@ -37,6 +38,7 @@ import org.androidpn.widget.NoScrollViewPager;
 import org.androidpn.widget.StateButton;
 import org.jivesoftware.smack.Chat;
 import org.jivesoftware.smack.ChatManager;
+import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.XMPPException;
 import org.jivesoftware.smack.packet.Message;
 import org.litepal.crud.DataSupport;
@@ -305,10 +307,10 @@ public class ChatActivity extends BaseAppCompatActivity {
             messageInfo.setContent(chatMessage.getContent());
 
             if (chatMessage.getTag() == 1) {
-                messageInfo.setImageUrl(contact.getImageURL());
+                messageInfo.setHeader(contact.getImageURL().replace("localhost", ActivityHolder.getInstance().getConnection().getHost()));
                 messageInfo.setType(Constants.CHAT_ITEM_TYPE_LEFT);
             } else if (chatMessage.getTag() == 0) {
-                messageInfo.setImageUrl(UserInfoHolder.getInstance().getImageURL());
+                messageInfo.setHeader(UserInfoHolder.getInstance().getImageURL().replace("localhost", ActivityHolder.getInstance().getConnection().getHost()));
                 messageInfo.setType(Constants.CHAT_ITEM_TYPE_RIGHT);
             }
             messageInfos.add(messageInfo);
@@ -343,6 +345,8 @@ public class ChatActivity extends BaseAppCompatActivity {
 //        messageInfos.add(messageInfo3);
         chatAdapter.clear();
         chatAdapter.addAll(messageInfos);
+
+        chatList.scrollToPosition(chatAdapter.getCount() - 1);
     }
 
 //    @Subscribe(threadMode = ThreadMode.MAIN)

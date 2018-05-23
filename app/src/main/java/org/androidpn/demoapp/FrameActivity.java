@@ -103,6 +103,23 @@ public class FrameActivity extends ActivityGroup {
 					 		contact.save();
 						} else {
 					 		contact = contacts.get(0);
+							for (Contact contact1 : contacts) {
+								if (contact1.getUserName().equals(UserInfoHolder.getInstance().getUserName())) {
+									contact = contact1;
+									break;
+								}
+							}
+							if (!contact.getUserName().equals(UserInfoHolder.getInstance().getUserName())) {
+								String fromUserName1 = contact.getFromUserName();
+								String imageURL = contact.getImageURL();
+								contact = new Contact();
+								contact.setFromUserName(fromUserName1);
+								contact.setUserName(UserInfoHolder.getInstance().getUserName());
+								contact.setCreateTime(new Date().getTime());
+								contact.setImageURL(imageURL);
+
+								contact.save();
+							}
 						}
 
 						contact.setUnReadCount(contact.getUnReadCount()+1);
