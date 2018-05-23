@@ -67,7 +67,7 @@ public class MyMessageActivity extends BaseActivity {
     @Override
     public void refresh() {
         super.refresh();
-        loadMessage();
+        updateImage();
     }
 
     public void updateImage() {

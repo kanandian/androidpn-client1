@@ -139,7 +139,7 @@ public class ChatActivity extends BaseAppCompatActivity {
                 MessageInfo messageInfo = new MessageInfo();
                 messageInfo.setContent(content);
                 messageInfo.setType(Constants.CHAT_ITEM_TYPE_RIGHT);
-                messageInfo.setHeader(UserInfoHolder.getInstance().getImageURL());
+                messageInfo.setHeader(UserInfoHolder.getInstance().getImageURL().replace("localhost", ActivityHolder.getInstance().getConnection().getHost()));
                 messageInfos.add(messageInfo);
                 chatAdapter.add(messageInfo);
                 chatList.scrollToPosition(chatAdapter.getCount() - 1);
@@ -307,7 +307,9 @@ public class ChatActivity extends BaseAppCompatActivity {
             messageInfo.setContent(chatMessage.getContent());
 
             if (chatMessage.getTag() == 1) {
-                messageInfo.setHeader(contact.getImageURL().replace("localhost", ActivityHolder.getInstance().getConnection().getHost()));
+                if (contact.getImageURL() != null) {
+                    messageInfo.setHeader(contact.getImageURL().replace("localhost", ActivityHolder.getInstance().getConnection().getHost()));
+                }
                 messageInfo.setType(Constants.CHAT_ITEM_TYPE_LEFT);
             } else if (chatMessage.getTag() == 0) {
                 messageInfo.setHeader(UserInfoHolder.getInstance().getImageURL().replace("localhost", ActivityHolder.getInstance().getConnection().getHost()));
@@ -384,7 +386,8 @@ public class ChatActivity extends BaseAppCompatActivity {
         handler.sendMessage(msg);
     }
 
-    public void updateImage() {
+    public void updateImage(String imageURL) {
+        contact.setImageURL(imageURL);
         android.os.Message msg = new android.os.Message();
         msg.what = UPDATE_IMAGE;
         handler.sendMessage(msg);

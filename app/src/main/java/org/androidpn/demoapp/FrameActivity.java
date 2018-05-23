@@ -67,8 +67,8 @@ public class FrameActivity extends ActivityGroup {
 		ActivityHolder.getInstance().setCurrentActivity(FrameActivity.this);
 		initView();
 
-//		DataSupport.deleteAll(Contact.class);
-//		DataSupport.deleteAll(ChatMessage.class);
+		DataSupport.deleteAll(Contact.class);
+		DataSupport.deleteAll(ChatMessage.class);
 
 		ActivityHolder.getInstance().getConnection().getChatManager().addChatListener(new ChatManagerListener() {
 			@Override

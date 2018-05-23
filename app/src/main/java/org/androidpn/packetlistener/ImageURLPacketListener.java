@@ -34,7 +34,7 @@ public class ImageURLPacketListener implements PacketListener {
                 ChatActivity chatActivity = (ChatActivity) activity;
 
                 if (imageURLIQ.getUserName().equals(chatActivity.getToJID())) {
-                    chatActivity.updateImage();
+                    chatActivity.updateImage(imageURLIQ.getImageURL());
                 }
 
             } else if (activity instanceof FrameActivity) {
