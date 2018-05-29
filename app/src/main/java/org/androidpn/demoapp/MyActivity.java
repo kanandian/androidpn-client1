@@ -25,10 +25,9 @@ import org.androidpn.utils.VolleyUtil;
 
 public class MyActivity extends BaseActivity {
 
-	private TextView mMy_register, mMy_login, mMy_address, mMy_checkin,
-			mMy_comment, mMy_photo, mMy_logintoast, mMy_info;
+	private TextView mMy_register, mMy_login, mMy_logintoast, mMy_info;
 	// �ŷ�
-	private LinearLayout mMy_messagebtn;
+//	private LinearLayout mMy_messagebtn;
 	// listview���͵�linearlayout��ť
 	private LinearLayout mMy_list_yuding,mMy_list_caogao,mMy_list_guanzhu,
 			mMy_list_shanghushoucang, mMy_list_tuangoushoucang;
@@ -47,11 +46,11 @@ public class MyActivity extends BaseActivity {
 		mMy_login = (TextView) findViewById(R.id.My_login);
 		mMy_info = (TextView) findViewById(R.id.My_info);
 
-		mMy_address = (TextView) findViewById(R.id.My_address);
-		mMy_checkin = (TextView) findViewById(R.id.My_checkin);
-		mMy_comment = (TextView) findViewById(R.id.My_comment);
-		mMy_photo = (TextView) findViewById(R.id.My_photo);
-		mMy_messagebtn = (LinearLayout) findViewById(R.id.My_messagebtn);
+//		mMy_address = (TextView) findViewById(R.id.My_address);
+//		mMy_checkin = (TextView) findViewById(R.id.My_checkin);
+//		mMy_comment = (TextView) findViewById(R.id.My_comment);
+//		mMy_photo = (TextView) findViewById(R.id.My_photo);
+//		mMy_messagebtn = (LinearLayout) findViewById(R.id.My_messagebtn);
 //		mMy_list_tuangou = (LinearLayout) findViewById(R.id.My_list_tuangou);
 //		mMy_list_huiyuanka = (LinearLayout) findViewById(R.id.My_list_huiyuanka);
 		mMy_list_yuding = (LinearLayout) findViewById(R.id.My_list_yuding);
@@ -73,11 +72,11 @@ public class MyActivity extends BaseActivity {
 
 		mMy_register.setOnClickListener(mOnclickListener);
 		mMy_login.setOnClickListener(mOnclickListener);
-		mMy_address.setOnClickListener(mOnclickListener);
-		mMy_checkin.setOnClickListener(mOnclickListener);
-		mMy_comment.setOnClickListener(mOnclickListener);
-		mMy_photo.setOnClickListener(mOnclickListener);
-		mMy_messagebtn.setOnClickListener(mOnclickListener);
+//		mMy_address.setOnClickListener(mOnclickListener);
+//		mMy_checkin.setOnClickListener(mOnclickListener);
+//		mMy_comment.setOnClickListener(mOnclickListener);
+//		mMy_photo.setOnClickListener(mOnclickListener);
+//		mMy_messagebtn.setOnClickListener(mOnclickListener);
 //		mMy_list_tuangou.setOnClickListener(mOnclickListener);
 //		mMy_list_huiyuanka.setOnClickListener(mOnclickListener);
 		mMy_list_yuding.setOnClickListener(mOnclickListener);

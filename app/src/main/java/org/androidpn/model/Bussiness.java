@@ -3,6 +3,8 @@ package org.androidpn.model;
 import org.androidpn.info.ShopInfo;
 import org.androidpn.utils.Location;
 
+import java.lang.ref.SoftReference;
+
 /**
  * Created by pro1 on 18/2/6.
  */
@@ -14,6 +16,7 @@ public class Bussiness {
     private String bussinessName;
     private String classification;
     private String tag;
+    private String feature;
     private Location location;
     private String mobile;
     private double price;
@@ -21,6 +24,9 @@ public class Bussiness {
     private String des;
 
     private String holder;
+
+    private String startTime;
+    private String endTime;
 
     public Bussiness() {
 
@@ -64,6 +70,14 @@ public class Bussiness {
 
     public void setTag(String tag) {
         this.tag = tag;
+    }
+
+    public String getFeature() {
+        return feature;
+    }
+
+    public void setFeature(String feature) {
+        this.feature = feature;
     }
 
     public Location getLocation() {
@@ -118,6 +132,22 @@ public class Bussiness {
         this.holder = holder;
     }
 
+    public String getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(String startTime) {
+        this.startTime = startTime;
+    }
+
+    public String getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(String endTime) {
+        this.endTime = endTime;
+    }
+
     public ShopInfo toShopInfo() {
         ShopInfo shopInfo = new ShopInfo();
 
@@ -134,6 +164,11 @@ public class Bussiness {
         shopInfo.setSaddress(this.getLocation().getAddress());
         shopInfo.setSlevel(this.getLevel());
         shopInfo.setSholder(this.getHolder());
+
+        shopInfo.setStartTime(this.getStartTime());
+        shopInfo.setEndTime(this.getEndTime());
+        shopInfo.setFeature(this.getFeature());
+
 
         return shopInfo;
     }

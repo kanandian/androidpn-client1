@@ -65,7 +65,7 @@
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/Shop_details_more_time"
+            android:id="@+id/bussiness_hour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="每日/9:00-21:00"
@@ -83,39 +83,39 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:text="餐厅特色"
+            android:text="店铺特色"
             android:textColor="#666666"
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/Shop_details_more_time"
+            android:id="@+id/bussiness_features"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="无线上网、免费停车、有下午茶"
             android:textSize="17sp" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/yy_list_bkg_line_bottom"
-        android:orientation="vertical"
-        android:padding="15dp" >
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/yy_list_bkg_line_bottom"-->
+        <!--android:orientation="vertical"-->
+        <!--android:padding="15dp" >-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="餐厅氛围"
-            android:textColor="#666666"
-            android:textSize="15sp" />
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:text="餐厅氛围"-->
+            <!--android:textColor="#666666"-->
+            <!--android:textSize="15sp" />-->
 
-        <TextView
-            android:id="@+id/Shop_details_more_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="情侣约会、朋友聚餐、休闲小憩、商务宴请、家庭聚会"
-            android:textSize="17sp" />
-    </LinearLayout>
+        <!--<TextView-->
+            <!--android:id="@+id/Shop_details_more_time"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="情侣约会、朋友聚餐、休闲小憩、商务宴请、家庭聚会"-->
+            <!--android:textSize="17sp" />-->
+    <!--</LinearLayout>-->
 
 </LinearLayout>

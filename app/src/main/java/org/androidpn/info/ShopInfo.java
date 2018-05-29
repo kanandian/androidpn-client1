@@ -35,6 +35,9 @@ public class ShopInfo implements Serializable {
 	private String iname;
 
 	private String sholder;
+	private String startTime;
+	private String endTime;
+	private String feature;
 
 
 
@@ -199,6 +202,30 @@ public class ShopInfo implements Serializable {
 
 	public String getStarSrc() {
 		return "@drawable/star"+this.getSlevel();
+	}
+
+	public String getStartTime() {
+		return startTime;
+	}
+
+	public void setStartTime(String startTime) {
+		this.startTime = startTime;
+	}
+
+	public String getEndTime() {
+		return endTime;
+	}
+
+	public void setEndTime(String endTime) {
+		this.endTime = endTime;
+	}
+
+	public String getFeature() {
+		return feature;
+	}
+
+	public void setFeature(String feature) {
+		this.feature = feature;
 	}
 
 	public int getStarImageResource() {

@@ -63,6 +63,15 @@ public class BussinessIQProvider implements IQProvider {
                         resultModelIQ.setErrMsg("未收藏");
                     }
                 }
+                if ("starttime".equals(parser.getName())) {
+                    bussiness.setStartTime(parser.nextText());
+                }
+                if ("endtime".equals(parser.getName())) {
+                    bussiness.setEndTime(parser.nextText());
+                }
+                if ("feature".equals(parser.getName())) {
+                    bussiness.setFeature(parser.nextText());
+                }
             } else if (eventType == 3
                     && "bussiness".equals(parser.getName())) {
                 done = true;

@@ -16,8 +16,11 @@ import org.androidpn.info.ShopInfo;
 public class ShopDetailsMore extends BaseActivity {
 
 	private ShopInfo info = null;
-	private TextView mShop_details_more_title, mShop_details_more_time;
+	private TextView mShop_details_more_title;
 	private ImageView mShoplist_back;
+
+	private TextView bussinessHourText;
+	private TextView bussinessFeaturesText;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +35,7 @@ public class ShopDetailsMore extends BaseActivity {
 	}
 
 	private void initView() {
-		mShop_details_more_time = (TextView) findViewById(R.id.Shop_details_more_time);
+//		mShop_details_more_time = (TextView) findViewById(R.id.Shop_details_more_time);
 		mShop_details_more_title = (TextView) findViewById(R.id.Shop_details_more_title);
 		mShoplist_back = (ImageView) findViewById(R.id.Shoplist_back);
 		mShoplist_back.setOnClickListener(new View.OnClickListener() {
@@ -40,10 +43,17 @@ public class ShopDetailsMore extends BaseActivity {
 				ShopDetailsMore.this.finish();
 			}
 		});
+
+		bussinessHourText = (TextView) findViewById(R.id.bussiness_hour);
+		bussinessFeaturesText = (TextView) findViewById(R.id.bussiness_features);
+
 	}
 
 	private void initModel() {
 		mShop_details_more_title.setText(info.getSname());
-		mShop_details_more_time.setText(info.getStime());
+//		mShop_details_more_time.setText(info.getStime());
+
+		bussinessHourText.setText(info.getStartTime()+"-"+info.getEndTime());
+		bussinessFeaturesText.setText(info.getFeature());
 	}
 }

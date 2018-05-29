@@ -62,6 +62,15 @@ public class ActivityIQProvider implements IQProvider {
                     if("holder".equals(parser.getAttributeName(i))) {
                         bussiness.setHolder(parser.getAttributeValue(i));
                     }
+                    if ("starttime".equals(parser.getAttributeName(i))) {
+                        bussiness.setStartTime(parser.getAttributeValue(i));
+                    }
+                    if ("endtime".equals(parser.getAttributeName(i))) {
+                        bussiness.setEndTime(parser.getAttributeValue(i));
+                    }
+                    if ("feature".equals(parser.getAttributeName(i))) {
+                        bussiness.setFeature(parser.getAttributeValue(i));
+                    }
                 }
                 bussinessList.add(bussiness);
             } else if (eventType == 3

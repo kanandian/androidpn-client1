@@ -646,7 +646,7 @@
                     android:layout_toLeftOf="@+id/shop_image_more"
                     android:paddingBottom="10dp"
                     android:paddingLeft="15dp"
-                    android:text="营业时间、餐厅特色、餐厅氛围"
+                    android:text="营业时间、店铺特色"
                     android:textColor="#000000"
                     android:textSize="16sp" />
 
@@ -893,7 +893,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="报错"
+                android:text="联系商家"
                 android:textColor="#FF8C00"
                 android:textSize="13sp" />
         </LinearLayout>

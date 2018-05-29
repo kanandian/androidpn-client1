@@ -28,6 +28,7 @@
         android:debuggable="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
+        android:supportsRtl="true"
         android:testOnly="true" >
         <meta-data
             android:name="com.amap.api.v2.apikey"
@@ -127,7 +128,12 @@
         <activity android:name="org.androidpn.demoapp.OrderSuccessActivity" />
         <activity android:name="org.androidpn.demoapp.TakeoutListActivity" />
         <activity android:name="org.androidpn.demoapp.MyBussinessesActivity" />
-        <activity android:name="org.androidpn.demoapp.AddBussinessActivity" />
+        <activity
+            android:name="org.androidpn.demoapp.AddBussinessActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity android:name="org.androidpn.demoapp.EditTakeoutMenuActivity" />
         <activity android:name="org.androidpn.demoapp.TakeoutOrderActivity" />
         <activity android:name="org.androidpn.demoapp.OrderDetailActivity" />

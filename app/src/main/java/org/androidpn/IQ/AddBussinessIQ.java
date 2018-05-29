@@ -8,10 +8,13 @@ public class AddBussinessIQ extends IQ {
     private String imageURL;
     private String classification;
     private String tag;
+    private String feature;
     private String location;
     private String mobile;
     private String des;
     private String holder;
+    private String fromTime;
+    private String toTime;
 
     public AddBussinessIQ() {
 
@@ -34,6 +37,9 @@ public class AddBussinessIQ extends IQ {
         if (tag != null) {
             buf.append("<tag>").append(tag).append("</tag>");
         }
+        if (feature != null) {
+            buf.append("<feature>").append(feature).append("</feature>");
+        }
         if (location != null) {
             buf.append("<location>").append(location).append("</location>");
         }
@@ -45,6 +51,12 @@ public class AddBussinessIQ extends IQ {
         }
         if (holder != null) {
             buf.append("<holder>").append(holder).append("</holder>");
+        }
+        if (fromTime != null) {
+            buf.append("<fromtime>").append(fromTime).append("</fromtime>");
+        }
+        if (toTime != null) {
+            buf.append("<totime>").append(toTime).append("</totime>");
         }
         buf.append("</").append("bussiness").append("> ");
         return buf.toString();
@@ -82,6 +94,14 @@ public class AddBussinessIQ extends IQ {
         this.tag = tag;
     }
 
+    public String getFeature() {
+        return feature;
+    }
+
+    public void setFeature(String feature) {
+        this.feature = feature;
+    }
+
     public String getLocation() {
         return location;
     }
@@ -112,5 +132,21 @@ public class AddBussinessIQ extends IQ {
 
     public void setHolder(String holder) {
         this.holder = holder;
+    }
+
+    public String getFromTime() {
+        return fromTime;
+    }
+
+    public void setFromTime(String fromTime) {
+        this.fromTime = fromTime;
+    }
+
+    public String getToTime() {
+        return toTime;
+    }
+
+    public void setToTime(String toTime) {
+        this.toTime = toTime;
     }
 }
