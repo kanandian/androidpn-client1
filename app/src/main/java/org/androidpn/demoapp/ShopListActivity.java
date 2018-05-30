@@ -26,6 +26,7 @@ import org.androidpn.info.ShopInfo;
 import org.androidpn.model.Model;
 import org.androidpn.net.ThreadPoolUtils;
 import org.androidpn.utils.ActivityHolder;
+import org.androidpn.utils.LocationHolder;
 import org.androidpn.utils.MyJson;
 import org.jivesoftware.smack.packet.IQ;
 
@@ -173,6 +174,7 @@ public class ShopListActivity extends BaseActivity {
 		InquiryIQ inquiryIQ = new InquiryIQ();
 		inquiryIQ.setTarget("activity");
 		inquiryIQ.setTitle("main");
+		inquiryIQ.setLocation(LocationHolder.getInstance().getLocation().toString());
 		inquiryIQ.setType(IQ.Type.GET);
 
 		Log.d("qzf", "sendInquiryIQ: "+inquiryIQ.toXML());

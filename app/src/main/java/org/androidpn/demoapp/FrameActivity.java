@@ -28,6 +28,7 @@ import org.androidpn.entity.ChatMessage;
 import org.androidpn.model.Contact;
 import org.androidpn.utils.ActivityHolder;
 import org.androidpn.utils.Constants;
+import org.androidpn.utils.LocationHolder;
 import org.androidpn.utils.UserInfoHolder;
 import org.jivesoftware.smack.Chat;
 import org.jivesoftware.smack.ChatManagerListener;
@@ -346,6 +347,7 @@ public class FrameActivity extends ActivityGroup {
 
 		inquiryIQ.setTarget("activity");
 		inquiryIQ.setTitle("perference:"+ UserInfoHolder.getInstance().getUserName());
+		inquiryIQ.setLocation(LocationHolder.getInstance().getLocation().toString());
 		inquiryIQ.setType(IQ.Type.GET);
 
 		Log.d("qzf's", "sendInquiryIQ: "+inquiryIQ.toXML());

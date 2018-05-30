@@ -16,6 +16,8 @@ import org.androidpn.IQ.InquiryIQ;
 import org.androidpn.adapter.ShopAdapter;
 import org.androidpn.info.ShopInfo;
 import org.androidpn.utils.ActivityHolder;
+import org.androidpn.utils.Location;
+import org.androidpn.utils.LocationHolder;
 import org.androidpn.utils.UserInfoHolder;
 import org.jivesoftware.smack.packet.IQ;
 
@@ -126,6 +128,7 @@ public class SearchActivity extends BaseActivity {
 
 		inquiryIQ.setTarget("activity");
 		inquiryIQ.setTitle("perference:"+ UserInfoHolder.getInstance().getUserName());
+		inquiryIQ.setLocation(LocationHolder.getInstance().getLocation().toString());
 		inquiryIQ.setType(IQ.Type.GET);
 
 		Log.d("qzf's", "sendInquiryIQ: "+inquiryIQ.toXML());

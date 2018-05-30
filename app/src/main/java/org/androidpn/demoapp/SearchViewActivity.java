@@ -13,6 +13,7 @@ import android.widget.SearchView;
 import org.androidpn.IQ.InquiryIQ;
 import org.androidpn.entity.SearchHistory;
 import org.androidpn.utils.ActivityHolder;
+import org.androidpn.utils.LocationHolder;
 import org.androidpn.utils.UserInfoHolder;
 import org.jivesoftware.smack.packet.IQ;
 import org.litepal.crud.DataSupport;
@@ -96,6 +97,7 @@ public class SearchViewActivity extends Activity implements SearchView.OnQueryTe
 
         inquiryIQ.setTarget("search");
         inquiryIQ.setTitle(query);
+        inquiryIQ.setLocation(LocationHolder.getInstance().getLocation().toString());
 
         Log.d("qzf", "onQueryTextSubmit: "+inquiryIQ.toXML());
 
