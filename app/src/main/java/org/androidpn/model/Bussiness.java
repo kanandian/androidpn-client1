@@ -168,6 +168,7 @@ public class Bussiness {
         shopInfo.setStartTime(this.getStartTime());
         shopInfo.setEndTime(this.getEndTime());
         shopInfo.setFeature(this.getFeature());
+        shopInfo.setSdetails(this.getDes());
 
 
         return shopInfo;

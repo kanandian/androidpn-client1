@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
 
     <RelativeLayout
         android:id="@+id/titlerelativelayout"
@@ -24,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:gravity="center_vertical"
-            android:text="修改店铺"
+            android:text="修改店铺信息"
             android:textColor="#000000"
             android:textSize="18sp" />
     </RelativeLayout>
@@ -45,38 +50,79 @@
                 android:background="#ADADAD"
                 android:orientation="vertical" >
 
+                <!--<EditText-->
+                    <!--android:id="@+id/tag"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="0.2dp"-->
+                    <!--android:background="#FFFFFF"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textColorHint="@color/hint_gray"-->
+                    <!--android:textColor="@color/text_black"-->
+                    <!--android:hint="请输入标签"/>-->
+
                 <EditText
-                    android:id="@+id/bussiness_name"
+                    android:id="@+id/bussiness_features"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="0.2dp"
                     android:background="#FFFFFF"
-                    android:hint="请输入店铺名称"
                     android:padding="10dp"
                     android:singleLine="true"
                     android:textSize="16sp"
                     android:textColorHint="@color/hint_gray"
-                    android:textColor="@color/text_black"/>
+                    android:textColor="@color/text_black"
+                    android:hint="餐厅特色"/>
 
-                <LinearLayout
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/text_location"-->
+                        <!--android:layout_width="0px"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="#FFFFFF"-->
+                        <!--android:textColorHint="@color/hint_gray"-->
+                        <!--android:textColor="@color/text_black" />-->
+                    <!--<Button-->
+                        <!--android:id="@+id/btn_locate"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/login_btn_bg"-->
+                        <!--android:text="定位"/>-->
+                <!--</LinearLayout>-->
+
+
+                <TextView
+                    android:id="@+id/start_time"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_marginBottom="0.2dp"
+                    android:background="#FFFFFF"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:textColorHint="@color/hint_gray"
+                    android:textColor="@color/text_black"
+                    android:hint="开始时间" />
 
-                    <TimePicker
-                        android:id="@+id/timePicker1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_weight="1" />
-
-                    <TimePicker
-                        android:id="@+id/timePicker2"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"></TimePicker>
-
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/end_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.2dp"
+                    android:background="#FFFFFF"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:textColorHint="@color/hint_gray"
+                    android:textColor="@color/text_black"
+                    android:hint="结束时间" />
 
                 <EditText
                     android:id="@+id/edit_mobile"
@@ -106,7 +152,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/btn_add_bussiness"
+                android:id="@+id/btn_update_bussiness"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"

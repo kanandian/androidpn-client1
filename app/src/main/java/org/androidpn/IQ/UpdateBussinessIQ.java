@@ -5,7 +5,8 @@ import org.jivesoftware.smack.packet.IQ;
 public class UpdateBussinessIQ extends IQ {
 
     private String bussinessId;
-    private String bussinessName;
+//    private String bussinessName;
+    private String feature;
     private String mobile;
     private String des;
     private String fromTime;
@@ -22,8 +23,8 @@ public class UpdateBussinessIQ extends IQ {
         if (bussinessId != null) {
             buf.append("<bussinessId>").append(bussinessId).append("</bussinessId>");
         }
-        if(bussinessName != null){
-            buf.append("<businessName>").append(bussinessName).append("</businessName>");
+        if(feature != null){
+            buf.append("<feature>").append(feature).append("</feature>");
         }
         if (mobile != null) {
             buf.append("<mobile>").append(mobile).append("</mobile>");
@@ -49,12 +50,21 @@ public class UpdateBussinessIQ extends IQ {
         this.bussinessId = bussinessId;
     }
 
-    public String getBussinessName() {
-        return bussinessName;
+//    public String getBussinessName() {
+//        return bussinessName;
+//    }
+
+//    public void setBussinessName(String bussinessName) {
+//        this.bussinessName = bussinessName;
+//    }
+
+
+    public String getFeature() {
+        return feature;
     }
 
-    public void setBussinessName(String bussinessName) {
-        this.bussinessName = bussinessName;
+    public void setFeature(String feature) {
+        this.feature = feature;
     }
 
     public String getMobile() {

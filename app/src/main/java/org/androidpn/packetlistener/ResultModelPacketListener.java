@@ -5,6 +5,7 @@ import android.app.Activity;
 import org.androidpn.IQ.ResultModelIQ;
 import org.androidpn.client.XmppManager;
 import org.androidpn.demoapp.BaseActivity;
+import org.androidpn.demoapp.BaseAppCompatActivity;
 import org.androidpn.utils.ActivityHolder;
 import org.jivesoftware.smack.PacketListener;
 import org.jivesoftware.smack.packet.Packet;
@@ -27,6 +28,10 @@ public class ResultModelPacketListener implements PacketListener {
                 BaseActivity baseActivity = (BaseActivity) activity;
 
                 baseActivity.updateForResponse(resultModelIQ);
+            } else if (activity instanceof BaseAppCompatActivity) {
+                BaseAppCompatActivity baseAppCompatActivity = (BaseAppCompatActivity) activity;
+
+                baseAppCompatActivity.updateForResponse(resultModelIQ);
             }
         }
     }

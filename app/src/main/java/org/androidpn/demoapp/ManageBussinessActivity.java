@@ -58,7 +58,9 @@ public class ManageBussinessActivity extends BaseActivity {
         updateInfoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(ManageBussinessActivity.this, UpdateBussinessInfoActivity.class);
+                intent.putExtra("shopInfo", shopInfo);
+                startActivity(intent);
             }
         });
 
