@@ -132,6 +132,10 @@
 
 		<activity android:name=".PaymentActivity"></activity>
 
+		<activity android:name=".UpdatePasswordActivity"></activity>
+
+		<activity android:name=".ForgotPasswordActivity"></activity>
+
 		<activity
 			android:name=".ChatActivity"
 			android:configChanges="orientation|keyboardHidden|navigation|screenSize"

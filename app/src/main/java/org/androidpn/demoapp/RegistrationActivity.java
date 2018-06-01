@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
@@ -18,6 +20,7 @@ import org.androidpn.IQ.RegisterIQ;
 import org.androidpn.IQ.ResultModelIQ;
 import org.androidpn.client.Constants;
 import org.androidpn.utils.ActivityHolder;
+import org.androidpn.utils.HandlerUtil;
 import org.androidpn.utils.UserInfoHolder;
 import org.jivesoftware.smack.packet.IQ;
 
@@ -34,6 +37,18 @@ public class RegistrationActivity extends BaseActivity {
 	private SharedPreferences sharedPrefs;
 
 	private Button sendMessageButton;
+
+	private Handler handler = new Handler() {
+		@Override
+		public void handleMessage(Message msg) {
+			super.handleMessage(msg);
+
+			if(msg.what == UPDATE_UI) {
+				String message = (String) msg.obj;
+				Toast.makeText(ActivityHolder.getInstance().getCurrentActivity(), message, Toast.LENGTH_LONG).show();
+			}
+		}
+	};
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -143,7 +158,12 @@ public class RegistrationActivity extends BaseActivity {
 				RegistrationActivity.this.finish();
 			}
 		} else {
-			Toast.makeText(RegistrationActivity.this, resultModelIQ.getErrMsg(), Toast.LENGTH_LONG).show();
+//			Toast.makeText(RegistrationActivity.this, resultModelIQ.getErrMsg(), Toast.LENGTH_LONG).show();
+//			HandlerUtil.getInstance().showToast(resultModelIQ.getErrMsg());
+			Message msg = new Message();
+			msg.what = UPDATE_UI;
+			msg.obj = resultModelIQ.getErrMsg();
+			handler.sendMessage(msg);
 		}
 	}
 }

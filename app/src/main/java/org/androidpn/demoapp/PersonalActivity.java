@@ -26,6 +26,7 @@ public class PersonalActivity extends BaseActivity {
     private TextView updateButton;
     private TextView logoutButton;
     private TextView updateImageButton;
+    private TextView updatePasswordButton;
 
     private String name;
     private String mobile;
@@ -47,6 +48,7 @@ public class PersonalActivity extends BaseActivity {
         updateButton = (TextView) findViewById(R.id.btn_update_info);
         logoutButton = (TextView) findViewById(R.id.btn_logout);
         updateImageButton = (TextView) findViewById(R.id.btn_update_image);
+        updatePasswordButton = (TextView) findViewById(R.id.btn_update_password);
 
         nameEdit.setText(UserInfoHolder.getInstance().getName());
         mobileEdit.setText(UserInfoHolder.getInstance().getMobile());
@@ -89,6 +91,14 @@ public class PersonalActivity extends BaseActivity {
                 Intent intent = new Intent(PersonalActivity.this, UploadImageActivity.class);
                 intent.putExtra("imageName", UserInfoHolder.getInstance().getUserName());
                 intent.putExtra("target", "user");
+                startActivity(intent);
+            }
+        });
+
+        updatePasswordButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PersonalActivity.this, UpdatePasswordActivity.class);
                 startActivity(intent);
             }
         });

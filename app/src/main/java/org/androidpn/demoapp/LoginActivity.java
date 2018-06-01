@@ -99,7 +99,9 @@ public class LoginActivity extends BaseActivity {
 				sendLoginIQ(userName, password);
 			}
 			if (mID == R.id.Login_wangjimima) {
-				Toast.makeText(LoginActivity.this, "忘记密码", Toast.LENGTH_SHORT).show();
+//				Toast.makeText(LoginActivity.this, "忘记密码", Toast.LENGTH_SHORT).show();
+				Intent intent = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
+				startActivity(intent);
 			}
 			if (mID == R.id.Login_zhuce) {
 				Intent intent = new Intent(LoginActivity.this,

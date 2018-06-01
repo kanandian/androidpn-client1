@@ -146,6 +146,8 @@
             android:name="org.androidpn.demoapp.SearchViewActivity"
             android:theme="@style/MyStyle" />
         <activity android:name="org.androidpn.demoapp.PaymentActivity" />
+        <activity android:name="org.androidpn.demoapp.UpdatePasswordActivity" />
+        <activity android:name="org.androidpn.demoapp.ForgotPasswordActivity" />
         <activity
             android:name="org.androidpn.demoapp.ChatActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"
