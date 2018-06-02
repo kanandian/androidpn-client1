@@ -136,6 +136,8 @@
 
 		<activity android:name=".ForgotPasswordActivity"></activity>
 
+		<activity android:name=".ShopListSearchActivity"></activity>
+
 		<activity
 			android:name=".ChatActivity"
 			android:configChanges="orientation|keyboardHidden|navigation|screenSize"

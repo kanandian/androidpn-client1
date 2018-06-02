@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.SearchView;
 
 import org.androidpn.IQ.InquiryIQ;
 import org.androidpn.adapter.ShopAdapter;
@@ -176,6 +177,13 @@ public class SearchActivity extends BaseActivity {
 				intent5.putExtra("title", "外卖");
 				SearchActivity.this.startActivity(intent5);
 				break;
+				case R.id.Search_search:
+				Intent intent6 = new Intent(SearchActivity.this,
+						SearchViewActivity.class);
+				intent6.putExtra("title", "shoplist");
+				SearchActivity.this.startActivity(intent6);
+				break;
+
 //			case R.id.Search_list_souquancheng:
 //				Intent intent6 = new Intent(SearchActivity.this,
 //						SearchTheCity.class);

@@ -1,6 +1,7 @@
 package org.androidpn.demoapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -25,6 +26,8 @@ public class SearchViewActivity extends Activity implements SearchView.OnQueryTe
     private SearchView searchView;
     private ListView listView;
     private String[] mStrings;
+
+    private String title = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +66,10 @@ public class SearchViewActivity extends Activity implements SearchView.OnQueryTe
     }
 
     public void prepareData() {
+        Intent intent = getIntent();
+        title = intent.getStringExtra("title");
+
+
         List<SearchHistory> searchHistoryList = DataSupport.findAll(SearchHistory.class);
         mStrings = new String[searchHistoryList.size()+1];
 
@@ -99,10 +106,20 @@ public class SearchViewActivity extends Activity implements SearchView.OnQueryTe
         inquiryIQ.setTitle(query);
         inquiryIQ.setLocation(LocationHolder.getInstance().getLocation().toString());
 
-        Log.d("qzf", "onQueryTextSubmit: "+inquiryIQ.toXML());
 
-        ActivityHolder.getInstance().sendPacket(inquiryIQ);
+        if (title != null) {
+            if ("shoplist".equals(title)) {
+                Intent intent = new Intent(SearchViewActivity.this, ShopListSearchActivity.class);
+                intent.putExtra("title", "全部");
+                intent.putExtra("inquiryIQ", inquiryIQ);
+                startActivity(intent);
+            }
 
+        } else {
+            Log.d("qzf", "onQueryTextSubmit: "+inquiryIQ.toXML());
+
+            ActivityHolder.getInstance().sendPacket(inquiryIQ);
+        }
         SearchViewActivity.this.finish();
         return false;
     }

@@ -56,11 +56,15 @@ public class ShopAdapter extends BaseAdapter implements Filterable {
 
 				if (content.contains("classification")) {
 					String key = content.split("[:]")[1];
-					for (ShopInfo shopInfo : list) {
-						if (shopInfo.getSname().contains(key)) {
-							shopInfoList.add(shopInfo);
-						} else if (shopInfo.getStype().contains(key)) {
-							shopInfoList.add(shopInfo);
+					if ("全部".equals(key)) {
+						shopInfoList = list;
+					} else {
+						for (ShopInfo shopInfo : list) {
+							if (shopInfo.getSname().contains(key)) {
+								shopInfoList.add(shopInfo);
+							} else if (shopInfo.getStype().contains(key)) {
+								shopInfoList.add(shopInfo);
+							}
 						}
 					}
 				} else if (content.contains("distance")){

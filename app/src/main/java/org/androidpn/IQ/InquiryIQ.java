@@ -2,7 +2,9 @@ package org.androidpn.IQ;
 
 import org.jivesoftware.smack.packet.IQ;
 
-public class InquiryIQ extends IQ {
+import java.io.Serializable;
+
+public class InquiryIQ extends IQ implements Serializable {
 	
 	private String target = null;
 	private String title = null;

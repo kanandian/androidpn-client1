@@ -70,7 +70,7 @@ public class Model {
 	public static String[] SHOPLIST_TOPLIST = new String[] { "ȫ���̻�", "�Ź��̻�",
 			"��Ԥ���̻�", "��Ա���̻�", "�Ż�ȯ�̻�", "�����̻�" };
 	// shoplist�������ı�
-	public static String[] SHOPLIST_THREELIST = {"美食", "景点", "酒店", "酒吧", "电影", "外卖"};
+	public static String[] SHOPLIST_THREELIST = {"全部","美食", "景点", "酒店", "酒吧", "电影", "外卖"};
 	// shoplist�������ı�
 	public static String[] SHOPLIST_PLACE = new String[] { "����", "ȫ����������",
 			"������", "������", "�ϸ���", "�㷻��", "ƽ����", "�ɱ���", "������", "����" };
