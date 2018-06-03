@@ -57,12 +57,14 @@ public class ContactAdapter extends ArrayAdapter<Contact> {
 
         NetworkImageView imageView = (NetworkImageView) item.findViewById(R.id.img_user);
         TextView userText = (TextView) item.findViewById(R.id.text_contact_name);
+        TextView contentText = (TextView) item.findViewById(R.id.text_contact_content);
         TextView timeText = (TextView) item.findViewById(R.id.text_time);
 
         if (contact.getImageURL() != null) {
             imageView.setImageUrl(contact.getImageURL().replace("localhost", ActivityHolder.getInstance().getConnection().getHost()), imageLoader);
         }
         userText.setText(contact.getFromUserName());
+        contentText.setText(contact.getLastUnRead());
         timeText.setText(DateFormatUtil.getFormatTime(contact.getCreateTime()));
 
 

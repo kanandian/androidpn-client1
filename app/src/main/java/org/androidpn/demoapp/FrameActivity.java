@@ -68,8 +68,8 @@ public class FrameActivity extends ActivityGroup {
 		ActivityHolder.getInstance().setCurrentActivity(FrameActivity.this);
 		initView();
 
-		DataSupport.deleteAll(Contact.class);
-		DataSupport.deleteAll(ChatMessage.class);
+//		DataSupport.deleteAll(Contact.class);
+//		DataSupport.deleteAll(ChatMessage.class);
 
 		ActivityHolder.getInstance().getConnection().getChatManager().addChatListener(new ChatManagerListener() {
 			@Override
@@ -124,6 +124,11 @@ public class FrameActivity extends ActivityGroup {
 						}
 
 						contact.setUnReadCount(contact.getUnReadCount()+1);
+
+						Contact updateContact = new Contact();
+						updateContact.setLastUnRead(message.getBody());
+						updateContact.updateAll("fromUserName = ?", fromUserName);
+
 
 					 	if (contact.getImageURL() == null || "".equals(contact.getImageURL())) {
 					 		InquiryIQ inquiryIQ = new InquiryIQ();
