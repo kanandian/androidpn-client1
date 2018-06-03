@@ -15,6 +15,7 @@
  */
 package org.androidpn.IQ;
 
+import org.androidpn.model.Bussiness;
 import org.jivesoftware.smack.packet.IQ;
 
 /** 
@@ -33,6 +34,8 @@ public class NotificationIQ extends IQ {
     private String message;
 
     private String uri;
+
+    private Bussiness bussiness = null;
 
     public NotificationIQ() {
     }
@@ -89,4 +92,11 @@ public class NotificationIQ extends IQ {
         this.uri = url;
     }
 
+    public Bussiness getBussiness() {
+        return bussiness;
+    }
+
+    public void setBussiness(Bussiness bussiness) {
+        this.bussiness = bussiness;
+    }
 }

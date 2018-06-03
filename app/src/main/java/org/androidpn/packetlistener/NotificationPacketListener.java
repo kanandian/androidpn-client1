@@ -19,6 +19,7 @@ import org.androidpn.IQ.NotificationIQ;
 import org.androidpn.client.Constants;
 import org.androidpn.client.LogUtil;
 import org.androidpn.client.XmppManager;
+import org.androidpn.model.Bussiness;
 import org.jivesoftware.smack.PacketListener;
 import org.jivesoftware.smack.packet.Packet;
 
@@ -58,6 +59,8 @@ public class NotificationPacketListener implements PacketListener {
                 //                String notificationTicker = notification.getTicker();
                 String notificationUri = notification.getUri();
 
+                Bussiness bussiness = notification.getBussiness();
+
                 Intent intent = new Intent(Constants.ACTION_SHOW_NOTIFICATION);
                 intent.putExtra(Constants.NOTIFICATION_ID, notificationId);
                 intent.putExtra(Constants.NOTIFICATION_API_KEY,
@@ -68,6 +71,7 @@ public class NotificationPacketListener implements PacketListener {
                 intent.putExtra(Constants.NOTIFICATION_MESSAGE,
                         notificationMessage);
                 intent.putExtra(Constants.NOTIFICATION_URI, notificationUri);
+                intent.putExtra(Constants.NOTIFICATION_BUSSINESS, bussiness);
                 //                intent.setData(Uri.parse((new StringBuilder(
                 //                        "notif://notification.androidpn.org/")).append(
                 //                        notificationApiKey).append("/").append(

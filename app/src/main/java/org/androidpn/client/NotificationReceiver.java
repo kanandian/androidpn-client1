@@ -20,6 +20,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
+import org.androidpn.model.Bussiness;
+
 /** 
  * Broadcast receiver that handles push notification messages from the server.
  * This should be registered as receiver in AndroidManifest.xml. 
@@ -58,6 +60,8 @@ public final class NotificationReceiver extends BroadcastReceiver {
             String notificationUri = intent
                     .getStringExtra(Constants.NOTIFICATION_URI);
 
+            Bussiness bussiness = (Bussiness) intent.getSerializableExtra(Constants.NOTIFICATION_BUSSINESS);
+
             Log.d(LOGTAG, "notificationId=" + notificationId);
             Log.d(LOGTAG, "notificationApiKey=" + notificationApiKey);
             Log.d(LOGTAG, "notificationTitle=" + notificationTitle);
@@ -66,7 +70,7 @@ public final class NotificationReceiver extends BroadcastReceiver {
 
             Notifier notifier = new Notifier(context);
             notifier.notify(notificationId, notificationApiKey,
-                    notificationTitle, notificationMessage, notificationUri);
+                    notificationTitle, notificationMessage, notificationUri, bussiness);
         }
 
         //        } else if (Constants.ACTION_NOTIFICATION_CLICKED.equals(action)) {

@@ -16,6 +16,7 @@
 package org.androidpn.IQprovider;
 
 import org.androidpn.IQ.NotificationIQ;
+import org.androidpn.model.Bussiness;
 import org.jivesoftware.smack.packet.IQ;
 import org.jivesoftware.smack.provider.IQProvider;
 import org.xmlpull.v1.XmlPullParser;
@@ -34,6 +35,8 @@ public class NotificationIQProvider implements IQProvider {
     public IQ parseIQ(XmlPullParser parser) throws Exception {
 
         NotificationIQ notification = new NotificationIQ();
+        Bussiness bussiness = new Bussiness();
+
         for (boolean done = false; !done;) {
             int eventType = parser.next();
             if (eventType == 2) {
@@ -52,10 +55,57 @@ public class NotificationIQProvider implements IQProvider {
                 if ("uri".equals(parser.getName())) {
                     notification.setUri(parser.nextText());
                 }
+                if ("bussinessid".equals(parser.getName())) {
+                    bussiness.setBussinessId(Long.parseLong(parser.nextText()));
+                }
+                if ("bussinessname".equals(parser.getName())) {
+                    bussiness.setBussinessName(parser.nextText());
+                }
+                if ("classification".equals(parser.getName())) {
+                    bussiness.setClassification(parser.nextText());
+                }
+                if ("des".equals(parser.getName())) {
+                    bussiness.setDes(parser.nextText());
+                }
+                if ("imageurl".equals(parser.getName())) {
+                    bussiness.setImageURL(parser.nextText());
+                }
+                if ("level".equals(parser.getName())) {
+                    bussiness.setLevel(parser.nextText());
+                }
+                if ("location".equals(parser.getName())) {
+                    bussiness.setLocation(parser.nextText());
+                }
+                if ("mobile".equals(parser.getName())) {
+                    bussiness.setMobile(parser.nextText());
+                }
+                if ("price".equals(parser.getName())) {
+                    bussiness.setPrice(Double.parseDouble(parser.nextText()));
+                }
+                if ("tag".equals(parser.getName())) {
+                    bussiness.setTag(parser.nextText());
+                }
+                if ("holder".equals(parser.getName())) {
+                    bussiness.setHolder(parser.nextText());
+                }
+                if ("starttime".equals(parser.getName())) {
+                    bussiness.setStartTime(parser.nextText());
+                }
+                if ("endtime".equals(parser.getName())) {
+                    bussiness.setEndTime(parser.nextText());
+                }
+                if ("feature".equals(parser.getName())) {
+                    bussiness.setFeature(parser.nextText());
+                }
+
             } else if (eventType == 3
                     && "notification".equals(parser.getName())) {
                 done = true;
             }
+        }
+
+        if (bussiness.getBussinessId() != null && !"".equals(bussiness.getBussinessId())) {
+            notification.setBussiness(bussiness);
         }
 
         return notification;

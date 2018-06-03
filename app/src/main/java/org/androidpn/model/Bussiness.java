@@ -3,13 +3,14 @@ package org.androidpn.model;
 import org.androidpn.info.ShopInfo;
 import org.androidpn.utils.Location;
 
+import java.io.Serializable;
 import java.lang.ref.SoftReference;
 
 /**
  * Created by pro1 on 18/2/6.
  */
 
-public class Bussiness {
+public class Bussiness implements Serializable {
 
     private Long bussinessId;
     private String imageURL;

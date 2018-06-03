@@ -23,8 +23,14 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.support.v7.app.NotificationCompat;
 import android.util.Log;
 import android.widget.Toast;
+
+import org.androidpn.demoapp.SearchActivity;
+import org.androidpn.demoapp.ShopDetailsActivity;
+import org.androidpn.model.Bussiness;
 
 /** 
  * This class is to notify the user of messages with NotificationManager.
@@ -52,7 +58,7 @@ public class Notifier {
     }
 
     public void notify(String notificationId, String apiKey, String title,
-            String message, String uri) {
+            String message, String uri, Bussiness bussiness) {
         Log.d(LOGTAG, "notify()...");
 
         Log.d(LOGTAG, "notificationId=" + notificationId);
@@ -67,8 +73,39 @@ public class Notifier {
                 Toast.makeText(context, message, Toast.LENGTH_LONG).show();
             }
 
+
+            Intent intent = null;
+            if (bussiness != null) {
+                intent = new Intent(context, ShopDetailsActivity.class);
+                Bundle bund = new Bundle();
+                bund.putSerializable("ShopInfo",bussiness.toShopInfo());
+                intent.putExtra("value",bund);
+            } else {
+                intent = new Intent(context,
+                        NotificationDetailsActivity.class);
+                intent.putExtra(Constants.NOTIFICATION_ID, notificationId);
+                intent.putExtra(Constants.NOTIFICATION_API_KEY, apiKey);
+                intent.putExtra(Constants.NOTIFICATION_TITLE, title);
+                intent.putExtra(Constants.NOTIFICATION_MESSAGE, message);
+                intent.putExtra(Constants.NOTIFICATION_URI, uri);
+            }
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.setFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+            intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+            PendingIntent contentIntent = PendingIntent.getActivity(context, random.nextInt(),
+                    intent, PendingIntent.FLAG_UPDATE_CURRENT);
+
             // Notification
-            Notification notification = new Notification();
+            NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
+            Notification notification = builder.setContentTitle(title)
+                    .setContentText(message)
+                    .setWhen(System.currentTimeMillis())
+                    .setContentIntent(contentIntent)
+                    .build();
+
             notification.icon = getNotificationIcon();
             notification.defaults = Notification.DEFAULT_LIGHTS;
             if (isNotificationSoundEnabled()) {
@@ -97,22 +134,6 @@ public class Notifier {
             //                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             //                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
             //            }
-
-            Intent intent = new Intent(context,
-                    NotificationDetailsActivity.class);
-            intent.putExtra(Constants.NOTIFICATION_ID, notificationId);
-            intent.putExtra(Constants.NOTIFICATION_API_KEY, apiKey);
-            intent.putExtra(Constants.NOTIFICATION_TITLE, title);
-            intent.putExtra(Constants.NOTIFICATION_MESSAGE, message);
-            intent.putExtra(Constants.NOTIFICATION_URI, uri);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.setFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-            intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-
-            PendingIntent contentIntent = PendingIntent.getActivity(context, random.nextInt(),
-                    intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
 //            notification.setLatestEventInfo(context, title, message,
 //                    contentIntent);
