@@ -79,7 +79,7 @@ public class MyMessageActivity extends BaseActivity {
     public void loadMessage() {
         if (UserInfoHolder.getInstance().isAuth()) {
             String userName = UserInfoHolder.getInstance().getUserName();
-            contactList = DataSupport.where("userName = ?", userName).find(Contact.class);
+            contactList = DataSupport.where("userName = ?", userName).order("createTime desc").find(Contact.class);
 
             adapter = new ContactAdapter(MyMessageActivity.this, contactList);
             listView.setAdapter(adapter);

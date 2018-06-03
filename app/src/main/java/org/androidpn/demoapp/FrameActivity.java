@@ -123,11 +123,11 @@ public class FrameActivity extends ActivityGroup {
 							}
 						}
 
-						contact.setUnReadCount(contact.getUnReadCount()+1);
-
 						Contact updateContact = new Contact();
+						updateContact.setUnReadCount(contact.getUnReadCount() + 1);
 						updateContact.setLastUnRead(message.getBody());
-						updateContact.updateAll("fromUserName = ?", fromUserName);
+						updateContact.setCreateTime(new Date().getTime());
+						updateContact.updateAll("fromUserName = ? and userName = ?", fromUserName, userName);
 
 
 					 	if (contact.getImageURL() == null || "".equals(contact.getImageURL())) {
