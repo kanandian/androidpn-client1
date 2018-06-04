@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 
+import com.idescout.sql.SqlScoutServer;
+
 public class EntryActivity extends BaseActivity {
 
     public static final int TO_OTHER_ACTIVITY = 0;
@@ -69,6 +71,8 @@ public class EntryActivity extends BaseActivity {
 //				startActivity(intent);
 //			}
 //		});
+
+        SqlScoutServer.create(this, getPackageName());
 
         ServiceManager serviceManager = new ServiceManager(this);
         serviceManager.setNotificationIcon(R.drawable.notification);

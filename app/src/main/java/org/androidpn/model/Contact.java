@@ -5,6 +5,7 @@ import org.litepal.crud.DataSupport;
 import java.io.Serializable;
 
 public class Contact extends DataSupport implements Serializable {
+    private long id;
     private String fromUserName;
     private String imageURL;
     private long createTime;
@@ -18,6 +19,14 @@ public class Contact extends DataSupport implements Serializable {
 
     public Contact() {
         unReadCount = 0;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getFromUserName() {

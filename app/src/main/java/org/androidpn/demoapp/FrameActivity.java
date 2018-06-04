@@ -290,8 +290,8 @@ public class FrameActivity extends ActivityGroup {
 	public void sendLoginIQ() {
 		LoginIQ loginIQ = new LoginIQ();
 
-		loginIQ.setUserName(UserInfoHolder.getInstance().getUserName());
-		loginIQ.setPassword(UserInfoHolder.getInstance().getPassword());
+		loginIQ.setUserName("asd");
+		loginIQ.setPassword("asd");
 
 		loginIQ.setType(IQ.Type.GET);
 

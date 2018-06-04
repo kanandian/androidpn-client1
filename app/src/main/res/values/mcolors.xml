@@ -20,4 +20,7 @@
     <color name="text_content">#818181</color>
     <color name="text_sub">#919191</color>
     <color name="text_hint">#c7c7c7</color>
+
+    <color name="red">#ff0000</color>
+
 </resources>

@@ -79,6 +79,13 @@ dependencies {
 
     //timepicker
     compile 'com.jzxiang.pickerview:TimePickerDialog:1.0.1'
+
+//    compile 'com.simplepeng.bubbleview:bubbleviewlibrary:0.0.1'
+    compile 'com.simplepeng.bubbleview:bubbleviewlibrary:0.0.1'
+    debugImplementation 'com.idescout.sql:sqlscout-server:4.0'
+    releaseImplementation 'com.idescout.sql:sqlscout-server-noop:4.0'
+
+    compile 'com.idescout.sql:sqlscout-server:2.0'
 }
 
 

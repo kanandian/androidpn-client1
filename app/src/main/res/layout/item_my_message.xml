@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bubbleview="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -36,12 +37,35 @@
                 android:layout_weight="1"/>
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/text_time"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:textColor="@color/hint_gray"
-            />
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/hint_gray"
+                />
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <com.simple.bubbleviewlibrary.BubbleView
+                    android:id="@+id/bubbleView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="40dp"
+                    android:visibility="visible"
+                    bubbleview:circle_color="@color/colorAccent"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
     </LinearLayout>
 
 

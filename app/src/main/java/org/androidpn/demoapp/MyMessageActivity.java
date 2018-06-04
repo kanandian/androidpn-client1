@@ -1,5 +1,6 @@
 package org.androidpn.demoapp;
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,6 +14,7 @@ import org.androidpn.enity.MessageInfo;
 import org.androidpn.entity.ChatMessage;
 import org.androidpn.model.Contact;
 import org.androidpn.utils.ActivityHolder;
+import org.androidpn.utils.Constants;
 import org.androidpn.utils.UserInfoHolder;
 import org.litepal.crud.DataSupport;
 
@@ -57,6 +59,13 @@ public class MyMessageActivity extends BaseActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Contact contact = contactList.get(i);
+
+
+                ContentValues contentValues = new ContentValues();
+                contentValues.put("unreadcount", 0);
+                DataSupport.update(Contact.class, contentValues, contact.getId());
+
+
                 Intent intent = new Intent(MyMessageActivity.this, ChatActivity.class);
                 intent.putExtra("contact", contact);
                 startActivity(intent);
