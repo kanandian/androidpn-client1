@@ -7,6 +7,7 @@ import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import org.androidpn.IQ.InquiryIQ;
@@ -25,6 +26,8 @@ public class TakeoutListActivity extends BaseActivity {
 
     private ListView takeoutList;
     private TakeoutListAdapter adapter;
+
+    private ImageView backButton;
 
     private List<TakeoutOrder> takeoutOrders;
 
@@ -50,7 +53,15 @@ public class TakeoutListActivity extends BaseActivity {
 
     public void initData() {
         takeoutList = (ListView) findViewById(R.id.list_takeout_orer);
+        backButton = (ImageView) findViewById(R.id.btn_back);
 
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TakeoutListActivity.this.finish();
+            }
+        });
 
         takeoutList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

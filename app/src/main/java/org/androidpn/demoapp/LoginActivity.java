@@ -45,17 +45,19 @@ public class LoginActivity extends BaseActivity {
 				if (obj instanceof ResultModelIQ) {
 					ResultModelIQ resultModelIQ = (ResultModelIQ) obj;
 					if (resultModelIQ.getErrCode() == 1) {
-						AlertDialog.Builder dialog = new AlertDialog.Builder(LoginActivity.this, R.style.AlertDialog);
-						dialog.setTitle("警告");
-						dialog.setMessage(resultModelIQ.getErrMsg());
-						dialog.setCancelable(false);
-						dialog.setPositiveButton("ok", new DialogInterface.OnClickListener() {
-							@Override
-							public void onClick(DialogInterface dialogInterface, int i) {
+//						AlertDialog.Builder dialog = new AlertDialog.Builder(LoginActivity.this, R.style.AlertDialog);
+//						dialog.setTitle("警告");
+//						dialog.setMessage(resultModelIQ.getErrMsg());
+//						dialog.setCancelable(false);
+//						dialog.setPositiveButton("ok", new DialogInterface.OnClickListener() {
+//							@Override
+//							public void onClick(DialogInterface dialogInterface, int i) {
+//
+//							}
+//						});
+//						dialog.show();
 
-							}
-						});
-						dialog.show();
+						Toast.makeText(LoginActivity.this, resultModelIQ.getErrMsg(), Toast.LENGTH_LONG).show();
 					} else if (resultModelIQ.getErrCode() == 0) {
 						LoginActivity.this.finish();
 					}
