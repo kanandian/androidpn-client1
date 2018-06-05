@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.androidpn.demoapp"
+    android:versionCode="20101028"
+    android:versionName="0.5.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:testOnly="true" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="6e6873f83ecb750fadb47a27101016bb" />
+
+        <activity android:name="org.androidpn.demoapp.TestActivity" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="org.androidpn.demoapp.EntryActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name=".MainActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+
+        <activity android:name="org.androidpn.demoapp.MainActivity" >
+        </activity>
+        <activity android:name="org.androidpn.demoapp.FrameActivity" >
+        </activity>
+        <activity android:name="org.androidpn.demoapp.SearchActivity" >
+        </activity>
+        <activity
+            android:name="org.androidpn.demoapp.TuanActivity"
+            android:label="@string/title_activity_tuan" >
+        </activity>
+        <activity
+            android:name="org.androidpn.demoapp.CheckinActivity"
+            android:label="@string/title_activity_checkin" >
+        </activity>
+        <activity
+            android:name="org.androidpn.demoapp.MyActivity"
+            android:label="@string/title_activity_my" >
+        </activity>
+        <activity
+            android:name="org.androidpn.demoapp.MoreActivity"
+            android:label="@string/title_activity_more" >
+        </activity>
+        <activity android:name="org.androidpn.demoapp.ShopListActivity" >
+        </activity>
+        <activity
+            android:name="org.androidpn.demoapp.SearchMoreActivity"
+            android:label="@string/title_activity_search_more" >
+        </activity>
+        <activity
+            android:name="org.androidpn.demoapp.ShopDetailsActivity"
+            android:label="@string/title_activity_shop_details" >
+        </activity>
+        <activity
+            android:name="org.androidpn.demoapp.SearchTheCity"
+            android:label="@string/title_activity_sou_quan_cheng" >
+        </activity>
+        <activity
+            android:name="org.androidpn.demoapp.ShopDetailsMore"
+            android:label="@string/title_activity_shop_details_more" >
+        </activity>
+        <activity android:name="org.androidpn.demoapp.ShopCommentsActivity" />
+        <activity
+            android:name="org.androidpn.demoapp.RankingList"
+            android:label="@string/title_activity_paihangbang" >
+        </activity>
+        <activity
+            android:name="org.androidpn.demoapp.RegistrationActivity"
+            android:label="@string/title_activity_registration" >
+        </activity>
+        <activity
+            android:name="org.androidpn.demoapp.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="org.androidpn.demoapp.ShopDetailsCheckinActivity"
+            android:label="@string/title_activity_shop_detailsqiandao" >
+        </activity>
+        <activity
+            android:name="org.androidpn.demoapp.ShopDetailsCommentActivity"
+            android:label="@string/title_activity_shop_detailsdianping" >
+        </activity>
+        <activity
+            android:name="org.androidpn.demoapp.RankingList_more"
+            android:label="@string/title_activity_paihangbang_more" >
+        </activity>
+        <activity
+            android:name="org.androidpn.demoapp.RankingList_bzrm"
+            android:label="@string/title_activity_paihangbang_bzrm" >
+        </activity>
+        <activity
+            android:name="org.androidpn.demoapp.TuanDetailsActivity"
+            android:label="@string/title_activity_tuan_details" >
+        </activity>
+        <activity android:name="org.androidpn.demoapp.TakeOutActivity" />
+        <activity android:name="org.androidpn.demoapp.TakeoutOrderDetailActivity" />
+        <activity android:name="org.androidpn.demoapp.OrderSuccessActivity" />
+        <activity android:name="org.androidpn.demoapp.TakeoutListActivity" />
+        <activity android:name="org.androidpn.demoapp.MyBussinessesActivity" />
+        <activity
+            android:name="org.androidpn.demoapp.AddBussinessActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="org.androidpn.demoapp.EditTakeoutMenuActivity" />
+        <activity android:name="org.androidpn.demoapp.TakeoutOrderActivity" />
+        <activity android:name="org.androidpn.demoapp.OrderDetailActivity" />
+        <activity android:name="org.androidpn.demoapp.ShopCollectionActivity" />
+        <activity android:name="org.androidpn.demoapp.ShopNotificationActivity" />
+        <activity android:name="org.androidpn.demoapp.ManageBussinessActivity" />
+        <activity android:name="org.androidpn.demoapp.UploadImageActivity" />
+        <activity android:name="org.androidpn.demoapp.ShowMapActivity" />
+        <activity
+            android:name="org.androidpn.demoapp.SearchViewActivity"
+            android:theme="@style/MyStyle" />
+        <activity android:name="org.androidpn.demoapp.PaymentActivity" />
+        <activity android:name="org.androidpn.demoapp.UpdatePasswordActivity" />
+        <activity android:name="org.androidpn.demoapp.ForgotPasswordActivity" />
+        <activity android:name="org.androidpn.demoapp.ShopListSearchActivity" />
+        <activity
+            android:name="org.androidpn.demoapp.ChatActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="org.androidpn.demoapp.FullImageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="org.androidpn.demoapp.MyMessageActivity" />
+        <activity android:name="org.androidpn.demoapp.BussinessInfoActivity" />
+        <activity android:name="org.androidpn.demoapp.NavigationActivity" />
+        <activity android:name="org.androidpn.demoapp.PersonalActivity" />
+        <activity android:name="org.androidpn.demoapp.RegisterActivity" />
+        <activity
+            android:name="org.androidpn.demoapp.UpdateBussinessInfoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- <activity android:name=".LoginActivity"></activity> -->
+        <activity
+            android:name="org.androidpn.client.NotificationDetailsActivity"
+            android:label="Notification Details" >
+        </activity>
+        <activity
+            android:name="org.androidpn.client.NotificationSettingsActivity"
+            android:label="Notification Settings" >
+        </activity>
+        <activity
+            android:name="com.amap.api.navi.AmapRouteActivity"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <service
+            android:name="org.androidpn.client.NotificationService"
+            android:enabled="true"
+            android:label="NotificationService" >
+            <intent-filter>
+                <action android:name="org.androidpn.client.NotificationService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.amap.api.location.APSService" />
+
+        <!--
+			<meta-data android:name="ANDROIDPN_API_KEY"
+			android:value="1234567890" />
+        -->
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="org.androidpn.demoapp.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

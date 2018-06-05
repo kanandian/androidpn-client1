@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/assets"><file name="litepal.xml" path="/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/assets/litepal.xml"/></source><source path="/Users/macpro/AndroidStudioProjects/androidpn-client1/app/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/debug/assets"/></dataSet></merger>
