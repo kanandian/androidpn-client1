@@ -19,7 +19,7 @@ public class TagsHolder {
             return tags2;
         } else if ("酒吧".equals(classification)) {
             return tags3;
-        } else if ("电影".equals(classification)) {
+        } else if ("电影院".equals(classification)) {
             return tags4;
         } else if ("外卖".equals(classification)) {
             return tags5;

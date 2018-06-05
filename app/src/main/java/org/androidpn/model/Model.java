@@ -70,7 +70,7 @@ public class Model {
 	public static String[] SHOPLIST_TOPLIST = new String[] { "ȫ���̻�", "�Ź��̻�",
 			"��Ԥ���̻�", "��Ա���̻�", "�Ż�ȯ�̻�", "�����̻�" };
 	// shoplist�������ı�
-	public static String[] SHOPLIST_THREELIST = {"全部","美食", "景点", "酒店", "酒吧", "电影", "外卖"};
+	public static String[] SHOPLIST_THREELIST = {"全部","美食", "景点", "酒店", "酒吧", "电影院", "外卖"};
 	// shoplist�������ı�
 	public static String[] SHOPLIST_PLACE = new String[] { "����", "ȫ����������",
 			"������", "������", "�ϸ���", "�㷻��", "ƽ����", "�ɱ���", "������", "����" };
@@ -96,7 +96,7 @@ public class Model {
 	// ���������
 
 	public static String[] DISTANCE_CONDITION = { "1000米以内", "3000米以内", "5000米以内", "8000米以内", "8000米以上" };
-	public static String[] CLASSIFICATION_CONDITION = {"美食", "景点", "酒店", "酒吧", "电影", "外卖"};
+	public static String[] CLASSIFICATION_CONDITION = {"美食", "景点", "酒店", "酒吧", "电影院", "外卖"};
 
 	public static int image1[] = { R.drawable.emoji000, R.drawable.emoji001,
 			R.drawable.emoji002, R.drawable.emoji003, R.drawable.emoji004,

@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.androidpn.IQ.PaymentIQ;
 import org.androidpn.IQ.TakeoutOrderIQ;
@@ -67,10 +68,15 @@ public class TakeoutOrderDetailActivity extends BaseActivity {
         paymentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+//                checkInfo();
                 payment();
             }
         });
     }
+
+//    private void checkInfo() {
+//
+//    }
 
     private void payment() {
 //        PaymentIQ paymentIQ = new PaymentIQ();
@@ -89,6 +95,15 @@ public class TakeoutOrderDetailActivity extends BaseActivity {
         String address = addressEdit.getText().toString();
         String note = noteEdit.getText().toString();
         String mobile = mobileEdit.getText().toString();
+
+        if (address == null || "".equals(address)) {
+            Toast.makeText(TakeoutOrderDetailActivity.this, "配送地址不能为空", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (mobile == null || "".equals(mobile)) {
+            Toast.makeText(TakeoutOrderDetailActivity.this, "联系电话不能为空", Toast.LENGTH_LONG).show();
+            return;
+        }
 
 
         TakeoutOrderIQ takeoutOrderIQ = new TakeoutOrderIQ();

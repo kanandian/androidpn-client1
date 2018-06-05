@@ -168,7 +168,7 @@ public class SearchActivity extends BaseActivity {
 			case R.id.Search_chinsesnack:
 				Intent intent4 = new Intent(SearchActivity.this,
 						ShopListActivity.class);
-				intent4.putExtra("title", "电影");
+				intent4.putExtra("title", "电影院");
 				SearchActivity.this.startActivity(intent4);
 				break;
 			case R.id.Search_more:

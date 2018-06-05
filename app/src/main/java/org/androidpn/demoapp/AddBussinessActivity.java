@@ -31,7 +31,7 @@ import java.sql.Time;
 
 public class AddBussinessActivity extends BaseAppCompatActivity {
 
-    private String[] classfications = {"美食", "景点", "酒店", "酒吧", "电影", "外卖"};
+    private String[] classfications = {"美食", "景点", "酒店", "酒吧", "电影院", "外卖"};
 //    private String[] tags = {};
 
     private EditText bussinessNameEdit;
