@@ -107,6 +107,9 @@ public class MyActivity extends BaseActivity {
 	}
 
 	public void loadPersonalData() {
+		mMy_list_caogao.setVisibility(View.GONE);
+		mMy_list_tuangoushoucang.setVisibility(View.GONE);
+
 		if (UserInfoHolder.getInstance().isAuth()) {
 			mMy_logintoast.setText(UserInfoHolder.getInstance().getUserName());
 			mMy_logintoast.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
@@ -129,6 +132,11 @@ public class MyActivity extends BaseActivity {
 					}
 				});
 				imageView.setImageUrl(imageURL.replace("localhost", ActivityHolder.getInstance().getConnection().getHost()), imageLoader);
+			}
+
+			if (UserInfoHolder.getInstance().getUserType() == 1) {
+				mMy_list_caogao.setVisibility(View.VISIBLE);
+				mMy_list_tuangoushoucang.setVisibility(View.VISIBLE);
 			}
 		} else {
 //			Drawable drawable = getResources().getDrawable(R.drawable.arrow_profile);

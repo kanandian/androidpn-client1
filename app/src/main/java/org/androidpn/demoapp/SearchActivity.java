@@ -41,7 +41,7 @@ public class SearchActivity extends BaseActivity {
 //	private LinearLayout mSearch_list_huiyuanka, mSearch_list_souquancheng,
 //			mSearch_list_paihangbang, mSearch_list_youhuiquan;
 	// ����ʶ��ť
-	private ImageView mSearch_button1;
+//	private ImageView mSearch_button1;
 
 	private List<ShopInfo> shopList;
 	private ShopAdapter adapter;
@@ -72,7 +72,7 @@ public class SearchActivity extends BaseActivity {
 		// ������linearlayout��Ϊ��ť
 		mSearch_city = (LinearLayout) findViewById(R.id.Search_city);
 		mSearch_search = (LinearLayout) findViewById(R.id.Search_search);
-		mSearch_button1 = (ImageView) findViewById(R.id.Search_button1);
+//		mSearch_button1 = (ImageView) findViewById(R.id.Search_button1);
 		// gridview��ʽlinearlayout��Ϊ��ť
 		mSearch_food = (LinearLayout) findViewById(R.id.Search_food);
 		mSearch_outing = (LinearLayout) findViewById(R.id.Search_outing);
@@ -88,7 +88,7 @@ public class SearchActivity extends BaseActivity {
 		MyOnclickListener mOnclickListener = new MyOnclickListener();
 		mSearch_city.setOnClickListener(mOnclickListener);
 		mSearch_search.setOnClickListener(mOnclickListener);
-		mSearch_button1.setOnClickListener(mOnclickListener);
+//		mSearch_button1.setOnClickListener(mOnclickListener);
 		mSearch_food.setOnClickListener(mOnclickListener);
 		mSearch_outing.setOnClickListener(mOnclickListener);
 		mSearch_hotel.setOnClickListener(mOnclickListener);

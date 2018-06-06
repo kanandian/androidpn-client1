@@ -56,6 +56,7 @@ public class LoginReponsePacketListener implements PacketListener {
                 String name = loginResponseIQ.getName();
                 String mobile = loginResponseIQ.getMobile();
                 String imageURL = loginResponseIQ.getImageURL();
+                int userType = loginResponseIQ.getUserType();
                 boolean isRealUser = loginResponseIQ.isRealUser();
 
                 UserInfoHolder userInfoHolder = UserInfoHolder.getInstance();
@@ -68,6 +69,7 @@ public class LoginReponsePacketListener implements PacketListener {
                 userInfoHolder.setMobile(mobile);
                 userInfoHolder.setImageURL(imageURL);
                 userInfoHolder.setAuth(isRealUser);
+                userInfoHolder.setUserType(userType);
 
 
 

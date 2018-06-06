@@ -21,17 +21,17 @@ public final class R {
         public static final int scrollbars = 0x7f0300f2;
     }
     public static final class id {
-        public static final int empty = 0x7f080128;
-        public static final int error = 0x7f08012e;
-        public static final int horizontal = 0x7f08013c;
-        public static final int insideInset = 0x7f08014b;
-        public static final int insideOverlay = 0x7f08014c;
-        public static final int none = 0x7f08016e;
-        public static final int outsideInset = 0x7f080171;
-        public static final int outsideOverlay = 0x7f080172;
-        public static final int progress = 0x7f080181;
-        public static final int ptr_layout = 0x7f080184;
-        public static final int vertical = 0x7f080228;
+        public static final int empty = 0x7f080129;
+        public static final int error = 0x7f08012f;
+        public static final int horizontal = 0x7f08013d;
+        public static final int insideInset = 0x7f08014c;
+        public static final int insideOverlay = 0x7f08014d;
+        public static final int none = 0x7f08016f;
+        public static final int outsideInset = 0x7f080172;
+        public static final int outsideOverlay = 0x7f080173;
+        public static final int progress = 0x7f080182;
+        public static final int ptr_layout = 0x7f080185;
+        public static final int vertical = 0x7f08022a;
     }
     public static final class layout {
         public static final int layout_progress_recyclerview = 0x7f0a0069;

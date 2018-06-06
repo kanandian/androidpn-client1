@@ -326,7 +326,8 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/my_tab_background"
                 android:paddingBottom="0dp"
-                android:paddingLeft="15dp" >
+                android:paddingLeft="15dp"
+                android:visibility="gone">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -338,7 +339,7 @@
                     android:paddingTop="8dp"
                     android:text="   我的店铺"
                     android:textColor="#666666"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"/>
             </LinearLayout>
 
 
@@ -347,7 +348,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/my_tab_background"
-                android:paddingBottom="0dp" >
+                android:paddingBottom="0dp"
+                android:visibility="gone">
 
                 <TextView
                     android:layout_width="match_parent"

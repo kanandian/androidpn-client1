@@ -20,6 +20,8 @@ public class LoginResponseIQ extends IQ {
     private boolean isRealUser;
     private String imageURL;
 
+    private int userType;
+
     public LoginResponseIQ() {
         this.isError = false;
     }
@@ -94,6 +96,14 @@ public class LoginResponseIQ extends IQ {
 
     public void setImageURL(String imageURL) {
         this.imageURL = imageURL;
+    }
+
+    public int getUserType() {
+        return userType;
+    }
+
+    public void setUserType(int userType) {
+        this.userType = userType;
     }
 
     @Override

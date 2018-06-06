@@ -12,6 +12,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,6 +38,10 @@ public class RegistrationActivity extends BaseActivity {
 	private SharedPreferences sharedPrefs;
 
 	private Button sendMessageButton;
+
+	private RadioGroup radioGroup;
+
+	private int userType = 0;
 
 	private Handler handler = new Handler() {
 		@Override
@@ -73,6 +78,8 @@ public class RegistrationActivity extends BaseActivity {
 		vcodeEdit = (EditText) findViewById(R.id.edit_vcode);
 		sendMessageButton = (Button) findViewById(R.id.btn_get_vcode);
 
+		radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+
 
 		sendMessageButton.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -90,6 +97,17 @@ public class RegistrationActivity extends BaseActivity {
 				Log.d("qzf", "getvcode"+inquiryIQ.toXML());
 
 				ActivityHolder.getInstance().sendPacket(inquiryIQ);
+			}
+		});
+
+		radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+			@Override
+			public void onCheckedChanged(RadioGroup radioGroup, int checkId) {
+				if (checkId == R.id.btn_user) {
+					userType = 0;
+				} else if (checkId == R.id.btn_bussiness) {
+					userType = 1;
+				}
 			}
 		});
 
@@ -136,6 +154,8 @@ public class RegistrationActivity extends BaseActivity {
 
 			registerIQ.setVcode(vcode);
 
+			registerIQ.setUserType(String.valueOf(userType));
+
 			registerIQ.setType(IQ.Type.SET);
 
 			Log.d("Regsiter Packet", "sendRegisterIQ: "+registerIQ.toXML());
@@ -156,6 +176,11 @@ public class RegistrationActivity extends BaseActivity {
 		if (resultModelIQ.getErrCode() == 0) {
 			if ("registration".equals(resultModelIQ.getAction())) {
 				RegistrationActivity.this.finish();
+			} else {
+				Message msg = new Message();
+				msg.what = UPDATE_UI;
+				msg.obj = resultModelIQ.getErrMsg();
+				handler.sendMessage(msg);
 			}
 		} else {
 //			Toast.makeText(RegistrationActivity.this, resultModelIQ.getErrMsg(), Toast.LENGTH_LONG).show();

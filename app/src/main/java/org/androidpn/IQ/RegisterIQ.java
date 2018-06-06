@@ -15,6 +15,7 @@ public class RegisterIQ extends IQ {
     String name;
     String mobile;
     String vcode;
+    String userType;
 
     public RegisterIQ() {
     }
@@ -75,6 +76,14 @@ public class RegisterIQ extends IQ {
         this.vcode = vcode;
     }
 
+    public String getUserType() {
+        return userType;
+    }
+
+    public void setUserType(String userType) {
+        this.userType = userType;
+    }
+
     @Override
     public String getChildElementXML() {
 //        StringBuilder buf = new StringBuilder();
@@ -113,6 +122,9 @@ public class RegisterIQ extends IQ {
         }
         if(vcode != null){
             buf.append("<vcode>").append(vcode).append("</vcode>");
+        }
+        if (userType != null) {
+            buf.append("<usertype>").append(userType).append("</usertype>");
         }
         buf.append("</").append("registeration").append("> ");
         return buf.toString();

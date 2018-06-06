@@ -1,5 +1,6 @@
 package org.androidpn.IQprovider;
 
+import android.content.Intent;
 import android.util.Log;
 
 import org.androidpn.IQ.LoginIQ;
@@ -55,6 +56,9 @@ public class LoginIQProvider implements IQProvider {
                 }
                 if ("imageURL".equals(parser.getName())) {
                     loginResponseIQ.setImageURL(parser.nextText());
+                }
+                if ("usertype".equals(parser.getName())) {
+                    loginResponseIQ.setUserType(Integer.parseInt(parser.nextText()));
                 }
             } else if (eventType == 3
                     && "login".equals(parser.getName())) {

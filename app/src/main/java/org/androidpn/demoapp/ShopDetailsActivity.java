@@ -54,7 +54,7 @@ public class ShopDetailsActivity extends BaseActivity {
 	private ArrayList<CommentsInfo> CommentsList;
 	private ArrayList<FoodInfo> FoodList;
 	// top�͵��̵�����
-	private ImageView mShop_details_back, mShop_details_share,
+	private ImageView mShop_details_back,
 			mShop_details_off, mShop_details_star;
 
 	private NetworkImageView mShop_details_photo;
@@ -86,13 +86,12 @@ public class ShopDetailsActivity extends BaseActivity {
 	// ������Ϣ��layout
 	private RelativeLayout mshop_details_qita;
 	// ��ҵ긽����layout
-	private TextView mshop_fujin_meishi, mshop_fujin_jingdian,
-			mshop_fujin_jiudian, mshop_fujin_quanbu;
+//	private TextView mshop_fujin_meishi, mshop_fujin_jingdian,
+//			mshop_fujin_jiudian, mshop_fujin_quanbu;
 	// �����ֵ��layout
-	private RelativeLayout mshop_details_fendian;
 	private TextView mshop_details_fendians_txt;
 	// ������ҵ��layout
-	private RelativeLayout mshop_details_kanguo;
+//	private RelativeLayout mshop_details_kanguo;
 	// ����popupWindow
 	private View parent;
 	private PopupWindow popupWindow;
@@ -139,7 +138,7 @@ public class ShopDetailsActivity extends BaseActivity {
 		MyOnClickListener myOnClickListener = new MyOnClickListener();
 		// ����ؼ�
 		mShop_details_back = (ImageView) findViewById(R.id.Shop_details_back);
-		mShop_details_share = (ImageView) findViewById(R.id.Shop_details_share);
+//		mShop_details_share = (ImageView) findViewById(R.id.Shop_details_share);
 		mShop_details_off = (ImageView) findViewById(R.id.Shop_details_off);
 		// ������ĵ���ʽ��ť
 		mShop_details_bottom_img1 = (LinearLayout) findViewById(R.id.Shop_details_bottom_img1);
@@ -186,19 +185,19 @@ public class ShopDetailsActivity extends BaseActivity {
 		// ������Ϣ
 		mshop_details_qita = (RelativeLayout) findViewById(R.id.shop_details_qita);
 		// ����ҵ긽��
-		mshop_fujin_meishi = (TextView) findViewById(R.id.shop_fujin_meishi);
-		mshop_fujin_jingdian = (TextView) findViewById(R.id.shop_fujin_jingdian);
-		mshop_fujin_jiudian = (TextView) findViewById(R.id.shop_fujin_jiudian);
-		mshop_fujin_quanbu = (TextView) findViewById(R.id.shop_fujin_quanbu);
+//		mshop_fujin_meishi = (TextView) findViewById(R.id.shop_fujin_meishi);
+//		mshop_fujin_jingdian = (TextView) findViewById(R.id.shop_fujin_jingdian);
+//		mshop_fujin_jiudian = (TextView) findViewById(R.id.shop_fujin_jiudian);
+//		mshop_fujin_quanbu = (TextView) findViewById(R.id.shop_fujin_quanbu);
 		// �鿴�����ֵ�
-		mshop_details_fendian = (RelativeLayout) findViewById(R.id.shop_details_fendian);
+//		mshop_details_fendian = (RelativeLayout) findViewById(R.id.shop_details_fendian);
 		mshop_details_fendians_txt = (TextView) findViewById(R.id.shop_details_fendians_txt);
 		// ������ҵ���˻�����
-		mshop_details_kanguo = (RelativeLayout) findViewById(R.id.shop_details_kanguo);
+//		mshop_details_kanguo = (RelativeLayout) findViewById(R.id.shop_details_kanguo);
 
 		// ���ؼ����ü���
 		mShop_details_back.setOnClickListener(myOnClickListener);
-		mShop_details_share.setOnClickListener(myOnClickListener);
+//		mShop_details_share.setOnClickListener(myOnClickListener);
 		mShop_details_off.setOnClickListener(myOnClickListener);
 		mShop_details_bottom_img1.setOnClickListener(myOnClickListener);
 		mShop_details_bottom_img2.setOnClickListener(myOnClickListener);
@@ -215,12 +214,12 @@ public class ShopDetailsActivity extends BaseActivity {
 		mshop_details_dianping.setOnClickListener(myOnClickListener);
 		mshop_details_qiandaoqiang.setOnClickListener(myOnClickListener);
 		mshop_details_qita.setOnClickListener(myOnClickListener);
-		mshop_fujin_meishi.setOnClickListener(myOnClickListener);
-		mshop_fujin_jingdian.setOnClickListener(myOnClickListener);
-		mshop_fujin_jiudian.setOnClickListener(myOnClickListener);
-		mshop_fujin_quanbu.setOnClickListener(myOnClickListener);
-		mshop_details_fendian.setOnClickListener(myOnClickListener);
-		mshop_details_kanguo.setOnClickListener(myOnClickListener);
+//		mshop_fujin_meishi.setOnClickListener(myOnClickListener);
+//		mshop_fujin_jingdian.setOnClickListener(myOnClickListener);
+//		mshop_fujin_jiudian.setOnClickListener(myOnClickListener);
+//		mshop_fujin_quanbu.setOnClickListener(myOnClickListener);
+//		mshop_details_fendian.setOnClickListener(myOnClickListener);
+//		mshop_details_kanguo.setOnClickListener(myOnClickListener);
 
 
 		mshop_details_address.setOnClickListener(myOnClickListener);

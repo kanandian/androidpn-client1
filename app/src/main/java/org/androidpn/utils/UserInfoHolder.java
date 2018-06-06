@@ -20,6 +20,8 @@ public class UserInfoHolder {
 
     private boolean isAuth;
 
+    private int userType;
+
     private boolean isRealUser;
     private String imageURL;
 
@@ -101,6 +103,14 @@ public class UserInfoHolder {
 
     public void setImageURL(String imageURL) {
         this.imageURL = imageURL;
+    }
+
+    public int getUserType() {
+        return userType;
+    }
+
+    public void setUserType(int userType) {
+        this.userType = userType;
     }
 
     public void setUserToConnection(String userName) {

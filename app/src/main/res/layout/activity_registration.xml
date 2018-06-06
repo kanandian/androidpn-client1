@@ -141,11 +141,33 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/login_btn_bg"
+                        android:textColor="#ffffff"
                         android:text="获取验证码"
                         />
 
                 </LinearLayout>
             </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/btn_bussiness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商家"/>
+            </RadioGroup>
+
 
             <TextView
                 android:id="@+id/Registration_OK"
