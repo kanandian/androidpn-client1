@@ -124,7 +124,9 @@ public class FrameActivity extends ActivityGroup {
 						}
 
 						Contact updateContact = new Contact();
-						updateContact.setUnReadCount(contact.getUnReadCount() + 1);
+					 	if (!(ActivityHolder.getInstance().getCurrentActivity() instanceof ChatActivity)) {
+							updateContact.setUnReadCount(contact.getUnReadCount() + 1);
+						}
 						updateContact.setLastUnRead(message.getBody());
 						updateContact.setCreateTime(new Date().getTime());
 						updateContact.updateAll("fromUserName = ? and userName = ?", fromUserName, userName);

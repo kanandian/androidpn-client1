@@ -137,7 +137,14 @@ public class ForgotPasswordActivity extends BaseActivity {
     public void updateForResponse(ResultModelIQ resultModelIQ) {
         super.updateForResponse(resultModelIQ);
         if (resultModelIQ.getErrCode() == 0) {
-            ForgotPasswordActivity.this.finish();
+            if ("sendmessage".equals(resultModelIQ.getAction())) {
+                Message msg = new Message();
+                msg.what = UPDATE_UI;
+                msg.obj = "短信发送成功";
+                handler.sendMessage(msg);
+            } else {
+                ForgotPasswordActivity.this.finish();
+            }
         } else {
 //            HandlerUtil.getInstance().showToast(resultModelIQ.getErrMsg());
             Message msg = new Message();

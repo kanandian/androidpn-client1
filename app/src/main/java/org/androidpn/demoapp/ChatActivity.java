@@ -103,6 +103,7 @@ public class ChatActivity extends BaseAppCompatActivity {
 
             if(msg.what == UPDATE_UI) {
                 MessageInfo messageInfo = (MessageInfo) msg.obj;
+                messageInfo.setHeader(messageInfo.getHeader().replace("localhost", ActivityHolder.getInstance().getConnection().getHost()));
                 messageInfos.add(messageInfo);
                 chatAdapter.add(messageInfo);
                 chatList.scrollToPosition(chatAdapter.getCount() - 1);
@@ -161,6 +162,12 @@ public class ChatActivity extends BaseAppCompatActivity {
                 chatMessage.setTarget(contact.getFromUserName());
 
                 chatMessage.save();
+
+
+                Contact updateContact = new Contact();
+                updateContact.setLastUnRead(content);
+                updateContact.setCreateTime(new Date().getTime());
+                updateContact.updateAll("fromUserName = ? and userName = ?", contact.getFromUserName(), UserInfoHolder.getInstance().getUserName());
 
                 editText.setText("");
             }
