@@ -167,6 +167,8 @@
 		<activity android:name=".PersonalActivity"></activity>
 		<activity android:name=".RegisterActivity"></activity>
 
+		<activity android:name=".NotiferActivity"></activity>
+
 		<activity android:name=".UpdateBussinessInfoActivity"
 			android:configChanges="orientation|keyboardHidden|navigation|screenSize"
 			android:screenOrientation="portrait"

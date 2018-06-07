@@ -8,18 +8,18 @@ import butterknife.ButterKnife.ViewBinder;
 public class ForgotPasswordActivity$$ViewBinder<T extends org.androidpn.demoapp.ForgotPasswordActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131231001, "field 'mobileEdit'");
-    target.mobileEdit = finder.castView(view, 2131231001, "field 'mobileEdit'");
-    view = finder.findRequiredView(source, 2131231011, "field 'vcodeEdit'");
-    target.vcodeEdit = finder.castView(view, 2131231011, "field 'vcodeEdit'");
-    view = finder.findRequiredView(source, 2131231004, "field 'npasswordEdit'");
-    target.npasswordEdit = finder.castView(view, 2131231004, "field 'npasswordEdit'");
-    view = finder.findRequiredView(source, 2131230996, "field 'cpasswordEdit'");
-    target.cpasswordEdit = finder.castView(view, 2131230996, "field 'cpasswordEdit'");
+    view = finder.findRequiredView(source, 2131231002, "field 'mobileEdit'");
+    target.mobileEdit = finder.castView(view, 2131231002, "field 'mobileEdit'");
+    view = finder.findRequiredView(source, 2131231012, "field 'vcodeEdit'");
+    target.vcodeEdit = finder.castView(view, 2131231012, "field 'vcodeEdit'");
+    view = finder.findRequiredView(source, 2131231005, "field 'npasswordEdit'");
+    target.npasswordEdit = finder.castView(view, 2131231005, "field 'npasswordEdit'");
+    view = finder.findRequiredView(source, 2131230997, "field 'cpasswordEdit'");
+    target.cpasswordEdit = finder.castView(view, 2131230997, "field 'cpasswordEdit'");
     view = finder.findRequiredView(source, 2131230930, "field 'getVCodeBtn'");
     target.getVCodeBtn = finder.castView(view, 2131230930, "field 'getVCodeBtn'");
-    view = finder.findRequiredView(source, 2131230945, "field 'udpateButton'");
-    target.udpateButton = finder.castView(view, 2131230945, "field 'udpateButton'");
+    view = finder.findRequiredView(source, 2131230946, "field 'udpateButton'");
+    target.udpateButton = finder.castView(view, 2131230946, "field 'udpateButton'");
   }
 
   @Override public void unbind(T target) {

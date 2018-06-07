@@ -8,10 +8,10 @@ import butterknife.ButterKnife.ViewBinder;
 public class ChatEmotionFragment$$ViewBinder<T extends org.androidpn.fragment.ChatEmotionFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131231032, "field 'fragmentChatVp'");
-    target.fragmentChatVp = finder.castView(view, 2131231032, "field 'fragmentChatVp'");
-    view = finder.findRequiredView(source, 2131231031, "field 'fragmentChatGroup'");
-    target.fragmentChatGroup = finder.castView(view, 2131231031, "field 'fragmentChatGroup'");
+    view = finder.findRequiredView(source, 2131231033, "field 'fragmentChatVp'");
+    target.fragmentChatVp = finder.castView(view, 2131231033, "field 'fragmentChatVp'");
+    view = finder.findRequiredView(source, 2131231032, "field 'fragmentChatGroup'");
+    target.fragmentChatGroup = finder.castView(view, 2131231032, "field 'fragmentChatGroup'");
   }
 
   @Override public void unbind(T target) {

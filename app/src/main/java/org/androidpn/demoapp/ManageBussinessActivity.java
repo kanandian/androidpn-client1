@@ -1,5 +1,6 @@
 package org.androidpn.demoapp;
 
+import android.app.Notification;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -21,6 +22,7 @@ public class ManageBussinessActivity extends BaseActivity {
     private TextView updateInfoButton;
     private TextView updateMenuButton;
     private TextView ordersButton;
+    private TextView notiferButton;
     private TextView deleteButton;
 
     private ShopInfo shopInfo;
@@ -46,6 +48,7 @@ public class ManageBussinessActivity extends BaseActivity {
         updateImageButton = (TextView) findViewById(R.id.btn_update_image);
         updateInfoButton = (TextView) findViewById(R.id.btn_update_info);
         updateMenuButton = (TextView) findViewById(R.id.btn_menu_manage);
+        notiferButton = (TextView) findViewById(R.id.btn_notifer);
         ordersButton = (TextView) findViewById(R.id.btn_orders);
         deleteButton = (TextView) findViewById(R.id.btn_delete);
 
@@ -68,6 +71,15 @@ public class ManageBussinessActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ManageBussinessActivity.this, UpdateBussinessInfoActivity.class);
+                intent.putExtra("shopInfo", shopInfo);
+                startActivity(intent);
+            }
+        });
+
+        notiferButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ManageBussinessActivity.this, NotiferActivity.class);
                 intent.putExtra("shopInfo", shopInfo);
                 startActivity(intent);
             }

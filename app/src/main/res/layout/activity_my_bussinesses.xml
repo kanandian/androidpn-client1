@@ -37,11 +37,11 @@
                 android:textColor="#FF8C00"
                 android:textSize="18sp" />
 
-            <ImageView
-                android:id="@+id/Search_city_img"
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:src="@drawable/search_city" />
+            <!--<ImageView-->
+                <!--android:id="@+id/Search_city_img"-->
+                <!--android:layout_width="22dp"-->
+                <!--android:layout_height="22dp"-->
+                <!--android:src="@drawable/search_city" />-->
         </LinearLayout>
     </RelativeLayout>
 

@@ -8,7 +8,7 @@ import butterknife.ButterKnife.ViewBinder;
 public class ChatFunctionFragment$$ViewBinder<T extends org.androidpn.fragment.ChatFunctionFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131230958, "method 'onClick'");
+    view = finder.findRequiredView(source, 2131230959, "method 'onClick'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -17,7 +17,7 @@ public class ChatFunctionFragment$$ViewBinder<T extends org.androidpn.fragment.C
           target.onClick(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131230959, "method 'onClick'");
+    view = finder.findRequiredView(source, 2131230960, "method 'onClick'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

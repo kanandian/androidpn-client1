@@ -173,6 +173,7 @@
         <activity android:name="org.androidpn.demoapp.NavigationActivity" />
         <activity android:name="org.androidpn.demoapp.PersonalActivity" />
         <activity android:name="org.androidpn.demoapp.RegisterActivity" />
+        <activity android:name="org.androidpn.demoapp.NotiferActivity" />
         <activity
             android:name="org.androidpn.demoapp.UpdateBussinessInfoActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"

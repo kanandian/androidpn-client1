@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-217:12
-INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-217:12
-INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-217:12
-INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-217:12
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-219:12
+INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-219:12
+INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-219:12
+INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-219:12
 MERGED from [com.android.volley:volley:1.1.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/93d53ba5aba1120c5758a6b11d10a6cb/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:24.2.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/design-24.2.1.aar/06f2a614bcb7dce1b77e4bc23ca50781/AndroidManifest.xml:17:1-24:12
 MERGED from [com.jzxiang.pickerview:TimePickerDialog:1.0.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/TimePickerDialog-1.0.1.aar/2be54b59ce9644074ac4fead88e3168d/AndroidManifest.xml:2:1-16:12
@@ -20,9 +20,9 @@ MERGED from [com.android.support:support-core-ui:24.2.1] /Users/macpro/.gradle/c
 MERGED from [com.android.support:support-media-compat:24.2.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/support-media-compat-24.2.1.aar/4d618b577427fb56cb581a14d04adf58/AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-core-utils:24.2.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/support-core-utils-24.2.1.aar/a245c09181fedc561c0847303060de10/AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-compat:24.2.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-24.2.1.aar/d511b078a9749b56cb271de784f1b600/AndroidManifest.xml:17:1-27:12
-INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-217:12
-INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-217:12
-INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-217:12
+INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-219:12
+INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-219:12
+INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:2:1-219:12
 	package
 		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:3:2-33
 		INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml
@@ -38,7 +38,7 @@ INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main
 		INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:5:2-202:16
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:5:2-204:16
 MERGED from [com.android.volley:volley:1.1.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/93d53ba5aba1120c5758a6b11d10a6cb/AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.1.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/93d53ba5aba1120c5758a6b11d10a6cb/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:24.2.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/design-24.2.1.aar/06f2a614bcb7dce1b77e4bc23ca50781/AndroidManifest.xml:22:5-20
@@ -349,58 +349,62 @@ activity#org.androidpn.demoapp.RegisterActivity
 ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:168:3-57
 	android:name
 		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:168:13-45
+activity#org.androidpn.demoapp.NotiferActivity
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:170:3-56
+	android:name
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:170:13-44
 activity#org.androidpn.demoapp.UpdateBussinessInfoActivity
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:170:3-174:72
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:172:3-176:72
 	android:screenOrientation
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:172:4-40
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:174:4-40
 	android:windowSoftInputMode
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:173:4-58
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:175:4-58
 	android:configChanges
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:171:4-76
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:173:4-76
 	android:theme
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:174:4-60
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:176:4-60
 	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:170:13-56
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:172:13-56
 activity#org.androidpn.client.NotificationDetailsActivity
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:177:3-179:14
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:179:3-181:14
 	android:label
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:178:4-40
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:180:4-40
 	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:177:13-76
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:179:13-76
 activity#org.androidpn.client.NotificationSettingsActivity
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:180:3-182:14
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:182:3-184:14
 	android:label
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:181:4-41
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:183:4-41
 	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:180:13-77
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:182:13-77
 activity#com.amap.api.navi.AmapRouteActivity
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:183:3-184:57
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:185:3-186:57
 	android:configChanges
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:184:4-54
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:186:4-54
 	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:183:13-63
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:185:13-63
 service#org.androidpn.client.NotificationService
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:188:3-194:13
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:190:3-196:13
 	android:enabled
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:188:12-34
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:190:12-34
 	android:label
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:190:4-39
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:192:4-39
 	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:189:4-59
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:191:4-59
 intent-filter#org.androidpn.client.NotificationService
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:191:4-193:20
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:193:4-195:20
 action#org.androidpn.client.NotificationService
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:192:5-71
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:194:5-71
 	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:192:13-68
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:194:13-68
 service#com.amap.api.location.APSService
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:195:3-70
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:197:3-70
 	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:195:12-59
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:197:12-59
 uses-sdk
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:203:2-40
-INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:203:2-40
-INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:203:2-40
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:205:2-40
+INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:205:2-40
+INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:205:2-40
 MERGED from [com.android.volley:volley:1.1.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/93d53ba5aba1120c5758a6b11d10a6cb/AndroidManifest.xml:7:5-43
 MERGED from [com.android.volley:volley:1.1.0] /Users/macpro/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/93d53ba5aba1120c5758a6b11d10a6cb/AndroidManifest.xml:7:5-43
 MERGED from [com.android.support:design:24.2.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/design-24.2.1.aar/06f2a614bcb7dce1b77e4bc23ca50781/AndroidManifest.xml:20:5-43
@@ -433,67 +437,67 @@ MERGED from [com.android.support:support-core-utils:24.2.1] /Users/macpro/.gradl
 MERGED from [com.android.support:support-core-utils:24.2.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/support-core-utils-24.2.1.aar/a245c09181fedc561c0847303060de10/AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:24.2.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-24.2.1.aar/d511b078a9749b56cb271de784f1b600/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:24.2.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/support-compat-24.2.1.aar/d511b078a9749b56cb271de784f1b600/AndroidManifest.xml:21:5-23:58
-INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:203:2-40
-INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:203:2-40
+INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:205:2-40
+INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:205:2-40
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:24.2.1] /Users/macpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/5b51be794e50d43869b51c0ae39276c8/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:203:2-40
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:205:2-40
 		INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:203:12-37
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:205:12-37
 		INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:204:2-78
-	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:204:19-75
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:205:2-76
-	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:205:19-73
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:206:2-78
 	android:name
 		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:206:19-75
-uses-permission#android.permission.ACCESS_FINE_LOCATION
+uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:207:2-76
 	android:name
 		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:207:19-73
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:208:2-78
+	android:name
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:208:19-75
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:209:2-76
+	android:name
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:209:19-73
 uses-permission#android.permission.INTERNET
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:208:2-64
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:210:2-64
 	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:208:19-61
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:210:19-61
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:209:2-72
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:211:2-72
 	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:209:19-69
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:211:19-69
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:210:2-73
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:212:2-73
 	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:210:19-70
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:212:19-70
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:211:2-73
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:213:2-73
 	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:211:19-70
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:213:19-70
 uses-permission#android.permission.VIBRATE
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:212:2-63
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:214:2-63
 	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:212:19-60
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:214:19-60
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:213:2-65
-	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:213:19-62
-uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:214:2-86
-	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:214:19-83
-uses-permission#android.permission.BLUETOOTH
 ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:215:2-65
 	android:name
 		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:215:19-62
-uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:216:2-71
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:216:2-86
 	android:name
-		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:216:19-68
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:216:19-83
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:217:2-65
+	android:name
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:217:19-62
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:218:2-71
+	android:name
+		ADDED from /Users/macpro/AndroidStudioProjects/androidpn-client1/app/src/main/AndroidManifest.xml:218:19-68
